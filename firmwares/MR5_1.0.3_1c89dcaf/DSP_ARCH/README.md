@@ -12,6 +12,8 @@
 | `SIGNAL_PATHS.md` | Трассы сигнала: Bluetooth (A2DP/ESCO), Line In (задний), XLR balanced (задний), AUX (фронтальный) → ЦАП/наушники; граф узлов и переключение источников |
 | `POWER_AMP.md` | Управление выходными трактами: ЦАП-узлы, гейны SET_HP_GAIN / AUX_DAC_GAIN, GPIO (PORTA 0xfd5000), tri-amp |
 | `EQ_TABLES.md` | Полные таблицы коэффициентов EQ из stream.bin (Bass/Treb/Desk_Acoustic/EQDIY/ESCO) |
+| `FLASH_LAYOUT.md` | Раскладка flash: встроенные jlfs-файлы (cfg_tool.bin, p11_code.bin, stream.bin), происхождение effect_cfg |
+| `STOCK_MODS.md` | Модификации на стоке без перепрошивки: max L/R PEQ, мьют источника, HP→SUB-OUT, DUT/AT-канал |
 
 ## Кратко — главные выводы
 
