@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark" data-seed="peach">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MR5 BLE Probe · проверка доставки параметров (безопасный стенд)</title>
+<style>
+:root{--font-sans:system-ui,"Segoe UI",Roboto,sans-serif;--font-mono:ui-monospace,Consolas,monospace;
+--r-lg:20px;--r-md:14px;--r-pill:999px}
+[data-seed="teal"]{--h:174;--s:68%}[data-seed="blue"]{--h:217;--s:88%}
+[data-seed="violet"]{--h:263;--s:82%}[data-seed="peach"]{--h:22;--s:85%}
+[data-theme="dark"]{--bg:hsl(var(--h),18%,7%);--s0:hsl(var(--h),16%,10%);--s1:hsl(var(--h),15%,13%);
+--s2:hsl(var(--h),15%,17%);--s3:hsl(var(--h),14%,21%);--tx:hsl(var(--h),24%,92%);--tx2:hsl(var(--h),14%,70%);
+--ol:hsl(var(--h),14%,25%);--prim:hsl(var(--h),var(--s),78%);--onprim:hsl(var(--h),65%,16%);
+--pc:hsl(var(--h),48%,28%);--onpc:hsl(var(--h),92%,90%);--ok:#7ee787;--warn:#f2cc60;--err:#ffb4ab;
+--wc:rgba(210,153,34,.16);--ec:rgba(255,100,90,.14)}
+[data-theme="light"]{--bg:hsl(var(--h),32%,97%);--s0:hsl(var(--h),28%,94%);--s1:hsl(var(--h),24%,91%);
+--s2:hsl(var(--h),22%,87%);--s3:hsl(var(--h),20%,83%);--tx:hsl(var(--h),20%,12%);--tx2:hsl(var(--h),14%,36%);
+--ol:hsl(var(--h),16%,78%);--prim:hsl(var(--h),72%,42%);--onprim:#fff;--pc:hsl(var(--h),90%,90%);
+--onpc:hsl(var(--h),75%,16%);--ok:#137333;--warn:#9a6700;--err:#b3261e;--wc:rgba(154,103,0,.15);--ec:rgba(179,38,30,.12)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 var(--font-sans)}
+.topbar{position:sticky;top:0;z-index:9;display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+justify-content:space-between;padding:10px 16px;background:color-mix(in srgb,var(--bg) 86%,transparent);
+backdrop-filter:blur(12px);border-bottom:1px solid var(--ol)}
+.topbar h1{font-size:17px;margin:0}.topbar .sub{font-size:12px;color:var(--tx2)}
+.shell{max-width:1100px;margin:0 auto;padding:12px;display:grid;gap:12px}
+.card{background:var(--s0);border:1px solid var(--ol);border-radius:var(--r-lg);padding:14px}
+.card h2{margin:0 0 10px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--tx2)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.muted{font-size:12px;color:var(--tx2)}.mono{font-family:var(--font-mono)}
+button{font:inherit;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:600;
+font-size:13px;border-radius:var(--r-pill);padding:0 14px;height:36px;background:var(--s2);color:var(--tx);
+transition:transform .1s}
+button:active{transform:scale(.97)}button:disabled{opacity:.4;cursor:not-allowed}
+.btn-p{background:var(--prim);color:var(--onprim)}.btn-t{background:var(--pc);color:var(--onpc)}
+.btn-d{background:var(--ec);color:var(--err)}.btn-sm{height:30px;font-size:12px;padding:0 11px}
+.chip{display:inline-flex;gap:6px;align-items:center;padding:4px 10px;border-radius:var(--r-pill);
+font-size:12px;font-weight:600;background:var(--s2);color:var(--tx2)}
+.chip.ok{background:rgba(46,160,67,.18);color:var(--ok)}.chip.err{background:var(--ec);color:var(--err)}
+.chip.warn{background:var(--wc);color:var(--warn)}
+.dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+.dot.pulse{animation:pulse 1.6s infinite}@keyframes pulse{50%{opacity:.4;transform:scale(.8)}}
+input,select,textarea{font:inherit;background:var(--s2);color:var(--tx);border:1px solid var(--ol);
+border-radius:10px;padding:6px 8px;font-size:13px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--prim)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--ol)}
+th{color:var(--tx2);font-size:11px;text-transform:uppercase}
+.st-ok{color:var(--ok);font-weight:700}.st-sil{color:var(--tx2)}.st-bad{color:var(--err);font-weight:700}
+.st-other{color:var(--warn)}
+.hexbox{background:var(--s1);border:1px solid var(--ol);border-radius:10px;padding:8px;
+font-family:var(--font-mono);font-size:11.5px;word-break:break-all;max-height:150px;overflow:auto;white-space:pre-wrap}
+.log{background:var(--s1);border:1px solid var(--ol);border-radius:var(--r-lg);height:300px;overflow:auto;
+padding:6px;font-family:var(--font-mono);font-size:11.5px}
+.pl{padding:4px 6px;border-radius:8px;margin-bottom:3px}
+.pl-tx{color:#79c0ff}.pl-rx{color:var(--ok)}.pl-sys{color:#d2a8ff}.pl-err{color:var(--err)}.pl-warn{color:var(--warn)}
+.warnbox{background:var(--wc);color:var(--warn);border-radius:10px;padding:8px 10px;font-size:12px;margin-top:8px}
+.dangerbox{background:var(--ec);color:var(--err);border-radius:10px;padding:8px 10px;font-size:12px;margin-top:8px}
+.switch{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:600}
+.switch input{width:34px;height:20px;appearance:none;background:var(--s3);border-radius:var(--r-pill);
+position:relative;transition:background .2s;cursor:pointer;margin:0}
+.switch input:checked{background:var(--pc)}
+.switch input::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;
+background:var(--tx);transition:left .2s}
+.switch input:checked::after{left:16px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px;margin-top:8px}
+.kv div{background:var(--s1);border:1px solid var(--ol);border-radius:10px;padding:6px 9px;font-size:12px}
+.kv b{display:block;font-size:10px;color:var(--tx2);text-transform:uppercase}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>MR5 BLE Probe · проверка доставки node_param_set</h1>
+    <div class="sub">Протокол верифицирован PEdifierMrBTool (CN MR5BT) · правила: сначала READ, писать только обратимо</div>
+  </div>
+  <div class="row">
+    <span id="connChip" class="chip"><span class="dot"></span>Отключено</span>
+    <span id="modeChip" class="chip warn">DRY-RUN</span>
+    <button id="btnTheme" class="btn-sm">Тема</button>
+  </div>
+</header>
+<main class="shell">
+
+  <div class="card">
+    <h2>1 · Подключение и предохранители</h2>
+    <div class="row">
+      <button id="btnConnect" class="btn-p">Подключить MR5</button>
+      <button id="btnDisc" class="btn-d" disabled>Отключить</button>
+      <button id="btnStop" class="btn-d" disabled>■ СТОП (очистить очередь)</button>
+      <label class="switch"><input type="checkbox" id="swDry" checked> Dry-run (только лог, не писать)</label>
+    </div>
+    <div class="kv">
+      <div><b>Троттлинг записи</b><span class="mono">≥ 300 мс между кадрами</span></div>
+      <div><b>Лимит payload</b><span class="mono">64 Б (больше — только вручную)</span></div>
+      <div><b>Watchdog</b><span class="mono">5 молчаний подряд → пауза</span></div>
+      <div><b>RX-окно</b><span class="mono">2 с на ответ, классификация</span></div>
+    </div>
+    <div class="warnbox">Правила стенда: (1) при подключении НИЧЕГО не отправляется автоматически;
+    (2) каждый исходящий кадр показывается в лог до отправки; (3) запись включается только тумблером
+    «Разрешить запись» и работает только с классами ROUNDTRIP/PROBE; (4) класс DANGER — отдельный
+    тумблер + подтверждение на каждый кадр; (5) watchdog приостанавливает всё, если колонка перестала отвечать.</div>
+  </div>
+
+  <div class="card">
+    <h2>2 · READ-матрица (безопасно, можно гонять всегда)</h2>
+    <div class="row">
+      <button id="btnReadAll" class="btn-p" disabled>Прогнать все чтения</button>
+      <button id="btnReadClear" class="btn-sm">Очистить таблицу</button>
+      <span class="muted">Определяет, какие op вообще живут на этой прошивке</span>
+    </div>
+    <table style="margin-top:8px"><thead><tr><th>op</th><th>Команда</th><th>Статус</th><th>Ответ</th></tr></thead>
+    <tbody id="readBody"><tr><td colspan="4" class="muted">— ещё не прогоняли —</td></tr></tbody></table>
+  </div>
+
+  <div class="card">
+    <h2>3 · ROUNDTRIP-тесты (обратимая запись: читаем → пишем то же значение → читаем назад)</h2>
+    <div class="row">
+      <label class="switch"><input type="checkbox" id="swWrite"> Разрешить запись (ROUNDTRIP/PROBE)</label>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <button id="rtVol" class="btn-t" disabled>Громкость: no-op 0x67</button>
+      <button id="rtPrompt" class="btn-t" disabled>Голос. оповещение: no-op 0x87</button>
+      <button id="rtEq" class="btn-t" disabled>EQ-полоса 0: no-op 0x44</button>
+      <button id="rtEqGet" class="btn-t" disabled>EQ чтение 0x43 → парсер</button>
+    </div>
+    <div class="muted" style="margin-top:6px">Каждый тест: 0x66/0x86/0x43 (текущее) → запись того же значения →
+    чтение → сверка. Если значение изменилось — автоматический откат. Это доказывает, что канал записи
+    работает, не меняя звук.</div>
+    <div id="rtOut" class="hexbox" style="margin-top:8px">—</div>
+  </div>
+
+  <div class="card">
+    <h2>4 · PROBE: кандидаты доставки node_param_set (гипотезы из реверса)</h2>
+    <div class="row">
+      <label class="muted">op (hex, через запятую): <input id="probeOps" value="2B" style="width:120px"></label>
+      <label class="muted">payload: <select id="probePay">
+        <option value="gain0">gain-блок 12 Б, 0 дБ (8×00+f32)</option>
+        <option value="gain-90">gain-блок 12 Б, −90.3 дБ (mute)</option>
+        <option value="empty">пустой (0 Б)</option>
+        <option value="one">1 Б: 0x00</option>
+        <option value="custom">свой (hex ниже)</option>
+      </select></label>
+      <label class="muted" style="flex:1;min-width:140px">hex <input id="probeHex" style="width:100%" placeholder="00 00 00 00 00 00 00 00 00 00 00 00" disabled></label>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <label class="switch"><input type="checkbox" id="swConfirm"> Подтверждать каждый кадр</label>
+      <button id="btnProbe" class="btn-t" disabled>Проба (по одному, с ожиданием ответа)</button>
+      <button id="btnProbeStop" class="btn-sm">Прервать серию</button>
+    </div>
+    <div class="warnbox">Кандидат 0x2B (десятичный 43) — гипотеза «доставка node_param_set по app-каналу».
+    Гейн-блок с 0 дБ безобиден: это заводское значение SET_HP_GAIN idx0. Проба шлёт кадры ПО ОДНОМУ,
+    ждёт RX-окно 2 с и классифицирует ответ. Любой ACK/эхо = кандидат подтверждён.</div>
+    <div id="probeOut" class="hexbox" style="margin-top:8px">—</div>
+  </div>
+
+  <div class="card">
+    <h2>5 · DANGER (по умолчанию ВЫКЛЮЧЕНО, требует двойного включения)</h2>
+    <div class="row">
+      <label class="switch"><input type="checkbox" id="swDanger1"> Осознал риск</label>
+      <label class="switch"><input type="checkbox" id="swDanger2" disabled> Включить DANGER</label>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <button class="btn-d btn-sm" data-danger="CE" disabled>0xCE выключение</button>
+      <button class="btn-d btn-sm" data-danger="07" disabled>0x07 сброс устройства</button>
+      <button class="btn-d btn-sm" data-danger="92" disabled>0x92 LDAC cfg (ребут!)</button>
+      <button class="btn-d btn-sm" data-danger="62" disabled>0x62 источник</button>
+      <button class="btn-d btn-sm" data-danger="BC" disabled>0xBC активный спикер</button>
+    </div>
+    <div class="row" style="margin-top:6px">
+      <input id="dutLine" value="DUT+TST+VER+GET+" style="flex:1;min-width:180px" placeholder="DUT/AT ASCII (транспорт не подтверждён)">
+      <button class="btn-d btn-sm" data-danger="DUT" disabled>Отправить ASCII</button>
+      <label class="muted" style="flex:1;min-width:140px">сырой кадр hex <input id="rawFrame" style="width:100%" placeholder="AA EC 43 00 00 2A"></label>
+      <button class="btn-d btn-sm" data-danger="RAW" disabled>Сырой кадр</button>
+    </div>
+    <div class="dangerbox">Эти команды меняют состояние и/или перезагружают колонку. 0x92 перевозит
+    устройство в другой кодек-режим (может ребутнуть). DUT-строки вида SAV/SET пишут в flash.
+    Сырой кадр уходит как есть — проверяй байты. Каждый клик требует подтверждения.</div>
+  </div>
+
+  <div class="card">
+    <h2>6 · Лог сессии</h2>
+    <div class="row">
+      <button id="logSave" class="btn-t btn-sm">Скачать лог (.txt)</button>
+      <button id="logClear" class="btn-sm">Очистить</button>
+      <span id="stat" class="muted mono">tx=0 rx=0 ack=0 sil=0</span>
+    </div>
+    <div class="log" id="log" style="margin-top:6px"></div>
+  </div>
+
+</main>
+<script>
+"use strict";
+/* ===== MR5 BLE Probe · транспорт = верифицированный PEdifierMrBTool ===== */
+const UUIDS={SVC:"48093a01-1a48-11e9-ab14-d663bd873d93",
+  NOTIFY:"48090001-1a48-11e9-ab14-d663bd873d93",WRITE:"48090002-1a48-11e9-ab14-d663bd873d93"};
+const CMD={EQ_SET:0xC4,EQ_QUERY:0xC5,SINGLE_EQ_SET:0x44,CUSTOM_EQ_GET:0x43,CUSTOM_EQ_RESET:0x45,
+  CUSTOM_EQ_CHANGE:0x46,EQ_NAME_SAVE:0x47,VOLUME_QUERY:0x66,VOLUME_SET:0x67,DEVICE_NAME_QUERY:0xC9,
+  VERSION_QUERY:0xC6,SUPPORT_FUNC:0xD8,DEVICE_STATE:0xC3,HEADSET_STATE:0xC0,AUDIO_CODEC:0x68,
+  ADVANCED_QUERY:0xD5,AUTO_SHUTDOWN_QUERY:0xD7,AUTO_SHUTDOWN_SET:0xD6,RESET_DEVICE:0x07,SHUTDOWN:0xCE,
+  INPUT_SOURCE_QUERY:0x61,INPUT_SOURCE_SET:0x62,LDAC_QUERY:0x48,LDAC_CFG_SET:0x92,LDAC_SET:0x49,
+  ACTIVE_SPEAKER_QUERY:0xBB,ACTIVE_SPEAKER_SET:0xBC,PROMPT_TONE_QUERY:0x86,PROMPT_TONE_SET:0x87};
+const READ_OPS=[[0xC6,"VERSION"],[0xC9,"DEVICE_NAME"],[0x66,"VOLUME"],[0x68,"AUDIO_CODEC"],
+  [0xD8,"SUPPORT_FUNC"],[0xC3,"DEVICE_STATE"],[0xC0,"HEADSET_STATE"],[0xD5,"ADVANCED"],
+  [0x43,"CUSTOM_EQ_GET"],[0xC5,"EQ_QUERY"],[0x61,"INPUT_SOURCE"],[0x48,"LDAC_QUERY"],
+  [0xBB,"ACTIVE_SPEAKER"],[0x86,"PROMPT_TONE"],[0xD7,"AUTO_SHUTDOWN"]];
+
+const $=id=>document.getElementById(id);
+const hex=u8=>Array.from(u8,x=>x.toString(16).padStart(2,"0").toUpperCase()).join(" ");
+const fromHex=s=>{const c=(s||"").replace(/[^0-9a-fA-F]/g,""),p=c.length%2?"0"+c:c,
+  o=new Uint8Array(p.length/2);for(let i=0;i<p.length;i+=2)o[i/2]=parseInt(p.substr(i,2),16);return o;};
+const S={dev:null,wCh:null,connected:false,dry:true,write:false,danger:false,stop:false,pause:false,
+  tx:0,rx:0,ack:0,sil:0,silStreak:0};
+
+/* ===== ЛОГ ===== */
+const logLines=[];
+function log(kind,msg){
+  const ts=new Date().toTimeString().slice(0,8);
+  logLines.push(`[${ts}] ${kind}: ${msg}`);
+  const el=document.createElement("div");el.className="pl pl-"+kind;
+  el.textContent=`[${ts}] ${kind}: ${msg}`;
+  const box=$("log");box.appendChild(el);
+  while(box.childNodes.length>800)box.removeChild(box.firstChild);
+  box.scrollTop=box.scrollHeight;
+  $("stat").textContent=`tx=${S.tx} rx=${S.rx} ack=${S.ack} sil=${S.sil}`;
+}
+
+/* ===== КАДРЫ ===== */
+function frame(op,payload,app=0xEC,rx=false){
+  const body=new Uint8Array(5+payload.length);
+  body[0]=rx?0xBB:0xAA;body[1]=app;body[2]=op&0xff;
+  body[3]=(payload.length>>8)&0xff;body[4]=payload.length&0xff;
+  body.set(payload,5);let s=0;for(const x of body)s=(s+x)&0xff;
+  const out=new Uint8Array(body.length+1);out.set(body);out[body.length]=s;return out;
+}
+function parseRx(u8){
+  if(u8.length<6||u8[0]!==0xBB)return null;
+  const cmd=u8[2],len=(u8[3]<<8)|u8[4];
+  const crcOk=u8[u8.length-1]===[...u8.slice(0,-1)].reduce((a,b)=>a+b,0)&0xff;
+  return{cmd,len,pay:u8.slice(5,5+len),crcOk};
+}
+function gainBlock(db){const b=new ArrayBuffer(12),v=new DataView(b);
+  v.setFloat32(8,db,true);return new Uint8Array(b);}
+
+/* ===== BLE ===== */
+async function bleConnect(){
+  try{
+    const dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"}],
+      optionalServices:[UUIDS.SVC]});
+    log("sys","устройство: "+(dev.name||"?"));
+    const g=await dev.gatt.connect();
+    const svc=await g.getPrimaryService(UUIDS.SVC);
+    const nCh=await svc.getCharacteristic(UUIDS.NOTIFY);
+    await nCh.startNotifications();
+    nCh.addEventListener("characteristicvaluechanged",e=>onRx(new Uint8Array(e.target.value.buffer)));
+    S.wCh=await svc.getCharacteristic(UUIDS.WRITE);
+    S.dev=dev;S.connected=true;S.silStreak=0;
+    dev.addEventListener("gattserverdisconnected",()=>{S.connected=false;upd();log("sys","отключено");});
+    upd();log("sys","подключено — авто-запросов НЕТ, всё вручную");
+  }catch(e){log("err","BLE: "+e.message);}
+}
+function onRx(u8){
+  S.rx++;S.silStreak=0;
+  const p=parseRx(u8);
+  if(!p){log("rx","НЕПАРСИМОЕ: "+hex(u8));return;}
+  resolveWaiter(p);
+  log("rx",`op=0x${p.cmd.toString(16).toUpperCase()} len=${p.pay.length} crc=${p.crcOk?"OK":"BAD"} pay=${p.pay.length?hex(p.pay):"∅"}`);
+  if(pending&&pending.op===p.cmd){classify(pending,p,"echo");}
+  else if(pending){classify(pending,p,"other");}
+}
+function upd(){
+  $("connChip").innerHTML=S.connected?'<span class="dot pulse"></span>Подключено':'<span class="dot"></span>Отключено';
+  $("connChip").className="chip "+(S.connected?"ok":"");
+  const can=S.connected&&!S.pause;
+  $("btnDisc").disabled=!S.connected;
+  $("btnStop").disabled=!S.connected;
+  $("btnReadAll").disabled=!(S.connected&&S.dry);
+  ["rtVol","rtPrompt","rtEq","rtEqGet"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
+  $("btnProbe").disabled=!(S.connected&&S.write);
+  document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
+}
+
+/* ===== ОЧЕРЕДЬ / ОТПРАВКА ===== */
+let pending=null,waiterResolve=null;
+function resolveWaiter(p){if(waiterResolve){waiterResolve(p);waiterResolve=null;}}
+function waitFor(timeoutMs){
+  return new Promise(res=>{
+    const t=setTimeout(()=>{waiterResolve=null;res(null);},timeoutMs);
+    waiterResolve=p=>{clearTimeout(t);res(p);};
+  });
+}
+async function transmit(frameU8,label,risk){
+  if(!S.connected){log("err","нет подключения");return null;}
+  if(S.pause){log("warn","ПАУЗА watchdog — отправка заблокирована");return null;}
+  if(risk!=="READ"){
+    if(risk==="DANGER"){
+      if(!S.danger){log("err","DANGER выключен");return null;}
+      if(!confirm("DANGER: "+label+"\nОтправить?")){log("sys","отменено пользователем");return null;}
+    }else{
+      if(!S.write){log("err","запись выключена (dry-run)");return null;}
+      if($("swConfirm").checked&&!confirm(label+"\nОтправить?")){log("sys","отменено пользователем");return null;}
+    }
+  }
+  log("tx",`[${risk}] ${label}: ${hex(frameU8)}`);
+  if(S.dry&&risk!=="READ"){log("warn","DRY-RUN: кадр НЕ отправлен");return null;}
+  if(S.txNotified===undefined)S.txNotified=0;
+  S.tx++;
+  try{await S.wCh.writeValue(frameU8);}
+  catch(e){log("err","TX: "+e.message);return null;}
+  const p=await waitFor(2000);
+  if(!p){S.sil++;S.silStreak++;classify(pending||{op:frameU8[2]},null,"silence");
+    if(S.silStreak>=5){S.pause=true;log("err","WATCHDOG: 5 молчаний подряд — ПАУЗА. Кнопка СТОП сбросит.");upd();}
+  }else S.silStreak=0;
+  await new Promise(r=>setTimeout(r,300)); // троттлинг
+  return p;
+}
+function classify(ctx,p,kind){
+  if(kind==="silence"){S.sil;log("sys",`→ op 0x${(ctx.op||0).toString(16).toUpperCase()}: ТИШИНА (2 с)`);return;}
+  if(kind==="echo"){S.ack++;
+    log("sys",`→ ЭХО/ACK op=0x${p.cmd.toString(16).toUpperCase()} pay=${p.pay.length?hex(p.pay):"∅"} — канал ОТВЕЧАЕТ`);
+    if(ctx.onReply)ctx.onReply(p);
+  }else log("sys",`→ сторонний ответ op=0x${p.cmd.toString(16).toUpperCase()} (ожидали 0x${(ctx.op||0).toString(16).toUpperCase()})`);
+}
+
+/* ===== READ-МАТРИЦА ===== */
+const readState={};
+async function readAll(){
+  $("readBody").innerHTML="";
+  for(const[op,name]of READ_OPS){
+    if(S.stop)break;
+    pending={op};
+    const p=await transmit(frame(op,new Uint8Array(0)),`${name} (0x${op.toString(16).toUpperCase()})`,"READ");
+    let st,txt;
+    if(!p){st="st-sil";txt="тишина";}
+    else if(p.cmd===op){st="st-ok";
+      txt=describe(op,p.pay)||hex(p.pay);
+      readState[name]={pay:p.pay};}
+    else if(p.crcOk){st="st-other";txt=`эхо 0x${p.cmd.toString(16)}`;}
+    else{st="st-bad";txt="crc BAD";}
+    const tr=document.createElement("tr");
+    tr.innerHTML=`<td class="mono">0x${op.toString(16).toUpperCase()}</td><td>${name}</td>
+      <td class="${st}">${st==="st-ok"?"ОТВЕТ":st==="st-sil"?"тишина":st==="st-other"?"чужой op":"CRC BAD"}</td>
+      <td class="mono">${txt}</td>`;
+    $("readBody").appendChild(tr);
+  }
+  log("sys","READ-матрица завершена");
+}
+function describe(op,pay){
+  try{
+    if(op===CMD.VERSION_QUERY&&pay.length>=3)return`FW ${pay[0]}.${pay[1]}.${pay[2]}`;
+    if(op===CMD.DEVICE_NAME_QUERY)return new TextDecoder().decode(pay);
+    if(op===CMD.VOLUME_QUERY&&pay.length>=2)return`vol=${pay[1]}/${pay[0]}`;
+    if(op===CMD.AUDIO_CODEC&&pay.length>=1)return["SBC","AAC","aptX","aptX-HD","LDAC","LHDC"][pay[0]]||"0x"+pay[0].toString(16);
+    if(op===CMD.SUPPORT_FUNC&&pay.length>13)return`eqBands=${pay[12]} maxVol=${pay[13]}`;
+    if(op===CMD.ADVANCED_QUERY&&pay.length>=7)return`lowcut=${(pay[2]<<8)|pay[3]} slope=${pay[4]} space=${pay[5]} desktop=${pay[6]}`;
+    if(op===CMD.CUSTOM_EQ_GET&&pay.length>=2)return`eqType=${pay[0]} bands=${pay[1]}`;
+    if(op===CMD.INPUT_SOURCE_QUERY&&pay.length>=1)return["BT","USB","AUX","Opt"][pay[0]]||pay[0];
+    if(op===CMD.ACTIVE_SPEAKER_QUERY&&pay.length>=2)return pay[1]===2?"Left":"Right";
+    if(op===CMD.PROMPT_TONE_QUERY&&pay.length>=2)return pay[1]===1?"on":"off";
+    if(op===CMD.DEVICE_STATE&&pay.length>=1)return"state="+pay[0];
+  }catch(e){}
+  return null;
+}
+
+/* ===== ROUNDTRIP ===== */
+async function rtVolume(){
+  pending={op:CMD.VOLUME_QUERY};
+  let p=await transmit(frame(CMD.VOLUME_QUERY,new Uint8Array(0)),"чтение 0x66","READ");
+  if(!p||p.cmd!==CMD.VOLUME_QUERY||p.pay.length<2){$("rtOut").textContent="0x66 не ответил — тест прерван";return;}
+  const[max,cur]=p.pay;
+  $("rtOut").textContent=`текущее vol=${cur}/${max}\nпишу то же значение ${cur} (0x67)...`;
+  pending={op:CMD.VOLUME_SET};
+  await transmit(frame(CMD.VOLUME_SET,new Uint8Array([cur])),`VOLUME_SET ${cur} (то же значение)`,"ROUNDTRIP");
+  pending={op:CMD.VOLUME_QUERY};
+  p=await transmit(frame(CMD.VOLUME_QUERY,new Uint8Array(0)),"контроль 0x66","READ");
+  const ok=p&&p.cmd===CMD.VOLUME_QUERY&&p.pay[1]===cur;
+  $("rtOut").textContent+=`\nконтроль: ${ok?"значение НЕ изменилось — канал записи РАБОТАЕТ":"значение изменилось! откат..."}`;
+  if(!ok&&p&&p.cmd===CMD.VOLUME_QUERY){
+    pending={op:CMD.VOLUME_SET};
+    await transmit(frame(CMD.VOLUME_SET,new Uint8Array([cur])),`откат к ${cur}`,"ROUNDTRIP");
+  }
+}
+async function rtPrompt(){
+  pending={op:CMD.PROMPT_TONE_QUERY};
+  let p=await transmit(frame(CMD.PROMPT_TONE_QUERY,new Uint8Array(0)),"чтение 0x86","READ");
+  if(!p||p.cmd!==CMD.PROMPT_TONE_QUERY||p.pay.length<2){$("rtOut").textContent="0x86 не ответил";return;}
+  const v=p.pay[1]===1?1:0;
+  $("rtOut").textContent=`prompt=${v?"on":"off"}\nпишу то же значение (0x87 [02 01 v])...`;
+  pending={op:CMD.PROMPT_TONE_SET};
+  await transmit(frame(CMD.PROMPT_TONE_SET,new Uint8Array([0x02,0x01,v])),"PROMPT_SET (то же значение)","ROUNDTRIP");
+  pending={op:CMD.PROMPT_TONE_QUERY};
+  p=await transmit(frame(CMD.PROMPT_TONE_QUERY,new Uint8Array(0)),"контроль 0x86","READ");
+  const ok=p&&p.pay.length>=2&&p.pay[1]===v;
+  $("rtOut").textContent+=`\nконтроль: ${ok?"OK — значение не изменилось":"изменилось!"}`;
+}
+async function rtEq(){
+  pending={op:CMD.CUSTOM_EQ_GET};
+  let p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"чтение 0x43","READ");
+  if(!p||p.cmd!==CMD.CUSTOM_EQ_GET||p.pay.length<5){$("rtOut").textContent="0x43 не ответил / мало данных";return;}
+  const eqType=p.pay[0],n=p.pay[1];
+  $("rtOut").textContent=`eqType=${eqType} bands=${n}\nшлю band0 c ТЕКУЩИМИ freq/gain (0x44)...`;
+  const idx=p.pay[2],freq=p.pay[4]<<8|p.pay[5],gByte=p.pay[6];
+  pending={op:CMD.SINGLE_EQ_SET};
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,idx,(freq>>8)&0xff,freq&0xff,gByte])),
+    `SINGLE_EQ_SET band${idx} freq=${freq} gByte=0x${gByte.toString(16)} (то же значение)`,"ROUNDTRIP");
+  pending={op:CMD.CUSTOM_EQ_GET};
+  p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"контроль 0x43","READ");
+  const ok=p&&p.cmd===CMD.CUSTOM_EQ_GET&&p.pay.length>6&&((p.pay[4]<<8|p.pay[5])===freq)&&p.pay[6]===gByte;
+  $("rtOut").textContent+=`\nконтроль: ${ok?"OK — полоса не изменилась, запись подтверждена":"нет подтверждения сверки"}`;
+}
+async function rtEqGet(){
+  pending={op:CMD.CUSTOM_EQ_GET};
+  const p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"чтение 0x43","READ");
+  if(!p){$("rtOut").textContent="тишина";return;}
+  $("rtOut").textContent=`raw: ${hex(p.pay)}\n\nparity: eqType=${p.pay[0]} numBands=${p.pay[1]}\n`
+    +`байты 2..12: ${hex(p.pay.slice(2,12))}\n(полный разбор — в DSP.html «Прочитать EQ»)`;
+}
+
+/* ===== PROBE ===== */
+async function probeSeries(){
+  const ops=$("probeOps").value.split(",").map(x=>parseInt(x.trim(),16)).filter(x=>x>=0&&x<=0xff);
+  if(!ops.length){log("err","список op пуст");return;}
+  const mode=$("probePay").value;
+  let payload=new Uint8Array(0);
+  if(mode==="gain0")payload=gainBlock(0);
+  else if(mode==="gain-90")payload=gainBlock(-90.3);
+  else if(mode==="one")payload=new Uint8Array([0]);
+  else if(mode==="custom")payload=fromHex($("probeHex").value);
+  if(payload.length>64&&!confirm(`payload ${payload.length} Б > 64 Б. Точно отправлять?`))return;
+  $("probeOut").textContent="";
+  for(const op of ops){
+    if(S.stop)break;
+    pending={op,onReply:p=>{
+      $("probeOut").textContent+=`op 0x${op.toString(16).toUpperCase()}: ОТВЕТ 0x${p.cmd.toString(16).toUpperCase()} pay=${hex(p.pay)}\n`;
+    }};
+    const p=await transmit(frame(op,payload),
+      `PROBE op=0x${op.toString(16).toUpperCase()} (${payload.length} Б)`,"PROBE");
+    if(!p)$("probeOut").textContent+=`op 0x${op.toString(16).toUpperCase()}: тишина (2 с)\n`;
+  }
+  log("sys","серия PROBE завершена");
+}
+
+/* ===== ИНИЦ ===== */
+$("btnConnect").onclick=bleConnect;
+$("btnDisc").onclick=()=>{if(S.dev)S.dev.gatt.disconnect();};
+$("btnStop").onclick=()=>{S.stop=true;S.pause=false;S.silStreak=0;log("sys","СТОП: очередь сброшена, пауза снята");upd();};
+$("swDry").onchange=e=>{S.dry=e.target.checked;
+  $("modeChip").textContent=S.dry?"DRY-RUN":(S.write?"WRITE":"READ-ONLY");
+  $("modeChip").className="chip "+(S.dry?"warn":"ok");
+  $("btnReadAll").disabled=!(S.connected&&S.dry);upd();
+  log("sys","dry-run: "+S.dry);};
+$("swWrite").onchange=e=>{S.write=e.target.checked;
+  if(S.write&&S.dry){S.dry=false;$("swDry").checked=false;}
+  $("modeChip").textContent=S.dry?"DRY-RUN":(S.write?"WRITE":"READ-ONLY");
+  $("modeChip").className="chip "+(S.write?"ok":"warn");
+  log("sys","запись: "+S.write);upd();};
+$("swDanger1").onchange=e=>{$("swDanger2").disabled=!e.target.checked;
+  if(!e.target.checked)$("swDanger2").checked=false;
+  S.danger=$("swDanger2").checked;upd();};
+$("swDanger2").onchange=e=>{S.danger=e.target.checked;
+  if(S.danger&&!confirm("Включить опасные команды? Возможны выключение, сброс, ребут колонки.")){
+    e.target.checked=false;S.danger=false;}
+  log("sys","DANGER: "+S.danger);upd();};
+$("btnReadAll").onclick=async()=>{S.stop=false;await readAll();};
+$("btnReadClear").onclick=()=>{$("readBody").innerHTML='<tr><td colspan="4" class="muted">— очищено —</td></tr>';};
+$("rtVol").onclick=rtVolume;$("rtPrompt").onclick=rtPrompt;$("rtEq").onclick=rtEq;$("rtEqGet").onclick=rtEqGet;
+$("probePay").onchange=e=>{$("probeHex").disabled=e.target.value!=="custom";};
+$("btnProbe").onclick=async()=>{S.stop=false;await probeSeries();};
+$("btnProbeStop").onclick=()=>{S.stop=true;log("sys","серия PROBE прервана");};
+document.querySelectorAll("[data-danger]").forEach(b=>b.onclick=()=>{
+  const d=b.dataset.danger;
+  if(d==="DUT"){
+    const s=$("dutLine").value.trim();
+    transmit(new TextEncoder().encode(s+"\r\n"),"DUT ASCII '"+s+"'","DANGER");
+  }else if(d==="RAW"){
+    const f=fromHex($("rawFrame").value);
+    transmit(f,"RAW "+hex(f),"DANGER");
+  }else{
+    const op=parseInt(d,16);
+    const payload=(op===CMD.LDAC_CFG_SET)?new Uint8Array([0x0F,0]):
+      (op===CMD.INPUT_SOURCE_SET)?new Uint8Array([0x00]):
+      (op===CMD.ACTIVE_SPEAKER_SET)?new Uint8Array([0x04,0x02]):new Uint8Array(0);
+    transmit(frame(op,payload),`DANGER op=0x${d} (${payload.length} Б)`,"DANGER");
+  }
+});
+$("logSave").onclick=()=>{
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([logLines.join("\n")],{type:"text/plain"}));
+  a.download="mr5_ble_probe_log.txt";a.click();
+};
+$("logClear").onclick=()=>{$("log").innerHTML="";};
+$("btnTheme").onclick=()=>{const h=document.documentElement;
+  h.dataset.theme=h.dataset.theme==="dark"?"light":"dark";};
+log("sys","стенд готов. Dry-run включён — до снятия тумблеров ничего не пишет.");
+log("sys","порядок: 1) READ-матрица → 2) ROUNDTRIP → 3) PROBE 0x2B. DANGER не трогать без нужды.");
+
+</script>
+</body>
+</html>
