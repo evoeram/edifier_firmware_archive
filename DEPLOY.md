@@ -80,6 +80,28 @@ pi32v2) на другую машину. Основной кейс: **MR5 1.0.3**
 передаётся аргументом), `tools/b3_overlay_names.py` / `b3_overlay_chain.py`
 (константа SDK_ELF внутри — поправить под новое расположение).
 
+## Перенос на другую машину
+
+Вариант А — через GitHub (с этой машины gh CLI не установлен):
+
+```
+# на старой/новой машине с правами:
+cd edifier_firmware_archive
+git remote add origin https://github.com/<user>/edifier-firmware-re.git
+git push -u origin master        # или: git push -u origin main
+```
+(репо уже создано локально: commit `2f18ce5`, ветка master)
+
+Вариант Б — офлайн, одним файлом `edifier_re.bundle` (22,5 МБ, в корне):
+
+```
+git clone edifier_re.bundle edifier_firmware_archive
+cd edifier_firmware_archive
+git remote set-url origin https://github.com/<user>/edifier-firmware-re.git  # опционально
+```
+
+Дальше — «Быстрое развёртывание» выше.
+
 ## Ключевые документы
 
 - `firmwares/MR5_1.0.3_1c89dcaf/source/ANALYSIS.md` — вся история и выводы
