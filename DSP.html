@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark" data-seed="teal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MR5 DSP Hack · управление аудиографом без перепрошивки</title>
+<style>
+:root{--font-sans:system-ui,"Segoe UI",Roboto,sans-serif;--font-mono:ui-monospace,Consolas,monospace;
+--r-lg:20px;--r-md:14px;--r-pill:999px}
+[data-seed="teal"]{--h:174;--s:68%}[data-seed="blue"]{--h:217;--s:88%}
+[data-seed="violet"]{--h:263;--s:82%}[data-seed="peach"]{--h:22;--s:85%}
+[data-theme="dark"]{--bg:hsl(var(--h),18%,7%);--s0:hsl(var(--h),16%,10%);--s1:hsl(var(--h),15%,13%);
+--s2:hsl(var(--h),15%,17%);--s3:hsl(var(--h),14%,21%);--tx:hsl(var(--h),24%,92%);--tx2:hsl(var(--h),14%,70%);
+--ol:hsl(var(--h),14%,25%);--prim:hsl(var(--h),var(--s),78%);--onprim:hsl(var(--h),65%,16%);
+--pc:hsl(var(--h),48%,28%);--onpc:hsl(var(--h),92%,90%);--ok:#7ee787;--warn:#f2cc60;--err:#ffb4ab;
+--wc:rgba(210,153,34,.16);--ec:rgba(255,100,90,.14)}
+[data-theme="light"]{--bg:hsl(var(--h),32%,97%);--s0:hsl(var(--h),28%,94%);--s1:hsl(var(--h),24%,91%);
+--s2:hsl(var(--h),22%,87%);--s3:hsl(var(--h),20%,83%);--tx:hsl(var(--h),20%,12%);--tx2:hsl(var(--h),14%,36%);
+--ol:hsl(var(--h),16%,78%);--prim:hsl(var(--h),72%,42%);--onprim:#fff;--pc:hsl(var(--h),90%,90%);
+--onpc:hsl(var(--h),75%,16%);--ok:#137333;--warn:#9a6700;--err:#b3261e;--wc:rgba(154,103,0,.15);--ec:rgba(179,38,30,.12)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 var(--font-sans)}
+.topbar{position:sticky;top:0;z-index:9;display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+justify-content:space-between;padding:10px 16px;background:color-mix(in srgb,var(--bg) 86%,transparent);
+backdrop-filter:blur(12px);border-bottom:1px solid var(--ol)}
+.topbar h1{font-size:17px;margin:0}.topbar .sub{font-size:12px;color:var(--tx2)}
+.shell{max-width:1400px;margin:0 auto;padding:12px;display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:1080px){.shell{grid-template-columns:1fr 1fr;align-items:start}}
+.card{background:var(--s0);border:1px solid var(--ol);border-radius:var(--r-lg);padding:14px}
+.card h2{margin:0 0 10px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--tx2)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.between{justify-content:space-between}
+.muted{font-size:12px;color:var(--tx2)}.mono{font-family:var(--font-mono)}
+button{font:inherit;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:600;
+font-size:13px;border-radius:var(--r-pill);padding:0 14px;height:36px;background:var(--s2);color:var(--tx);
+transition:transform .1s}
+button:active{transform:scale(.97)}button:disabled{opacity:.4;cursor:not-allowed}
+.btn-p{background:var(--prim);color:var(--onprim)}.btn-t{background:var(--pc);color:var(--onpc)}
+.btn-d{background:var(--ec);color:var(--err)}.btn-sm{height:30px;font-size:12px;padding:0 11px}
+.chip{display:inline-flex;gap:6px;align-items:center;padding:4px 10px;border-radius:var(--r-pill);
+font-size:12px;font-weight:600;background:var(--s2);color:var(--tx2)}
+.chip.ok{background:rgba(46,160,67,.18);color:var(--ok)}.chip.err{background:var(--ec);color:var(--err)}
+.chip.info{background:var(--pc);color:var(--onpc)}
+.dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+.dot.pulse{animation:pulse 1.6s infinite}@keyframes pulse{50%{opacity:.4;transform:scale(.8)}}
+input,select{font:inherit;background:var(--s2);color:var(--tx);border:1px solid var(--ol);
+border-radius:10px;padding:6px 8px;font-size:13px;outline:none}
+input:focus,select:focus{border-color:var(--prim)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{text-align:left;padding:5px 6px;border-bottom:1px solid var(--ol)}
+th{color:var(--tx2);font-size:11px;text-transform:uppercase}
+.bandrow{display:grid;grid-template-columns:30px 92px 70px 66px 54px 30px;gap:5px;align-items:center;
+padding:4px 6px;background:var(--s1);border:1px solid var(--ol);border-radius:10px;margin-bottom:4px}
+.bandrow input,.bandrow select{width:100%;padding:4px 5px;font-size:12px}
+.bandrow .idx{font-weight:700;font-size:11px;text-align:center;background:var(--pc);color:var(--onpc);
+border-radius:7px;height:24px;display:grid;place-items:center}
+.hexbox{background:var(--s1);border:1px solid var(--ol);border-radius:10px;padding:8px;
+font-family:var(--font-mono);font-size:11.5px;word-break:break-all;max-height:110px;overflow:auto;white-space:pre-wrap}
+.log{background:var(--s1);border:1px solid var(--ol);border-radius:var(--r-lg);height:260px;overflow:auto;
+padding:6px;font-family:var(--font-mono);font-size:11.5px}
+.pl{padding:4px 6px;border-radius:8px;margin-bottom:3px}
+.pl-tx{color:#79c0ff}.pl-rx{color:var(--ok)}.pl-sys{color:#d2a8ff}.pl-err{color:var(--err)}
+.warnbox{background:var(--wc);color:var(--warn);border-radius:10px;padding:8px 10px;font-size:12px;margin-top:8px}
+canvas{width:100%;height:150px;background:var(--s1);border:1px solid var(--ol);border-radius:10px}
+.tabs{display:inline-flex;background:var(--s1);border:1px solid var(--ol);border-radius:var(--r-pill);padding:3px;gap:2px}
+.tab{height:28px;border-radius:var(--r-pill);background:transparent;color:var(--tx2);font-size:12px}
+.tab.active{background:var(--pc);color:var(--onpc)}
+.hidden{display:none!important}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:6px;margin-top:8px}
+.kv div{background:var(--s1);border:1px solid var(--ol);border-radius:10px;padding:6px 9px;font-size:12px}
+.kv b{display:block;font-size:10px;color:var(--tx2);text-transform:uppercase}
+.slotbtn{height:30px;font-size:11.5px;padding:0 9px;border-radius:10px}
+.slotbtn.on{background:var(--pc);color:var(--onpc)}
+.slotbtn.dim{opacity:.55}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>MR5 DSP Hack · jlstream audio-graph control</h1>
+    <div class="sub">FW 1.0.3 (JieLi JL701N) · node_param_set / cfg-DB / DUT-канал · реверс: edifier_firmware_archive</div>
+  </div>
+  <div class="row">
+    <span id="connChip" class="chip"><span class="dot"></span>Отключено</span>
+    <button id="btnTheme" class="btn-sm">Тема</button>
+  </div>
+</header>
+<main class="shell">
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="card">
+      <h2>1 · Транспорт: BLE (Edifier app-протокол) + DUT-терминал</h2>
+      <div class="row">
+        <button id="btnConnect" class="btn-p">Подключить MR5</button>
+        <button id="btnDisc" class="btn-d" disabled>Отключить</button>
+        <span class="muted">SVC 48093a01… · notify 48090001 · write 48090002</span>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <label class="muted">appCode <select id="appCode"><option value="236">0xEC</option><option value="237">0xED</option></select></label>
+        <label class="muted">op <input id="rawOp" value="43" style="width:60px"></label>
+        <label class="muted" style="flex:1;min-width:120px">payload hex <input id="rawPay" style="width:100%" placeholder="00 00 03 E8 0C"></label>
+        <button id="rawSend" class="btn-t" disabled>Кадр TX</button>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <input id="dutLine" value="DUT+TST+VER+GET+" style="flex:1;min-width:150px" placeholder="AT-строка DUT-канала (ASCII, транспорт не подтверждён)">
+        <button id="dutSend" class="btn-t" disabled>Отправить ASCII</button>
+      </div>
+      <div class="warnbox">DUT/AT-канал найден в прошивке (f_tst_btn_sta @06018a8e: "DUT+TST+TXS+n", "DUT+TST+SAV+nn",
+      "TST+BTN+STA"; двухзначное число → effect_nodes_open(N)). Транспорт (UART/BLE) не атрибутирован — кнопка шлёт
+      строку как есть в write-характеристику. Безвредно, если канал не активен.</div>
+    </div>
+
+    <div class="card">
+      <h2>2 · Источник / режим (effect_nodes_open) и мьюты трактов</h2>
+      <div class="row">
+        <label class="muted">mode NN (00–79): <input id="modeN" value="00" style="width:52px"></label>
+        <button id="modeOpen" class="btn-p" disabled>DUT: открыть режим</button>
+        <button id="cmdTxs0" class="btn-t btn-sm" disabled>TXS+0</button>
+        <button id="cmdTxs1" class="btn-t btn-sm" disabled>TXS+1</button>
+        <button id="cmdSav" class="btn-t btn-sm" disabled>SAV+00</button>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <span class="muted">Мьют источника (gain-пейлоад −90.3 дБ):</span>
+        <button id="muteBt" class="btn-d btn-sm" disabled>BT (Vol_BtmMusic)</button>
+        <button id="muteLine" class="btn-d btn-sm" disabled>Line/AUX (ADC13-тракт)</button>
+        <button id="unmuteAll" class="btn-t btn-sm" disabled>Снять (0 дБ)</button>
+      </div>
+      <div class="muted" style="margin-top:6px">Мьют = генерация 12-байтного gain-параметра (0xa904: 8×00 + f32 дБ)
+      для узла тракта + попытка доставки: BLE-кадром (если аппарат принимает node_param_set по app-каналу)
+      либо как cfg-DB blob (кнопка в лаборатории).</div>
+    </div>
+
+    <div class="card">
+      <h2>3 · HP → SUB-OUT визард</h2>
+      <div class="row">
+        <label class="muted">LPF, Гц <input id="subF" type="number" value="100" style="width:70px"></label>
+        <label class="muted">Гейн компенсации, дБ <input id="subG" type="number" value="6" step="0.5" style="width:64px"></label>
+        <button id="subGen" class="btn-p">Собрать</button>
+      </div>
+      <div id="subOut" class="hexbox" style="margin-top:8px">Нажми «Собрать» — сгенерирую 12-полосный LPF-блок
+      (type 1 lowpass1) для EQDIY-слота + SET_HP_GAIN-пейлоад.</div>
+      <div class="warnbox">⚠ Разделительные конденсаторы HP-выхода при низкоомной нагрузке (4–8 Ом) дают
+      fc ≈ 90–180 Гц — НЧ срежется. SUB из HP-выхода годится только на высокоомный вход сабового усилителя (≥10 кОм).</div>
+    </div>
+
+    <div class="card">
+      <h2>4 · Лог канала</h2>
+      <div class="row between"><div class="row">
+        <button class="btn-sm tab active" data-f="ALL">Все</button>
+        <button class="btn-sm tab" data-f="TX">TX</button>
+        <button class="btn-sm tab" data-f="RX">RX</button>
+        <button class="btn-sm tab" data-f="SYS">События</button>
+      </div>
+      <button id="logClear" class="btn-sm">Очистить</button></div>
+      <div class="log" id="log" style="margin-top:6px"></div>
+    </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="card">
+      <h2>5 · PEQ Studio · слоты EQ (17 × 12 бэндов)</h2>
+      <div class="row" id="slotBar" style="margin-bottom:8px"></div>
+      <div class="muted" id="slotInfo"></div>
+      <canvas id="resp" width="600" height="150"></canvas>
+      <div id="bandList" style="margin-top:8px"></div>
+      <div class="row" style="margin-top:6px">
+        <button id="eqSend44" class="btn-p btn-sm" disabled>Отправить полосы (BLE 0x44)</button>
+        <button id="eqSend46" class="btn-p btn-sm" disabled>Bulk 0x46 (9 полос)</button>
+        <button id="eqCopy" class="btn-t btn-sm">Копировать 200-байтный блок</button>
+        <button id="eqBin" class="btn-t btn-sm">Скачать .bin (cfg-DB)</button>
+        <button id="eqFlat" class="btn-sm">Flat</button>
+      </div>
+      <div class="muted" style="margin-top:4px">0x44/0x46 — app-протокол (до 9 полос, gain-байт).
+      200-байтный блок — нативный формат node_param_set(0x737b)/cfg-DB (12 полос, type 0–8, f32).</div>
+      <div class="hexbox" id="eqHex" style="margin-top:6px"></div>
+    </div>
+
+    <div class="card">
+      <h2>6 · Gain-узлы (0xa904) и digvol</h2>
+      <div class="row">
+        <label class="muted">Узел <select id="gainNode"></select></label>
+        <label class="muted">дБ <input id="gainDb" type="number" step="0.1" value="0" style="width:74px"></label>
+        <button id="gainGen" class="btn-p btn-sm">Пейлоад</button>
+        <button id="gainCopy" class="btn-t btn-sm">Копировать</button>
+      </div>
+      <div class="hexbox" id="gainHex" style="margin-top:8px">—</div>
+      <div class="kv">
+        <div><b>SET_HP_GAIN</b><span class="mono">+8.3 / −90.3 (mute)</span></div>
+        <div><b>SET_HP_GAIN2</b><span class="mono">+2.4</span></div>
+        <div><b>AUX_DAC_GAIN</b><span class="mono">0 / −1.3</span></div>
+        <div><b>AUX_DAC_GAIN2</b><span class="mono">+6.5</span></div>
+      </div>
+      <div class="muted" style="margin-top:6px">Формат параметра (доказан декомпиляцией f_config397392):
+      8 нулевых байт + float32 (дБ), длина 12.</div>
+    </div>
+
+    <div class="card">
+      <h2>7 · Лаборатория: crc16 (djb2) + cfg-DB запись</h2>
+      <div class="row">
+        <label class="muted">Имя шаблона <input id="nodeName" value="EQ" style="width:130px"></label>
+        <label class="muted">type <input id="cfgType" type="number" value="1" min="0" max="10" style="width:52px"></label>
+        <label class="muted">param <input id="cfgParam" type="number" value="51" style="width:64px"></label>
+        <button id="cfgCalc" class="btn-p btn-sm">CRC + дескриптор</button>
+      </div>
+      <div class="hexbox" id="cfgHex" style="margin-top:8px">—</div>
+      <div class="muted" style="margin-top:4px">Ключ узла: {type, crc16 = djb2(имя ШАБЛОНА; seed 0x1505, ×33),
+      param}. Проверено по stream.bin: EQ=0x737B, Gain=0xA904, DAC=0xDCCD, DRC=0xDEFE, ADC=0xD06D.
+      Запись cfg-DB — FUN_06037cce, чтение — 06037ba4; cfg-DB приоритетнее заводских значений stream.bin.</div>
+    </div>
+
+    <div class="card">
+      <h2>8 · Карта аудиографа (из tag 0/tag 10 stream.bin)</h2>
+      <div class="muted">Каналы источников: ch0/3 — тон · ch4 — ADC13 (Line/XLR/AUX) · ch6 — esco_adc ·
+      <b>ch7 — A2DP_RX7 · ch13 — A2DP_RX6 (BT-музыка L/R)</b> · ch10/17 — IIS0_RX1/2</div>
+      <table style="margin-top:6px"><thead><tr><th>Канал</th><th>EQ-слоты</th><th>→ далее</th></tr></thead>
+      <tbody id="graphBody"></tbody></table>
+    </div>
+  </section>
+
+</main>
+<script>
+"use strict";
+/* ===== RE-ДАННЫЕ: MR5 1.0.3, JieLi JL701N (edifier_firmware_archive / DSP_ARCH) ===== */
+const UUIDS = {
+  SVC:  "48093a01-1a48-11e9-ab14-d663bd873d93",
+  ALT:  ["48090a03-1a48-11e9-ab14-d663bd873d93","48097e03-1a48-11e9-ab14-d663bd873d93",
+         "4809f301-1a48-11e9-ab14-d663bd873d93"],
+  NOTIFY:"48090001-1a48-11e9-ab14-d663bd873d93",
+  WRITE: "48090002-1a48-11e9-ab14-d663bd873d93"
+};
+
+/* Шаблоны узлов: crc = djb2(ИМЯ ШАБЛОНА) — проверено: EQ=0x737b, Gain=0xa904,
+   DAC=0xdccd, DRC=0xdefe, MIXER=0xe62a, ADC=0xd06d, A2DP_RX=0xf975, IIS0_TX=0x69a5,
+   MIC=0xd0bc. Ключ узла в графе/cfg-DB = (crc шаблона, param). Инстансы — tag 0. */
+const TEMPLATES = [
+  {crc:0xf975,n:"A2DP_RX",insts:[6,7]},
+  {crc:0x74e3,n:"digvol?(0x74e3)",insts:[1,2,9,47,49,51,53,81,92]},
+  {crc:0xe62a,n:"MIXER",insts:[1]},
+  {crc:0xda15,n:"?(0xda15)",insts:[18,42]},
+  {crc:0xdccd,n:"DAC",insts:[2,21,24,25]},
+  {crc:0x6963,n:"?(0x6963) IIS0_RX",insts:[1,2]},
+  {crc:0x69a5,n:"IIS0_TX",insts:[1,2,3]},
+  {crc:0x737b,n:"EQ",insts:[49,50,51,52,53,54,56,57,58,59,60,61,62,63,10,11,17]},
+  {crc:0xa248,n:"?(0xa248) Energy",insts:[1,2,3,4]},
+  {crc:0xa904,n:"Gain",insts:[1,2,3,4]},
+  {crc:0xdefe,n:"DRC",insts:[5,31]},
+  {crc:0xd06d,n:"ADC",insts:[1,13]},
+  {crc:0xd0bc,n:"MIC",insts:[1]},
+  {crc:0xeb56,n:"?(0xeb56) pcspk",insts:[1]},
+  {crc:0x9b3b,n:"?(0x9b3b) cfg",insts:[12,14,21]},
+  {crc:0xa576,n:"?(0xa576) cfg",insts:[1,6,16,18,19]},
+  {crc:0xd911,n:"?(0xd911)",insts:[9]},
+  {crc:0x7de5,n:"?(0x7de5)",insts:[3,4,16,20,21]},
+  {crc:0xed7f,n:"?(0xed7f)",insts:[5,10,12]},
+  {crc:0x1ecd,n:"?(0x1ecd)",insts:[13,16]},
+  {crc:0x7674,n:"?(0x7674)",insts:[168]},
+  {crc:0x768a,n:"?(0x768a)",insts:[1]},
+  {crc:0x1a85,n:"?(0x1a85)",insts:[1,2,51,44,50,42,43,6,34]},
+  {crc:0x0a2c,n:"?(0x0a2c)",insts:[1]}
+];
+
+/* Слоты EQ: параметр, L/R по tag 0 (257+ = правый), привязка к каналу (tag 10) */
+const EQ_SLOTS = [
+  {p:49, name:"BassShelf",      side:"stereo", ch:"0 (тон)",   inBT:false},
+  {p:50, name:"TrebShelf",      side:"stereo", ch:"0 (тон)",   inBT:false},
+  {p:52, name:"BassShelf_LB2",  side:"stereo", ch:"3 (тон)",   inBT:false},
+  {p:53, name:"TrebShelf_LB2",  side:"stereo", ch:"3 (тон)",   inBT:false},
+  {p:51, name:"EQDIY",          side:"L+R",    ch:"7 (A2DP_RX7)", inBT:true},
+  {p:62, name:"Desk_Acoustic",  side:"L+R",    ch:"7 (A2DP_RX7)", inBT:true},
+  {p:54, name:"EQDIY_2",        side:"L+R",    ch:"10 (IIS0_RX1)",inBT:false},
+  {p:56, name:"Desk_Acoustic_2",side:"L+R",    ch:"10 (IIS0_RX1)",inBT:false},
+  {p:57, name:"BassShelf_LB3",  side:"L+R",    ch:"13 (A2DP_RX6)",inBT:true},
+  {p:58, name:"TrebShelf_LB3",  side:"L+R",    ch:"13 (A2DP_RX6)",inBT:true},
+  {p:59, name:"EQDIY_3",        side:"L+R",    ch:"13 (A2DP_RX6)",inBT:true},
+  {p:60, name:"BassShelf_LB4",  side:"L+R",    ch:"17 (IIS0_RX2)",inBT:false},
+  {p:61, name:"TrebShelf_LB4",  side:"L+R",    ch:"17 (IIS0_RX2)",inBT:false},
+  {p:63, name:"EQDIY_4",        side:"L+R",    ch:"17 (IIS0_RX2)",inBT:false},
+  {p:10, name:"EscoUlEq",       side:"L+R",    ch:"6 (esco_adc)", inBT:false},
+  {p:11, name:"EscoDlEq",       side:"L+R",    ch:"9",            inBT:false},
+  {p:17, name:"EQ17",           side:"L+R",    ch:"4 (ADC13 Line)",inBT:false}
+];
+
+const GAIN_NODES = [
+  {p:1,name:"SET_HP_GAIN", factory:{0:8.3,1:-90.3}},
+  {p:2,name:"AUX_DAC_GAIN",factory:{0:0.0,1:-1.3}},
+  {p:3,name:"SET_HP_GAIN2",factory:{0:2.4,1:-90.3}},
+  {p:4,name:"AUX_DAC_GAIN2",factory:{0:6.5,1:0.0}}
+];
+
+const BAND_TYPES = {0:"bypass",1:"lowpass1",2:"peaking",3:"lowshelf",4:"highshelf",
+                    5:"bandpass",6:"notch",7:"lowshelf2",8:"highshelf2"};
+
+/* ===== ФОРМАТЫ (байт-точно, из stream.bin / декомпиляции) =====
+   EQ-блок 200 Б: {00 00 00 00 00 0C 00 00} + 12×{band u16 | type u16 | freq f32 | gain f32 | Q f32}
+   Gain-блок 12 Б: 8×00 + f32 дБ (FUN_06038bd8(0xa904, имя, buf, 12))
+   digvol 136 Б: шапка 8 Б + 32×f32 дБ
+   cfg-DB ключ: {type, crc16(name), param}                                   */
+
+function crcName(s){let h=0x1505;for(let i=0;i<s.length;i++)h=(h*33+s.charCodeAt(i))&0xffff;return h;}
+
+function buildEqBlock(bands){ // bands: 12 × {band,type,freq,gain,q}
+  const buf=new ArrayBuffer(200),v=new DataView(buf);
+  v.setUint32(0,0);v.setUint8(5,12); // шапка как в заводском EQDIY: 00 00 00 00 00 0C 00 00
+  for(let i=0;i<12;i++){const b=bands[i]||{band:i,type:2,freq:0,gain:0,q:0.7},o=8+i*16;
+    v.setUint16(o,b.band&0xffff,true);v.setUint16(o+2,b.type&0xffff,true);
+    v.setFloat32(o+4,b.freq,true);v.setFloat32(o+8,b.gain,true);v.setFloat32(o+12,b.q,true);}
+  return new Uint8Array(buf);
+}
+function parseEqBlock(u8){ // -> массив бэндов
+  const v=new DataView(u8.buffer,u8.byteOffset,u8.byteLength),n=v.getUint8(5),out=[];
+  for(let i=0;i<n&&i<12;i++){const o=8+i*16;
+    out.push({band:v.getUint16(o,true),type:v.getUint16(o+2,true),freq:v.getFloat32(o+4,true),
+              gain:v.getFloat32(o+8,true),q:v.getFloat32(o+12,true)});}
+  return out;
+}
+function buildGainBlock(db){const buf=new ArrayBuffer(12),v=new DataView(buf);
+  v.setFloat32(8,db,true);return new Uint8Array(buf);}
+
+function buildCfgRecord(type,name,param,idx,block){
+  // дескриптор 32 Б {type|crc16|param|idx|boff=0|stride} + блок данных
+  const crc=crcName(name),head=new Uint8Array(32),hv=new DataView(head.buffer);
+  hv.setUint8(0,type);hv.setUint16(1,crc,true);hv.setUint16(3,param,true);
+  hv.setUint8(9,idx&0xff);hv.setUint16(10,0,true);hv.setUint16(14,block.length,true);
+  const out=new Uint8Array(32+block.length);out.set(head);out.set(block,32);return out;}
+
+/* Апп-протокол Edifier (из RE ConneX): кадр AA app op lenLo.. payload crc8 */
+function appFrame(op,payload,app=0xEC){
+  const body=new Uint8Array(5+payload.length);
+  body[0]=0xAA;body[1]=app;body[2]=op;body[3]=(payload.length>>8)&0xff;body[4]=payload.length&0xff;
+  body.set(payload,5);let s=0;for(const x of body)s=(s+x)&0xff;
+  const out=new Uint8Array(body.length+1);out.set(body);out[body.length]=s;return out;}
+
+/* ===== ГРАФ ДЛЯ ОТОБРАЖЕНИЯ (tag 10) ===== */
+const GRAPH_ROWS=[
+  ["0 (тон)",      "BassShelf(49) → TrebShelf(50)",             "DAC24 (порт 27, 2ch)"],
+  ["3 (тон)",      "BassShelf_LB2(52) → TrebShelf_LB2(53)",     "—"],
+  ["4 ADC13 Line/XLR/AUX","EQ17 (12 полос)",                    "digvol → DAC"],
+  ["6 esco_adc",   "EscoUlEq(10)",                               "esco TX"],
+  ["7 A2DP_RX7",   "EQDIY(51) → Desk_Acoustic(62)",              "DRC? → digvol Vol_BtmMusic(92) → DAC"],
+  ["10 IIS0_RX1",  "EQDIY_2(54) → Desk_Acoustic_2(56)",          "AUX_DAC_GAIN(2) → digvol Vol_LinMusic(81)"],
+  ["13 A2DP_RX6",  "BassShelf_LB3(57) → TrebShelf_LB3(58) → EQDIY_3(59)","GAIN1 SET_HP_GAIN → DRC31 → Vol_BtmMusic2(49) → DAC3(21)"],
+  ["17 IIS0_RX2",  "BassShelf_LB4(60) → TrebShelf_LB4(61) → EQDIY_4(63)","GAIN3/GAIN4 → DRC5 → Vol_LinMusic2(51) → DAC25"]
+];
+
+/* ===== ЛОГ ===== */
+const logBox=()=>document.getElementById("log");
+let logFilter="ALL";
+function log(dir,msg){
+  const el=document.createElement("div");el.className="pl pl-"+dir.toLowerCase().slice(0,3);
+  const ts=new Date().toTimeString().slice(0,8);
+  el.textContent=`[${ts}] ${dir}: ${msg}`;
+  if(logFilter==="ALL"||logFilter===dir){logBox().appendChild(el);
+    while(logBox().childNodes.length>600)logBox().removeChild(logBox().firstChild);
+    logBox().scrollTop=logBox().scrollHeight;}
+}
+
+/* ===== BLE ТРАНСПОРТ ===== */
+const S={dev:null,wCh:null,connected:false};
+const $=id=>document.getElementById(id);
+const hex=u8=>Array.from(u8,x=>x.toString(16).padStart(2,"0").toUpperCase()).join(" ");
+const fromHex=s=>{const c=(s||"").replace(/[^0-9a-fA-F]/g,""),p=c.length%2?"0"+c:c,
+  o=new Uint8Array(p.length/2);for(let i=0;i<p.length;i+=2)o[i/2]=parseInt(p.substr(i,2),16);return o;};
+
+async function bleConnect(){
+  try{
+    const dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"}],
+      optionalServices:[UUIDS.SVC,...UUIDS.ALT]});
+    log("SYS","Устройство: "+(dev.name||"?"));
+    const srv=await dev.gatt.connect();
+    let service=null;
+    for(const u of [UUIDS.SVC,...UUIDS.ALT]){try{service=await srv.getPrimaryService(u);break;}catch(e){}}
+    if(!service)throw new Error("сервис Edifier не найден");
+    const nCh=await service.getCharacteristic(UUIDS.NOTIFY);
+    await nCh.startNotifications();
+    nCh.addEventListener("characteristicvaluechanged",e=>{
+      const u8=new Uint8Array(e.target.value.buffer);log("RX",hex(u8));});
+    S.wCh=await service.getCharacteristic(UUIDS.WRITE);
+    S.dev=dev;S.connected=true;
+    dev.addEventListener("gattserverdisconnected",()=>{S.connected=false;updConn();log("SYS","Отключено");});
+    updConn();log("SYS","Подключено, сервис "+service.uuid);
+  }catch(e){log("ERR","BLE: "+e.message);}
+}
+async function bleSend(u8,label){
+  if(!S.connected){log("ERR","Нет подключения");return;}
+  try{await S.wCh.writeValue(u8);log("TX",(label?label+" · ":"")+hex(u8));}
+  catch(e){log("ERR","TX: "+e.message);}
+}
+function sendApp(op,payload){return bleSend(appFrame(op,payload,$("appCode").value|0),`app op=0x${op.toString(16).padStart(2,"0").toUpperCase()}`);}
+async function sendDut(str){
+  const u8=new TextEncoder().encode(str+"\r\n");
+  if(S.connected)await bleSend(u8,"DUT ASCII");
+  else log("WARN","DUT '"+str+"' — только в лог (нет BLE). Строка готова для UART/прототипа.");
+}
+function updConn(){
+  $("connChip").innerHTML=S.connected?'<span class="dot pulse"></span>Подключено':'<span class="dot"></span>Отключено';
+  $("connChip").className="chip "+(S.connected?"ok":"");
+  document.querySelectorAll("button[data-need]").forEach(b=>b.disabled=!S.connected);
+}
+
+/* ===== АЧХ: RBJ-би-квад (превью; прошивка считает свои коэффициенты тех же типов) ===== */
+function biquadAt(type,f0,gain,q,fs=48000){
+  const A=Math.pow(10,gain/40),w=2*Math.PI*Math.min(f0,fs/2-1)/fs,cw=Math.cos(w),sw=Math.sin(w),alpha=sw/(2*q);
+  let b0=1,b1=0,b2=0,a0=1,a1=0,a2=0;
+  switch(type){
+    case 2: b0=1+alpha*A;b1=-2*cw;b2=1-alpha*A;a0=1+alpha/A;a1=-2*cw;a2=1-alpha/A;break;
+    case 3: b0=A*((A+1)-(A-1)*cw+2*Math.sqrt(A)*alpha);b1=2*A*((A-1)-(A+1)*cw);
+            b2=A*((A+1)-(A-1)*cw-2*Math.sqrt(A)*alpha);a0=(A+1)+(A-1)*cw+2*Math.sqrt(A)*alpha;
+            a1=-2*((A-1)+(A+1)*cw);a2=(A+1)+(A-1)*cw-2*Math.sqrt(A)*alpha;break;
+    case 4: case 8: b0=A*((A+1)+(A-1)*cw+2*Math.sqrt(A)*alpha);b1=-2*A*((A-1)+(A+1)*cw);
+            b2=A*((A+1)+(A-1)*cw-2*Math.sqrt(A)*alpha);a0=(A+1)-(A-1)*cw+2*Math.sqrt(A)*alpha;
+            a1=2*((A-1)-(A+1)*cw);a2=(A+1)-(A-1)*cw-2*Math.sqrt(A)*alpha;break;
+    case 1: case 7: {const t=Math.tan(w/2);
+            b0=1/(1+t);b1=t-1;b2=0;a0=1;a1=t-1;a2=0;}break;
+    case 5: b0=alpha;b1=0;b2=-alpha;a0=1;a1=-2*cw;a2=1-alpha;break;
+    case 6: b0=1;b1=-2*cw;b2=1-alpha;a0=1;a1=-2*cw;a2=1-alpha;break;
+    default: return 0;
+  }
+  const zr=1+0.0;const w2=2*Math.PI*10000/fs;
+  let mag=1;
+  for(const wz of [Math.PI/4,Math.PI/2,(3*Math.PI)/4]){
+    const zr2=Math.cos(wz),zi2=-Math.sin(wz);
+    const n0=b0,n1=b1,n2=b2,d0=a0,d1=a1,d2=a2;
+    const nr=n0+n1*zr2+n2*Math.cos(2*wz),ni=n1*zi2+n2*Math.sin(2*wz)*-1;
+    const dr=d0+d1*zr2+d2*Math.cos(2*wz),di=d1*zi2+d2*Math.sin(2*wz)*-1;
+    mag*=Math.hypot(nr,ni)/Math.hypot(dr,di);
+  }
+  return 20*Math.log10(mag+1e-12);
+}
+function drawResponse(bands){
+  const cv=$("resp"),ctx=cv.getContext("2d");
+  ctx.clearRect(0,0,cv.width,cv.height);
+  const W=cv.width,H=cv.height,fMin=20,fMax=20000;
+  const fx=f=>Math.log10(f/fMin)/Math.log10(fMax/fMin)*W;
+  const gy=db=>H/2-db*(H/2-8)/15;
+  ctx.strokeStyle="rgba(128,128,128,.25)";ctx.beginPath();
+  [100,1000,10000].forEach(f=>{ctx.moveTo(fx(f),0);ctx.lineTo(fx(f),H);});
+  [10,0,-10].forEach(d=>{ctx.moveTo(0,gy(d));ctx.lineTo(W,gy(d));});ctx.stroke();
+  ctx.strokeStyle=getComputedStyle(document.documentElement).getPropertyValue("--prim");
+  ctx.lineWidth=2;ctx.beginPath();
+  for(let x=0;x<W;x++){
+    const f=fMin*Math.pow(fMax/fMin,x/W);let sum=0;
+    for(const b of bands)if(b.freq>0)sum+=biquadAt(b.type,b.freq,b.gain,b.q||0.7);
+    const y=Math.max(2,Math.min(H-2,gy(sum)));
+    x?ctx.lineTo(x,y):ctx.moveTo(x,y);
+  }
+  ctx.stroke();
+}
+
+/* ===== PEQ STUDIO ===== */
+let curSlot=0;
+let bands=Array.from({length:12},(_,i)=>({band:i,type:2,freq:0,gain:0,q:0.707}));
+const FACTORY_FLAT={51:Array.from({length:12},(_,i)=>({band:i,type:2,freq:0,gain:0,q:0.707}))};
+
+function slotBandsParam(){return EQ_SLOTS[curSlot].p;}
+function renderSlots(){
+  const bar=$("slotBar");bar.innerHTML="";
+  EQ_SLOTS.forEach((s,i)=>{
+    const b=document.createElement("button");
+    b.className="slotbtn btn-sm"+(i===curSlot?" on":"")+(s.inBT?"":" dim");
+    b.textContent=`${s.name}${s.side==="L+R"?" L/R":""}`;
+    b.title=`param=${s.p} · канал ${s.ch}${s.inBT?" · В BT-ЦЕПИ":""}`;
+    b.onclick=()=>{curSlot=i;renderSlots();renderBands();};
+    bar.appendChild(b);
+  });
+  const s=EQ_SLOTS[curSlot];
+  $("slotInfo").textContent=`${s.name} · param=${s.p} · ${s.side} · канал ${s.ch}${s.inBT?" · ● активен в BT-музыке":" · вне BT-цепи"}`;
+}
+function renderBands(){
+  const box=$("bandList");box.innerHTML="";
+  bands.forEach((b,i)=>{
+    const r=document.createElement("div");r.className="bandrow";
+    r.innerHTML=`<div class="idx">${i}</div>
+      <select data-k="type">${Object.entries(BAND_TYPES).map(([k,v])=>
+        `<option value="${k}"${+k===b.type?" selected":""}>${v}</option>`).join("")}</select>
+      <input data-k="freq" type="number" value="${b.freq}" placeholder="Гц">
+      <input data-k="gain" type="number" step="0.5" value="${b.gain}">
+      <input data-k="q" type="number" step="0.05" value="${b.q}">
+      <button class="btn-sm" title="очистить">×</button>`;
+    r.querySelector('[data-k="type"]').onchange=e=>{b.type=+e.target.value;upd();};
+    r.querySelector('[data-k="freq"]').oninput=e=>{b.freq=+e.target.value||0;upd();};
+    r.querySelector('[data-k="gain"]').oninput=e=>{b.gain=+e.target.value||0;upd();};
+    r.querySelector('[data-k="q"]').oninput=e=>{b.q=+e.target.value||0.707;upd();};
+    r.querySelector("button").onclick=()=>{bands[i]={band:i,type:2,freq:0,gain:0,q:0.707};renderBands();upd();};
+    box.appendChild(r);
+  });
+  function upd(){drawResponse(bands.filter(x=>x.freq>0));$("eqHex").textContent=hex(buildEqBlock(bands));}
+  upd();
+}
+
+/* ===== GAIN-ЛАБАРАТОРИЯ ===== */
+function initGain(){
+  const sel=$("gainNode");
+  GAIN_NODES.forEach(g=>{const o=document.createElement("option");
+    o.value=g.p;o.textContent=`param=${g.p} ${g.name}`;sel.appendChild(o);});
+  $("gainGen").onclick=()=>{
+    const g=GAIN_NODES.find(x=>x.p==+sel.value),db=+$("gainDb").value;
+    const blk=buildGainBlock(db);
+    $("gainHex").textContent=`node_param_set(0xa904, "Gain", param=${g.p} (L) / ${256+g.p} (R), 12 Б):\n`
+      +hex(blk)
+      +`\n\nЗаводские idx0/idx1: ${g.factory[0]} дБ / ${g.factory[1]} дБ\n`
+      +(db<=-90?"⚠ −90.3 дБ = заводской MUT-профиль":"эквивалентная заводская амплитуда не найдена — нештатное значение");
+    log("SYS",`gain payload ${g.name} ${db} дБ собран`);
+  };
+  $("gainCopy").onclick=()=>navigator.clipboard.writeText($("gainHex").textContent.split("\n")[1]||"")
+    .then(()=>log("SYS","gain-блок скопирован"));
+}
+
+/* ===== CFG-DB ЛАБАРАТОРИЯ ===== */
+function initCfg(){
+  $("cfgCalc").onclick=()=>{
+    const name=$("nodeName").value.trim()||"EQ",type=+$("cfgType").value,param=+$("cfgParam").value;
+    const crc=crcName(name);
+    const blk=buildEqBlock(bands);
+    const rec=buildCfgRecord(type,name,param,0,blk);
+    $("cfgHex").textContent=
+      `crc16_djb2("${name}") = 0x${crc.toString(16).padStart(4,"0").toUpperCase()}\n`
+      +`Ключ узла: type=${type} crc=0x${crc.toString(16)} param=${param}${256+param>255?" (R:"+ (256+param) +")":""}\n`
+      +`node_param_set(0x${crc.toString(16)}, "${name}", ${param}, ${blk.length}):\n  ${hex(blk.slice(0,64))} ${blk.length>64?"…":""}\n`
+      +`Дескриптор 32 Б (запись FUN_06037cce): ${hex(rec.slice(0,32))}\n`
+      +`Полная запись (desc+block, ${rec.length} Б):\n  ${hex(rec.slice(0,96))} ${rec.length>96?"…":""}`;
+    log("SYS",`cfg-DB ключ ${name}: crc=0x${crc.toString(16)} param=${param}`);
+  };
+}
+
+/* ===== HP→SUB ВИЗАРД ===== */
+function initSub(){
+  $("subGen").onclick=()=>{
+    const fc=Math.max(20,Math.min(20000,+$("subF").value||100));
+    const gc=+$("subG").value||0;
+    const bandsSub=Array.from({length:12},(_,i)=>{
+      if(i===0)return{band:0,type:1,freq:fc,gain:0,q:0.707};
+      return{band:i,type:0,freq:0,gain:0,q:0.707};
+    });
+    const blk=buildEqBlock(bandsSub),g=buildGainBlock(gc);
+    $("subOut").textContent=
+      `EQ-блок (200 Б) → EQDIY-слот, band0 = lowpass1 @${fc} Гц, остальные bypass:\n`
+      +hex(blk.slice(0,72))+" …\n\n"
+      +`Gain 12 Б (SET_HP_GAIN компенсация ${gc} дБ):\n${hex(g)}\n\n`
+      +`node_param_set(0x737b,"EQDIY",51,200) + node_param_set(0xa904,"SET_HP_GAIN",1,12)`;
+    log("SYS",`SUB-визард: LPF ${fc} Гц + ${gc} дБ собран`);
+  };
+}
+
+/* ===== DUT / РЕЖИМЫ / МЬЮТЫ ===== */
+function initDut(){
+  $("dutSend").onclick=()=>sendDut($("dutLine").value.trim());
+  $("modeOpen").onclick=()=>{
+    const n=(parseInt($("modeN").value,16)||0)&0xff;
+    if(n>=0x4F){log("ERR","effect_nodes_open(N): N<0x4F");return;}
+    const s=`DUT+TST+TXS+${String(n).padStart(2,"0")}`;
+    $("dutLine").value=s;sendDut(s);
+  };
+  const q=(id,txt)=>{$(id).onclick=()=>{$("dutLine").value=txt;sendDut(txt);};};
+  q("cmdTxs0","DUT+TST+TXS+0");q("cmdTxs1","DUT+TST+TXS+1");
+  q("cmdSav","DUT+TST+SAV+00");
+  const mutePayload=(tplCrc,tplName,name,param,db)=>{
+    const blk=buildGainBlock(db);
+    log("SYS",`node_param_set(0x${tplCrc.toString(16)}, "${tplName}", param=${param}, 12): ${hex(blk)}`);
+    if(S.connected)sendApp(43,blk);
+    else $("rawPay").value=hex(blk);
+  };
+  $("muteBt").onclick=()=>mutePayload(0x74e3,"digvol?(0x74e3)","Vol_BtmMusic",92,-90.3);
+  $("muteLine").onclick=()=>mutePayload(0x74e3,"digvol?(0x74e3)","Vol_LinMusic",81,-90.3);
+  $("unmuteAll").onclick=()=>{mutePayload(0x74e3,"digvol?(0x74e3)","Vol_BtmMusic",92,0);mutePayload(0x74e3,"digvol?(0x74e3)","Vol_LinMusic",81,0);};
+  $("rawSend").onclick=()=>{
+    const op=parseInt($("rawOp").value,16)||0;
+    sendApp(op,fromHex($("rawPay").value));
+  };
+}
+
+/* ===== EQ ОТПРАВКА / ЭКСПОРТ ===== */
+function initEq(){
+  $("eqSend44").onclick=()=>{
+    const active=bands.filter(b=>b.freq>0).slice(0,9);
+    if(!active.length){log("ERR","нет активных полос");return;}
+    const pay=new Uint8Array(1+active.length*8);
+    pay[0]=slotBandsParam();
+    active.forEach((b,i)=>{const o=1+i*8,v=new DataView(pay.buffer);
+      v.setUint16(o,b.freq,true);v.setInt16(o+2,b.gain*4,true);
+      v.setUint16(o+4,Math.round((b.q||0.707)*100),true);v.setUint16(o+6,b.type,true);});
+    sendApp(0x44,pay);
+  };
+  $("eqSend46").onclick=()=>{
+    const pay=new Uint8Array(1+72);
+    pay[0]=slotBandsParam();
+    bands.slice(0,9).forEach((b,i)=>{const o=1+i*8,v=new DataView(pay.buffer);
+      v.setUint16(o,b.freq,true);v.setInt16(o+2,b.gain*4,true);
+      v.setUint16(o+4,Math.round((b.q||0.707)*100),true);v.setUint16(o+6,b.type,true);});
+    sendApp(0x46,pay);
+  };
+  $("eqCopy").onclick=()=>navigator.clipboard.writeText(hex(buildEqBlock(bands)))
+    .then(()=>log("SYS","EQ-блок 200 Б скопирован"));
+  $("eqBin").onclick=()=>{
+    const rec=buildCfgRecord(1,"EQDIY",slotBandsParam(),0,buildEqBlock(bands));
+    const a=document.createElement("a");
+    a.href=URL.createObjectURL(new Blob([rec],{type:"application/octet-stream"}));
+    a.download=`mr5_eq_param${slotBandsParam()}_cfgdb.bin`;a.click();
+    log("SYS","экспортирован cfg-DB blob (desc 32 Б + блок)");
+  };
+  $("eqFlat").onclick=()=>{
+    bands=Array.from({length:12},(_,i)=>({band:i,type:2,freq:0,gain:0,q:0.707}));
+    renderBands();
+  };
+}
+
+/* ===== ГРАФ ===== */
+function initGraph(){
+  $("graphBody").innerHTML=GRAPH_ROWS.map(r=>
+    `<tr><td class="mono">${r[0]}</td><td class="mono">${r[1]}</td><td>${r[2]}</td></tr>`).join("");
+}
+
+/* ===== ЛОГ-ТАБЫ / ТЕМА ===== */
+function initChrome(){
+  document.querySelectorAll(".tab[data-f]").forEach(t=>t.onclick=()=>{
+    document.querySelectorAll(".tab[data-f]").forEach(x=>x.classList.remove("active"));
+    t.classList.add("active");logFilter=t.dataset.f;
+  });
+  $("logClear").onclick=()=>logBox().innerHTML="";
+  $("btnConnect").onclick=bleConnect;
+  $("btnDisc").onclick=()=>{if(S.dev)S.dev.gatt.disconnect();};
+  $("btnTheme").onclick=()=>{
+    const h=document.documentElement;
+    h.dataset.theme=h.dataset.theme==="dark"?"light":"dark";
+  };
+}
+
+initChrome();initGain();initCfg();initSub();initDut();initEq();initGraph();
+renderSlots();renderBands();
+log("SYS","MR5 DSP Hack готов. Форматы байт-точные по stream.bin (EQ 200 Б, gain 12 Б, digvol 136 Б).");
+log("SYS","DUT-транспорт не атрибутирован — ASCII-строки шлются только после подключения BLE.");
+
+
+</script>
+</body>
+</html>
