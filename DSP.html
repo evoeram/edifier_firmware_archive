@@ -410,6 +410,7 @@ function log(dir,msg){
 
 /* ===== BLE ТРАНСПОРТ ===== */
 const S={dev:null,wCh:null,connected:false};
+const SVC_CANDS=[UUIDS.SVC,...UUIDS.ALT]; // сервис под разными UUID 4809xxxx — ищем характеристики по всем
 const $=id=>document.getElementById(id);
 const hex=u8=>Array.from(u8,x=>x.toString(16).padStart(2,"0").toUpperCase()).join(" ");
 const fromHex=s=>{const c=(s||"").replace(/[^0-9a-fA-F]/g,""),p=c.length%2?"0"+c:c,
@@ -417,24 +418,35 @@ const fromHex=s=>{const c=(s||"").replace(/[^0-9a-fA-F]/g,""),p=c.length%2?"0"+c
 
 async function bleConnect(){
   try{
-    const dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"}],
-      optionalServices:[UUIDS.SVC,...UUIDS.ALT]});
+    const dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"},{namePrefix:"MR"}],
+      optionalServices:SVC_CANDS});
     log("SYS","Устройство: "+(dev.name||"?"));
     const srv=await dev.gatt.connect();
-    let service=null;
-    for(const u of [UUIDS.SVC,...UUIDS.ALT]){try{service=await srv.getPrimaryService(u);break;}catch(e){}}
-    if(!service)throw new Error("сервис Edifier не найден");
-    const nCh=await service.getCharacteristic(UUIDS.NOTIFY);
+    let nCh=null,wCh=null;
+    for(const u of SVC_CANDS){
+      let service;
+      try{service=await srv.getPrimaryService(u);}catch(e){continue;}
+      const chs=await service.getCharacteristics();
+      for(const c of chs){
+        if(c.uuid.startsWith("48090001"))nCh=c;
+        if(c.uuid.startsWith("48090002"))wCh=c;
+      }
+      if(nCh&&wCh)break;
+    }
+    if(!nCh||!wCh){log("ERR","характеристики 48090001/48090002 не найдены ни в одном 4809xxxx-сервисе");await dev.gatt.disconnect();return;}
     await nCh.startNotifications();
     nCh.addEventListener("characteristicvaluechanged",e=>{
       const u8=new Uint8Array(e.target.value.buffer);
       handleRx(u8);
     });
-    S.wCh=await service.getCharacteristic(UUIDS.WRITE);
+    S.wCh=wCh;
     S.dev=dev;S.connected=true;
     dev.addEventListener("gattserverdisconnected",()=>{S.connected=false;updConn();log("SYS","Отключено");});
-    updConn();log("SYS","Подключено, сервис "+service.uuid);
-  }catch(e){log("ERR","BLE: "+e.message);}
+    updConn();log("SYS","Подключено");
+  }catch(e){
+    if(e.name==="NotFoundError")log("SYS","выбор отменён / устройств нет (колонка подключена к телефону? адаптер включён?)");
+    else log("ERR","BLE: "+e.name+" "+e.message);
+  }
 }
 async function bleSend(u8,label){
   if(!S.connected){log("ERR","Нет подключения");return;}

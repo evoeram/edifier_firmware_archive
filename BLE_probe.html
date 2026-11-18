@@ -203,6 +203,14 @@ background:var(--tx);transition:left .2s}
 /* ===== MR5 BLE Probe · транспорт = верифицированный PEdifierMrBTool ===== */
 const UUIDS={SVC:"48093a01-1a48-11e9-ab14-d663bd873d93",
   NOTIFY:"48090001-1a48-11e9-ab14-d663bd873d93",WRITE:"48090002-1a48-11e9-ab14-d663bd873d93"};
+/* Сервис у разных прошивок лежит под разными UUID 4809xxxx (bleak в PEdifierMrBTool
+   ищет характеристику по ВСЕМ сервисам) — поэтому перебираем кандидатов и ищем
+   характеристики 48090001/48090002, а не фиксированный сервис. */
+const SVC_CANDS=[
+  "48093a01-1a48-11e9-ab14-d663bd873d93",
+  "48090a03-1a48-11e9-ab14-d663bd873d93",
+  "48097e03-1a48-11e9-ab14-d663bd873d93",
+  "4809f301-1a48-11e9-ab14-d663bd873d93"];
 const CMD={EQ_SET:0xC4,EQ_QUERY:0xC5,SINGLE_EQ_SET:0x44,CUSTOM_EQ_GET:0x43,CUSTOM_EQ_RESET:0x45,
   CUSTOM_EQ_CHANGE:0x46,EQ_NAME_SAVE:0x47,VOLUME_QUERY:0x66,VOLUME_SET:0x67,DEVICE_NAME_QUERY:0xC9,
   VERSION_QUERY:0xC6,SUPPORT_FUNC:0xD8,DEVICE_STATE:0xC3,HEADSET_STATE:0xC0,AUDIO_CODEC:0x68,
@@ -265,30 +273,43 @@ async function bleConnect(){
     let dev;
     try{
       dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"},{namePrefix:"MR"}],
-        optionalServices:[UUIDS.SVC]});
+        optionalServices:SVC_CANDS});
     }catch(e1){
-      if(e1.name==="NotFoundError"){log("sys","выбор отменён пользователем");return;}
+      if(e1.name==="NotFoundError"){log("sys","выбор отменён или устройств нет. Чек-лист в карточке 1: колонка не подключена к телефону? включена? адаптер включён?");return;}
       log("warn","фильтр имён не сработал ("+e1.message+"), пробую без фильтра...");
-      dev=await navigator.bluetooth.requestDevice({acceptAllDevices:true,optionalServices:[UUIDS.SVC]});
+      dev=await navigator.bluetooth.requestDevice({acceptAllDevices:true,optionalServices:SVC_CANDS});
     }
     log("sys","устройство: "+(dev.name||"(без имени)")+" ["+dev.id.slice(0,12)+"…]");
     const g=await dev.gatt.connect();
-    let svc=null;
-    try{svc=await g.getPrimaryService(UUIDS.SVC);}
-    catch(e2){
-      log("err","сервис 48093a01 не найден у «"+(dev.name||"?")+"» — это не Edifier/JieLi-устройство");
+    let nCh=null,wCh=null,found=[];
+    for(const u of SVC_CANDS){
+      let svc;
+      try{svc=await g.getPrimaryService(u);}catch(e){continue;}
+      const chs=await svc.getCharacteristics();
+      found.push(u.slice(0,8)+"("+chs.length+" хар)");
+      for(const c of chs){
+        if(c.uuid.startsWith("48090001"))nCh=c;
+        if(c.uuid.startsWith("48090002"))wCh=c;
+      }
+      if(nCh&&wCh)break;
+    }
+    if(!nCh||!wCh){
+      let avail=[];
+      try{const svcs=await g.getPrimaryServices();
+        for(const s of svcs){const chs=await s.getCharacteristics();
+          avail.push(s.uuid.slice(0,8)+"["+chs.map(c=>c.uuid.slice(0,8)).join(",")+"]");}}catch(e){}
+      log("err","характеристики 48090001/48090002 не найдены. Открытые сервисы: "+
+        (avail.join(" ")||"нет")+". Кандидаты: "+(found.join(", ")||"ни один 4809xxxx не открылся"));
       await g.disconnect();return;
     }
-    const nCh=await svc.getCharacteristic(UUIDS.NOTIFY);
     await nCh.startNotifications();
     nCh.addEventListener("characteristicvaluechanged",e=>onRx(new Uint8Array(e.target.value.buffer)));
-    S.wCh=await svc.getCharacteristic(UUIDS.WRITE);
+    S.wCh=wCh;
     S.dev=dev;S.connected=true;S.silStreak=0;
     dev.addEventListener("gattserverdisconnected",()=>{S.connected=false;upd();log("sys","отключено");});
     upd();log("sys","подключено — авто-запросов НЕТ, всё вручную");
   }catch(e){
-    if(e.name==="NotFoundError")log("sys","выбор отменён или устройств нет. Чек-лист в карточке 1: колонка не подключена к телефону? включена? адаптер включён?");
-    else log("err","BLE: "+e.name+" "+e.message);
+    log("err","BLE: "+e.name+" "+e.message);
   }
 }
 function onRx(u8){
