@@ -189,7 +189,41 @@ background:var(--tx);transition:left .2s}
   </div>
 
   <div class="card">
-    <h2>6 · Лог сессии</h2>
+    <h2>6 · DUT/AT-пробник (автоматический перебор команд из прошивки)</h2>
+    <div class="row">
+      <label class="muted">EOL-варианты:</label>
+      <label class="switch"><input type="checkbox" id="dutCRLF" checked> \r\n</label>
+      <label class="switch"><input type="checkbox" id="dutLF" checked> \n</label>
+      <label class="switch"><input type="checkbox" id="dutNone"> без EOL</label>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <label class="switch"><input type="checkbox" id="dutConfirm"> Подтверждать каждый кадр</label>
+      <button id="dutRun" class="btn-p" disabled>Прогнать READ-набор (безопасно)</button>
+      <button id="dutStop" class="btn-sm">Прервать</button>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <label class="muted" style="flex:1;min-width:200px">свой список (по строке):
+        <textarea id="dutList" rows="3" style="width:100%;font-family:var(--font-mono);font-size:11.5px">DUT+TST+VER+GET+
+DUT+TST+MAC+GET+FFFFFFFFFFFF
+DUT+TST+BLE+GET+FFFFFFFFFFFF
+DUT+TST+NAM+GET+
+DUT+TST+TRM+GET+000
+DUT+TST+BLE+NAM+GET
+TST+BTN+STA</textarea></label>
+    </div>
+    <div class="row" style="margin-top:6px">
+      <button class="btn-d btn-sm" data-danger="DUTSET" disabled>DANGER-набор (TXS/SAV/LED — меняет состояние)</button>
+    </div>
+    <div class="warnbox">Команды взяты из строк прошивки (f_tst_btn_sta @06018a8e). Транспорт канала
+    не подтверждён: пробник шлёт каждую команду всеми выбранными EOL-вариантами и слушает 1,5 с —
+    ответ может прийти текстом (ASCII) или кадром BB. Найденные живые комбинации подсвечиваются в логе
+    и в таблице. READ-набор только читает состояние.</div>
+    <table style="margin-top:8px"><thead><tr><th>Команда</th><th>EOL</th><th>Результат</th></tr></thead>
+    <tbody id="dutBody"><tr><td colspan="3" class="muted">— не запускали —</td></tr></tbody></table>
+  </div>
+
+  <div class="card">
+    <h2>7 · Лог сессии</h2>
     <div class="row">
       <button id="logSave" class="btn-t btn-sm">Скачать лог (.txt)</button>
       <button id="logClear" class="btn-sm">Очистить</button>
@@ -317,7 +351,14 @@ async function bleConnect(){
 function onRx(u8){
   S.rx++;S.silStreak=0;
   const p=parseRx(u8);
-  if(!p){log("rx","НЕПАРСИМОЕ: "+hex(u8));return;}
+  if(!p){
+    // не кадр BB — пробуем ASCII (DUT/AT-канал отвечает текстом)
+    let txt="";let ascii=true;
+    for(const b of u8){if(b>=32&&b<127||b===10||b===13)txt+=String.fromCharCode(b);else{ascii=false;break;}}
+    if(ascii&&txt.trim()){dutHit(txt.trim());log("rx","ASCII: '"+txt.trim()+"'");}
+    else log("rx","НЕПАРСИМОЕ: "+hex(u8));
+    return;
+  }
   resolveWaiter(p);
   if(!rawLogged[p.cmd]){rawLogged[p.cmd]=1;
     log("rx","RAW full frame (для вывода чексуммы): "+hex(u8));}
@@ -334,6 +375,7 @@ function upd(){
   $("btnReadAll").disabled=!(S.connected&&S.dry);
   ["rtVol","rtPrompt","rtEq","rtEqGet","rtMap"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
   $("btnProbe").disabled=!(S.connected&&S.write);
+  $("dutRun").disabled=!(S.connected&&!S.pause);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
 
@@ -554,6 +596,61 @@ async function probeSeries(){
   log("sys","серия PROBE завершена");
 }
 
+/* ===== DUT/AT ПРОБНИК ===== */
+const DUT_DANGER=["DUT+TST+TXS+0","DUT+TST+TXS+1","DUT+TST+DUT+0","DUT+TST+SAV+00","DUT+TST+SAV+01",
+  "TST+LED+IO1+1","TST+LED+IO1+0","TST+LED+IO2+1","TST+LED+IO2+0","TST+LED+IO3+1","TST+LED+IO3+0"];
+let dutStopFlag=false,dutHits={};
+function dutHit(txt){
+  if(pendingDut){dutHits[pendingDut.key]=txt;
+    $("dutBody").querySelectorAll("tr").forEach(tr=>{
+      if(tr.dataset.key===pendingDut.key){tr.children[2].innerHTML='<span class="st-ok">ОТВЕТ: '+txt.replace(/</g,"&lt;")+"</span>";}
+    });
+    pendingDut.got=true;resolveDut();
+  }
+}
+let dutResolve=null,pendingDut=null;
+function resolveDut(){if(dutResolve){dutResolve();dutResolve=null;}}
+async function dutSend(line){
+  const eols=[];
+  if($("dutCRLF").checked)eols.push("\r\n");
+  if($("dutLF").checked)eols.push("\n");
+  if($("dutNone").checked)eols.push("");
+  for(const eol of eols){
+    if(dutStopFlag)return;
+    const key=line+"|"+(eol==="\r\n"?"CRLF":eol==="\n"?"LF":"RAW");
+    const tr=document.createElement("tr");tr.dataset.key=key;
+    tr.innerHTML=`<td class="mono">${line.replace(/</g,"&lt;")}</td><td>${eol==="\r\n"?"CRLF":eol==="\n"?"LF":"нет"}</td><td class="muted">…</td>`;
+    $("dutBody").prepend(tr);
+    const risk=$("dutConfirm").checked||line.indexOf("SET")>=0||line.indexOf("SAV")>=0?"DANGER":"READ";
+    if(risk==="DANGER"&&!S.danger){log("err","DUT '"+line+"': SET/SAV — требует DANGER");continue;}
+    pendingDut={key};
+    const bytes=new TextEncoder().encode(line+eol);
+    // DUT всегда пишем реально (это не BLE-кадр app-протокола) — dry-run уважаем:
+    if(S.dry&&risk!=="READ"){log("warn","DRY-RUN: '"+line+"' не отправлен");pendingDut=null;continue;}
+    log("tx","[DUT] '"+line+"' ("+(eol===""?"без EOL":eol==="\n"?"LF":"CRLF")+")");
+    S.tx++;
+    try{await S.wCh.writeValue(bytes);}catch(e){log("err","TX: "+e.message);pendingDut=null;continue;}
+    await Promise.race([new Promise(r=>{dutResolve=r;}),new Promise(r=>setTimeout(r,1500))]);
+    if(!pendingDut.got){tr.children[2].innerHTML='<span class="st-sil">тишина</span>';
+      S.sil++;S.silStreak++;if(S.silStreak>=5){S.pause=true;log("err","WATCHDOG: пауза");upd();}}
+    else{S.ack++;S.silStreak=0;log("sys","✓ DUT-канал ЖИВОЙ: '"+line+"' → "+dutHits[key]);}
+    pendingDut=null;
+    await new Promise(r=>setTimeout(r,300));
+  }
+}
+async function dutRun(list){
+  dutStopFlag=false;$("dutBody").innerHTML="";
+  for(const line of list){if(dutStopFlag||S.pause)break;await dutSend(line.trim());}
+  const found=Object.keys(dutHits);
+  log("sys",found.length?("DUT-пробник: живых команд "+found.length+" → "+found.join(" | ")):"DUT-пробник: живых команд не найдено");
+}
+$("dutRun").onclick=()=>{
+  if(!S.connected){log("err","нет подключения");return;}
+  dutHits={};
+  dutRun($("dutList").value.split("\n").map(x=>x.trim()).filter(Boolean));
+};
+$("dutStop").onclick=()=>{dutStopFlag=true;log("sys","DUT-серия прервана");};
+
 /* ===== ИНИЦ ===== */
 $("btnConnect").onclick=bleConnect;
 $("btnDisc").onclick=()=>{if(S.dev)S.dev.gatt.disconnect();};
@@ -584,6 +681,10 @@ $("btnProbe").onclick=async()=>{S.stop=false;await probeSeries();};
 $("btnProbeStop").onclick=()=>{S.stop=true;log("sys","серия PROBE прервана");};
 document.querySelectorAll("[data-danger]").forEach(b=>b.onclick=()=>{
   const d=b.dataset.danger;
+  if(d==="DUTSET"){
+    if(!confirm("DANGER: DUT-набор меняет состояние (TXS/SAV/LED). Запустить?"))return;
+    dutHits={};dutRun(DUT_DANGER);return;
+  }
   if(d==="DUT"){
     const s=$("dutLine").value.trim();
     transmit(new TextEncoder().encode(s+"\r\n"),"DUT ASCII '"+s+"'","DANGER");
