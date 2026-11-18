@@ -102,17 +102,25 @@ canvas{width:100%;height:150px;background:var(--s1);border:1px solid var(--ol);b
         <button id="rawSend" class="btn-t" disabled>Кадр TX</button>
       </div>
       <div class="row" style="margin-top:8px">
+        <button class="btn-t btn-sm" data-need disabled onclick="sendApp(CMD.VERSION_QUERY)">Версия</button>
+        <button class="btn-t btn-sm" data-need disabled onclick="sendApp(CMD.DEVICE_NAME_QUERY)">Имя</button>
+        <button class="btn-t btn-sm" data-need disabled onclick="sendApp(CMD.VOLUME_QUERY)">Громкость</button>
+        <button class="btn-t btn-sm" data-need disabled onclick="sendApp(CMD.AUDIO_CODEC)">Кодек</button>
+        <button class="btn-t btn-sm" data-need disabled onclick="sendApp(CMD.SUPPORT_FUNC)">Фичи</button>
+        <button class="btn-t btn-sm" data-need disabled onclick="sendApp(CMD.ADVANCED_QUERY)">Расш. аудио</button>
+        <span id="devInfo" class="mono muted"></span>
+      </div>
+      <div class="row" style="margin-top:8px">
         <input id="dutLine" value="DUT+TST+VER+GET+" style="flex:1;min-width:150px" placeholder="AT-строка DUT-канала (ASCII, транспорт не подтверждён)">
         <button id="dutSend" class="btn-t" disabled>Отправить ASCII</button>
       </div>
       <div class="warnbox">DUT/AT-канал найден в прошивке (f_tst_btn_sta @06018a8e: "DUT+TST+TXS+n", "DUT+TST+SAV+nn",
       "TST+BTN+STA"; двухзначное число → effect_nodes_open(N)). Транспорт (UART/BLE) не атрибутирован — кнопка шлёт
       строку как есть в write-характеристику. Безвредно, если канал не активен.</div>
-      <div class="warnbox">⚠ Форматы байт-точны для <b>MR5 FW 1.0.3 (Global, 1c89dcaf)</b>. Регион сам по себе
-      роли не играет (BLE UUID и протокол — стандартный стек JieLi JL701N, в прошивке даже лежат китайские
-      озвучки tone_zh), но <b>версия сборки</b> — да: на CN-серверах может лежать другой билд с другим графом
-      (номера EQ-слотов 49–63, crc, раскладка блоков). Перед применением сверьте версию
-      (DUT: «DUT+TST+VER+GET+» или приложение). Чтение/лог безопасны на любой версии.</div>
+      <div class="warnbox">✅ Транспорт и app-команды верифицированы на CN MR5BT/MR3BT (проект PEdifierMrBTool,
+      живой BLE-захват) — регион роли не играет, CN-колонки работают с этим же протоколом. ⚠ Форматы
+      «глубокого» DSP (200-Б блоки, слоты 49–63, crc) байт-точны для <b>FW 1.0.3 (1c89dcaf)</b>; на другой
+      версии билда сверяйте версию (кнопка «Версия» или 0xC6). Чтение безопасно всегда.</div>
     </div>
 
     <div class="card">
@@ -169,14 +177,18 @@ canvas{width:100%;height:150px;background:var(--s1);border:1px solid var(--ol);b
       <canvas id="resp" width="600" height="150"></canvas>
       <div id="bandList" style="margin-top:8px"></div>
       <div class="row" style="margin-top:6px">
-        <button id="eqSend44" class="btn-p btn-sm" disabled>Отправить полосы (BLE 0x44)</button>
-        <button id="eqSend46" class="btn-p btn-sm" disabled>Bulk 0x46 (9 полос)</button>
+        <button id="eqSend44" class="btn-p btn-sm" disabled>Отправить полосы (0x44, ±3 дБ)</button>
+        <button id="eqSend46" class="btn-p btn-sm" disabled>Bulk 0x46 (формат не раскрыт)</button>
+        <button id="eqQuery" class="btn-t btn-sm" disabled>Прочитать EQ (0x43)</button>
+        <button id="eqReset" class="btn-t btn-sm" disabled>Сброс EQ (0x45)</button>
         <button id="eqCopy" class="btn-t btn-sm">Копировать 200-байтный блок</button>
         <button id="eqBin" class="btn-t btn-sm">Скачать .bin (cfg-DB)</button>
         <button id="eqFlat" class="btn-sm">Flat</button>
       </div>
-      <div class="muted" style="margin-top:4px">0x44/0x46 — app-протокол (до 9 полос, gain-байт).
-      200-байтный блок — нативный формат node_param_set(0x737b)/cfg-DB (12 полос, type 0–8, f32).</div>
+      <div class="muted" style="margin-top:4px">App-протокол (верифицирован на CN MR5BT, PEdifierMrBTool): 0x44 — одна полоса
+      [00 idx freqHi freqLo gainByte], гейн −3…+3 дБ шагом 0,5; app-EQ пишется в EQDIY-слот графа.
+      200-байтный блок — нативный формат node_param_set(0x737b)/cfg-DB (12 полос, type 0–8, f32) — без
+      app-лимитов, но требует доставки через cfg-DB/DUT.</div>
       <div class="hexbox" id="eqHex" style="margin-top:6px"></div>
     </div>
 
@@ -301,6 +313,43 @@ const BAND_TYPES = {0:"bypass",1:"lowpass1",2:"peaking",3:"lowshelf",4:"highshel
    digvol 136 Б: шапка 8 Б + 32×f32 дБ
    cfg-DB ключ: {type, crc16(name), param}                                   */
 
+/* ===== ВЕРИФИЦИРОВАННЫЙ ПРОТОКОЛ (PEdifierMrBTool, живой BLE-захват CN MR5BT/MR3BT) =====
+   Кадр TX: AA appCode op lenHi lenLo payload crc8(sum) · RX: BB ...
+   App-EQ ограничен: 9 полос, −3..+3 дБ шаг 0.5, gainByte = dB/0.5+6 */
+const CMD = {
+  EQ_SET:0xC4, EQ_QUERY:0xC5, SINGLE_EQ_SET:0x44, CUSTOM_EQ_GET:0x43,
+  CUSTOM_EQ_RESET:0x45, CUSTOM_EQ_CHANGE:0x46, EQ_NAME_SAVE:0x47,
+  VOLUME_QUERY:0x66, VOLUME_SET:0x67, DEVICE_NAME_QUERY:0xC9, VERSION_QUERY:0xC6,
+  SUPPORT_FUNC:0xD8, DEVICE_STATE:0xC3, AUDIO_CODEC:0x68, ADVANCED_QUERY:0xD5,
+  AUTO_SHUTDOWN_SET:0xD6, AUTO_SHUTDOWN_QUERY:0xD7, RESET_DEVICE:0x07, SHUTDOWN:0xCE,
+  INPUT_SOURCE_QUERY:0x61, INPUT_SOURCE_SET:0x62,
+  LDAC_QUERY:0x48, LDAC_CFG_SET:0x92, LDAC_SET:0x49,
+  ACTIVE_SPEAKER_QUERY:0xBB, ACTIVE_SPEAKER_SET:0xBC,
+  PROMPT_TONE_QUERY:0x86, PROMPT_TONE_SET:0x87
+};
+const gainToByte = db => Math.max(0, Math.min(12, Math.round(db/0.5)+6));
+const byteToGain = b => (b-6)*0.5;
+
+/* Ответ 0x43: [eqType, numBands, {idx, pad?, freq u16 BE, gainByte}..., asciiName] */
+function parseEqResponse(pay){
+  if(pay.length<2) return null;
+  const eqType=pay[0], n=pay[1], out={eqType, name:"", bands:[]};
+  let o=2;
+  for(let i=0;i<n && o<pay.length;i++){
+    const idx=pay[o++];
+    if(i===0)o++; // наблюдаемый pad первой полосы
+    if(o+3>pay.length)break;
+    const freq=(pay[o]<<8)|pay[o+1]; o+=2;
+    out.bands.push({idx, freq, gain:byteToGain(pay[o++])});
+  }
+  for(let j=o;j<pay.length-2;j++){
+    if(pay[j]>=32&&pay[j]<127&&pay[j+1]>=32&&pay[j+1]<127&&pay[j+2]>=32&&pay[j+2]<127){
+      let e=j;while(e<pay.length&&pay[e]>=32&&pay[e]<127)e++;
+      out.name=String.fromCharCode(...pay.slice(j,e));break;}
+  }
+  return out;
+}
+
 function crcName(s){let h=0x1505;for(let i=0;i<s.length;i++)h=(h*33+s.charCodeAt(i))&0xffff;return h;}
 
 function buildEqBlock(bands){ // bands: 12 × {band,type,freq,gain,q}
@@ -378,7 +427,9 @@ async function bleConnect(){
     const nCh=await service.getCharacteristic(UUIDS.NOTIFY);
     await nCh.startNotifications();
     nCh.addEventListener("characteristicvaluechanged",e=>{
-      const u8=new Uint8Array(e.target.value.buffer);log("RX",hex(u8));});
+      const u8=new Uint8Array(e.target.value.buffer);
+      handleRx(u8);
+    });
     S.wCh=await service.getCharacteristic(UUIDS.WRITE);
     S.dev=dev;S.connected=true;
     dev.addEventListener("gattserverdisconnected",()=>{S.connected=false;updConn();log("SYS","Отключено");});
@@ -391,6 +442,43 @@ async function bleSend(u8,label){
   catch(e){log("ERR","TX: "+e.message);}
 }
 function sendApp(op,payload){return bleSend(appFrame(op,payload,$("appCode").value|0),`app op=0x${op.toString(16).padStart(2,"0").toUpperCase()}`);}
+
+/* RX: кадр BB op len payload crc — лог + разбор известных ответов */
+function handleRx(u8){
+  let info="";
+  if(u8[0]===0xBB&&u8.length>=6){
+    const cmd=u8[2],len=(u8[3]<<8)|u8[4],pay=u8.slice(5,5+len);
+    let crcOk=false;try{crcOk=u8[u8.length-1]===[...u8.slice(0,-1)].reduce((a,b)=>a+b,0)&0xff;}catch(e){}
+    info=`op=0x${cmd.toString(16).toUpperCase()} crc=${crcOk?"OK":"BAD"}`;
+    if(cmd===CMD.CUSTOM_EQ_GET){
+      const q=parseEqResponse(pay);
+      if(q){info+=` eqType=${q.eqType} bands=${q.bands.length}${q.name?" name='"+q.name+"'":""}`;
+        applyDeviceEq(q);}
+    }else if(cmd===CMD.VERSION_QUERY&&pay.length>=3){
+      info+=` версия FW ${pay[0]}.${pay[1]}.${pay[2]}`;
+      $("devInfo").textContent="FW "+pay[0]+"."+pay[1]+"."+pay[2]+" — эталон хака: 1.0.3";
+    }else if(cmd===CMD.SUPPORT_FUNC&&pay.length>13){
+      info+=` eqBands=${pay[12]} maxVol=${pay[13]}`;
+    }else if(cmd===CMD.VOLUME_QUERY&&pay.length>=2){
+      info+=` vol=${pay[1]}/${pay[0]}`;
+    }else if(cmd===CMD.AUDIO_CODEC&&pay.length>=1){
+      info+=` codec=${{0:"SBC",1:"AAC",2:"aptX",3:"aptX-HD",4:"LDAC",5:"LHDC",13:"LDAC"}[pay[0]]||"0x"+pay[0].toString(16)}`;
+    }else if(cmd===CMD.ADVANCED_QUERY&&pay.length>=7){
+      info+=` lowcut=${(pay[2]<<8)|pay[3]}Гц slope=${pay[4]} space=-${pay[5]}дБ desktop=${pay[6]===1?"on":"off"}`;
+    }else if(pay.length)info+=` payload=${hex(pay)}`;
+  }
+  log("RX",info||hex(u8));
+}
+
+/* Заполнить PEQ-редактор прочитанным с устройства (app-EQ = EQDIY-слот, 9 полос) */
+function applyDeviceEq(q){
+  bands=Array.from({length:12},(_,i)=>({band:i,type:2,freq:0,gain:0,q:0.707}));
+  for(const b of q.bands){
+    if(b.idx<12)bands[b.idx]={band:b.idx,type:2,freq:b.freq,gain:b.gain,q:0.707};
+  }
+  renderBands();
+  log("SYS","EQ с устройства загружен в редактор (Q/тип апп-протоколом не передаются — принято peaking/0.707)");
+}
 async function sendDut(str){
   const u8=new TextEncoder().encode(str+"\r\n");
   if(S.connected)await bleSend(u8,"DUT ASCII");
@@ -561,8 +649,8 @@ function initDut(){
   const mutePayload=(tplCrc,tplName,name,param,db)=>{
     const blk=buildGainBlock(db);
     log("SYS",`node_param_set(0x${tplCrc.toString(16)}, "${tplName}", param=${param}, 12): ${hex(blk)}`);
-    if(S.connected)sendApp(43,blk);
-    else $("rawPay").value=hex(blk);
+    $("rawPay").value=hex(blk);
+    log("WARN","доставка gain-блока по app-каналу не подтверждена (0x2B — гипотеза; 0x43 занят EQ-запросом). Блок в payload hex для ручной проверки");
   };
   $("muteBt").onclick=()=>mutePayload(0x74e3,"digvol?(0x74e3)","Vol_BtmMusic",92,-90.3);
   $("muteLine").onclick=()=>mutePayload(0x74e3,"digvol?(0x74e3)","Vol_LinMusic",81,-90.3);
@@ -575,24 +663,24 @@ function initDut(){
 
 /* ===== EQ ОТПРАВКА / ЭКСПОРТ ===== */
 function initEq(){
-  $("eqSend44").onclick=()=>{
+  /* Верифицированный 0x44 SINGLE_EQ_SET: [0x00, idx, freqHi, freqLo, gainByte],
+     −3..+3 дБ (app-лимит). Полосы шлём по одной. */
+  $("eqSend44").onclick=async()=>{
     const active=bands.filter(b=>b.freq>0).slice(0,9);
     if(!active.length){log("ERR","нет активных полос");return;}
-    const pay=new Uint8Array(1+active.length*8);
-    pay[0]=slotBandsParam();
-    active.forEach((b,i)=>{const o=1+i*8,v=new DataView(pay.buffer);
-      v.setUint16(o,b.freq,true);v.setInt16(o+2,b.gain*4,true);
-      v.setUint16(o+4,Math.round((b.q||0.707)*100),true);v.setUint16(o+6,b.type,true);});
-    sendApp(0x44,pay);
+    for(let i=0;i<active.length;i++){
+      const b=active[i],f=Math.max(20,Math.min(20000,Math.round(b.freq)));
+      const pay=new Uint8Array([0x00,b.band&0xff,(f>>8)&0xff,f&0xff,gainToByte(b.gain)]);
+      await sendApp(CMD.SINGLE_EQ_SET,pay);
+      await new Promise(r=>setTimeout(r,120));
+    }
+    log("SYS",`отправлено полос: ${active.length} (гейн обрезан в ±3 дБ — лимит app-EQ)`);
   };
   $("eqSend46").onclick=()=>{
-    const pay=new Uint8Array(1+72);
-    pay[0]=slotBandsParam();
-    bands.slice(0,9).forEach((b,i)=>{const o=1+i*8,v=new DataView(pay.buffer);
-      v.setUint16(o,b.freq,true);v.setInt16(o+2,b.gain*4,true);
-      v.setUint16(o+4,Math.round((b.q||0.707)*100),true);v.setUint16(o+6,b.type,true);});
-    sendApp(0x46,pay);
+    log("WARN","0x46 CUSTOM_EQ_CHANGE: op верифицирован, но формат bulk-полос в PEdifierMrBTool не раскрыт — используйте 0x44");
   };
+  $("eqQuery").onclick=()=>sendApp(CMD.CUSTOM_EQ_GET);
+  $("eqReset").onclick=()=>sendApp(CMD.CUSTOM_EQ_RESET);
   $("eqCopy").onclick=()=>navigator.clipboard.writeText(hex(buildEqBlock(bands)))
     .then(()=>log("SYS","EQ-блок 200 Б скопирован"));
   $("eqBin").onclick=()=>{
