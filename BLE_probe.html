@@ -101,6 +101,14 @@ background:var(--tx);transition:left .2s}
     (2) каждый исходящий кадр показывается в лог до отправки; (3) запись включается только тумблером
     «Разрешить запись» и работает только с классами ROUNDTRIP/PROBE; (4) класс DANGER — отдельный
     тумблер + подтверждение на каждый кадр; (5) watchdog приостанавливает всё, если колонка перестала отвечать.</div>
+    <div class="dangerbox" id="btHints" style="display:none"></div>
+    <div class="warnbox" style="background:rgba(46,160,67,.12);color:var(--ok)">
+      <b>Если в окне выбора пусто / не подключается — чек-лист:</b>
+      ① колонка <b>не должна быть подключена к телефону/ПК</b> (в подключённом состоянии она не рекламируется —
+      разорви соединение или выключи/включи BT на телефоне); ② колонка включена и не спит;
+      ③ Bluetooth-адаптер компьютера включён (Win+K видит устройства);
+      ④ имя в рекламе может быть «MR5BT»/«MR3BT» без «EDIFIER» — фильтр уже ослаблен, выбирай любое, сервис отсеет;
+      ⑤ если окно выбора вообще не появилось — открой файл двойным кликом в обычном Chrome/Edge, а не в панели.</div>
   </div>
 
   <div class="card">
@@ -244,13 +252,33 @@ function gainBlock(db){const b=new ArrayBuffer(12),v=new DataView(b);
   v.setFloat32(8,db,true);return new Uint8Array(b);}
 
 /* ===== BLE ===== */
+function btCheck(){
+  if(!navigator.bluetooth)return"Web Bluetooth недоступен в этом окружении. Открой файл В ОБЫЧНОМ Chrome/Edge (двойной клик по BLE_probe.html), а не в панели предпросмотра.";
+  if(!navigator.bluetooth.requestDevice)return"navigator.bluetooth.requestDevice отсутствует — браузер без Web Bluetooth.";
+  if(!window.isSecureContext)return"Нужен secure context: file:// или https://";
+  return null;
+}
 async function bleConnect(){
+  const err0=btCheck();
+  if(err0){log("err",err0);alert(err0);return;}
   try{
-    const dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"}],
-      optionalServices:[UUIDS.SVC]});
-    log("sys","устройство: "+(dev.name||"?"));
+    let dev;
+    try{
+      dev=await navigator.bluetooth.requestDevice({filters:[{namePrefix:"EDIFIER"},{namePrefix:"MR"}],
+        optionalServices:[UUIDS.SVC]});
+    }catch(e1){
+      if(e1.name==="NotFoundError"){log("sys","выбор отменён пользователем");return;}
+      log("warn","фильтр имён не сработал ("+e1.message+"), пробую без фильтра...");
+      dev=await navigator.bluetooth.requestDevice({acceptAllDevices:true,optionalServices:[UUIDS.SVC]});
+    }
+    log("sys","устройство: "+(dev.name||"(без имени)")+" ["+dev.id.slice(0,12)+"…]");
     const g=await dev.gatt.connect();
-    const svc=await g.getPrimaryService(UUIDS.SVC);
+    let svc=null;
+    try{svc=await g.getPrimaryService(UUIDS.SVC);}
+    catch(e2){
+      log("err","сервис 48093a01 не найден у «"+(dev.name||"?")+"» — это не Edifier/JieLi-устройство");
+      await g.disconnect();return;
+    }
     const nCh=await svc.getCharacteristic(UUIDS.NOTIFY);
     await nCh.startNotifications();
     nCh.addEventListener("characteristicvaluechanged",e=>onRx(new Uint8Array(e.target.value.buffer)));
@@ -258,7 +286,10 @@ async function bleConnect(){
     S.dev=dev;S.connected=true;S.silStreak=0;
     dev.addEventListener("gattserverdisconnected",()=>{S.connected=false;upd();log("sys","отключено");});
     upd();log("sys","подключено — авто-запросов НЕТ, всё вручную");
-  }catch(e){log("err","BLE: "+e.message);}
+  }catch(e){
+    if(e.name==="NotFoundError")log("sys","выбор отменён или устройств нет. Чек-лист в карточке 1: колонка не подключена к телефону? включена? адаптер включён?");
+    else log("err","BLE: "+e.name+" "+e.message);
+  }
 }
 function onRx(u8){
   S.rx++;S.silStreak=0;
@@ -494,6 +525,15 @@ $("btnTheme").onclick=()=>{const h=document.documentElement;
   h.dataset.theme=h.dataset.theme==="dark"?"light":"dark";};
 log("sys","стенд готов. Dry-run включён — до снятия тумблеров ничего не пишет.");
 log("sys","порядок: 1) READ-матрица → 2) ROUNDTRIP → 3) PROBE 0x2B. DANGER не трогать без нужды.");
+(function(){
+  const err=btCheck();
+  if(err){
+    log("err",err);
+    const w=document.createElement("div");w.className="dangerbox";w.style.margin="10px 14px";
+    w.innerHTML="<b>Bluetooth недоступен:</b> "+err;
+    document.querySelector("main").prepend(w);
+  }
+})();
 
 </script>
 </body>
