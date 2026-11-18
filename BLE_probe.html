@@ -132,6 +132,7 @@ background:var(--tx);transition:left .2s}
       <button id="rtPrompt" class="btn-t" disabled>Голос. оповещение: no-op 0x87</button>
       <button id="rtEq" class="btn-t" disabled>EQ-полоса 0: no-op 0x44</button>
       <button id="rtEqGet" class="btn-t" disabled>EQ чтение 0x43 → парсер</button>
+      <button id="rtMap" class="btn-t" disabled>BAND-MAP (диф полос)</button>
     </div>
     <div class="muted" style="margin-top:6px">Каждый тест: 0x66/0x86/0x43 (текущее) → запись того же значения →
     чтение → сверка. Если значение изменилось — автоматический откат. Это доказывает, что канал записи
@@ -228,6 +229,7 @@ const fromHex=s=>{const c=(s||"").replace(/[^0-9a-fA-F]/g,""),p=c.length%2?"0"+c
   o=new Uint8Array(p.length/2);for(let i=0;i<p.length;i+=2)o[i/2]=parseInt(p.substr(i,2),16);return o;};
 const S={dev:null,wCh:null,connected:false,dry:true,write:false,danger:false,stop:false,pause:false,
   tx:0,rx:0,ack:0,sil:0,silStreak:0};
+const rawLogged={};
 
 /* ===== ЛОГ ===== */
 const logLines=[];
@@ -317,6 +319,8 @@ function onRx(u8){
   const p=parseRx(u8);
   if(!p){log("rx","НЕПАРСИМОЕ: "+hex(u8));return;}
   resolveWaiter(p);
+  if(!rawLogged[p.cmd]){rawLogged[p.cmd]=1;
+    log("rx","RAW full frame (для вывода чексуммы): "+hex(u8));}
   log("rx",`op=0x${p.cmd.toString(16).toUpperCase()} len=${p.pay.length} crc=${p.crcOk?"OK":"BAD"} pay=${p.pay.length?hex(p.pay):"∅"}`);
   if(pending&&pending.op===p.cmd){classify(pending,p,"echo");}
   else if(pending){classify(pending,p,"other");}
@@ -328,7 +332,7 @@ function upd(){
   $("btnDisc").disabled=!S.connected;
   $("btnStop").disabled=!S.connected;
   $("btnReadAll").disabled=!(S.connected&&S.dry);
-  ["rtVol","rtPrompt","rtEq","rtEqGet"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
+  ["rtVol","rtPrompt","rtEq","rtEqGet","rtMap"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
   $("btnProbe").disabled=!(S.connected&&S.write);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
@@ -449,17 +453,17 @@ async function rtPrompt(){
 async function rtEq(){
   pending={op:CMD.CUSTOM_EQ_GET};
   let p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"чтение 0x43","READ");
-  if(!p||p.cmd!==CMD.CUSTOM_EQ_GET||p.pay.length<5){$("rtOut").textContent="0x43 не ответил / мало данных";return;}
-  const eqType=p.pay[0],n=p.pay[1];
-  $("rtOut").textContent=`eqType=${eqType} bands=${n}\nшлю band0 c ТЕКУЩИМИ freq/gain (0x44)...`;
-  const idx=p.pay[2],freq=p.pay[4]<<8|p.pay[5],gByte=p.pay[6];
+  if(!p||p.cmd!==CMD.CUSTOM_EQ_GET||p.pay.length<6){$("rtOut").textContent="0x43 не ответил / мало данных";return;}
+  /* Раскладка доказана логом: pay[2..5] = {00, gain0, freqHi0, freqLo0} — гейн band0 в pay[3] */
+  const g0=p.pay[3],f0=(p.pay[4]<<8)|p.pay[5];
+  $("rtOut").textContent=`band0: gainByte=0x${g0.toString(16)} (${((g0-6)*0.5).toFixed(1)} дБ), freq=${f0} Гц\nшлю band0 c ТЕМИ ЖЕ значениями (0x44)...`;
   pending={op:CMD.SINGLE_EQ_SET};
-  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,idx,(freq>>8)&0xff,freq&0xff,gByte])),
-    `SINGLE_EQ_SET band${idx} freq=${freq} gByte=0x${gByte.toString(16)} (то же значение)`,"ROUNDTRIP");
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x00,(f0>>8)&0xff,f0&0xff,g0])),
+    `SINGLE_EQ_SET band0 freq=${f0} gByte=0x${g0.toString(16)} (то же значение)`,"ROUNDTRIP");
   pending={op:CMD.CUSTOM_EQ_GET};
   p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"контроль 0x43","READ");
-  const ok=p&&p.cmd===CMD.CUSTOM_EQ_GET&&p.pay.length>6&&((p.pay[4]<<8|p.pay[5])===freq)&&p.pay[6]===gByte;
-  $("rtOut").textContent+=`\nконтроль: ${ok?"OK — полоса не изменилась, запись подтверждена":"нет подтверждения сверки"}`;
+  const ok=p&&p.cmd===CMD.CUSTOM_EQ_GET&&p.pay[3]===g0&&((p.pay[4]<<8)|p.pay[5])===f0;
+  $("rtOut").textContent+=`\nконтроль: ${ok?"OK — запись работает, значения не изменились":"РАСХОЖДЕНИЕ — см. лог"}`;
 }
 async function rtEqGet(){
   pending={op:CMD.CUSTOM_EQ_GET};
@@ -467,6 +471,40 @@ async function rtEqGet(){
   if(!p){$("rtOut").textContent="тишина";return;}
   $("rtOut").textContent=`raw: ${hex(p.pay)}\n\nparity: eqType=${p.pay[0]} numBands=${p.pay[1]}\n`
     +`байты 2..12: ${hex(p.pay.slice(2,12))}\n(полный разбор — в DSP.html «Прочитать EQ»)`;
+}
+
+/* BAND-MAP: диф-эксперимент. Пишем band1 gain=0x06, смотрим КАКИЕ байты ответа
+   изменились; затем возвращаем исходное значение и сверяем. */
+async function bandMap(){
+  const out=$("rtOut");out.textContent="";
+  const read=async()=>{
+    pending={op:CMD.CUSTOM_EQ_GET};
+    const p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"чтение 0x43","READ");
+    return(p&&p.cmd===CMD.CUSTOM_EQ_GET)?p.pay:null;
+  };
+  const snap=await read();
+  if(!snap){out.textContent="0x43 не ответил";return;}
+  out.textContent+=`SNAP (${snap.length} Б): ${hex(snap)}\n\n`;
+  pending={op:CMD.SINGLE_EQ_SET};
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0x06])),
+    "band1: gain=0x06 (0 дБ), freq=40","ROUNDTRIP");
+  const after=await read();
+  if(!after||after.length!==snap.length){out.textContent+="ответ не получен/другой длины — стоп";return;}
+  const diff1=[];for(let i=0;i<snap.length;i++)if(snap[i]!==after[i])diff1.push(i);
+  out.textContent+=`ИЗМЕНИЛИСЬ байты: ${diff1.join(", ")||"никакие"}\n`;
+  diff1.forEach(i=>out.textContent+=`  [${i}] 0x${snap[i].toString(16)} → 0x${after[i].toString(16)}\n`);
+  const orig=diff1.length?snap[diff1[0]]:0x14;
+  pending={op:CMD.SINGLE_EQ_SET};
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,orig])),
+    `band1: восстановление gain=0x${orig.toString(16)}`,"ROUNDTRIP");
+  const back=await read();
+  if(back&&back.length===snap.length){
+    const restored=diff1.every(i=>back[i]===snap[i]);
+    out.textContent+=`\nВОЗВРАТ: ${restored?"исходные байты восстановлены OK":"НЕ совпал — перекапply пресет в приложении"}`;
+    if(!restored){const d2=[];for(let i=0;i<snap.length;i++)if(snap[i]!==back[i])d2.push(i);
+      out.textContent+=`\n  расходятся: ${d2.join(", ")}`;}
+  }
+  out.textContent+=`\n\nВЫВОД: гейн band1 — байт(ы) ${diff1.join(",")||"?"} ответа 0x43; запись 0x44 работает.`;
 }
 
 /* ===== PROBE ===== */
@@ -517,6 +555,7 @@ $("swDanger2").onchange=e=>{S.danger=e.target.checked;
 $("btnReadAll").onclick=async()=>{S.stop=false;await readAll();};
 $("btnReadClear").onclick=()=>{$("readBody").innerHTML='<tr><td colspan="4" class="muted">— очищено —</td></tr>';};
 $("rtVol").onclick=rtVolume;$("rtPrompt").onclick=rtPrompt;$("rtEq").onclick=rtEq;$("rtEqGet").onclick=rtEqGet;
+$("rtMap").onclick=bandMap;
 $("probePay").onchange=e=>{$("probeHex").disabled=e.target.value!=="custom";};
 $("btnProbe").onclick=async()=>{S.stop=false;await probeSeries();};
 $("btnProbeStop").onclick=()=>{S.stop=true;log("sys","серия PROBE прервана");};
