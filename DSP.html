@@ -460,7 +460,7 @@ function handleRx(u8){
   let info="";
   if(u8[0]===0xBB&&u8.length>=6){
     const cmd=u8[2],len=(u8[3]<<8)|u8[4],pay=u8.slice(5,5+len);
-    let crcOk=false;try{crcOk=u8[u8.length-1]===[...u8.slice(0,-1)].reduce((a,b)=>a+b,0)&0xff;}catch(e){}
+    let crcOk=false;try{crcOk=u8[u8.length-1]===(([...u8.slice(0,-1)].reduce((a,b)=>a+b,0))&0xff);}catch(e){}
     info=`op=0x${cmd.toString(16).toUpperCase()} crc=${crcOk?"OK":"BAD"}`;
     if(cmd===CMD.CUSTOM_EQ_GET){
       const q=parseEqResponse(pay);

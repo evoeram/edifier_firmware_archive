@@ -255,7 +255,7 @@ function frame(op,payload,app=0xEC,rx=false){
 function parseRx(u8){
   if(u8.length<6||u8[0]!==0xBB)return null;
   const cmd=u8[2],len=(u8[3]<<8)|u8[4];
-  const crcOk=u8[u8.length-1]===[...u8.slice(0,-1)].reduce((a,b)=>a+b,0)&0xff;
+  const crcOk=u8[u8.length-1]===(([...u8.slice(0,-1)].reduce((a,b)=>a+b,0))&0xff);
   return{cmd,len,pay:u8.slice(5,5+len),crcOk};
 }
 function gainBlock(db){const b=new ArrayBuffer(12),v=new DataView(b);
@@ -473,8 +473,9 @@ async function rtEqGet(){
     +`байты 2..12: ${hex(p.pay.slice(2,12))}\n(полный разбор — в DSP.html «Прочитать EQ»)`;
 }
 
-/* BAND-MAP: диф-эксперимент. Пишем band1 gain=0x06, смотрим КАКИЕ байты ответа
-   изменились; затем возвращаем исходное значение и сверяем. */
+/* BAND-MAP: двухточечная калибровка. Пишем band1 два разных гейна (0x06, 0x0C)
+   и две разных частоты (40, 50 Гц), диффим ответы — получаем точные позиции и
+   преобразование payload→response. Затем восстановление исходного состояния. */
 async function bandMap(){
   const out=$("rtOut");out.textContent="";
   const read=async()=>{
@@ -482,29 +483,51 @@ async function bandMap(){
     const p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"чтение 0x43","READ");
     return(p&&p.cmd===CMD.CUSTOM_EQ_GET)?p.pay:null;
   };
+  const diff=(a,b)=>{const d=[];for(let i=0;i<Math.min(a.length,b.length);i++)if(a[i]!==b[i])d.push(i);return d;};
   const snap=await read();
   if(!snap){out.textContent="0x43 не ответил";return;}
-  out.textContent+=`SNAP (${snap.length} Б): ${hex(snap)}\n\n`;
+  out.textContent+=`SNAP: ${hex(snap)}\n\n`;
+  // калибровка гейна: 0x06, затем 0x0C
   pending={op:CMD.SINGLE_EQ_SET};
-  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0x06])),
-    "band1: gain=0x06 (0 дБ), freq=40","ROUNDTRIP");
-  const after=await read();
-  if(!after||after.length!==snap.length){out.textContent+="ответ не получен/другой длины — стоп";return;}
-  const diff1=[];for(let i=0;i<snap.length;i++)if(snap[i]!==after[i])diff1.push(i);
-  out.textContent+=`ИЗМЕНИЛИСЬ байты: ${diff1.join(", ")||"никакие"}\n`;
-  diff1.forEach(i=>out.textContent+=`  [${i}] 0x${snap[i].toString(16)} → 0x${after[i].toString(16)}\n`);
-  const orig=diff1.length?snap[diff1[0]]:0x14;
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0x06])),"band1 gain=0x06","ROUNDTRIP");
+  const r1=await read();
   pending={op:CMD.SINGLE_EQ_SET};
-  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,orig])),
-    `band1: восстановление gain=0x${orig.toString(16)}`,"ROUNDTRIP");
-  const back=await read();
-  if(back&&back.length===snap.length){
-    const restored=diff1.every(i=>back[i]===snap[i]);
-    out.textContent+=`\nВОЗВРАТ: ${restored?"исходные байты восстановлены OK":"НЕ совпал — перекапply пресет в приложении"}`;
-    if(!restored){const d2=[];for(let i=0;i<snap.length;i++)if(snap[i]!==back[i])d2.push(i);
-      out.textContent+=`\n  расходятся: ${d2.join(", ")}`;}
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0x0C])),"band1 gain=0x0C","ROUNDTRIP");
+  const r2=await read();
+  if(!r1||!r2){out.textContent+="ответ не получен — стоп";return;}
+  const d1=diff(snap,r1),d2=diff(r1,r2);
+  out.textContent+=`gain 0x06 → изменились [${d1.map(i=>i+":0x"+snap[i].toString(16)+"→0x"+r1[i].toString(16)).join(", ")}]\n`;
+  out.textContent+=`gain 0x0C → изменились [${d2.map(i=>i+":0x"+r1[i].toString(16)+"→0x"+r2[i].toString(16)).join(", ")}]\n`;
+  // калибровка частоты: 40→50 Гц (при гейне 0x0C)
+  pending={op:CMD.SINGLE_EQ_SET};
+  await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x32,0x0C])),"band1 freq=50","ROUNDTRIP");
+  const r3=await read();
+  const d3=r3?diff(r2,r3):[];
+  out.textContent+=`freq 50 → изменились [${d3.map(i=>i+":0x"+r2[i].toString(16)+"→0x"+r3[i].toString(16)).join(", ")}]\n\n`;
+  // восстановление: ищем payload-байт, дающий исходный отклик (линейная экстраполяция по двум точкам)
+  const gainPos=d2.length?d2[0]:(d1.length?d1[0]:-1);
+  if(gainPos>=0&&r1[gainPos]!==r2[gainPos]){
+    const y1=r1[gainPos],y2=r2[gainPos];            // отклики на 0x06 и 0x0C
+    const target=snap[gainPos];                      // исходный байт
+    const k=(y2-y1)/(0x0C-0x06);
+    const x=Math.round(0x06+(target-y1)/k);
+    out.textContent+=`калибровка гейна: payload 0x06→0x${y1.toString(16)}, 0x0C→0x${y2.toString(16)}, k=${k}\n`;
+    out.textContent+=`исходный байт 0x${target.toString(16)} достигается payload=0x${(x&0xff).toString(16)}\n`;
+    if(x>=0&&x<=12){
+      pending={op:CMD.SINGLE_EQ_SET};
+      await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,x])),
+        `band1: восстановление (payload 0x${x.toString(16)})`,"ROUNDTRIP");
+      const rb=await read();
+      const ok=rb&&rb[gainPos]===target;
+      out.textContent+=`ВОЗВРАТ гейна: ${ok?"OK ✓":"НЕ СОШЛОСЬ — перекапply пресет «Sound effects2» в приложении"}`;
+    }else out.textContent+=`вне диапазона 0..12 — восстанови пресет в приложении`;
+  }else out.textContent+="гейн-байт не идентифицирован";
+  // частоту вернём на 40 Гц (исходная)
+  if(d3.length){
+    pending={op:CMD.SINGLE_EQ_SET};
+    await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0x0C])),"band1 freq=40 (назад)","ROUNDTRIP");
   }
-  out.textContent+=`\n\nВЫВОД: гейн band1 — байт(ы) ${diff1.join(",")||"?"} ответа 0x43; запись 0x44 работает.`;
+  out.textContent+=`\n\nSNAP-гейн band0 (20 Гц) не трогали. Если что-то не так — пресет «Sound effects2» в приложении всё вернёт.`;
 }
 
 /* ===== PROBE ===== */
