@@ -563,3 +563,33 @@ POWER_AMP, EQ_TABLES + decomp/ и tools/). Ключевое:
 
 Инструменты: DSP_ARCH/tools/*.py (шаблоны узлов, дамп конфигов, EQ-таблицы),
 CallersDump.java (ghidra_scripts), декомпиляты DSP_ARCH/decomp/.
+
+## 12. Flash-layout: origin of effect configs (2026-11-18)
+
+Answered the «effect_cfg ≡ resource tail volume» hypothesis: **REFUTED**.
+The TLV volume from C1.2 (hdr@0x9B390) is the embedded flash file
+**stream.bin** (jlfs inode: magic 0x4C689141, hdr 0x20, size 0xF17C, name
+inside the inode; ends exactly at EOF 0xAA50C).
+
+Embedded jlfs files found in the tail (packed end-to-end, size = inode+data):
+- `cfg_tool.bin` @0x9831E, 234 B, id 0xED909943 — product config
+  (soundbox / JL701N / 1.0.0 / patch_01, BT MAC A4:DB:A5:DB:A6:DB,
+  device name **EDIFIER MR5**);
+- `p11_code.bin` @0x98408, 12 168 B, id 0x3B4FF3FC — P11 (PMU/touch) core code;
+- `stream.bin` @0x9B390, 61 820 B, id 0x4C689141 — audio graph + factory
+  effect configs (already decoded in C1.2 / DSP_ARCH).
+
+Chain check: 0x9831E+0xEA=0x98408 → +0x2F88=0x9B390 → +0xF17C=0xAA50C=EOF ✓.
+
+`flash/res/effect_cfg.bin` is referenced by code (VA 0x0605FAAF, near tag
+`bt_test.base`; `flash/res/stream.bin` @0x0605FEFA near task tags
+`aec`/`jlstream`) but its inode is NOT in our dump — needs full OTA/ufw or
+service flash dump. Factory effect values are already covered by stream.bin;
+only the user-override layer is missing.
+
+NEW uncovered code region: dec 0x8EEFC..0x9831E (VA 0x0608EFFC..0x0609841E,
+~37.9 KB) is continuing XIP pi32v2 code NOT covered by app_bin_full.bin
+(current Ghidra project ends at 0x8EEFC). Rebuild project on the full
+MR5_1.0.3_1c89dcaf_dec.bin for full coverage.
+
+Details: `DSP_ARCH/FLASH_LAYOUT.md`.
