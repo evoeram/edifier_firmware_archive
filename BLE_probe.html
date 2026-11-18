@@ -158,6 +158,8 @@ background:var(--tx);transition:left .2s}
       <button id="btnProbe" class="btn-t" disabled>Проба (по одному, с ожиданием ответа)</button>
       <button id="btnProbeStop" class="btn-sm">Прервать серию</button>
     </div>
+    <div class="muted" style="margin-top:4px">READ-подобные op (0x43, 0xC6, 0xD8, …) шлются сразу, без тумблеров.
+    Для не-READ op нужно снять Dry-run и включить «Разрешить запись» (карточка 3).</div>
     <div class="warnbox">Кандидат 0x2B (десятичный 43) — гипотеза «доставка node_param_set по app-каналу».
     Гейн-блок с 0 дБ безобиден: это заводское значение SET_HP_GAIN idx0. Проба шлёт кадры ПО ОДНОМУ,
     ждёт RX-окно 2 с и классифицирует ответ. Любой ACK/эхо = кандидат подтверждён.</div>
@@ -374,7 +376,7 @@ function upd(){
   $("btnStop").disabled=!S.connected;
   $("btnReadAll").disabled=!(S.connected&&S.dry);
   ["rtVol","rtPrompt","rtEq","rtEqGet","rtMap"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
-  $("btnProbe").disabled=!(S.connected&&S.write);
+  $("btnProbe").disabled=!S.connected;
   $("dutRun").disabled=!(S.connected&&!S.pause);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
@@ -573,6 +575,8 @@ async function bandMap(){
 }
 
 /* ===== PROBE ===== */
+/* READ-подобные op: шлются как READ (без тумблера записи и мимо dry-run) */
+const READ_LIKE=new Set([0x43,0xC5,0xC6,0xC9,0x66,0x68,0xD8,0xC3,0xC0,0xD5,0x61,0x48,0xBB,0x86,0xD7,0x92,0x92&0xff]);
 async function probeSeries(){
   const ops=$("probeOps").value.split(",").map(x=>parseInt(x.trim(),16)).filter(x=>x>=0&&x<=0xff);
   if(!ops.length){log("err","список op пуст");return;}
@@ -586,12 +590,18 @@ async function probeSeries(){
   $("probeOut").textContent="";
   for(const op of ops){
     if(S.stop)break;
+    const risk=READ_LIKE.has(op)?"READ":"PROBE";
+    if(risk==="PROBE"&&S.dry&&!$("swWrite").checked){
+      log("warn","op 0x"+op.toString(16).toUpperCase()+" — не READ: сними Dry-run и включи «Разрешить запись»");
+      $("probeOut").textContent+="op 0x"+op.toString(16).toUpperCase()+": заблокировано предохранителем (dry-run)\n";
+      continue;
+    }
     pending={op,onReply:p=>{
-      $("probeOut").textContent+=`op 0x${op.toString(16).toUpperCase()}: ОТВЕТ 0x${p.cmd.toString(16).toUpperCase()} pay=${hex(p.pay)}\n`;
+      $("probeOut").textContent+=`op 0x${op.toString(16).toUpperCase()} pay=${hex(payload)}: ОТВЕТ pay(${p.pay.length})=${hex(p.pay)}\n`;
     }};
     const p=await transmit(frame(op,payload),
-      `PROBE op=0x${op.toString(16).toUpperCase()} (${payload.length} Б)`,"PROBE");
-    if(!p)$("probeOut").textContent+=`op 0x${op.toString(16).toUpperCase()}: тишина (2 с)\n`;
+      `PROBE op=0x${op.toString(16).toUpperCase()} (${payload.length} Б)`,risk);
+    if(!p)$("probeOut").textContent+=`op 0x${op.toString(16).toUpperCase()} pay=${hex(payload)}: тишина (2 с)\n`;
   }
   log("sys","серия PROBE завершена");
 }
