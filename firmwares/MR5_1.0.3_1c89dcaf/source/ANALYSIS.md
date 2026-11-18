@@ -532,3 +532,34 @@ call/goto-форм с полем `{n}`; см. `BRANCH_FIELD` в objdump.py).
 - `GizClaw/AC695N_Soundbox_SDK` — эталонные plaintext/шифрованные образы
   (jl_isd.bin, update.ufw, std_app.bin), isd_config.ini (ENTRY=0x1E00100).
 - `kagaimiq/ghidra-jieli` — SLEIGH pi32v2/q32s для Ghidra.
+
+## 11. DSP_ARCH — DSP-подсистема MR5 (2026-11-18)
+
+Полный разбор DSP вынесен в `DSP_ARCH/` (README, DSP_ALGORITHMS, SIGNAL_PATHS,
+POWER_AMP, EQ_TABLES + decomp/ и tools/). Ключевое:
+
+- Граф jlstream: 16 шаблонов узлов (crc djb2 seed 0x1505 x0x21), 62 имени =
+  инстансы (param), 176 записей графа, 246 конфиг-дескрипторов (185 EQ /
+  2 DRC / 59 GAIN). Конфиги: заводские в stream.bin (tag 5), текущие в
+  конфиг-БД spi-flash (FUN_06037ba4/cce, ключ {type,crc32(name),param}).
+- Алгоритмы: EQ би-квад типов 0..8 (audio_eq_tab_check 06065808, генераторы
+  06040e64..06041594), DRC peak-follower (DrcPeakFollowProcess 06085848,
+  drc_db2mag 06085550, DrcCalcTimeFactor 0604e496), микшер cfifo (0604bea4),
+  premute 0604dc98. Слоты EQ: тембр Bass -6..+6 дБ @125 Гц (26 табл.),
+  Treble -6..+6 дБ @10 кГц (13), Desk_Acoustic_2 (pk@200+t4@500), EQDIY x4.
+- Громкость: digvol-шаблон 0x74e3, 9 кривых по источникам
+  (BT -70..-7 дБ, Line -63..0 дБ ...). Гейны: SET_HP_GAIN +8.3 дБ /
+  -90.3 дБ (mute), SET_HP_GAIN2 +2.3 дБ, AUX_DAC_GAIN 0/-1.3 дБ,
+  AUX_DAC_GAIN2 +6.5 дБ.
+- Выходы: 4 инстанса DAC (DAC2/DAC3/DAC24/DAC25, tri-amp НЧ/СЧ/ВЧ +
+  наушники), IIS0_TX1/3/4. Наушники через SET_HP_GAIN, mute -90.3 дБ.
+  Управление PA/anti-pop — стробы PORTA (0xfd5000 OUT / 0xfd5008 DIR):
+  PA1 (bit2), PA6 (bit40) из set_hp_gain 06006390 и 06009ebc.
+- Источники: A2DP_RX6/7 (BT music), esco_adc+EscoUl/DlEq (разговор),
+  ADC13/linein (Line In задний + XLR, XLR — тот же тракт с усилением
+  AUX_DAC_GAIN2 +6.5 дБ), AUX фронтальный. Переключение — effect_nodes_open
+  0600e3d8 (site 06018e4a) + стабы узлов 06001dba-06001e76 ->
+  node_param_set FUN_06038bd8 (46 сайтов).
+
+Инструменты: DSP_ARCH/tools/*.py (шаблоны узлов, дамп конфигов, EQ-таблицы),
+CallersDump.java (ghidra_scripts), декомпиляты DSP_ARCH/decomp/.
