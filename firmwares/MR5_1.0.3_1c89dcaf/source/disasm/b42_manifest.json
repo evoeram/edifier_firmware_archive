@@ -1,0 +1,277 @@
+{
+ "sub_0600ba7c": {
+  "name": "dut_tst_cmd_handler",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_06013202": {
+  "name": "dut_tst_get_resp",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_060109f0": {
+  "name": "dut_tst_strtbl_get_a",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_06010a06": {
+  "name": "dut_tst_strtbl_get_b",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_06014348": {
+  "name": "dut_tst_get_send",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_0605312e": {
+  "name": "effect_cfg_mgr",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_06072d92": {
+  "name": "ota_file_lookup",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_0604b08e": {
+  "name": "jlstream_res_init",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_0604c65c": {
+  "name": "effect_nodes_close",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_0600e3d8": {
+  "name": "effect_nodes_open",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_060724f4": {
+  "name": "sdfile_dev_tbl_scan",
+  "how": "expert",
+  "strings": []
+ },
+ "sub_06001216": {
+  "name": "f_pc_mic",
+  "how": "string",
+  "strings": [
+   "pc_mic",
+   "pc_spk",
+   "strpic"
+  ]
+ },
+ "sub_06001df2": {
+  "name": "f_trebshelf_lb3",
+  "how": "string",
+  "strings": [
+   "TrebShelf_LB3",
+   "TrebShelf_LB4",
+   "Desk_Acoustic",
+   "AUX_DAC_GAIN2",
+   "Vol_BtmMusic2",
+   "Vol_LinMusic2",
+   "DUT+TST+TXS+0",
+   "DUT+TST+TXS+1",
+   "DUT+TST+DUT+0",
+   "TST+LED+IO1+1"
+  ]
+ },
+ "sub_06001e50": {
+  "name": "f_aux_dac_gain",
+  "how": "string",
+  "strings": [
+   "AUX_DAC_GAIN",
+   "SET_HP_GAIN2",
+   "EnergyMusic2",
+   "tone_zh/bt.*",
+   "Vol_BtmMusic",
+   "config397392",
+   "Vol_LinMusic",
+   "1234567890abcTST+DUT+TXS+",
+   "TST+DUT+SAV+"
+  ]
+ },
+ "sub_06004d44": {
+  "name": "f_aux_dac_gain_2",
+  "how": "string",
+  "strings": [
+   "AUX_DAC_GAIN",
+   "SET_HP_GAIN2",
+   "EnergyMusic2",
+   "tone_zh/bt.*",
+   "Vol_BtmMusic",
+   "config397392",
+   "Vol_LinMusic",
+   "1234567890abcTST+DUT+TXS+"
+  ]
+ },
+ "sub_0600de08": {
+  "name": "f_esco_adc",
+  "how": "string",
+  "strings": [
+   "esco_adc",
+   "smart_voice",
+   "periph_demo",
+   "clock",
+   "mcpwm",
+   "usr_systimer",
+   "btstack_lowpwer_deal",
+   "btstack"
+  ]
+ },
+ "sub_0600e216": {
+  "name": "f_tone_zh_normal",
+  "how": "string",
+  "strings": [
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+"
+  ]
+ },
+ "sub_0601293a": {
+  "name": "f_tst_dut_mac_get",
+  "how": "string",
+  "strings": [
+   "TST+DUT+MAC+GET",
+   "TST+DUT+BLE+GET",
+   "TST+DUT+NAM+GET"
+  ]
+ },
+ "sub_06019a02": {
+  "name": "f_vol_btc",
+  "how": "string",
+  "strings": [
+   "Vol_Btc",
+   "Vol_Btm",
+   "Vol_Lin",
+   "Vol_Sys",
+   "MusicEq",
+   "res.bin",
+   "a2dp_dec"
+  ]
+ },
+ "sub_0601cc90": {
+  "name": "f_zedr_ota2_bin",
+  "how": "string",
+  "strings": [
+   "Zedr_ota2.bin",
+   "Zsd_update2.bin"
+  ]
+ },
+ "sub_0602c736": {
+  "name": "f_2usb_stack",
+  "how": "string",
+  "strings": [
+   "2usb_stack",
+   "charge"
+  ]
+ },
+ "sub_0602ca70": {
+  "name": "f_2usb_stack_2",
+  "how": "string",
+  "strings": [
+   "2usb_stack",
+   "charge",
+   "DBG_REV",
+   "flash_powerup_ok"
+  ]
+ },
+ "sub_0602cde6": {
+  "name": "f_2usb_stack_3",
+  "how": "string",
+  "strings": [
+   "2usb_stack",
+   "charge",
+   "DBG_REV",
+   "flash_powerup_ok",
+   "flash/res/p11_code.bin"
+  ]
+ },
+ "sub_0604004c": {
+  "name": "f_src_v2_d_d",
+  "how": "string",
+  "strings": [
+   "+SRC_V2_%d%d",
+   "AUX_DAC_GAIN",
+   "SET_HP_GAIN2",
+   "EnergyMusic2",
+   "tone_zh/bt.*",
+   "Vol_BtmMusic",
+   "config397392"
+  ]
+ },
+ "sub_06049cfa": {
+  "name": "f_image",
+  "how": "string",
+  "strings": [
+   "image",
+   "ascii",
+   "flash",
+   "pc_mic",
+   "pc_spk"
+  ]
+ },
+ "sub_06072282": {
+  "name": "f_app_dir_head",
+  "how": "string",
+  "strings": [
+   "app_dir_head",
+   "app_dir_head2"
+  ]
+ },
+ "sub_060726d4": {
+  "name": "f_app_dir_head_2",
+  "how": "string",
+  "strings": [
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin"
+  ]
+ },
+ "sub_0607283e": {
+  "name": "f_app_dir_head_3",
+  "how": "string",
+  "strings": [
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin"
+  ]
+ },
+ "sub_06072c78": {
+  "name": "f_cfg_tool_bin",
+  "how": "string",
+  "strings": [
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin",
+   "app_dir_head"
+  ]
+ },
+ "sub_06072e1c": {
+  "name": "f_app_dir_head_4",
+  "how": "string",
+  "strings": [
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin"
+  ]
+ },
+ "sub_06074948": {
+  "name": "f_btstack",
+  "how": "string",
+  "strings": [
+   "btstack"
+  ]
+ }
+}

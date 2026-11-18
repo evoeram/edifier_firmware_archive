@@ -1,0 +1,2029 @@
+{
+"06088c40": {
+"ram": "0010dd54",
+"flash": "06088c40",
+"sites": 248,
+"size_lines": 74,
+"glob_tags": [
+"OS-arrays",
+"periph-B(clk/pll)"
+],
+"named_calls": [],
+"overlay_calls": [
+"087510",
+"08751e"
+],
+"caller_strings": []
+},
+"06088c72": {
+"ram": "0010dd86",
+"flash": "06088c72",
+"sites": 239,
+"size_lines": 57,
+"glob_tags": [
+"OS-arrays",
+"periph-B(clk/pll)"
+],
+"named_calls": [],
+"overlay_calls": [
+"08751e"
+],
+"caller_strings": []
+},
+"0608adbc": {
+"ram": "0010fed0",
+"flash": "0608adbc",
+"sites": 207,
+"size_lines": 18,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608adc6": {
+"ram": "0010feda",
+"flash": "0608adc6",
+"sites": 106,
+"size_lines": 16,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06087398": {
+"ram": "0010c4ac",
+"flash": "06087398",
+"sites": 86,
+"size_lines": 55,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cc8",
+"086cd0",
+"086dda",
+"08722c",
+"08968a",
+"08e9b2",
+"08e9ba"
+],
+"caller_strings": []
+},
+"0608718a": {
+"ram": "0010c29e",
+"flash": "0608718a",
+"sites": 74,
+"size_lines": 108,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cc8",
+"086dc8",
+"086e64",
+"086e74",
+"08968a",
+"08e9b2",
+"08e9b2",
+"08e9ba",
+"08e9ba"
+],
+"caller_strings": []
+},
+"0608adae": {
+"ram": "0010fec2",
+"flash": "0608adae",
+"sites": 71,
+"size_lines": 25,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"060876d0": {
+"ram": "0010c7e4",
+"flash": "060876d0",
+"sites": 34,
+"size_lines": 18,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"086cc8",
+"08754c",
+"087556",
+"08968a"
+],
+"caller_strings": []
+},
+"060875c2": {
+"ram": "0010c6d6",
+"flash": "060875c2",
+"sites": 33,
+"size_lines": 14,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [],
+"overlay_calls": [
+"0873c8"
+],
+"caller_strings": []
+},
+"06086daa": {
+"ram": "0010bebe",
+"flash": "06086daa",
+"sites": 25,
+"size_lines": 15,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608be7e": {
+"ram": "00110f92",
+"flash": "0608be7e",
+"sites": 24,
+"size_lines": 219,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"08acae",
+"08acbc",
+"08acbc",
+"08be8e",
+"08bf56",
+"08bfb2"
+],
+"caller_strings": []
+},
+"0608b0f0": {
+"ram": "00110204",
+"flash": "0608b0f0",
+"sites": 18,
+"size_lines": 16,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acbc"
+],
+"caller_strings": []
+},
+"060878c8": {
+"ram": "0010c9dc",
+"flash": "060878c8",
+"sites": 16,
+"size_lines": 9,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"087640"
+],
+"caller_strings": []
+},
+"06087ace": {
+"ram": "0010cbe2",
+"flash": "06087ace",
+"sites": 15,
+"size_lines": 58,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cc8",
+"086e74",
+"08754c",
+"08e9b2",
+"08e9ba",
+"08e9ba"
+],
+"caller_strings": []
+},
+"0608b092": {
+"ram": "001101a6",
+"flash": "0608b092",
+"sites": 14,
+"size_lines": 44,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acae",
+"08acbc",
+"08afbc"
+],
+"caller_strings": []
+},
+"06087a88": {
+"ram": "0010cb9c",
+"flash": "06087a88",
+"sites": 13,
+"size_lines": 25,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"0873c8",
+"08e9ba"
+],
+"caller_strings": []
+},
+"0608aee6": {
+"ram": "0010fffa",
+"flash": "0608aee6",
+"sites": 13,
+"size_lines": 21,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08adb4"
+],
+"caller_strings": []
+},
+"06088798": {
+"ram": "0010d8ac",
+"flash": "06088798",
+"sites": 12,
+"size_lines": 40,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"088438"
+],
+"caller_strings": []
+},
+"0608b0c6": {
+"ram": "001101da",
+"flash": "0608b0c6",
+"sites": 12,
+"size_lines": 23,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08afbc"
+],
+"caller_strings": []
+},
+"0608b156": {
+"ram": "0011026a",
+"flash": "0608b156",
+"sites": 12,
+"size_lines": 35,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acae",
+"08acc6"
+],
+"caller_strings": []
+},
+"0608bf56": {
+"ram": "0011106a",
+"flash": "0608bf56",
+"sites": 12,
+"size_lines": 156,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"08acae",
+"08be8e",
+"08bf56",
+"08bfb2"
+],
+"caller_strings": []
+},
+"0608b0bc": {
+"ram": "001101d0",
+"flash": "0608b0bc",
+"sites": 11,
+"size_lines": 25,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acbc"
+],
+"caller_strings": []
+},
+"0608b14c": {
+"ram": "00110260",
+"flash": "0608b14c",
+"sites": 11,
+"size_lines": 37,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acae",
+"08acbc",
+"08acc6"
+],
+"caller_strings": []
+},
+"06088306": {
+"ram": "0010d41a",
+"flash": "06088306",
+"sites": 10,
+"size_lines": 112,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08ecc4",
+"08ecc4"
+],
+"caller_strings": []
+},
+"060885ca": {
+"ram": "0010d6de",
+"flash": "060885ca",
+"sites": 10,
+"size_lines": 16,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"088438"
+],
+"caller_strings": []
+},
+"060879c4": {
+"ram": "0010cad8",
+"flash": "060879c4",
+"sites": 8,
+"size_lines": 40,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cd0",
+"086e16",
+"0877d0",
+"08e9b2",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087e72": {
+"ram": "0010cf86",
+"flash": "06087e72",
+"sites": 8,
+"size_lines": 17,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06088612": {
+"ram": "0010d726",
+"flash": "06088612",
+"sites": 8,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608978a": {
+"ram": "0010e89e",
+"flash": "0608978a",
+"sites": 7,
+"size_lines": 11,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608b09c": {
+"ram": "001101b0",
+"flash": "0608b09c",
+"sites": 7,
+"size_lines": 41,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acbc",
+"08af92",
+"08afbc"
+],
+"caller_strings": []
+},
+"0608c0ec": {
+"ram": "00111200",
+"flash": "0608c0ec",
+"sites": 7,
+"size_lines": 9,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08bfb2",
+"08bfb2"
+],
+"caller_strings": []
+},
+"0608c0f4": {
+"ram": "00111208",
+"flash": "0608c0f4",
+"sites": 7,
+"size_lines": 116,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08708a",
+"08c0d0"
+],
+"caller_strings": []
+},
+"0608e662": {
+"ram": "00113776",
+"flash": "0608e662",
+"sites": 7,
+"size_lines": 127,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [
+"08e41e",
+"08e41e",
+"08e432",
+"08e432"
+],
+"caller_strings": []
+},
+"0608edc4": {
+"ram": "00113ed8",
+"flash": "0608edc4",
+"sites": 7,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608aeb4": {
+"ram": "0010ffc8",
+"flash": "0608aeb4",
+"sites": 6,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608e5aa": {
+"ram": "001136be",
+"flash": "0608e5aa",
+"sites": 6,
+"size_lines": 169,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [
+"08e41e",
+"08e41e",
+"08e432",
+"08e432"
+],
+"caller_strings": []
+},
+"060885fa": {
+"ram": "0010d70e",
+"flash": "060885fa",
+"sites": 5,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06088b0a": {
+"ram": "0010dc1e",
+"flash": "06088b0a",
+"sites": 5,
+"size_lines": 123,
+"glob_tags": [
+"OS-arrays",
+"core/IRQ",
+"periph-B(clk/pll)"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"0874d8",
+"0874ee",
+"087510",
+"08751e",
+"08e9d8",
+"08e9d8"
+],
+"caller_strings": []
+},
+"0608eac4": {
+"ram": "00113bd8",
+"flash": "0608eac4",
+"sites": 5,
+"size_lines": 9,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608eb58": {
+"ram": "00113c6c",
+"flash": "0608eb58",
+"sites": 5,
+"size_lines": 11,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_enter_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608eb6e": {
+"ram": "00113c82",
+"flash": "0608eb6e",
+"sites": 5,
+"size_lines": 9,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06087f26": {
+"ram": "0010d03a",
+"flash": "06087f26",
+"sites": 4,
+"size_lines": 27,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"08e9ba"
+],
+"caller_strings": []
+},
+"06088620": {
+"ram": "0010d734",
+"flash": "06088620",
+"sites": 4,
+"size_lines": 26,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08752a"
+],
+"caller_strings": []
+},
+"06089dbc": {
+"ram": "0010eed0",
+"flash": "06089dbc",
+"sites": 4,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608eaba": {
+"ram": "00113bce",
+"flash": "0608eaba",
+"sites": 4,
+"size_lines": 17,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06088032": {
+"ram": "0010d146",
+"flash": "06088032",
+"sites": 3,
+"size_lines": 21,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608844c": {
+"ram": "0010d560",
+"flash": "0608844c",
+"sites": 3,
+"size_lines": 66,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608868a": {
+"ram": "0010d79e",
+"flash": "0608868a",
+"sites": 3,
+"size_lines": 19,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08855a"
+],
+"caller_strings": []
+},
+"06088bda": {
+"ram": "0010dcee",
+"flash": "06088bda",
+"sites": 3,
+"size_lines": 87,
+"glob_tags": [
+"OS-arrays",
+"core/IRQ",
+"periph-B(clk/pll)"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"0874ee",
+"087510",
+"08751e"
+],
+"caller_strings": []
+},
+"0608a0c2": {
+"ram": "0010f1d6",
+"flash": "0608a0c2",
+"sites": 3,
+"size_lines": 551,
+"glob_tags": [
+"OS-arrays",
+"core/IRQ",
+"periph-A"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"0898dc",
+"0898dc",
+"0898dc",
+"089c94",
+"089c94",
+"089ca2",
+"089f34",
+"089f54",
+"089f6e",
+"08aeac",
+"08af7e"
+],
+"caller_strings": []
+},
+"0608b160": {
+"ram": "00110274",
+"flash": "0608b160",
+"sites": 3,
+"size_lines": 27,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08acae"
+],
+"caller_strings": []
+},
+"0608b278": {
+"ram": "0011038c",
+"flash": "0608b278",
+"sites": 3,
+"size_lines": 281,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608c056": {
+"ram": "0011116a",
+"flash": "0608c056",
+"sites": 3,
+"size_lines": 78,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"08be8e",
+"08bfb2"
+],
+"caller_strings": []
+},
+"0608ca3a": {
+"ram": "00111b4e",
+"flash": "0608ca3a",
+"sites": 3,
+"size_lines": 355,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical",
+"os_taskq_post_msg"
+],
+"overlay_calls": [
+"08708a",
+"087298",
+"0877c8",
+"088698",
+"088698",
+"08acae",
+"08bfb2",
+"08bff4",
+"08cc6e"
+],
+"caller_strings": []
+},
+"0608e740": {
+"ram": "00113854",
+"flash": "0608e740",
+"sites": 3,
+"size_lines": 47,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [
+"08e41e",
+"08e432"
+],
+"caller_strings": []
+},
+"06086c48": {
+"ram": "0010bd5c",
+"flash": "06086c48",
+"sites": 2,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06086c50": {
+"ram": "0010bd64",
+"flash": "06086c50",
+"sites": 2,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"060878c2": {
+"ram": "0010c9d6",
+"flash": "060878c2",
+"sites": 2,
+"size_lines": 17,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"087640",
+"08772e"
+],
+"caller_strings": []
+},
+"06087cbc": {
+"ram": "0010cdd0",
+"flash": "06087cbc",
+"sites": 2,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087e06": {
+"ram": "0010cf1a",
+"flash": "06087e06",
+"sites": 2,
+"size_lines": 25,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cd0",
+"086e16",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087ff2": {
+"ram": "0010d106",
+"flash": "06087ff2",
+"sites": 2,
+"size_lines": 25,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"087e86"
+],
+"caller_strings": []
+},
+"06088082": {
+"ram": "0010d196",
+"flash": "06088082",
+"sites": 2,
+"size_lines": 68,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086eac",
+"087aca",
+"087d72",
+"08e9ba",
+"08eac0",
+"08eaea",
+"08eb0c"
+],
+"caller_strings": []
+},
+"06088180": {
+"ram": "0010d294",
+"flash": "06088180",
+"sites": 2,
+"size_lines": 15,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"087d72",
+"08e9ba"
+],
+"caller_strings": []
+},
+"060882da": {
+"ram": "0010d3ee",
+"flash": "060882da",
+"sites": 2,
+"size_lines": 13,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"08e9ba"
+],
+"caller_strings": []
+},
+"060886ac": {
+"ram": "0010d7c0",
+"flash": "060886ac",
+"sites": 2,
+"size_lines": 86,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"086b48",
+"086b4a",
+"0879ce",
+"08855a",
+"08855a",
+"08858a",
+"088590",
+"088590"
+],
+"caller_strings": []
+},
+"060886d0": {
+"ram": "0010d7e4",
+"flash": "060886d0",
+"sites": 2,
+"size_lines": 79,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"086b48",
+"086b4a",
+"0879ce",
+"08855a",
+"08855a",
+"08858a",
+"088590",
+"088590",
+"0885ac",
+"0885ac"
+],
+"caller_strings": []
+},
+"0608872c": {
+"ram": "0010d840",
+"flash": "0608872c",
+"sites": 2,
+"size_lines": 44,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0879ce",
+"08855a",
+"08855a",
+"0885ac"
+],
+"caller_strings": []
+},
+"06088d7e": {
+"ram": "0010de92",
+"flash": "06088d7e",
+"sites": 2,
+"size_lines": 21,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06088f1e": {
+"ram": "0010e032",
+"flash": "06088f1e",
+"sites": 2,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06088f8a": {
+"ram": "0010e09e",
+"flash": "06088f8a",
+"sites": 2,
+"size_lines": 15,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical"
+],
+"overlay_calls": [
+"08e446"
+],
+"caller_strings": []
+},
+"06089cd0": {
+"ram": "0010ede4",
+"flash": "06089cd0",
+"sites": 2,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06089d94": {
+"ram": "0010eea8",
+"flash": "06089d94",
+"sites": 2,
+"size_lines": 11,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06089da2": {
+"ram": "0010eeb6",
+"flash": "06089da2",
+"sites": 2,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608ade8": {
+"ram": "0010fefc",
+"flash": "0608ade8",
+"sites": 2,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608bf8e": {
+"ram": "001110a2",
+"flash": "0608bf8e",
+"sites": 2,
+"size_lines": 139,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"08bf56",
+"08bfb2"
+],
+"caller_strings": []
+},
+"0608c0b2": {
+"ram": "001111c6",
+"flash": "0608c0b2",
+"sites": 2,
+"size_lines": 28,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08be8e",
+"08bf56"
+],
+"caller_strings": []
+},
+"0608da58": {
+"ram": "00112b6c",
+"flash": "0608da58",
+"sites": 2,
+"size_lines": 625,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"0877c8",
+"0877c8",
+"087988",
+"08bd7e",
+"08bd7e",
+"08bd7e",
+"08bdb4",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08bfb2",
+"08bfb2",
+"08bfb2",
+"08bfb2",
+"08bfb2",
+"08bff4",
+"08bff4",
+"08bff4",
+"08bff4",
+"08d8d8"
+],
+"caller_strings": []
+},
+"0608e0b6": {
+"ram": "001131ca",
+"flash": "0608e0b6",
+"sites": 2,
+"size_lines": 202,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08be56",
+"08be56"
+],
+"caller_strings": []
+},
+"0608e7c2": {
+"ram": "001138d6",
+"flash": "0608e7c2",
+"sites": 2,
+"size_lines": 65,
+"glob_tags": [
+"OS-arrays",
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [
+"08e4aa",
+"08e4aa",
+"08e562",
+"08e66c"
+],
+"caller_strings": []
+},
+"0608eb62": {
+"ram": "00113c76",
+"flash": "0608eb62",
+"sites": 2,
+"size_lines": 8,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"060866e6": {
+"ram": "0010b7fa",
+"flash": "060866e6",
+"sites": 1,
+"size_lines": 302,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0546b6",
+"08acbc",
+"08acbc",
+"08acbc",
+"08acc6",
+"08acc6",
+"08acc6",
+"08acc6",
+"08acc6",
+"08acc6"
+],
+"caller_strings": []
+},
+"06086712": {
+"ram": "0010b826",
+"flash": "06086712",
+"sites": 1,
+"size_lines": 293,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0546b6",
+"08acc6",
+"08acc6",
+"08acc6",
+"08acc6",
+"08acc6",
+"08acc6"
+],
+"caller_strings": []
+},
+"060869ac": {
+"ram": "0010bac0",
+"flash": "060869ac",
+"sites": 1,
+"size_lines": 114,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"086824",
+"086824",
+"08acbc",
+"08acbc",
+"08acbc"
+],
+"caller_strings": []
+},
+"06086b3a": {
+"ram": "0010bc4e",
+"flash": "06086b3a",
+"sites": 1,
+"size_lines": 73,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [
+"086a1e",
+"086a1e"
+],
+"caller_strings": []
+},
+"06086bc4": {
+"ram": "0010bcd8",
+"flash": "06086bc4",
+"sites": 1,
+"size_lines": 27,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06086c1e": {
+"ram": "0010bd32",
+"flash": "06086c1e",
+"sites": 1,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06086c4a": {
+"ram": "0010bd5e",
+"flash": "06086c4a",
+"sites": 1,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06087c4a": {
+"ram": "0010cd5e",
+"flash": "06087c4a",
+"sites": 1,
+"size_lines": 47,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"087aca",
+"08acae",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087e00": {
+"ram": "0010cf14",
+"flash": "06087e00",
+"sites": 1,
+"size_lines": 26,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cd0",
+"086e16",
+"087c2e",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087e98": {
+"ram": "0010cfac",
+"flash": "06087e98",
+"sites": 1,
+"size_lines": 73,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cd0",
+"086dda",
+"08722c",
+"087d72",
+"08e9b2",
+"08e9ba",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087eac": {
+"ram": "0010cfc0",
+"flash": "06087eac",
+"sites": 1,
+"size_lines": 60,
+"glob_tags": [],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"086cd0",
+"086dda",
+"08722c",
+"08e9b2",
+"08e9ba",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06087fec": {
+"ram": "0010d100",
+"flash": "06087fec",
+"sites": 1,
+"size_lines": 29,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"087e86",
+"087e86"
+],
+"caller_strings": []
+},
+"06088004": {
+"ram": "0010d118",
+"flash": "06088004",
+"sites": 1,
+"size_lines": 16,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608812a": {
+"ram": "0010d23e",
+"flash": "0608812a",
+"sites": 1,
+"size_lines": 32,
+"glob_tags": [
+"OS-arrays"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"087d72",
+"08e9ba"
+],
+"caller_strings": []
+},
+"06088b7e": {
+"ram": "0010dc92",
+"flash": "06088b7e",
+"sites": 1,
+"size_lines": 96,
+"glob_tags": [
+"OS-arrays",
+"core/IRQ",
+"periph-B(clk/pll)"
+],
+"named_calls": [
+"os_exit_critical"
+],
+"overlay_calls": [
+"0874ee",
+"087510",
+"08751e"
+],
+"caller_strings": []
+},
+"06088d3a": {
+"ram": "0010de4e",
+"flash": "06088d3a",
+"sites": 1,
+"size_lines": 38,
+"glob_tags": [
+"periph-B(clk/pll)"
+],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06088ee8": {
+"ram": "0010dffc",
+"flash": "06088ee8",
+"sites": 1,
+"size_lines": 31,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"088dde",
+"088dde"
+],
+"caller_strings": []
+},
+"06088f06": {
+"ram": "0010e01a",
+"flash": "06088f06",
+"sites": 1,
+"size_lines": 20,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"088dde"
+],
+"caller_strings": []
+},
+"060890d4": {
+"ram": "0010e1e8",
+"flash": "060890d4",
+"sites": 1,
+"size_lines": 64,
+"glob_tags": [],
+"named_calls": [
+"delay_loop"
+],
+"overlay_calls": [
+"088eaa",
+"088f44"
+],
+"caller_strings": []
+},
+"060897ba": {
+"ram": "0010e8ce",
+"flash": "060897ba",
+"sites": 1,
+"size_lines": 22,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"089150",
+"089308"
+],
+"caller_strings": []
+},
+"060899c8": {
+"ram": "0010eadc",
+"flash": "060899c8",
+"sites": 1,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06089ba8": {
+"ram": "0010ecbc",
+"flash": "06089ba8",
+"sites": 1,
+"size_lines": 46,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0898dc"
+],
+"caller_strings": []
+},
+"06089c24": {
+"ram": "0010ed38",
+"flash": "06089c24",
+"sites": 1,
+"size_lines": 64,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0898dc"
+],
+"caller_strings": []
+},
+"06089d8a": {
+"ram": "0010ee9e",
+"flash": "06089d8a",
+"sites": 1,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"06089ec8": {
+"ram": "0010efdc",
+"flash": "06089ec8",
+"sites": 1,
+"size_lines": 74,
+"glob_tags": [
+"periph-A"
+],
+"named_calls": [],
+"overlay_calls": [
+"089c32"
+],
+"caller_strings": []
+},
+"0608a060": {
+"ram": "0010f174",
+"flash": "0608a060",
+"sites": 1,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608a06e": {
+"ram": "0010f182",
+"flash": "0608a06e",
+"sites": 1,
+"size_lines": 572,
+"glob_tags": [
+"OS-arrays",
+"core/IRQ",
+"periph-A"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"0898dc",
+"0898dc",
+"0898dc",
+"089c94",
+"089c94",
+"089c94",
+"089ca2",
+"089ca2",
+"089f34",
+"089f54",
+"089f60",
+"089fc2",
+"08aeac",
+"08af7e"
+],
+"caller_strings": []
+},
+"0608a402": {
+"ram": "0010f516",
+"flash": "0608a402",
+"sites": 1,
+"size_lines": 514,
+"glob_tags": [
+"OS-arrays",
+"periph-A"
+],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"0898dc",
+"0898dc",
+"0898dc",
+"089c94",
+"089c94",
+"089c94",
+"089c94",
+"089f34",
+"089f54",
+"089f6e",
+"089f6e",
+"089f6e",
+"089fc2",
+"089fc2",
+"089fc2",
+"089fc2",
+"089fc2",
+"08a084",
+"08a084",
+"08aeac",
+"08aef4",
+"08af7e",
+"08af88"
+],
+"caller_strings": []
+},
+"0608ad7a": {
+"ram": "0010fe8e",
+"flash": "0608ad7a",
+"sites": 1,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608adfe": {
+"ram": "0010ff12",
+"flash": "0608adfe",
+"sites": 1,
+"size_lines": 51,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608ae0c": {
+"ram": "0010ff20",
+"flash": "0608ae0c",
+"sites": 1,
+"size_lines": 44,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608ae72": {
+"ram": "0010ff86",
+"flash": "0608ae72",
+"sites": 1,
+"size_lines": 19,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08ad32"
+],
+"caller_strings": []
+},
+"0608afac": {
+"ram": "001100c0",
+"flash": "0608afac",
+"sites": 1,
+"size_lines": 29,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608b00a": {
+"ram": "0011011e",
+"flash": "0608b00a",
+"sites": 1,
+"size_lines": 35,
+"glob_tags": [
+"periph-A"
+],
+"named_calls": [],
+"overlay_calls": [
+"08aef4"
+],
+"caller_strings": []
+},
+"0608b104": {
+"ram": "00110218",
+"flash": "0608b104",
+"sites": 1,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608b124": {
+"ram": "00110238",
+"flash": "0608b124",
+"sites": 1,
+"size_lines": 18,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608b180": {
+"ram": "00110294",
+"flash": "0608b180",
+"sites": 1,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608b19e": {
+"ram": "001102b2",
+"flash": "0608b19e",
+"sites": 1,
+"size_lines": 8,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608b1b0": {
+"ram": "001102c4",
+"flash": "0608b1b0",
+"sites": 1,
+"size_lines": 49,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"088a0a",
+"088a0a",
+"08acbc",
+"08acc6"
+],
+"caller_strings": []
+},
+"0608b224": {
+"ram": "00110338",
+"flash": "0608b224",
+"sites": 1,
+"size_lines": 25,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"088a0a",
+"08acbc"
+],
+"caller_strings": []
+},
+"0608b69c": {
+"ram": "001107b0",
+"flash": "0608b69c",
+"sites": 1,
+"size_lines": 16,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608beb4": {
+"ram": "00110fc8",
+"flash": "0608beb4",
+"sites": 1,
+"size_lines": 208,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"08acae",
+"08be8e",
+"08bf56",
+"08bfb2"
+],
+"caller_strings": []
+},
+"0608ca60": {
+"ram": "00111b74",
+"flash": "0608ca60",
+"sites": 1,
+"size_lines": 339,
+"glob_tags": [],
+"named_calls": [
+"os_enter_critical",
+"os_exit_critical"
+],
+"overlay_calls": [
+"08708a",
+"087298",
+"088698",
+"088698",
+"08acae",
+"08bfb2",
+"08bff4",
+"08cc6e"
+],
+"caller_strings": []
+},
+"0608cd36": {
+"ram": "00111e4a",
+"flash": "0608cd36",
+"sites": 1,
+"size_lines": 135,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08708a",
+"087298",
+"08cc6e"
+],
+"caller_strings": []
+},
+"0608d9d8": {
+"ram": "00112aec",
+"flash": "0608d9d8",
+"sites": 1,
+"size_lines": 677,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"0877c8",
+"0877c8",
+"0877c8",
+"087988",
+"08bd7e",
+"08bd7e",
+"08bd7e",
+"08bdb4",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08be56",
+"08bfb2",
+"08bfb2",
+"08bfb2",
+"08bfb2",
+"08bfb2",
+"08bff4",
+"08bff4",
+"08bff4",
+"08bff4",
+"08c960"
+],
+"caller_strings": []
+},
+"0608e354": {
+"ram": "00113468",
+"flash": "0608e354",
+"sites": 1,
+"size_lines": 18,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [
+"08e24c"
+],
+"caller_strings": []
+},
+"0608e35c": {
+"ram": "00113470",
+"flash": "0608e35c",
+"sites": 1,
+"size_lines": 14,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608e36e": {
+"ram": "00113482",
+"flash": "0608e36e",
+"sites": 1,
+"size_lines": 11,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608e376": {
+"ram": "0011348a",
+"flash": "0608e376",
+"sites": 1,
+"size_lines": 20,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608e546": {
+"ram": "0011365a",
+"flash": "0608e546",
+"sites": 1,
+"size_lines": 188,
+"glob_tags": [
+"core/IRQ"
+],
+"named_calls": [],
+"overlay_calls": [
+"088e24",
+"08e41e",
+"08e41e",
+"08e41e",
+"08e432",
+"08e432",
+"08e432"
+],
+"caller_strings": []
+},
+"0608eae2": {
+"ram": "00113bf6",
+"flash": "0608eae2",
+"sites": 1,
+"size_lines": 14,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608eb88": {
+"ram": "00113c9c",
+"flash": "0608eb88",
+"sites": 1,
+"size_lines": 20,
+"glob_tags": [],
+"named_calls": [
+"delay_loop"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608eba0": {
+"ram": "00113cb4",
+"flash": "0608eba0",
+"sites": 1,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [
+"delay_loop"
+],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608ec3a": {
+"ram": "00113d4e",
+"flash": "0608ec3a",
+"sites": 1,
+"size_lines": 10,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608ec4a": {
+"ram": "00113d5e",
+"flash": "0608ec4a",
+"sites": 1,
+"size_lines": 12,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+},
+"0608efde": {
+"ram": "001140f2",
+"flash": "0608efde",
+"sites": 1,
+"size_lines": 13,
+"glob_tags": [],
+"named_calls": [],
+"overlay_calls": [],
+"caller_strings": []
+}
+}

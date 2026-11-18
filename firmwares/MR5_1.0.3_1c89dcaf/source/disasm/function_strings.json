@@ -1,0 +1,334 @@
+{
+ "sub_06000488": [
+  "bt_test"
+ ],
+ "sub_06000918": [
+  "JL_SPP"
+ ],
+ "sub_06001118": [
+  "IIS0_RX2"
+ ],
+ "sub_0600247a": [
+  "IIS0_RX2"
+ ],
+ "sub_0600a606": [
+  "IIS0_RX2"
+ ],
+ "sub_060021f8": [
+  "IIS0_RX2"
+ ],
+ "sub_0602b712": [
+  "IIS0_RX2"
+ ],
+ "sub_0602bb96": [
+  "IIS0_RX2"
+ ],
+ "sub_06000976": [
+  "IIS0_RX2"
+ ],
+ "sub_06005798": [
+  "IIS0_RX2"
+ ],
+ "sub_0601914e": [
+  "IIS0_RX2"
+ ],
+ "sub_06007e5c": [
+  "IIS0_RX2"
+ ],
+ "sub_06008742": [
+  "IIS0_RX2"
+ ],
+ "sub_06007f1a": [
+  "IIS0_RX2"
+ ],
+ "sub_0600ba7c": [
+  "IIS0_RX2",
+  "tone_zh/bt_conn.*"
+ ],
+ "sub_060731dc": [
+  "IIS0_RX2"
+ ],
+ "sub_0602b5ec": [
+  "IIS0_RX2"
+ ],
+ "sub_06001216": [
+  "flash"
+ ],
+ "sub_06001dba": [
+  "EXT_RESERVED"
+ ],
+ "sub_06001df2": [
+  "BassShelf_LB4"
+ ],
+ "sub_06001e12": [
+  "TrebShelf_LB4"
+ ],
+ "sub_06001e76": [
+  "jlstream_*"
+ ],
+ "sub_06004b74": [
+  "SHA-256"
+ ],
+ "sub_060035fe": [
+  "SHA-256"
+ ],
+ "sub_06003530": [
+  "SHA-256"
+ ],
+ "sub_060035a6": [
+  "SHA-256"
+ ],
+ "sub_06004f24": [
+  "pll_trim"
+ ],
+ "sub_06005cc8": [
+  "user_system"
+ ],
+ "sub_06006390": [
+  "SET_HP_GAIN"
+ ],
+ "sub_06006c16": [
+  "TST+DUT+SAV+"
+ ],
+ "sub_06007832": [
+  "VBass",
+  "smart_voice"
+ ],
+ "sub_06017b64": [
+  "tws_source"
+ ],
+ "sub_06007d8c": [
+  "tws_source"
+ ],
+ "sub_0600f55c": [
+  "DUT+TST+VER+GET+",
+  "Media",
+  "ring"
+ ],
+ "sub_06008634": [
+  "ring"
+ ],
+ "sub_06008bac": [
+  "usb_stack"
+ ],
+ "sub_0600b0e0": [
+  "%s%s"
+ ],
+ "sub_060099a6": [
+  "%s%s"
+ ],
+ "sub_0600a0b6": [
+  "MIXER7"
+ ],
+ "sub_0600b0a4": [
+  "MIXER7"
+ ],
+ "sub_0600b876": [
+  "Eq*Media"
+ ],
+ "sub_0600c870": [
+  "jl701n_V100-@20240417-$fcd444d5",
+  "tone_zh/normal.*"
+ ],
+ "sub_060359aa": [
+  "F111"
+ ],
+ "sub_0600e3d8": [
+  "F111"
+ ],
+ "sub_0600edc6": [
+  "tone"
+ ],
+ "sub_0600eec4": [
+  "a2dp"
+ ],
+ "sub_0601007a": [
+  "pc_spk"
+ ],
+ "sub_0602d510": [
+  "pc_spk"
+ ],
+ "sub_06016d36": [
+  "MusicEq"
+ ],
+ "sub_06013cf2": [
+  "MusicEq"
+ ],
+ "sub_06017a4e": [
+  "config397392"
+ ],
+ "sub_06017a96": [
+  "music"
+ ],
+ "sub_06017c92": [
+  "@333?\\2",
+  "flash/res/cfg_tool.bin"
+ ],
+ "sub_06018232": [
+  "esco",
+  "usr_systimer"
+ ],
+ "sub_06018a8e": [
+  "TST+BTN+STA"
+ ],
+ "sub_0602829e": [
+  "tone_zh/power_off.*"
+ ],
+ "sub_060194ea": [
+  "tone_zh/power_off.*"
+ ],
+ "sub_06028826": [
+  "tone_zh/power_off.*"
+ ],
+ "sub_0601cfd2": [
+  "111214"
+ ],
+ "sub_0602ddac": [
+  " !\"#$%",
+  "pmu_task"
+ ],
+ "sub_0602fb04": [
+  "pll1"
+ ],
+ "sub_0602fb88": [
+  "pll1"
+ ],
+ "sub_0602fd50": [
+  "A111"
+ ],
+ "sub_0602fd72": [
+  "1C016"
+ ],
+ "sub_0603044c": [
+  "112222"
+ ],
+ "sub_060305be": [
+  "1212"
+ ],
+ "sub_06030646": [
+  "Gain4"
+ ],
+ "sub_06030930": [
+  "&'()*+,-."
+ ],
+ "sub_060322c0": [
+  "1H11A"
+ ],
+ "sub_060322d8": [
+  "Fb04"
+ ],
+ "sub_060322fe": [
+  "b102211"
+ ],
+ "sub_06033bba": [
+  "1HA11"
+ ],
+ "sub_060327d0": [
+  "1HA11"
+ ],
+ "sub_06032714": [
+  "1HA11"
+ ],
+ "sub_06049bb4": [
+  "1H11A2221"
+ ],
+ "sub_060328d0": [
+  "1H11A2221"
+ ],
+ "sub_06049a6e": [
+  "1H11A2221",
+  "1H222"
+ ],
+ "sub_06032b1c": [
+  "1C004"
+ ],
+ "sub_06033b98": [
+  "Ac161"
+ ],
+ "sub_06034884": [
+  "FP11"
+ ],
+ "sub_06036e00": [
+  "11C010"
+ ],
+ "sub_060379f2": [
+  "jlstream"
+ ],
+ "sub_06038554": [
+  "jlstream_0"
+ ],
+ "sub_06038a26": [
+  "flash/res/"
+ ],
+ "sub_0603a99c": [
+  "decoder"
+ ],
+ "sub_0603e0b0": [
+  "msbc"
+ ],
+ "sub_0604c65c": [
+  "msbc"
+ ],
+ "sub_06045432": [
+  "DBG_REV"
+ ],
+ "sub_06044416": [
+  "DBG_REV"
+ ],
+ "sub_06044dae": [
+  "flash/res/p11_code.bin"
+ ],
+ "sub_06045174": [
+  "CxrwPrw",
+  "DBG_REV"
+ ],
+ "sub_060496f8": [
+  "H4_Controller"
+ ],
+ "sub_060499ce": [
+  "link_layer"
+ ],
+ "sub_0604b08e": [
+  "1Hc08"
+ ],
+ "sub_06050d16": [
+  " (08@HP"
+ ],
+ "sub_0606fb28": [
+  "EnergyMusic"
+ ],
+ "sub_0606ff4a": [
+  "DyEq"
+ ],
+ "sub_06072324": [
+  "app_dir_head"
+ ],
+ "sub_060724f4": [
+  "app_dir_head",
+  "ascii"
+ ],
+ "sub_06072a98": [
+  "dw_update"
+ ],
+ "sub_0607340e": [
+  "dw_update"
+ ],
+ "sub_06073210": [
+  "dw_update"
+ ],
+ "sub_06073f82": [
+  "btstack_lowpwer_deal"
+ ],
+ "sub_060760b6": [
+  "btstack_lowpwer_deal"
+ ],
+ "sub_06074948": [
+  "btstack_lowpwer_deal"
+ ],
+ "sub_06075104": [
+  "btstack_lowpwer_deal"
+ ],
+ "sub_060743ac": [
+  "btstack_lowpwer_deal"
+ ]
+}

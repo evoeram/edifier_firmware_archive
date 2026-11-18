@@ -1,0 +1,15 @@
+{
+  "product_id": 10021,
+  "model": "R990BT",
+  "requested_version": "0.0.0",
+  "code": 200,
+  "message": "获取成功",
+  "firmware_version": "1.0.1",
+  "firmware_url": "https://edifier-us-app.s3.us-east-2.amazonaws.com/product_firmware/20261104/R990BT_101_db_update_data_20261022_1793780984.bin",
+  "request_url": "https://foreign-app.edifier.com/home/api/v1/ota-upgrade?product_id=10021&os=1&mac=C8%3A24%3A78%3A12%3A34%3A56&current_version=0.0.0&app_version=1.0.32&app=13&timestamp=1794953326&sign=E4AEBF288DE7BFA1654873E875E972FD",
+  "sign_base": "app=13app_version=1.0.32current_version=0.0.0mac=C8:24:78:12:34:56os=1product_id=10021timestamp=17949533267rn$r44-jM",
+  "action": "DOWNLOADED",
+  "file": "/root/firmware/R990BT_1.0.1_f3977118.bin",
+  "size": 666143,
+  "sha256": "9b91343abcbea0cba061d553e3cd7db79a5201dbfe1f5657d07a03715d4316ce"
+}

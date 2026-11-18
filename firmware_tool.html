@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Edifier ConneX — загрузчик прошивок</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--fg:#e6edf3;--dim:#8b949e;--accent:#2f81f7;--ok:#3fb950;--warn:#d29922;--err:#f85149}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif}
+header{padding:22px 28px;border-bottom:1px solid var(--line);background:#11161c}
+h1{margin:0;font-size:20px}h1 small{color:var(--dim);font-weight:400;font-size:13px}
+main{max-width:1080px;margin:0 auto;padding:24px 20px 60px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;margin-bottom:18px}
+h2{margin:0 0 14px;font-size:15px;color:var(--accent)}
+label{display:block;margin:10px 0 4px;color:var(--dim);font-size:12px}
+input,select,textarea{width:100%;background:#0d1117;border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:9px 10px;font:14px/1.4 monospace}
+textarea{min-height:92px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+button{cursor:pointer;background:var(--accent);border:0;color:#fff;border-radius:6px;padding:10px 16px;font-weight:600;margin:14px 8px 0 0}
+button.ghost{background:#21262d;border:1px solid var(--line);color:var(--fg)}
+button:disabled{opacity:.5;cursor:not-allowed}
+.note{color:var(--dim);font-size:12px;margin-top:8px}
+pre{white-space:pre-wrap;word-break:break-all;background:#0d1117;border:1px solid var(--line);border-radius:6px;padding:12px;max-height:320px;overflow:auto;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:12px}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:600}
+a{color:var(--accent)}
+.badge{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;background:#1f6feb33;color:#79c0ff}
+.badge.ok{background:#23863633;color:#7ee787}
+.badge.err{background:#da363333;color:#ffa198}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+</style>
+</head>
+<body>
+<header>
+<h1>Edifier ConneX — загрузчик прошивок <small>реконструкция запроса из APK 1.0.32</small></h1>
+<div class="note">Запрос: <code>GET /home/api/v1/ota-upgrade</code> на <code>foreign-app.edifier.com</code>. Подпись: <code>MD5(sorted k=v… + секрет)</code>. CORS разрешён, поэтому страница работает прямо из файла.</div>
+</header>
+<main>
+
+<div class="panel">
+<h2>1. Устройство и параметры</h2>
+<div class="row">
+  <div>
+    <label>Модель (id из каталога)</label>
+    <select id="model"></select>
+  </div>
+  <div>
+    <label>MAC колонки/наушников</label>
+    <input id="mac" value="C8:24:78:12:34:56" placeholder="XX:XX:XX:XX:XX:XX">
+  </div>
+  <div>
+    <label>current_version (эмулируемая версия)</label>
+    <input id="version" value="0.0.0" placeholder="0.0.0">
+  </div>
+  <div>
+    <label>app_version</label>
+    <input id="appver" value="1.0.32">
+  </div>
+  <div>
+    <label>os</label>
+    <select id="os"><option value="1">1 — Android</option><option value="2">2 — iOS</option></select>
+  </div>
+  <div>
+    <label>app</label>
+    <select id="app"><option value="13">13 — Android (как в приложении)</option><option value="12">12</option><option value="1">1</option></select>
+  </div>
+  <div>
+    <label>lang_code (необязательно)</label>
+    <input id="lang" placeholder="например 1">
+  </div>
+  <div>
+    <label>Bearer tokens (Authorization, необязательно)</label>
+    <input id="auth" placeholder="можно оставить пустым">
+  </div>
+</div>
+<div class="note">
+  Чем меньше <code>current_version</code>, тем сервер охотнее отдаёт файл: <code>0.0.0</code> — надёжный способ вытянуть «последнюю» прошивку.
+  Если подставить реальную последнюю версию, ответ будет пустым <code>data:{}</code> — именно так приложение понимает, что обновления нет.
+</div>
+<div>
+  <button id="go">Найти прошивку</button>
+  <button id="curl" class="ghost">Копировать curl</button>
+  <button id="usingcat" class="ghost">Подставить версию из каталога</button>
+</div>
+</div>
+
+<div class="panel">
+<h2>2. Ответ</h2>
+<div id="status" class="note">—</div>
+<div id="result"></div>
+<pre id="raw">Здесь будет raw JSON…</pre>
+</div>
+
+<div class="panel">
+<h2>3. Перебор версий («эмуляция версии, которой нет»)</h2>
+<div class="note">Одна версия на строку. Для каждой будет выполнен отдельный запрос с теми же model/MAC. Так видно порог, при котором сервер начинает отдавать файл: API возвращает только последний `.bin`, исторических версий в нём нет.</div>
+<textarea id="versions">0.0.0
+0.0.1
+1.0.0
+1.0.1
+2.0.0
+2.1.0
+2.1.1
+</textarea>
+<button id="scan">Перебрать</button>
+<button id="stop" class="ghost" disabled>Стоп</button>
+<div id="scanout"></div>
+</div>
+
+<div class="panel">
+<h2>4. Как это устроено в коде</h2>
+<pre>AppRepository.getOtaUpdate(productId, mac, currentVersion)
+  map = {
+    product_id: id, os: 1, mac: mac,
+    current_version: version,
+    app_version: "1.0.32", app: "13"
+  }
+  if (lang_code) map.lang_code = ...
+  map.timestamp = String.format("%010d", now/1000)
+  map.sign = MD5( sort(keys).map(k =&gt; k+"="+map[k]).join("") + "7rn$r44-jM" ).toUpperCase()
+
+Api.getOtaUpdate(authorization, map)
+  GET https://foreign-app.edifier.com/home/api/v1/ota-upgrade?...&amp;sign=...
+
+Ответ: data.FirmwareVersionNo + data.FirmwareLinkUrl (S3 .bin)</pre>
+</div>
+
+</main>
+
+<script>
+/* ---------- модели из products_release.json (103 записи) ---------- */
+const PRODUCTS = [{"id":316,"name":"D32","ota":true,"last":""},{"id":318,"name":"S3000MKII","ota":false,"last":""},{"id":319,"name":"NeoBuds Pro 2","ota":false,"last":""},{"id":320,"name":"e25HD","ota":true,"last":"1.2.0"},{"id":321,"name":"QR65","ota":true,"last":""},{"id":323,"name":"X5 Pro","ota":false,"last":""},{"id":332,"name":"Comfo Run","ota":false,"last":""},{"id":334,"name":"W260NC","ota":false,"last":""},{"id":365,"name":"R990BT","ota":true,"last":"1.0.2"},{"id":369,"name":"STAX SPIRIT S5","ota":false,"last":""},{"id":376,"name":"W830NB","ota":true,"last":"1.0.7"},{"id":377,"name":"NeoBuds Pro","ota":false,"last":""},{"id":378,"name":"STAX SPIRIT S3","ota":false,"last":""},{"id":379,"name":"W240TN","ota":false,"last":""},{"id":380,"name":"W220T","ota":true,"last":""},{"id":381,"name":"TWS1 Pro 2","ota":false,"last":""},{"id":382,"name":"X5 Lite","ota":false,"last":""},{"id":383,"name":"MP85","ota":false,"last":""},{"id":389,"name":"QS30","ota":true,"last":""},{"id":390,"name":"D32","ota":true,"last":""},{"id":393,"name":"MG250","ota":false,"last":""},{"id":394,"name":"STAX SPIRIT S10","ota":true,"last":"1.1.1"},{"id":395,"name":"QD35","ota":false,"last":""},{"id":396,"name":"X2s","ota":false,"last":""},{"id":397,"name":"W320TN","ota":true,"last":""},{"id":398,"name":"W160T","ota":false,"last":""},{"id":399,"name":"WH700NB","ota":false,"last":""},{"id":400,"name":"W110T","ota":false,"last":""},{"id":401,"name":"X3 Lite","ota":false,"last":""},{"id":402,"name":"W210BT","ota":false,"last":""},{"id":403,"name":"W820NB Plus","ota":false,"last":""},{"id":404,"name":"WH950NB","ota":true,"last":""},{"id":405,"name":"WH500","ota":false,"last":""},{"id":406,"name":"W800BT Plus","ota":false,"last":""},{"id":407,"name":"W800BT Plus","ota":false,"last":""},{"id":422,"name":"NeoDots","ota":true,"last":""},{"id":423,"name":"W800BT Pro","ota":false,"last":""},{"id":424,"name":"S880DB MKII","ota":false,"last":""},{"id":478,"name":"QR30","ota":true,"last":"1.0.2"},{"id":482,"name":"LolliClip","ota":true,"last":"1.0.4"},{"id":481,"name":"ES20","ota":true,"last":"1.0.4"},{"id":480,"name":"ES60","ota":true,"last":"1.0.2"},{"id":477,"name":"ES850NB","ota":false,"last":""},{"id":471,"name":"Atom Max","ota":false,"last":""},{"id":470,"name":"T10","ota":false,"last":""},{"id":469,"name":"R1","ota":false,"last":""},{"id":468,"name":"W60","ota":false,"last":""},{"id":496,"name":"X3 Pro","ota":false,"last":""},{"id":504,"name":"G2 S","ota":false,"last":""},{"id":503,"name":"W280NB Pro","ota":false,"last":""},{"id":495,"name":"K750W","ota":false,"last":""},{"id":494,"name":"T30","ota":false,"last":""},{"id":493,"name":"NeoBuds Planar","ota":true,"last":"1.0.4"},{"id":492,"name":"W80","ota":true,"last":""},{"id":449,"name":"Comfo C","ota":false,"last":""},{"id":448,"name":"X1 Lite","ota":false,"last":""},{"id":450,"name":"W800BT SE","ota":false,"last":""},{"id":435,"name":"NeoBuds Plus","ota":true,"last":""},{"id":434,"name":"H9","ota":false,"last":""},{"id":433,"name":"WH700NB Pro","ota":false,"last":""},{"id":432,"name":"M60","ota":true,"last":"2.5.1"},{"id":431,"name":"V80","ota":false,"last":""},{"id":430,"name":"MR3","ota":true,"last":"1.0.8"},{"id":457,"name":"Comfo Flex","ota":false,"last":""},{"id":456,"name":"A6","ota":false,"last":""},{"id":451,"name":"W200T","ota":false,"last":""},{"id":562,"name":"EvoBuds","ota":true,"last":"1.0.2"},{"id":561,"name":"EvoBuds Pro","ota":false,"last":""},{"id":10010,"name":"R990BT","ota":true,"last":"1.0.6"},{"id":10009,"name":"G5 Max","ota":false,"last":""},{"id":10008,"name":"JoyBuds","ota":false,"last":""},{"id":10007,"name":"JoyBuds","ota":false,"last":""},{"id":10006,"name":"Comfo Bass","ota":false,"last":""},{"id":10005,"name":"S355DB","ota":true,"last":"2.1.1"},{"id":10003,"name":"R2750DB MKⅡ","ota":true,"last":"2.6.1"},{"id":10002,"name":"M90","ota":true,"last":"2.5.1"},{"id":10001,"name":"R20BT","ota":true,"last":"1.0.1"},{"id":590,"name":"P230 USB-C","ota":false,"last":""},{"id":521,"name":"MR5","ota":true,"last":"1.0.4"},{"id":520,"name":"QS20","ota":true,"last":"1.0.1"},{"id":519,"name":"Comfo Q","ota":false,"last":""},{"id":518,"name":"MP330","ota":true,"last":"1.0.2"},{"id":507,"name":"X2 Plus","ota":false,"last":""},{"id":506,"name":"NeoBuds Pro 3","ota":true,"last":""},{"id":548,"name":"W820NB Plus","ota":false,"last":""},{"id":547,"name":"X5 Pro","ota":false,"last":""},{"id":546,"name":"QD25","ota":true,"last":"1.0.1"},{"id":545,"name":"G1000 II","ota":false,"last":""},{"id":505,"name":"WH950NB","ota":false,"last":""},{"id":533,"name":"QR65","ota":false,"last":""},{"id":10019,"name":"WH880NB","ota":true,"last":""},{"id":10023,"name":"Comfo Bass Pro","ota":true,"last":"1.0.2"},{"id":10022,"name":"Comfo Q2","ota":true,"last":""},{"id":10021,"name":"R990BT","ota":true,"last":""},{"id":10020,"name":"M60（V26）","ota":true,"last":""},{"id":10011,"name":"MR4.5","ota":true,"last":""},{"id":10018,"name":"WH950NB Pro","ota":true,"last":""},{"id":10017,"name":"X2 Pro","ota":false,"last":""},{"id":10016,"name":"MR5","ota":true,"last":""},{"id":10015,"name":"R2750DB MKⅡ","ota":true,"last":""},{"id":10014,"name":"MR4 MKII","ota":true,"last":""},{"id":10013,"name":"MR4.5","ota":true,"last":""},{"id":10012,"name":"MR4 MKII","ota":true,"last":"1.0.2"}];
+
+/* ---------- MD5 (чистый JS, без библиотек) ---------- */
+function md5(input){
+  function add(x,y){const l=(x&0xffff)+(y&0xffff);return (((x>>16)+(y>>16)+(l>>16))<<16)|(l&0xffff);}
+  function rol(v,n){return (v<<n)|(v>>>(32-n));}
+  function cmn(q,a,b,x,s,t){return add(rol(add(add(a,q),add(x,t)),s),b);}
+  function ff(a,b,c,d,x,s,t){return cmn((b&c)|((~b)&d),a,b,x,s,t);}
+  function gg(a,b,c,d,x,s,t){return cmn((b&d)|(c&(~d)),a,b,x,s,t);}
+  function hh(a,b,c,d,x,s,t){return cmn(b^c^d,a,b,x,s,t);}
+  function ii(a,b,c,d,x,s,t){return cmn(c^(b|(~d)),a,b,x,s,t);}
+  const bytes=new TextEncoder().encode(input), len=bytes.length;
+  const n=((len+8)>>6)+1, x=new Array(n*16).fill(0);
+  for(let i=0;i<len;i++) x[i>>2]|=bytes[i]<<((i%4)*8);
+  x[len>>2]|=0x80<<((len%4)*8);
+  x[n*16-2]=len*8;
+  let a=1732584193,b=-271733879,c=-1732584194,d=271733878;
+  for(let i=0;i<x.length;i+=16){
+    const oa=a,ob=b,oc=c,od=d;
+    a=ff(a,b,c,d,x[i   ], 7,-680876936); d=ff(d,a,b,c,x[i+ 1],12,-389564586);
+    c=ff(c,d,a,b,x[i+ 2],17, 606105819); b=ff(b,c,d,a,x[i+ 3],22,-1044525330);
+    a=ff(a,b,c,d,x[i+ 4], 7,-176418897); d=ff(d,a,b,c,x[i+ 5],12, 1200080426);
+    c=ff(c,d,a,b,x[i+ 6],17,-1473231341); b=ff(b,c,d,a,x[i+ 7],22,  -45705983);
+    a=ff(a,b,c,d,x[i+ 8], 7, 1770035416); d=ff(d,a,b,c,x[i+ 9],12,-1958414417);
+    c=ff(c,d,a,b,x[i+10],17,     -42063); b=ff(b,c,d,a,x[i+11],22,-1990404162);
+    a=ff(a,b,c,d,x[i+12], 7, 1804603682); d=ff(d,a,b,c,x[i+13],12,  -40341101);
+    c=ff(c,d,a,b,x[i+14],17,-1502002290); b=ff(b,c,d,a,x[i+15],22, 1236535329);
+    a=gg(a,b,c,d,x[i+ 1], 5,-165796510); d=gg(d,a,b,c,x[i+ 6], 9,-1069501632);
+    c=gg(c,d,a,b,x[i+11],14, 643717713); b=gg(b,c,d,a,x[i   ],20, -373897302);
+    a=gg(a,b,c,d,x[i+ 5], 5,-701558691); d=gg(d,a,b,c,x[i+10], 9,   38016083);
+    c=gg(c,d,a,b,x[i+15],14,-660478335); b=gg(b,c,d,a,x[i+ 4],20, -405537848);
+    a=gg(a,b,c,d,x[i+ 9], 5, 568446438); d=gg(d,a,b,c,x[i+14], 9,-1019803690);
+    c=gg(c,d,a,b,x[i+ 3],14, -187363961); b=gg(b,c,d,a,x[i+ 8],20, 1163531501);
+    a=gg(a,b,c,d,x[i+13], 5,-1444681467); d=gg(d,a,b,c,x[i+ 2], 9,  -51403784);
+    c=gg(c,d,a,b,x[i+ 7],14, 1735328473); b=gg(b,c,d,a,x[i+12],20,-1926607734);
+    a=hh(a,b,c,d,x[i+ 5], 4,   -378558); d=hh(d,a,b,c,x[i+ 8],11,-2022574463);
+    c=hh(c,d,a,b,x[i+11],16, 1839030562); b=hh(b,c,d,a,x[i+14],23, -35309556);
+    a=hh(a,b,c,d,x[i+ 1], 4,-1530992060); d=hh(d,a,b,c,x[i+ 4],11, 1272893353);
+    c=hh(c,d,a,b,x[i+ 7],16, -155497632); b=hh(b,c,d,a,x[i+10],23,-1094730640);
+    a=hh(a,b,c,d,x[i+13], 4,  681279174); d=hh(d,a,b,c,x[i   ],11, -358537222);
+    c=hh(c,d,a,b,x[i+ 3],16, -722521979); b=hh(b,c,d,a,x[i+ 6],23,   76029189);
+    a=hh(a,b,c,d,x[i+ 9], 4, -640364487); d=hh(d,a,b,c,x[i+12],11, -421815835);
+    c=hh(c,d,a,b,x[i+15],16,  530742520); b=hh(b,c,d,a,x[i+ 2],23, -995338651);
+    a=ii(a,b,c,d,x[i   ], 6,-198630844); d=ii(d,a,b,c,x[i+ 7],10, 1126891415);
+    c=ii(c,d,a,b,x[i+14],15,-1416354905); b=ii(b,c,d,a,x[i+ 5],21,  -57434055);
+    a=ii(a,b,c,d,x[i+12], 6, 1700485571); d=ii(d,a,b,c,x[i+ 3],10,-1894986606);
+    c=ii(c,d,a,b,x[i+10],15,     -1051523); b=ii(b,c,d,a,x[i+ 1],21,-2054922799);
+    a=ii(a,b,c,d,x[i+ 8], 6, 1873313359); d=ii(d,a,b,c,x[i+15],10,  -30611744);
+    c=ii(c,d,a,b,x[i+ 6],15,-1560198380); b=ii(b,c,d,a,x[i+13],21, 1309151649);
+    a=ii(a,b,c,d,x[i+ 4], 6, -145523070); d=ii(d,a,b,c,x[i+11],10,-1120210379);
+    c=ii(c,d,a,b,x[i+ 2],15,  718787259); b=ii(b,c,d,a,x[i+ 9],21, -343485551);
+    a=add(a,oa);b=add(b,ob);c=add(c,oc);d=add(d,od);
+  }
+  const out=[a,b,c,d], hex=[];
+  for(let i=0;i<4;i++){
+    for(let j=0;j<4;j++) hex.push(((out[i]>>(j*8))&255).toString(16).padStart(2,'0'));
+  }
+  return hex.join('').toUpperCase();
+}
+
+/* ---------- элементы ---------- */
+const $=id=>document.getElementById(id);
+const model=$('model');
+const ota=PRODUCTS.filter(p=>p.ota), other=PRODUCTS.filter(p=>!p.ota);
+function group(label,list){
+  const g=document.createElement('optgroup');g.label=label;
+  list.forEach(p=>{const o=document.createElement('option');o.value=String(p.id);o.textContent=`${p.name}  (id ${p.id}${p.last?', '+p.last:''})`;g.appendChild(o);});
+  model.appendChild(g);
+}
+group('Поддерживают OTA ('+ota.length+')',ota);
+group('Остальные модели ('+other.length+')',other);
+model.value='10005';
+
+function buildParams(version){
+  const p={
+    product_id: model.value,
+    os: $('os').value,
+    mac: $('mac').value.trim(),
+    current_version: version,
+    app_version: $('appver').value.trim(),
+    app: $('app').value
+  };
+  const lang=$('lang').value.trim();
+  if(lang) p.lang_code=lang;
+  p.timestamp=String(Math.floor(Date.now()/1000)).padStart(10,'0');
+  const signBase=Object.keys(p).sort().map(k=>k+'='+p[k]).join('')+'7rn$r44-jM';
+  p.sign=md5(signBase);
+  return {params:p,signBase};
+}
+const BASE='https://foreign-app.edifier.com/home/api/v1/ota-upgrade';
+function makeUrl(p){return BASE+'?'+new URLSearchParams(p).toString();}
+
+function renderResult(json,url){
+  $('raw').textContent=JSON.stringify(json,null,2);
+  const box=$('result');box.innerHTML='';
+  const d=json&&json.data;
+  if(json&&json.code===200&&d&&d.FirmwareLinkUrl){
+    const ver=d.FirmwareVersionNo||'?';
+    box.innerHTML=`
+      <p><span class="badge ok">OK</span> Версия сервера: <b>${ver}</b></p>
+      <p><a href="${d.FirmwareLinkUrl}" download target="_blank" rel="noopener">Скачать .bin</a> &nbsp;
+         <button class="ghost" onclick="window.open('${d.FirmwareLinkUrl}','_blank')">Открыть</button></p>
+      <p class="note">${d.FirmwareLinkUrl}</p>
+      <p class="note">type=${d.type||''} · rule_type=${d.rule_type||''} · окно ${d.upgrade_start_time||''}–${d.upgrade_end_time||''}</p>`;
+  }else{
+    box.innerHTML=`<p><span class="badge err">${json?(json.code+' / '+json.message):'ошибка'}</span> Файл не выдан (обычно это значит, что current_version >= последней версии).</p>`;
+  }
+}
+
+async function request(version){
+  const {params,signBase}=buildParams(version);
+  const url=makeUrl(params);
+  const headers={};
+  const tok=$('auth').value.trim();
+  if(tok) headers.Authorization='Bearer '+tok;
+  const r=await fetch(url,{headers});
+  let j;try{j=await r.json();}catch(e){j={code:r.status,message:'не JSON',raw:await r.text()};}
+  return {j,url,signBase};
+}
+
+$('go').onclick=async()=>{
+  $('status').textContent='Запрос…';$('go').disabled=true;
+  try{
+    const {j,url,signBase}=await request($('version').value.trim()||'0.0.0');
+    $('status').textContent='Готово. sign строка: '+signBase;
+    renderResult(j,url);
+  }catch(e){$('status').textContent='Ошибка: '+e;$('raw').textContent=String(e);}
+  finally{$('go').disabled=false;}
+};
+
+$('usingcat').onclick=()=>{
+  const p=PRODUCTS.find(x=>String(x.id)===model.value);
+  if(p&&p.last){$('version').value=p.last;$('status').textContent='Подставлена версия из каталога: '+p.last;}
+  else $('status').textContent='У этой модели версия в каталоге не указана';
+};
+
+$('curl').onclick=async()=>{
+  const {params,signBase}=buildParams($('version').value.trim()||'0.0.0');
+  const cmd="curl -sS -H 'Authorization;' '"+makeUrl(params)+"'";
+  try{await navigator.clipboard.writeText(cmd);$('status').textContent='curl скопирован';}
+  catch(e){$('status').textContent=cmd;}
+};
+
+let scanning=false;
+$('scan').onclick=async()=>{
+  if(scanning)return;
+  scanning=true;$('scan').disabled=true;$('stop').disabled=false;
+  const versions=$('versions').value.split(/[\r\n]+/).map(s=>s.trim()).filter(Boolean);
+  const rows=[];
+  for(const v of versions){
+    if(!scanning)break;
+    $('status').textContent='Проверяем '+v+' …';
+    try{
+      const {j}=await request(v);
+      const d=j&&j.data;
+      rows.push({v,code:j?j.code:'?',ver:d&&d.FirmwareVersionNo||'',url:d&&d.FirmwareLinkUrl||''});
+    }catch(e){rows.push({v,code:'ERR',ver:'',url:String(e)});}
+    drawScan(rows);
+    await new Promise(r=>setTimeout(r,220));
+  }
+  $('status').textContent='Перебор завершён';
+  scanning=false;$('scan').disabled=false;$('stop').disabled=true;
+};
+$('stop').onclick=()=>{scanning=false;$('status').textContent='Остановлено';};
+function drawScan(rows){
+  $('scanout').innerHTML='<table><tr><th>current_version</th><th>code</th><th>версия сервера</th><th>ссылка</th></tr>'+
+    rows.map(r=>`<tr><td><code>${r.v}</code></td><td>${r.code}</td><td><b>${r.ver||'—'}</b></td><td>${r.url?`<a href="${r.url}" target="_blank" rel="noopener">${r.url}</a>`:'—'}</td></tr>`).join('')+'</table>';
+}
+</script>
+</body>
+</html>

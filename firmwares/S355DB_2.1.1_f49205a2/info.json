@@ -1,0 +1,15 @@
+{
+  "product_id": 10005,
+  "model": "S355DB",
+  "requested_version": "0.0.0",
+  "code": 200,
+  "message": "获取成功",
+  "firmware_version": "2.1.1",
+  "firmware_url": "https://edifier-us-app.s3.us-east-2.amazonaws.com/product_firmware/20260727/44fd53333ff75d37a0b2ad0af1074b40.bin",
+  "request_url": "https://foreign-app.edifier.com/home/api/v1/ota-upgrade?product_id=10005&os=1&mac=C8%3A24%3A78%3A12%3A34%3A56&current_version=0.0.0&app_version=1.0.32&app=13&timestamp=1794953291&sign=73B99ADC5A72A627E632DDA1027D1EA0",
+  "sign_base": "app=13app_version=1.0.32current_version=0.0.0mac=C8:24:78:12:34:56os=1product_id=10005timestamp=17949532917rn$r44-jM",
+  "action": "DOWNLOADED",
+  "file": "/root/firmware/S355DB_2.1.1_f49205a2.bin",
+  "size": 809689,
+  "sha256": "a29b125533ef7749d5e0fbc244e35742aa5a73945dcc34ef369b06b27e6cd10e"
+}

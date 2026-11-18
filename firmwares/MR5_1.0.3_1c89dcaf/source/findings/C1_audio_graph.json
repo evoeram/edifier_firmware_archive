@@ -1,0 +1,8645 @@
+{
+ "nodes": [
+  {
+   "crc": 27045,
+   "param": 1,
+   "name": "IIS0_TX4"
+  },
+  {
+   "crc": 29923,
+   "param": 1,
+   "name": "Vol_SysTone"
+  },
+  {
+   "crc": 29923,
+   "param": 2,
+   "name": "Vol_SysKTone"
+  },
+  {
+   "crc": 29923,
+   "param": 53,
+   "name": "Vol_SysRing"
+  },
+  {
+   "crc": 42358,
+   "param": 1,
+   "name": "config423581"
+  },
+  {
+   "crc": 42358,
+   "param": 19,
+   "name": "config4235819"
+  },
+  {
+   "crc": 55829,
+   "param": 18,
+   "name": "ChannelExpand18"
+  },
+  {
+   "crc": 56525,
+   "param": 24,
+   "name": "DAC24"
+  },
+  {
+   "crc": 58922,
+   "param": 1,
+   "name": "MIXER1"
+  },
+  {
+   "crc": 26979,
+   "param": 1,
+   "name": "IIS0_RX1"
+  },
+  {
+   "crc": 26979,
+   "param": 2,
+   "name": "IIS0_RX2"
+  },
+  {
+   "crc": 27045,
+   "param": 2,
+   "name": "IIS0_TX1"
+  },
+  {
+   "crc": 27045,
+   "param": 3,
+   "name": "IIS0_TX3"
+  },
+  {
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf"
+  },
+  {
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf"
+  },
+  {
+   "crc": 29563,
+   "param": 51,
+   "name": "EQDIY"
+  },
+  {
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2"
+  },
+  {
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2"
+  },
+  {
+   "crc": 29563,
+   "param": 54,
+   "name": "EQDIY_2"
+  },
+  {
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2"
+  },
+  {
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3"
+  },
+  {
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3"
+  },
+  {
+   "crc": 29563,
+   "param": 59,
+   "name": "EQDIY_3"
+  },
+  {
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4"
+  },
+  {
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4"
+  },
+  {
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic"
+  },
+  {
+   "crc": 29563,
+   "param": 63,
+   "name": "EQDIY_4"
+  },
+  {
+   "crc": 29923,
+   "param": 49,
+   "name": "Vol_BtmMusic2"
+  },
+  {
+   "crc": 29923,
+   "param": 51,
+   "name": "Vol_LinMusic2"
+  },
+  {
+   "crc": 29923,
+   "param": 81,
+   "name": "Vol_LinMusic"
+  },
+  {
+   "crc": 29923,
+   "param": 92,
+   "name": "Vol_BtmMusic"
+  },
+  {
+   "crc": 39739,
+   "param": 12,
+   "name": "config397392"
+  },
+  {
+   "crc": 39739,
+   "param": 21,
+   "name": "9B3B21"
+  },
+  {
+   "crc": 41544,
+   "param": 1,
+   "name": "EnergyMusic"
+  },
+  {
+   "crc": 41544,
+   "param": 2,
+   "name": "I2SEnergyMusic"
+  },
+  {
+   "crc": 41544,
+   "param": 3,
+   "name": "EnergyMusic2"
+  },
+  {
+   "crc": 41544,
+   "param": 4,
+   "name": "I2SEnergyMusic2"
+  },
+  {
+   "crc": 42358,
+   "param": 16,
+   "name": "A57616"
+  },
+  {
+   "crc": 42358,
+   "param": 18,
+   "name": "config4235818"
+  },
+  {
+   "crc": 43268,
+   "param": 1,
+   "name": "SET_HP_GAIN"
+  },
+  {
+   "crc": 43268,
+   "param": 2,
+   "name": "AUX_DAC_GAIN"
+  },
+  {
+   "crc": 43268,
+   "param": 3,
+   "name": "SET_HP_GAIN2"
+  },
+  {
+   "crc": 43268,
+   "param": 4,
+   "name": "AUX_DAC_GAIN2"
+  },
+  {
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3"
+  },
+  {
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25"
+  },
+  {
+   "crc": 57086,
+   "param": 5,
+   "name": "DRC5"
+  },
+  {
+   "crc": 57086,
+   "param": 31,
+   "name": "DRC31"
+  },
+  {
+   "crc": 63861,
+   "param": 6,
+   "name": "A2DP_RX6"
+  },
+  {
+   "crc": 63861,
+   "param": 7,
+   "name": "A2DP_RX7"
+  },
+  {
+   "crc": 29563,
+   "param": 10,
+   "name": "EscoUlEq"
+  },
+  {
+   "crc": 29563,
+   "param": 11,
+   "name": "EscoDlEq"
+  },
+  {
+   "crc": 29923,
+   "param": 9,
+   "name": "Vol_BtcCall"
+  },
+  {
+   "crc": 42358,
+   "param": 6,
+   "name": "config423586"
+  },
+  {
+   "crc": 53357,
+   "param": 1,
+   "name": "esco_adc"
+  },
+  {
+   "crc": 53436,
+   "param": 1,
+   "name": "MIC534361"
+  },
+  {
+   "crc": 55829,
+   "param": 42,
+   "name": "ChannelExpand42"
+  },
+  {
+   "crc": 56525,
+   "param": 2,
+   "name": "DAC2"
+  },
+  {
+   "crc": 29563,
+   "param": 17,
+   "name": "EQ17"
+  },
+  {
+   "crc": 29923,
+   "param": 47,
+   "name": "Vol_PcspkMusic"
+  },
+  {
+   "crc": 39739,
+   "param": 14,
+   "name": "config3973914"
+  },
+  {
+   "crc": 53357,
+   "param": 13,
+   "name": "ADC13"
+  },
+  {
+   "crc": 60246,
+   "param": 1,
+   "name": "pcspk"
+  }
+ ],
+ "edges": [
+  {
+   "crc": 30324,
+   "word": 168
+  },
+  {
+   "crc": 30346,
+   "word": 1
+  },
+  {
+   "crc": 6789,
+   "word": 1
+  },
+  {
+   "crc": 6789,
+   "word": 1
+  },
+  {
+   "crc": 42358,
+   "word": 1
+  },
+  {
+   "crc": 42358,
+   "word": 1
+  },
+  {
+   "crc": 29923,
+   "word": 1
+  },
+  {
+   "crc": 29923,
+   "word": 1
+  },
+  {
+   "crc": 58922,
+   "word": 1
+  },
+  {
+   "crc": 58922,
+   "word": 1
+  },
+  {
+   "crc": 55829,
+   "word": 274
+  },
+  {
+   "crc": 55829,
+   "word": 274
+  },
+  {
+   "crc": 55569,
+   "word": 9
+  },
+  {
+   "crc": 55569,
+   "word": 265
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 55569,
+   "word": 521
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 55569,
+   "word": 777
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 55569,
+   "word": 1033
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 55569,
+   "word": 1289
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 55569,
+   "word": 9
+  },
+  {
+   "crc": 56525,
+   "word": 24
+  },
+  {
+   "crc": 55569,
+   "word": 1545
+  },
+  {
+   "crc": 27045,
+   "word": 1
+  },
+  {
+   "crc": 33606,
+   "word": 1
+  },
+  {
+   "crc": 6789,
+   "word": 2
+  },
+  {
+   "crc": 6789,
+   "word": 2
+  },
+  {
+   "crc": 7885,
+   "word": 16
+  },
+  {
+   "crc": 7885,
+   "word": 16
+  },
+  {
+   "crc": 29923,
+   "word": 2
+  },
+  {
+   "crc": 29923,
+   "word": 2
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 51932,
+   "word": 8
+  },
+  {
+   "crc": 6789,
+   "word": 51
+  },
+  {
+   "crc": 6789,
+   "word": 51
+  },
+  {
+   "crc": 42358,
+   "word": 19
+  },
+  {
+   "crc": 42358,
+   "word": 19
+  },
+  {
+   "crc": 29923,
+   "word": 53
+  },
+  {
+   "crc": 29923,
+   "word": 53
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 5128,
+   "word": 368
+  },
+  {
+   "crc": 29563,
+   "word": 49
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 29563,
+   "word": 50
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 29563,
+   "word": 52
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 29563,
+   "word": 53
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 6789,
+   "word": 44
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 63861,
+   "word": 7
+  },
+  {
+   "crc": 6789,
+   "word": 50
+  },
+  {
+   "crc": 6789,
+   "word": 50
+  },
+  {
+   "crc": 60799,
+   "word": 10
+  },
+  {
+   "crc": 60799,
+   "word": 10
+  },
+  {
+   "crc": 42358,
+   "word": 18
+  },
+  {
+   "crc": 42358,
+   "word": 18
+  },
+  {
+   "crc": 41544,
+   "word": 1
+  },
+  {
+   "crc": 41544,
+   "word": 257
+  },
+  {
+   "crc": 29923,
+   "word": 92
+  },
+  {
+   "crc": 29923,
+   "word": 92
+  },
+  {
+   "crc": 29563,
+   "word": 51
+  },
+  {
+   "crc": 29563,
+   "word": 51
+  },
+  {
+   "crc": 29563,
+   "word": 62
+  },
+  {
+   "crc": 29563,
+   "word": 62
+  },
+  {
+   "crc": 32229,
+   "word": 3
+  },
+  {
+   "crc": 32229,
+   "word": 259
+  },
+  {
+   "crc": 27045,
+   "word": 2
+  },
+  {
+   "crc": 26979,
+   "word": 1
+  },
+  {
+   "crc": 39739,
+   "word": 268
+  },
+  {
+   "crc": 39739,
+   "word": 268
+  },
+  {
+   "crc": 41544,
+   "word": 2
+  },
+  {
+   "crc": 41544,
+   "word": 258
+  },
+  {
+   "crc": 43268,
+   "word": 2
+  },
+  {
+   "crc": 43268,
+   "word": 258
+  },
+  {
+   "crc": 29923,
+   "word": 81
+  },
+  {
+   "crc": 29923,
+   "word": 81
+  },
+  {
+   "crc": 29563,
+   "word": 54
+  },
+  {
+   "crc": 29563,
+   "word": 54
+  },
+  {
+   "crc": 29563,
+   "word": 56
+  },
+  {
+   "crc": 29563,
+   "word": 56
+  },
+  {
+   "crc": 32229,
+   "word": 21
+  },
+  {
+   "crc": 32229,
+   "word": 277
+  },
+  {
+   "crc": 27045,
+   "word": 3
+  },
+  {
+   "crc": 63861,
+   "word": 6
+  },
+  {
+   "crc": 6789,
+   "word": 42
+  },
+  {
+   "crc": 6789,
+   "word": 42
+  },
+  {
+   "crc": 60799,
+   "word": 12
+  },
+  {
+   "crc": 60799,
+   "word": 12
+  },
+  {
+   "crc": 42358,
+   "word": 16
+  },
+  {
+   "crc": 42358,
+   "word": 16
+  },
+  {
+   "crc": 41544,
+   "word": 3
+  },
+  {
+   "crc": 41544,
+   "word": 259
+  },
+  {
+   "crc": 29923,
+   "word": 49
+  },
+  {
+   "crc": 29923,
+   "word": 49
+  },
+  {
+   "crc": 29563,
+   "word": 57
+  },
+  {
+   "crc": 29563,
+   "word": 57
+  },
+  {
+   "crc": 29563,
+   "word": 58
+  },
+  {
+   "crc": 29563,
+   "word": 58
+  },
+  {
+   "crc": 29563,
+   "word": 59
+  },
+  {
+   "crc": 29563,
+   "word": 59
+  },
+  {
+   "crc": 43268,
+   "word": 1
+  },
+  {
+   "crc": 43268,
+   "word": 257
+  },
+  {
+   "crc": 57086,
+   "word": 31
+  },
+  {
+   "crc": 57086,
+   "word": 31
+  },
+  {
+   "crc": 32229,
+   "word": 16
+  },
+  {
+   "crc": 32229,
+   "word": 272
+  },
+  {
+   "crc": 56525,
+   "word": 21
+  },
+  {
+   "crc": 26979,
+   "word": 2
+  },
+  {
+   "crc": 39739,
+   "word": 277
+  },
+  {
+   "crc": 39739,
+   "word": 277
+  },
+  {
+   "crc": 41544,
+   "word": 4
+  },
+  {
+   "crc": 41544,
+   "word": 260
+  },
+  {
+   "crc": 43268,
+   "word": 4
+  },
+  {
+   "crc": 43268,
+   "word": 260
+  },
+  {
+   "crc": 29923,
+   "word": 51
+  },
+  {
+   "crc": 29923,
+   "word": 51
+  },
+  {
+   "crc": 29563,
+   "word": 60
+  },
+  {
+   "crc": 29563,
+   "word": 60
+  },
+  {
+   "crc": 29563,
+   "word": 61
+  },
+  {
+   "crc": 29563,
+   "word": 61
+  },
+  {
+   "crc": 29563,
+   "word": 63
+  },
+  {
+   "crc": 29563,
+   "word": 63
+  },
+  {
+   "crc": 43268,
+   "word": 3
+  },
+  {
+   "crc": 43268,
+   "word": 259
+  },
+  {
+   "crc": 57086,
+   "word": 5
+  },
+  {
+   "crc": 57086,
+   "word": 5
+  },
+  {
+   "crc": 32229,
+   "word": 20
+  },
+  {
+   "crc": 32229,
+   "word": 276
+  },
+  {
+   "crc": 56525,
+   "word": 25
+  },
+  {
+   "crc": 6789,
+   "word": 43
+  },
+  {
+   "crc": 0,
+   "word": 0
+  },
+  {
+   "crc": 47633,
+   "word": 96
+  },
+  {
+   "crc": 33880,
+   "word": 1
+  },
+  {
+   "crc": 6789,
+   "word": 6
+  },
+  {
+   "crc": 6789,
+   "word": 6
+  },
+  {
+   "crc": 60799,
+   "word": 5
+  },
+  {
+   "crc": 60799,
+   "word": 5
+  },
+  {
+   "crc": 29563,
+   "word": 11
+  },
+  {
+   "crc": 29563,
+   "word": 11
+  },
+  {
+   "crc": 42358,
+   "word": 6
+  },
+  {
+   "crc": 42358,
+   "word": 6
+  },
+  {
+   "crc": 29923,
+   "word": 9
+  },
+  {
+   "crc": 29923,
+   "word": 9
+  },
+  {
+   "crc": 55829,
+   "word": 298
+  },
+  {
+   "crc": 55829,
+   "word": 298
+  },
+  {
+   "crc": 32229,
+   "word": 4
+  },
+  {
+   "crc": 32229,
+   "word": 260
+  },
+  {
+   "crc": 56525,
+   "word": 2
+  },
+  {
+   "crc": 53357,
+   "word": 1
+  },
+  {
+   "crc": 53436,
+   "word": 1
+  },
+  {
+   "crc": 53436,
+   "word": 1
+  },
+  {
+   "crc": 29563,
+   "word": 10
+  },
+  {
+   "crc": 29563,
+   "word": 10
+  },
+  {
+   "crc": 2604,
+   "word": 1
+  },
+  {
+   "crc": 2604,
+   "word": 1
+  },
+  {
+   "crc": 33946,
+   "word": 1
+  },
+  {
+   "crc": 56461,
+   "word": 56
+  },
+  {
+   "crc": 53638,
+   "word": 1
+  },
+  {
+   "crc": 39739,
+   "word": 270
+  },
+  {
+   "crc": 39739,
+   "word": 270
+  },
+  {
+   "crc": 6789,
+   "word": 34
+  },
+  {
+   "crc": 6789,
+   "word": 34
+  },
+  {
+   "crc": 29923,
+   "word": 47
+  },
+  {
+   "crc": 29923,
+   "word": 47
+  },
+  {
+   "crc": 60246,
+   "word": 1
+  },
+  {
+   "crc": 53357,
+   "word": 13
+  },
+  {
+   "crc": 29563,
+   "word": 17
+  },
+  {
+   "crc": 29563,
+   "word": 17
+  },
+  {
+   "crc": 7885,
+   "word": 13
+  },
+  {
+   "crc": 7885,
+   "word": 13
+  },
+  {
+   "crc": 46865,
+   "word": 1
+  }
+ ],
+ "descriptors": [
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 8084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 8284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 8484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 8684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 8884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 9084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 9284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 9484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 9684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 9884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 10084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 10284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 10484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35043,
+   "idx": 13,
+   "block_off": 10684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35044,
+   "idx": 14,
+   "block_off": 10884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35045,
+   "idx": 15,
+   "block_off": 11084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35046,
+   "idx": 16,
+   "block_off": 11284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35047,
+   "idx": 17,
+   "block_off": 11484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35048,
+   "idx": 18,
+   "block_off": 11684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35049,
+   "idx": 19,
+   "block_off": 11884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35073,
+   "idx": 20,
+   "block_off": 12084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35074,
+   "idx": 21,
+   "block_off": 12284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35075,
+   "idx": 22,
+   "block_off": 12484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35076,
+   "idx": 23,
+   "block_off": 12684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35077,
+   "idx": 24,
+   "block_off": 12884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 49,
+   "name": "BassShelf",
+   "id_a": 38496,
+   "id_b": 35078,
+   "idx": 25,
+   "block_off": 13084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 13284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 13484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 13684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 13884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 14084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 14284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 14484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 14684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 14884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 15084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 15284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 15484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 50,
+   "name": "TrebShelf",
+   "id_a": 42532,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 15684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 51,
+   "name": "EQDIY",
+   "id_a": 12449,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 15884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 8084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 8284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 8484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 8684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 8884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 9084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 9284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 9484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 9684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 9884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 10084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 10284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 10484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35043,
+   "idx": 13,
+   "block_off": 10684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35044,
+   "idx": 14,
+   "block_off": 10884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35045,
+   "idx": 15,
+   "block_off": 11084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35046,
+   "idx": 16,
+   "block_off": 11284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35047,
+   "idx": 17,
+   "block_off": 11484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35048,
+   "idx": 18,
+   "block_off": 11684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35049,
+   "idx": 19,
+   "block_off": 11884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35073,
+   "idx": 20,
+   "block_off": 12084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35074,
+   "idx": 21,
+   "block_off": 12284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35075,
+   "idx": 22,
+   "block_off": 12484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35076,
+   "idx": 23,
+   "block_off": 12684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35077,
+   "idx": 24,
+   "block_off": 12884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 52,
+   "name": "BassShelf_LB2",
+   "id_a": 10847,
+   "id_b": 35078,
+   "idx": 25,
+   "block_off": 13084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 13284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 13484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 13684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 13884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 14084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 14284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 14484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 14684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 14884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 15084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 15284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 15484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 53,
+   "name": "TrebShelf_LB2",
+   "id_a": 31779,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 15684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 54,
+   "name": "EQDIY_2",
+   "id_a": 59730,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 16084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 16284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 16484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 16684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 16884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 17084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 17284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 17484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 17684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 17884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 18084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 56,
+   "name": "Desk_Acoustic_2",
+   "id_a": 58487,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 18284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 8084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 8284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 8484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 8684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 8884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 9084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 9284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 9484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 9684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 9884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 10084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 10284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 10484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35043,
+   "idx": 13,
+   "block_off": 10684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35044,
+   "idx": 14,
+   "block_off": 10884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35045,
+   "idx": 15,
+   "block_off": 11084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35046,
+   "idx": 16,
+   "block_off": 11284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35047,
+   "idx": 17,
+   "block_off": 11484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35048,
+   "idx": 18,
+   "block_off": 11684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35049,
+   "idx": 19,
+   "block_off": 11884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35073,
+   "idx": 20,
+   "block_off": 12084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35074,
+   "idx": 21,
+   "block_off": 12284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35075,
+   "idx": 22,
+   "block_off": 12484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35076,
+   "idx": 23,
+   "block_off": 12684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35077,
+   "idx": 24,
+   "block_off": 12884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 57,
+   "name": "BassShelf_LB3",
+   "id_a": 10848,
+   "id_b": 35078,
+   "idx": 25,
+   "block_off": 13084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 13284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 13484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 13684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 13884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 14084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 14284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 14484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 14684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 14884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 15084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 15284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 15484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 58,
+   "name": "TrebShelf_LB3",
+   "id_a": 31780,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 15684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 59,
+   "name": "EQDIY_3",
+   "id_a": 59731,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 16084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 8084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 8284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 8484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 8684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 8884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 9084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 9284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 9484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 9684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 9884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 10084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 10284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 10484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35043,
+   "idx": 13,
+   "block_off": 10684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35044,
+   "idx": 14,
+   "block_off": 10884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35045,
+   "idx": 15,
+   "block_off": 11084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35046,
+   "idx": 16,
+   "block_off": 11284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35047,
+   "idx": 17,
+   "block_off": 11484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35048,
+   "idx": 18,
+   "block_off": 11684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35049,
+   "idx": 19,
+   "block_off": 11884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35073,
+   "idx": 20,
+   "block_off": 12084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35074,
+   "idx": 21,
+   "block_off": 12284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35075,
+   "idx": 22,
+   "block_off": 12484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35076,
+   "idx": 23,
+   "block_off": 12684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35077,
+   "idx": 24,
+   "block_off": 12884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 60,
+   "name": "BassShelf_LB4",
+   "id_a": 10849,
+   "id_b": 35078,
+   "idx": 25,
+   "block_off": 13084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 13284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 13484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 13684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 13884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 14084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 14284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 14484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 14684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 14884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 15084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 15284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 35041,
+   "idx": 11,
+   "block_off": 15484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 61,
+   "name": "TrebShelf_LB4",
+   "id_a": 31781,
+   "id_b": 35042,
+   "idx": 12,
+   "block_off": 15684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 16284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 16484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12977,
+   "idx": 2,
+   "block_off": 16684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12978,
+   "idx": 3,
+   "block_off": 16884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12979,
+   "idx": 4,
+   "block_off": 17084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12980,
+   "idx": 5,
+   "block_off": 17284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12981,
+   "idx": 6,
+   "block_off": 17484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12982,
+   "idx": 7,
+   "block_off": 17684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12983,
+   "idx": 8,
+   "block_off": 17884,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 12984,
+   "idx": 9,
+   "block_off": 18084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 62,
+   "name": "Desk_Acoustic",
+   "id_a": 7814,
+   "id_b": 35040,
+   "idx": 10,
+   "block_off": 18284,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 63,
+   "name": "EQDIY_4",
+   "id_a": 59732,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 16084,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 10,
+   "name": "EscoUlEq",
+   "id_a": 48262,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 18484,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 11,
+   "name": "EscoDlEq",
+   "id_a": 27157,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 18684,
+   "stride": 200
+  },
+  {
+   "type": 1,
+   "crc": 29563,
+   "param": 17,
+   "name": "EQ17",
+   "id_a": 17603,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 18884,
+   "stride": 200
+  },
+  {
+   "type": 2,
+   "crc": 57086,
+   "param": 5,
+   "name": "DRC5",
+   "id_a": 48883,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19084,
+   "stride": 76
+  },
+  {
+   "type": 2,
+   "crc": 57086,
+   "param": 31,
+   "name": "DRC31",
+   "id_a": 40258,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19084,
+   "stride": 76
+  },
+  {
+   "type": 3,
+   "crc": 27045,
+   "param": 1,
+   "name": "IIS0_TX4",
+   "id_a": 40569,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19160,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 1,
+   "name": "Vol_SysTone",
+   "id_a": 9258,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19172,
+   "stride": 16
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 2,
+   "name": "Vol_SysKTone",
+   "id_a": 1141,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19172,
+   "stride": 16
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 53,
+   "name": "Vol_SysRing",
+   "id_a": 61924,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19172,
+   "stride": 16
+  },
+  {
+   "type": 3,
+   "crc": 42358,
+   "param": 1,
+   "name": "config423581",
+   "id_a": 34514,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19188,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 42358,
+   "param": 19,
+   "name": "config4235819",
+   "id_a": 24907,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19189,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 55829,
+   "param": 18,
+   "name": "ChannelExpand18",
+   "id_a": 52039,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19188,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 24,
+   "name": "DAC24",
+   "id_a": 19123,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19190,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 58922,
+   "param": 1,
+   "name": "MIXER1",
+   "id_a": 43931,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19199,
+   "stride": 8
+  },
+  {
+   "type": 3,
+   "crc": 26979,
+   "param": 1,
+   "name": "IIS0_RX1",
+   "id_a": 38388,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19207,
+   "stride": 2
+  },
+  {
+   "type": 3,
+   "crc": 26979,
+   "param": 2,
+   "name": "IIS0_RX2",
+   "id_a": 38389,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19207,
+   "stride": 2
+  },
+  {
+   "type": 3,
+   "crc": 27045,
+   "param": 2,
+   "name": "IIS0_TX1",
+   "id_a": 40566,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19209,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 27045,
+   "param": 3,
+   "name": "IIS0_TX3",
+   "id_a": 40568,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19209,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 27045,
+   "param": 3,
+   "name": "IIS0_TX3",
+   "id_a": 40568,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19221,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 49,
+   "name": "Vol_BtmMusic2",
+   "id_a": 4907,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19233,
+   "stride": 136
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 51,
+   "name": "Vol_LinMusic2",
+   "id_a": 37963,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19369,
+   "stride": 136
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 81,
+   "name": "Vol_LinMusic",
+   "id_a": 62713,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19505,
+   "stride": 136
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 92,
+   "name": "Vol_BtmMusic",
+   "id_a": 6105,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19641,
+   "stride": 136
+  },
+  {
+   "type": 3,
+   "crc": 39739,
+   "param": 12,
+   "name": "config397392",
+   "id_a": 13020,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19777,
+   "stride": 8
+  },
+  {
+   "type": 3,
+   "crc": 39739,
+   "param": 12,
+   "name": "config397392",
+   "id_a": 13020,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19785,
+   "stride": 8
+  },
+  {
+   "type": 3,
+   "crc": 39739,
+   "param": 21,
+   "name": "9B3B21",
+   "id_a": 30872,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19777,
+   "stride": 8
+  },
+  {
+   "type": 3,
+   "crc": 39739,
+   "param": 21,
+   "name": "9B3B21",
+   "id_a": 30872,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19785,
+   "stride": 8
+  },
+  {
+   "type": 3,
+   "crc": 41544,
+   "param": 1,
+   "name": "EnergyMusic",
+   "id_a": 33840,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19793,
+   "stride": 14
+  },
+  {
+   "type": 3,
+   "crc": 41544,
+   "param": 2,
+   "name": "I2SEnergyMusic",
+   "id_a": 18078,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19793,
+   "stride": 14
+  },
+  {
+   "type": 3,
+   "crc": 41544,
+   "param": 3,
+   "name": "EnergyMusic2",
+   "id_a": 2658,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19793,
+   "stride": 14
+  },
+  {
+   "type": 3,
+   "crc": 41544,
+   "param": 4,
+   "name": "I2SEnergyMusic2",
+   "id_a": 6800,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19793,
+   "stride": 14
+  },
+  {
+   "type": 3,
+   "crc": 42358,
+   "param": 16,
+   "name": "A57616",
+   "id_a": 32111,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19188,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 42358,
+   "param": 18,
+   "name": "config4235818",
+   "id_a": 24906,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19188,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 1,
+   "name": "SET_HP_GAIN",
+   "id_a": 43846,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19807,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 1,
+   "name": "SET_HP_GAIN",
+   "id_a": 43846,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19819,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 2,
+   "name": "AUX_DAC_GAIN",
+   "id_a": 15192,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19831,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 2,
+   "name": "AUX_DAC_GAIN",
+   "id_a": 15192,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19843,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 3,
+   "name": "SET_HP_GAIN2",
+   "id_a": 5176,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19855,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 3,
+   "name": "SET_HP_GAIN2",
+   "id_a": 5176,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19819,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 4,
+   "name": "AUX_DAC_GAIN2",
+   "id_a": 42634,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19867,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 43268,
+   "param": 4,
+   "name": "AUX_DAC_GAIN2",
+   "id_a": 42634,
+   "id_b": 12976,
+   "idx": 1,
+   "block_off": 19831,
+   "stride": 12
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3",
+   "id_a": 30368,
+   "id_b": 21642,
+   "idx": 0,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3",
+   "id_a": 30368,
+   "id_b": 8780,
+   "idx": 1,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3",
+   "id_a": 30368,
+   "id_b": 17124,
+   "idx": 2,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3",
+   "id_a": 30368,
+   "id_b": 36486,
+   "idx": 3,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3",
+   "id_a": 30368,
+   "id_b": 30680,
+   "idx": 4,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 21,
+   "name": "DAC3",
+   "id_a": 30368,
+   "id_b": 9179,
+   "idx": 5,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25",
+   "id_a": 19124,
+   "id_b": 21642,
+   "idx": 0,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25",
+   "id_a": 19124,
+   "id_b": 8780,
+   "idx": 1,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25",
+   "id_a": 19124,
+   "id_b": 17124,
+   "idx": 2,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25",
+   "id_a": 19124,
+   "id_b": 36486,
+   "idx": 3,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25",
+   "id_a": 19124,
+   "id_b": 30680,
+   "idx": 4,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 25,
+   "name": "DAC25",
+   "id_a": 19124,
+   "id_b": 9179,
+   "idx": 5,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 63861,
+   "param": 6,
+   "name": "A2DP_RX6",
+   "id_a": 10315,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19189,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 63861,
+   "param": 7,
+   "name": "A2DP_RX7",
+   "id_a": 10316,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19189,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 9,
+   "name": "Vol_BtcCall",
+   "id_a": 14826,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19888,
+   "stride": 16
+  },
+  {
+   "type": 3,
+   "crc": 42358,
+   "param": 6,
+   "name": "config423586",
+   "id_a": 34519,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19189,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 53357,
+   "param": 1,
+   "name": "esco_adc",
+   "id_a": 43414,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19904,
+   "stride": 40
+  },
+  {
+   "type": 3,
+   "crc": 53436,
+   "param": 1,
+   "name": "MIC534361",
+   "id_a": 53620,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19944,
+   "stride": 79
+  },
+  {
+   "type": 3,
+   "crc": 55829,
+   "param": 42,
+   "name": "ChannelExpand42",
+   "id_a": 52132,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19188,
+   "stride": 1
+  },
+  {
+   "type": 3,
+   "crc": 56525,
+   "param": 2,
+   "name": "DAC2",
+   "id_a": 30367,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 19879,
+   "stride": 9
+  },
+  {
+   "type": 3,
+   "crc": 29923,
+   "param": 47,
+   "name": "Vol_PcspkMusic",
+   "id_a": 55703,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 20023,
+   "stride": 16
+  },
+  {
+   "type": 3,
+   "crc": 39739,
+   "param": 14,
+   "name": "config3973914",
+   "id_a": 36463,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 20039,
+   "stride": 8
+  },
+  {
+   "type": 3,
+   "crc": 53357,
+   "param": 13,
+   "name": "ADC13",
+   "id_a": 42545,
+   "id_b": 12975,
+   "idx": 0,
+   "block_off": 20047,
+   "stride": 40
+  }
+ ],
+ "blocks": [
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 8084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 8284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 8484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 8684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 8884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 9084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 9284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 9484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 9684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 9884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 10084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 10284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 10484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 10684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 10884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 11084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 11284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 11484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 11684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 11884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 12084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 12284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 12484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 12684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 12884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "BassShelf",
+   "off": 13084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 4,
+     "freq_hz": 125,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 180,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 3,
+     "freq_hz": 4000,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 13284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 13484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 13684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 13884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 14084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 14284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 14484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 14684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 14884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 15084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 15284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 15484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "TrebShelf",
+   "off": 15684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 3,
+     "freq_hz": 10000,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "EQDIY",
+   "off": 15884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 24,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "EQDIY_2",
+   "off": 16084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 25,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 16284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 16484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 16684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 16884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 17084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 17284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 17484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 17684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 17884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 18084,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 200,
+     "q": 2.0
+    },
+    {
+     "band": 1,
+     "type": 4,
+     "freq_hz": 500,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "Desk_Acoustic_2",
+   "off": 18284,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 25,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1081,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2296,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4876,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10358,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21600,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "EscoUlEq",
+   "off": 18484,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 0,
+     "freq_hz": 100,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 0,
+     "freq_hz": 100,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1082,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2299,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4885,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10378,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 22000,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "EscoDlEq",
+   "off": 18684,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 25,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 113,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 240,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 509,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1082,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2299,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4885,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10378,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 22050,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 1,
+   "name": "EQ17",
+   "off": 18884,
+   "stride": 200,
+   "bands": [
+    {
+     "band": 0,
+     "type": 2,
+     "freq_hz": 25,
+     "q": 0.7
+    },
+    {
+     "band": 1,
+     "type": 2,
+     "freq_hz": 53,
+     "q": 0.7
+    },
+    {
+     "band": 2,
+     "type": 2,
+     "freq_hz": 112,
+     "q": 0.7
+    },
+    {
+     "band": 3,
+     "type": 2,
+     "freq_hz": 238,
+     "q": 0.7
+    },
+    {
+     "band": 4,
+     "type": 2,
+     "freq_hz": 505,
+     "q": 0.7
+    },
+    {
+     "band": 5,
+     "type": 2,
+     "freq_hz": 1070,
+     "q": 0.7
+    },
+    {
+     "band": 6,
+     "type": 2,
+     "freq_hz": 2268,
+     "q": 0.7
+    },
+    {
+     "band": 7,
+     "type": 2,
+     "freq_hz": 4807,
+     "q": 0.7
+    },
+    {
+     "band": 8,
+     "type": 2,
+     "freq_hz": 10190,
+     "q": 0.7
+    },
+    {
+     "band": 9,
+     "type": 2,
+     "freq_hz": 21599,
+     "q": 0.7
+    },
+    {
+     "band": 10,
+     "type": 7,
+     "freq_hz": 40,
+     "q": 0.7
+    },
+    {
+     "band": 11,
+     "type": 8,
+     "freq_hz": 18000,
+     "q": 0.7
+    }
+   ]
+  },
+  {
+   "type": 2,
+   "name": "DRC5",
+   "off": 19084,
+   "stride": 76,
+   "hex": "00 00 00 00 64 00 c8 00 cd cc cc bf cd cc cc bf 66 66 07 43 66 66 07 43 66 66 1e 43 66 66 07 43 66 66 0a 43 66 66 0a 43 66 66 0a 43 66 66 0a 43 66 66 0a 43 66 66 0a 43 00 00 00 00 00 00 00 00 00 00 c8 41 03 00 00 01 00 00 01 00",
+   "floats": [
+    0.0,
+    0.0,
+    -1.6,
+    -1.6,
+    135.39999,
+    135.39999,
+    158.39999,
+    135.39999,
+    138.39999,
+    138.39999,
+    138.39999,
+    138.39999,
+    138.39999,
+    138.39999,
+    0.0,
+    0.0,
+    25.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "IIS0_TX4",
+   "off": 19160,
+   "stride": 12,
+   "hex": "00 00 32 00 08 00 00 00 01 01 00 02",
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_SysTone",
+   "off": 19172,
+   "stride": 16,
+   "hex": "00 10 00 d3 ff ff ff 01 00 00 00 00 0a 00 00 00",
+   "floats": [
+    -550024249344.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "config423581",
+   "off": 19188,
+   "stride": 1,
+   "hex": "00",
+   "floats": []
+  },
+  {
+   "type": 3,
+   "name": "config4235819",
+   "off": 19189,
+   "stride": 1,
+   "hex": "01",
+   "floats": []
+  },
+  {
+   "type": 3,
+   "name": "DAC24",
+   "off": 19190,
+   "stride": 9,
+   "hex": "32 00 08 00 00 02 01 00 02",
+   "floats": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "MIXER1",
+   "off": 19199,
+   "stride": 8,
+   "hex": "01 01 01 01 01 01 01 01",
+   "floats": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "IIS0_RX1",
+   "off": 19207,
+   "stride": 2,
+   "hex": "01 00",
+   "floats": []
+  },
+  {
+   "type": 3,
+   "name": "IIS0_TX1",
+   "off": 19209,
+   "stride": 12,
+   "hex": "00 00 1e 00 0a 00 00 00 00 01 00 00",
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "IIS0_TX3",
+   "off": 19221,
+   "stride": 12,
+   "hex": "00 00 05 00 01 00 00 00 00 01 00 00",
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_BtmMusic2",
+   "off": 19233,
+   "stride": 136,
+   "hex": "00 1e 00 bd ff ff ff 02 f8 ff ff ff 00 00 78 00 00 00 7c c2 00 00 6c c2 00 00 5c c2 00 00 4c c2 00 00 40 c2 00 00 34 c2 00 00 28 c2 00 00 1c c2 00 00 10 c2 00 00 08 c2 00 00 00 c2 00 00 f0 c1 00 00 e0 c1 00 00 d0 c1 00 00 c0 c1 00 00 b0 c1 00 00 a0 c1 00 00 90 c1 00 00 80 c1 00 00 60 c1 00 00 50 c1 00 00 40 c1 00 00 30 c1 00 00 20 c1 00 00 10 c1 00 00 00 c1 00 00 e0 c0 00 00 c0 c0 00 00 b0 c0 00 00 a0 c0",
+   "floats": [
+    -0.03128,
+    0.0,
+    NaN,
+    0.0,
+    -63.0,
+    -59.0,
+    -55.0,
+    -51.0,
+    -48.0,
+    -45.0,
+    -42.0,
+    -39.0,
+    -36.0,
+    -34.0,
+    -32.0,
+    -30.0,
+    -28.0,
+    -26.0,
+    -24.0,
+    -22.0,
+    -20.0,
+    -18.0,
+    -16.0,
+    -14.0,
+    -13.0,
+    -12.0,
+    -11.0,
+    -10.0,
+    -9.0,
+    -8.0,
+    -7.0,
+    -6.0,
+    -5.5,
+    -5.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_LinMusic2",
+   "off": 19369,
+   "stride": 136,
+   "hex": "00 1e 00 c5 ff ff ff 02 00 00 00 00 00 00 78 00 00 00 68 c2 00 00 58 c2 00 00 48 c2 00 00 38 c2 00 00 2c c2 00 00 20 c2 00 00 14 c2 00 00 08 c2 00 00 f8 c1 00 00 e8 c1 00 00 d8 c1 00 00 c8 c1 00 00 b8 c1 00 00 a8 c1 00 00 98 c1 00 00 88 c1 00 00 70 c1 00 00 50 c1 00 00 30 c1 00 00 10 c1 00 00 00 c1 00 00 e0 c0 00 00 c0 c0 00 00 a0 c0 00 00 80 c0 00 00 40 c0 00 00 00 c0 00 00 80 bf 00 00 00 bf 00 00 00 00",
+   "floats": [
+    -2049.875,
+    0.0,
+    0.0,
+    0.0,
+    -58.0,
+    -54.0,
+    -50.0,
+    -46.0,
+    -43.0,
+    -40.0,
+    -37.0,
+    -34.0,
+    -31.0,
+    -29.0,
+    -27.0,
+    -25.0,
+    -23.0,
+    -21.0,
+    -19.0,
+    -17.0,
+    -15.0,
+    -13.0,
+    -11.0,
+    -9.0,
+    -8.0,
+    -7.0,
+    -6.0,
+    -5.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    -0.5,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_LinMusic",
+   "off": 19505,
+   "stride": 136,
+   "hex": "00 1e 00 c1 ff ff ff 02 00 00 00 00 00 00 78 00 00 00 7c c2 00 00 6c c2 00 00 5c c2 00 00 4c c2 00 00 3c c2 00 00 2c c2 00 00 20 c2 00 00 14 c2 00 00 08 c2 00 00 f8 c1 00 00 e0 c1 00 00 c8 c1 00 00 b8 c1 00 00 a8 c1 00 00 98 c1 00 00 88 c1 00 00 70 c1 00 00 50 c1 00 00 30 c1 00 00 10 c1 00 00 00 c1 00 00 e0 c0 00 00 c0 c0 00 00 a0 c0 00 00 80 c0 00 00 40 c0 00 00 00 c0 00 00 80 bf 00 00 00 bf 00 00 00 00",
+   "floats": [
+    -8.00732,
+    0.0,
+    0.0,
+    0.0,
+    -63.0,
+    -59.0,
+    -55.0,
+    -51.0,
+    -47.0,
+    -43.0,
+    -40.0,
+    -37.0,
+    -34.0,
+    -31.0,
+    -28.0,
+    -25.0,
+    -23.0,
+    -21.0,
+    -19.0,
+    -17.0,
+    -15.0,
+    -13.0,
+    -11.0,
+    -9.0,
+    -8.0,
+    -7.0,
+    -6.0,
+    -5.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    -0.5,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_BtmMusic",
+   "off": 19641,
+   "stride": 136,
+   "hex": "00 1e 00 ba ff ff ff 02 f9 ff ff ff 00 00 78 00 00 00 8c c2 00 00 84 c2 00 00 78 c2 00 00 68 c2 00 00 58 c2 00 00 48 c2 00 00 3c c2 00 00 30 c2 00 00 24 c2 00 00 18 c2 00 00 0c c2 00 00 00 c2 00 00 f0 c1 00 00 e0 c1 00 00 d0 c1 00 00 c0 c1 00 00 b0 c1 00 00 a0 c1 00 00 90 c1 00 00 80 c1 00 00 70 c1 00 00 60 c1 00 00 50 c1 00 00 40 c1 00 00 30 c1 00 00 20 c1 00 00 10 c1 00 00 00 c1 00 00 f0 c0 00 00 e0 c0",
+   "floats": [
+    -0.00049,
+    0.0,
+    NaN,
+    0.0,
+    -70.0,
+    -66.0,
+    -62.0,
+    -58.0,
+    -54.0,
+    -50.0,
+    -47.0,
+    -44.0,
+    -41.0,
+    -38.0,
+    -35.0,
+    -32.0,
+    -30.0,
+    -28.0,
+    -26.0,
+    -24.0,
+    -22.0,
+    -20.0,
+    -18.0,
+    -16.0,
+    -15.0,
+    -14.0,
+    -13.0,
+    -12.0,
+    -11.0,
+    -10.0,
+    -9.0,
+    -8.0,
+    -7.5,
+    -7.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "config397392",
+   "off": 19777,
+   "stride": 8,
+   "hex": "0f 00 64 00 00 00 00 00",
+   "floats": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "config397392",
+   "off": 19785,
+   "stride": 8,
+   "hex": "04 00 64 00 00 00 00 00",
+   "floats": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "EnergyMusic",
+   "off": 19793,
+   "stride": 14,
+   "hex": "00 00 00 00 0a 00 b8 0b 0a 00 64 00 01 00",
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "SET_HP_GAIN",
+   "off": 19807,
+   "stride": 12,
+   "hex": "00 00 00 00 00 00 00 00 cd cc 04 41",
+   "floats": [
+    0.0,
+    0.0,
+    8.3
+   ]
+  },
+  {
+   "type": 3,
+   "name": "SET_HP_GAIN",
+   "off": 19819,
+   "stride": 12,
+   "hex": "00 00 00 00 00 00 00 00 9a 99 b4 c2",
+   "floats": [
+    0.0,
+    0.0,
+    -90.3
+   ]
+  },
+  {
+   "type": 3,
+   "name": "AUX_DAC_GAIN",
+   "off": 19831,
+   "stride": 12,
+   "hex": "00 00 00 00 00 00 00 00 00 00 00 00",
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "AUX_DAC_GAIN",
+   "off": 19843,
+   "stride": 12,
+   "hex": "00 00 00 00 00 00 00 00 66 66 a6 bf",
+   "floats": [
+    0.0,
+    0.0,
+    -1.3
+   ]
+  },
+  {
+   "type": 3,
+   "name": "SET_HP_GAIN2",
+   "off": 19855,
+   "stride": 12,
+   "hex": "00 00 00 00 00 00 00 00 33 33 13 40",
+   "floats": [
+    0.0,
+    0.0,
+    2.3
+   ]
+  },
+  {
+   "type": 3,
+   "name": "AUX_DAC_GAIN2",
+   "off": 19867,
+   "stride": 12,
+   "hex": "00 00 00 00 00 00 00 00 00 00 d0 40",
+   "floats": [
+    0.0,
+    0.0,
+    6.5
+   ]
+  },
+  {
+   "type": 3,
+   "name": "DAC3",
+   "off": 19879,
+   "stride": 9,
+   "hex": "32 00 08 00 00 00 01 00 00",
+   "floats": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_BtcCall",
+   "off": 19888,
+   "stride": 16,
+   "hex": "00 0f 00 d3 ff ff ff 01 00 00 00 00 0a 00 00 00",
+   "floats": [
+    -550007472128.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "esco_adc",
+   "off": 19904,
+   "stride": 40,
+   "hex": "00 00 00 00 00 0a 01 01 00 0e 08 00 00 00 0a 01 01 02 0e 08 00 00 00 0a 01 01 04 0e 08 00 00 00 0a 01 01 08 0e 08 00 00",
+   "floats": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "MIC534361",
+   "off": 19944,
+   "stride": 79,
+   "hex": "00 02 00 00 00 00 00 00 00 00 80 3f 00 00 8c c2 01 00 00 40 c0 00 00 80 40 01 00 00 a0 3f ec 51 b8 3d 01 66 66 a6 3f 66 66 a6 3f 66 66 a6 3f 66 66 a6 3f 00 00 00 41 00 00 00 00 00 00 48 c2 00 00 40 41 00 00 00 00 00 00 20 c2 00 00 8c c2",
+   "floats": [
+    0.0,
+    0.0,
+    1.0,
+    -70.0,
+    2.0,
+    -0.0,
+    0.0,
+    126834966528.0,
+    1.5258094656899587e+23,
+    2.2626037690473247e+23,
+    2.2626037690473247e+23,
+    2.2626037690473247e+23,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "Vol_PcspkMusic",
+   "off": 20023,
+   "stride": 16,
+   "hex": "00 64 00 d3 ff ff ff 01 00 00 00 00 3c 00 00 00",
+   "floats": [
+    -551433535488.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "config3973914",
+   "off": 20039,
+   "stride": 8,
+   "hex": "64 00 64 00 00 00 00 00",
+   "floats": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "type": 3,
+   "name": "ADC13",
+   "off": 20047,
+   "stride": 40,
+   "hex": "00 00 00 00 00 0a 01 01 01 0e 08 00 00 00 0a 01 01 02 0e 08 00 00 00 0a 01 01 04 0e 08 00 00 00 0a 01 01 08 0e 08 00 00",
+   "floats": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

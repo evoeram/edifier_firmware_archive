@@ -1,0 +1,1835 @@
+{
+"0601f10c": {
+"name": "ASCII_IntToStr",
+"elf_addr": "0607fb24",
+"size": 60,
+"words_diff": "0/7"
+},
+"06001086": {
+"name": "ASCII_StrCmp",
+"elf_addr": "0607fa4c",
+"size": 58,
+"words_diff": "0/7"
+},
+"06020d36": {
+"name": "ASCII_ToLower",
+"elf_addr": "0607fafe",
+"size": 38,
+"words_diff": "0/4"
+},
+"0601f7fc": {
+"name": "ASCII_ToUpper",
+"elf_addr": "0607fad8",
+"size": 38,
+"words_diff": "0/4"
+},
+"0606eb7e": {
+"name": "AptFilt_Config",
+"elf_addr": "060a8454",
+"size": 68,
+"words_diff": "1/8"
+},
+"0606eae0": {
+"name": "AptFilt_Init",
+"elf_addr": "060a83b6",
+"size": 158,
+"words_diff": "2/19"
+},
+"0604e496": {
+"name": "DrcCalcTimeFactor",
+"elf_addr": "060b24e0",
+"size": 74,
+"words_diff": "1/9"
+},
+"0601e14c": {
+"name": "EchoSuppress_Config",
+"elf_addr": "0600fa02",
+"size": 30,
+"words_diff": "0/3"
+},
+"0601ddac": {
+"name": "EchoSuppress_Init",
+"elf_addr": "0600b5f4",
+"size": 246,
+"words_diff": "6/30"
+},
+"0601e2ba": {
+"name": "EchoSuppress_Process",
+"elf_addr": "0600fb70",
+"size": 720,
+"words_diff": "11/90"
+},
+"06058ce2": {
+"name": "III_aliasreduce",
+"elf_addr": "06025212",
+"size": 106,
+"words_diff": "2/13"
+},
+"06058ebe": {
+"name": "III_imdct_l",
+"elf_addr": "060253ee",
+"size": 144,
+"words_diff": "2/18"
+},
+"06058f4e": {
+"name": "III_imdct_s",
+"elf_addr": "0602547e",
+"size": 242,
+"words_diff": "4/30"
+},
+"060560e2": {
+"name": "III_sideinfo",
+"elf_addr": "06022612",
+"size": 692,
+"words_diff": "0/86"
+},
+"060589c4": {
+"name": "III_stereo",
+"elf_addr": "06024ef4",
+"size": 798,
+"words_diff": "5/99"
+},
+"0606a568": {
+"name": "MatrixCopy_float_c_c",
+"elf_addr": "0601a2b6",
+"size": 76,
+"words_diff": "0/9"
+},
+"0606a5b4": {
+"name": "MatrixEwMulAndSumOneDim_float_c_c_c_s1",
+"elf_addr": "0601a362",
+"size": 136,
+"words_diff": "0/17"
+},
+"0606e704": {
+"name": "NoiseSuppress_Init",
+"elf_addr": "060a7fda",
+"size": 942,
+"words_diff": "18/117"
+},
+"0608744a": {
+"name": "OSGetTaskTcb",
+"elf_addr": "0011ae4c",
+"size": 126,
+"words_diff": "3/15"
+},
+"06087946": {
+"name": "OSTaskQCallBack",
+"elf_addr": "0011ab68",
+"size": 126,
+"words_diff": "0/15"
+},
+"06086e1e": {
+"name": "OSUpdateIdleTime",
+"elf_addr": "0011a354",
+"size": 84,
+"words_diff": "2/10"
+},
+"06087154": {
+"name": "OS_EventHighestTask",
+"elf_addr": "0011a67e",
+"size": 54,
+"words_diff": "0/6"
+},
+"0608711e": {
+"name": "OS_EventTO",
+"elf_addr": "0011a648",
+"size": 54,
+"words_diff": "0/6"
+},
+"06086e72": {
+"name": "OS_RemoveIdleList",
+"elf_addr": "0011a3a8",
+"size": 86,
+"words_diff": "2/10"
+},
+"06008cf0": {
+"name": "READ_SLOT_CLK",
+"elf_addr": "0608e642",
+"size": 24,
+"words_diff": "0/3"
+},
+"060429d0": {
+"name": "RF_analog_init",
+"elf_addr": "06083680",
+"size": 32,
+"words_diff": "0/4"
+},
+"0606a274": {
+"name": "VecCompBT_float_f_f_f",
+"elf_addr": "0601a742",
+"size": 52,
+"words_diff": "0/6"
+},
+"0606a2a8": {
+"name": "VecCondCopy_float_f_f_f",
+"elf_addr": "0601a776",
+"size": 56,
+"words_diff": "0/7"
+},
+"06069ea6": {
+"name": "VecConjEleMul_float_c_c_c",
+"elf_addr": "0601a4c0",
+"size": 68,
+"words_diff": "0/8"
+},
+"06069fa0": {
+"name": "VecConjMulRecAve_float_c_c_c_f",
+"elf_addr": "0601aa58",
+"size": 84,
+"words_diff": "0/10"
+},
+"0606a1dc": {
+"name": "VecCopy_float_f_f",
+"elf_addr": "0601a242",
+"size": 36,
+"words_diff": "0/4"
+},
+"0606a6c6": {
+"name": "VecCopy_s16_s32",
+"elf_addr": "0601a978",
+"size": 34,
+"words_diff": "0/4"
+},
+"0606a6e8": {
+"name": "VecCopy_s32_s16",
+"elf_addr": "0601aa32",
+"size": 38,
+"words_diff": "0/4"
+},
+"06069f22": {
+"name": "VecDivide_float_c_f_c_f",
+"elf_addr": "0601a53c",
+"size": 62,
+"words_diff": "0/7"
+},
+"0606a238": {
+"name": "VecDivide_float_f_f_f_f",
+"elf_addr": "0601a706",
+"size": 60,
+"words_diff": "0/7"
+},
+"0606a358": {
+"name": "VecDotProduct_float_f_f_f",
+"elf_addr": "0601a83e",
+"size": 46,
+"words_diff": "0/5"
+},
+"0606a51c": {
+"name": "VecEleMul_f32_s16_f32",
+"elf_addr": "0601a92c",
+"size": 76,
+"words_diff": "0/9"
+},
+"0606a168": {
+"name": "VecEleMul_float_c_f_c",
+"elf_addr": "0601a8b2",
+"size": 54,
+"words_diff": "0/6"
+},
+"0606a074": {
+"name": "VecEleMul_float_f_f_f",
+"elf_addr": "0601a80e",
+"size": 48,
+"words_diff": "0/6"
+},
+"0606a4b8": {
+"name": "VecEleMul_s16_s16_f32",
+"elf_addr": "0601a616",
+"size": 100,
+"words_diff": "0/12"
+},
+"0606a77a": {
+"name": "VecEleShift_fix_r",
+"elf_addr": "0601a99a",
+"size": 44,
+"words_diff": "0/5"
+},
+"06069ff4": {
+"name": "VecGetMag_float_c_f",
+"elf_addr": "0601a8e8",
+"size": 44,
+"words_diff": "0/5"
+},
+"0606a0a4": {
+"name": "VecMagAndDiv_float_c_f_f_f",
+"elf_addr": "0601aaac",
+"size": 62,
+"words_diff": "0/7"
+},
+"06069e40": {
+"name": "VecMagRecAve_float_c_f_f",
+"elf_addr": "0601a45a",
+"size": 58,
+"words_diff": "0/7"
+},
+"0606a020": {
+"name": "VecMax_float_f_f",
+"elf_addr": "0601a67a",
+"size": 30,
+"words_diff": "0/3"
+},
+"0606a386": {
+"name": "VecMeanSq_float_f_f",
+"elf_addr": "0601a428",
+"size": 50,
+"words_diff": "0/6"
+},
+"0606a3b8": {
+"name": "VecMeanSq_s16_f32",
+"elf_addr": "0601a27e",
+"size": 56,
+"words_diff": "0/7"
+},
+"0606a19e": {
+"name": "VecMeanSqu_float_c_f",
+"elf_addr": "0601ab1a",
+"size": 62,
+"words_diff": "0/7"
+},
+"0606a138": {
+"name": "VecMean_float_f_f",
+"elf_addr": "0601aaea",
+"size": 48,
+"words_diff": "0/6"
+},
+"0606a0e2": {
+"name": "VecMin_float_f_f",
+"elf_addr": "0601a894",
+"size": 30,
+"words_diff": "0/3"
+},
+"0606a200": {
+"name": "VecMin_float_f_f_f",
+"elf_addr": "0601a6ce",
+"size": 56,
+"words_diff": "0/7"
+},
+"0606a744": {
+"name": "VecMinus_fix_r_r_r",
+"elf_addr": "0601a9fc",
+"size": 54,
+"words_diff": "0/6"
+},
+"0606a100": {
+"name": "VecMinus_float_f_f_f",
+"elf_addr": "0601a7d6",
+"size": 56,
+"words_diff": "0/7"
+},
+"0606a450": {
+"name": "VecMinus_s16_f32_f32",
+"elf_addr": "0601a3ea",
+"size": 62,
+"words_diff": "0/7"
+},
+"06069e7a": {
+"name": "VecMulScalar_float_c_f_c",
+"elf_addr": "0601a494",
+"size": 44,
+"words_diff": "0/5"
+},
+"0606a66a": {
+"name": "VecOvShift_s16_s16",
+"elf_addr": "0601a5ba",
+"size": 92,
+"words_diff": "0/11"
+},
+"0606a3f0": {
+"name": "VecOverShift_s16_f32",
+"elf_addr": "0601a302",
+"size": 96,
+"words_diff": "0/12"
+},
+"0606a70e": {
+"name": "VecPlus_fix_r_r_r",
+"elf_addr": "0601a9c6",
+"size": 54,
+"words_diff": "0/6"
+},
+"06069f60": {
+"name": "VecPlus_float_c_c_c",
+"elf_addr": "0601a57a",
+"size": 64,
+"words_diff": "0/8"
+},
+"06069eea": {
+"name": "VecPlus_float_f_f_f",
+"elf_addr": "0601a504",
+"size": 56,
+"words_diff": "0/7"
+},
+"0606a03e": {
+"name": "VecRecAve_float_f_f_f",
+"elf_addr": "0601a698",
+"size": 54,
+"words_diff": "0/6"
+},
+"0606a48e": {
+"name": "VectorCopy_f32_s16",
+"elf_addr": "0601a218",
+"size": 42,
+"words_diff": "0/5"
+},
+"060689b0": {
+"name": "VectorSet_float_f_c",
+"elf_addr": "0601a914",
+"size": 24,
+"words_diff": "0/3"
+},
+"06069e28": {
+"name": "VectorSet_float_f_f",
+"elf_addr": "0601a266",
+"size": 24,
+"words_diff": "0/3"
+},
+"0601e05c": {
+"name": "_Z10MatrixCopyRK6MatrixI9floatRealERS_I12floatComplexE",
+"elf_addr": "0600f91c",
+"size": 74,
+"words_diff": "0/9"
+},
+"0601e16a": {
+"name": "_Z13AllpassFilterR6VectorI7fixRealES2_PKS0_PS0_",
+"elf_addr": "0600fa20",
+"size": 86,
+"words_diff": "0/10"
+},
+"0606b0be": {
+"name": "_Z18MatrixAccessColumnRK6MatrixI12floatComplexER6VectorIS0_Ei",
+"elf_addr": "060b6004",
+"size": 32,
+"words_diff": "0/4"
+},
+"0606b63c": {
+"name": "_Z19VectorElementwiseOrRK6VectorIiES2_RS0_",
+"elf_addr": "060b6544",
+"size": 48,
+"words_diff": "0/6"
+},
+"0601dd5a": {
+"name": "_Z21VectorBinaryOperationRKPFvRK6ScalarI9floatRealERS1_ERK6VectorIS0_ERSA_",
+"elf_addr": "0600b5a2",
+"size": 74,
+"words_diff": "0/9"
+},
+"0606af8a": {
+"name": "_Z6mag2dbI9floatRealEvRK6ScalarIT_ERS3_",
+"elf_addr": "060b5ed0",
+"size": 30,
+"words_diff": "0/3"
+},
+"0606ae94": {
+"name": "_ZN11VectorArrayI11fixHalfRealEC2ERK6VectorIS0_Ei",
+"elf_addr": "060b5dea",
+"size": 46,
+"words_diff": "0/5"
+},
+"0606afa8": {
+"name": "_ZN13Shadow_BFNLMSI9floatReal12floatComplex11fixHalfRealE18UpdateShadowWeightERK6VectorIS2_ES7_RKS4_IS0_ESA_",
+"elf_addr": "060b5eee",
+"size": 278,
+"words_diff": "4/34"
+},
+"0606a9e4": {
+"name": "_ZN13Shadow_BFNLMSI9floatReal12floatComplex11fixHalfRealEC2EPS0_iiR3FFTIS0_S1_ERK6ScalarIS0_ESB_iSB_SB_",
+"elf_addr": "060b594a",
+"size": 458,
+"words_diff": "6/57"
+},
+"0606aec2": {
+"name": "_ZN13dynamicVectorI12floatComplex9floatRealEC2ER9AllocatorIS1_Eii",
+"elf_addr": "060b5e18",
+"size": 44,
+"words_diff": "0/5"
+},
+"0606af16": {
+"name": "_ZN13dynamicVectorI12floatComplex9floatRealED2Ev",
+"elf_addr": "060b5e6c",
+"size": 28,
+"words_diff": "0/3"
+},
+"0606bf92": {
+"name": "_ZN13dynamicVectorI7fixRealS0_EC2ER9AllocatorIS0_Eii",
+"elf_addr": "060b6e74",
+"size": 38,
+"words_diff": "0/4"
+},
+"0606aeee": {
+"name": "_ZN13dynamicVectorI9floatRealS0_EC2ER9AllocatorIS0_Eii",
+"elf_addr": "060b5e44",
+"size": 40,
+"words_diff": "0/5"
+},
+"0606ac12": {
+"name": "_ZN18NonlinearProcessorI9floatReal12floatComplexEC2EPS0_iiRK6ScalarIS0_ES7_S7_S7_",
+"elf_addr": "060b5b78",
+"size": 426,
+"words_diff": "0/53"
+},
+"0606a9aa": {
+"name": "_ZNK6MatrixI12floatComplexEclEiiii",
+"elf_addr": "060b5910",
+"size": 58,
+"words_diff": "0/7"
+},
+"0606c2ae": {
+"name": "_ZNK6VectorI12floatComplexEclERK10Vectorzone",
+"elf_addr": "060b7178",
+"size": 54,
+"words_diff": "0/6"
+},
+"0606abe0": {
+"name": "_ZNK6VectorI12floatComplexEclEiii",
+"elf_addr": "060b5b46",
+"size": 50,
+"words_diff": "0/6"
+},
+"0606bfb8": {
+"name": "_ZNK6VectorI7fixRealEclEiii",
+"elf_addr": "060b6e9a",
+"size": 60,
+"words_diff": "0/7"
+},
+"0606c03a": {
+"name": "_ZNK6VectorI9floatRealEclERK10Vectorzone",
+"elf_addr": "060b6f08",
+"size": 54,
+"words_diff": "0/6"
+},
+"0606abae": {
+"name": "_ZNK6VectorI9floatRealEclEiii",
+"elf_addr": "060b5b14",
+"size": 50,
+"words_diff": "0/6"
+},
+"060876ea": {
+"name": "__OSTaskQCopy",
+"elf_addr": "0011aa16",
+"size": 86,
+"words_diff": "1/10"
+},
+"060877a6": {
+"name": "__OSTaskQDel",
+"elf_addr": "0011aa6c",
+"size": 136,
+"words_diff": "0/17"
+},
+"06026830": {
+"name": "__fat_fget_path",
+"elf_addr": "0607adfc",
+"size": 26,
+"words_diff": "0/3"
+},
+"060359aa": {
+"name": "__get_access_addr",
+"elf_addr": "0608c34e",
+"size": 278,
+"words_diff": "0/34"
+},
+"0608ae16": {
+"name": "__hw_clk_limit",
+"elf_addr": "0609402a",
+"size": 28,
+"words_diff": "0/3"
+},
+"06044344": {
+"name": "__hw_power_init",
+"elf_addr": "0609948a",
+"size": 178,
+"words_diff": "3/22"
+},
+"060457b8": {
+"name": "__lp_timer_set_time",
+"elf_addr": "0609a81c",
+"size": 56,
+"words_diff": "1/7"
+},
+"0604bd48": {
+"name": "__power_suspend_post.7168",
+"elf_addr": "0609340a",
+"size": 30,
+"words_diff": "0/3"
+},
+"0601bda0": {
+"name": "__read_fhs_packet",
+"elf_addr": "0609078a",
+"size": 166,
+"words_diff": "0/20"
+},
+"06001fae": {
+"name": "__syscfg_read",
+"elf_addr": "06080320",
+"size": 42,
+"words_diff": "0/5"
+},
+"0608998a": {
+"name": "__tcnt_us",
+"elf_addr": "001202da",
+"size": 62,
+"words_diff": "1/7"
+},
+"06002dc0": {
+"name": "__vsprintf",
+"elf_addr": "0600460a",
+"size": 386,
+"words_diff": "5/48"
+},
+"0600e356": {
+"name": "__write_reg_bch",
+"elf_addr": "0608f8bc",
+"size": 26,
+"words_diff": "0/3"
+},
+"0600e336": {
+"name": "__write_reg_bdaddr",
+"elf_addr": "0608f89c",
+"size": 32,
+"words_diff": "0/4"
+},
+"0606769e": {
+"name": "__write_reg_clkoffset",
+"elf_addr": "0608ed16",
+"size": 28,
+"words_diff": "0/3"
+},
+"06067854": {
+"name": "__write_reg_txinfo",
+"elf_addr": "0011c132",
+"size": 70,
+"words_diff": "0/8"
+},
+"06044894": {
+"name": "adc_pmu_ch_select",
+"elf_addr": "06099856",
+"size": 70,
+"words_diff": "0/8"
+},
+"06041f76": {
+"name": "adc_trim_dac_data_cb",
+"elf_addr": "060b1dd8",
+"size": 46,
+"words_diff": "1/5"
+},
+"06070628": {
+"name": "alloc",
+"elf_addr": "06080ea6",
+"size": 62,
+"words_diff": "0/7"
+},
+"0605482e": {
+"name": "audio_cfifo_read_update",
+"elf_addr": "001254fe",
+"size": 338,
+"words_diff": "5/42"
+},
+"06065808": {
+"name": "audio_eq_tab_check",
+"elf_addr": "00123efa",
+"size": 74,
+"words_diff": "0/9"
+},
+"06078552": {
+"name": "avdtp_send",
+"elf_addr": "0606a120",
+"size": 40,
+"words_diff": "1/5"
+},
+"06078d02": {
+"name": "avdtp_unknown_cmd",
+"elf_addr": "0606ccbe",
+"size": 54,
+"words_diff": "1/6"
+},
+"0607b7cc": {
+"name": "avrcp_handle_get_capabilities",
+"elf_addr": "0606f42a",
+"size": 130,
+"words_diff": "1/16"
+},
+"0607088e": {
+"name": "bi_free",
+"elf_addr": "06081148",
+"size": 42,
+"words_diff": "0/5"
+},
+"06070666": {
+"name": "bi_initialize",
+"elf_addr": "06080ee4",
+"size": 38,
+"words_diff": "0/4"
+},
+"0602ec84": {
+"name": "bredr_clkn2offset",
+"elf_addr": "06086b70",
+"size": 32,
+"words_diff": "0/4"
+},
+"0601cf96": {
+"name": "bredr_get_esco_packet_type",
+"elf_addr": "06093702",
+"size": 50,
+"words_diff": "0/6"
+},
+"06067776": {
+"name": "bredr_set_frame_bitoff",
+"elf_addr": "0011c302",
+"size": 42,
+"words_diff": "0/5"
+},
+"06042498": {
+"name": "bta_set_amp_sepa",
+"elf_addr": "060834dc",
+"size": 48,
+"words_diff": "1/6"
+},
+"0607a600": {
+"name": "btstack_set_timer",
+"elf_addr": "0606a21c",
+"size": 58,
+"words_diff": "1/7"
+},
+"06056078": {
+"name": "cal_frame_len",
+"elf_addr": "060225a8",
+"size": 80,
+"words_diff": "0/10"
+},
+"0601dbb6": {
+"name": "ccm_memory_v2",
+"elf_addr": "0600f73a",
+"size": 382,
+"words_diff": "3/47"
+},
+"060204c4": {
+"name": "change_bitmap",
+"elf_addr": "060775d2",
+"size": 188,
+"words_diff": "1/23"
+},
+"0607291a": {
+"name": "check_buf_is_all_0xff",
+"elf_addr": "06067ba0",
+"size": 32,
+"words_diff": "0/4"
+},
+"06021fb4": {
+"name": "check_space",
+"elf_addr": "06078b0a",
+"size": 26,
+"words_diff": "0/3"
+},
+"06089b7a": {
+"name": "clear_wkup_src_pnd",
+"elf_addr": "0012056e",
+"size": 46,
+"words_diff": "0/5"
+},
+"060676ba": {
+"name": "clkn0_phase",
+"elf_addr": "0011c2cc",
+"size": 54,
+"words_diff": "0/6"
+},
+"0608e8f0": {
+"name": "clust2sect",
+"elf_addr": "00119de6",
+"size": 54,
+"words_diff": "0/6"
+},
+"0601e692": {
+"name": "compute_rms_db",
+"elf_addr": "0600ff48",
+"size": 46,
+"words_diff": "0/5"
+},
+"06056396": {
+"name": "copy_remain_data",
+"elf_addr": "060228c6",
+"size": 192,
+"words_diff": "1/24"
+},
+"06089e10": {
+"name": "core_sfr_enter_deepsleep",
+"elf_addr": "00120892",
+"size": 114,
+"words_diff": "1/14"
+},
+"0608a114": {
+"name": "core_sfr_exit_deepsleep",
+"elf_addr": "00120bfc",
+"size": 112,
+"words_diff": "1/14"
+},
+"0601f7a4": {
+"name": "create_name",
+"elf_addr": "060764fc",
+"size": 88,
+"words_diff": "0/11"
+},
+"06022368": {
+"name": "create_xdir",
+"elf_addr": "06078de4",
+"size": 282,
+"words_diff": "5/35"
+},
+"0601dec2": {
+"name": "db2mag",
+"elf_addr": "0600b70a",
+"size": 58,
+"words_diff": "1/7"
+},
+"0607cd34": {
+"name": "de_add_number",
+"elf_addr": "0607291c",
+"size": 74,
+"words_diff": "1/9"
+},
+"0607cd12": {
+"name": "de_add_uuid128",
+"elf_addr": "060728fa",
+"size": 34,
+"words_diff": "0/4"
+},
+"0607c964": {
+"name": "de_get_header_size",
+"elf_addr": "0607251a",
+"size": 26,
+"words_diff": "0/3"
+},
+"0607c97e": {
+"name": "de_get_len",
+"elf_addr": "06072534",
+"size": 80,
+"words_diff": "0/10"
+},
+"0607cb2a": {
+"name": "de_get_normalized_uuid",
+"elf_addr": "060726e0",
+"size": 102,
+"words_diff": "1/12"
+},
+"0607c9ce": {
+"name": "de_traverse_sequence",
+"elf_addr": "06072584",
+"size": 78,
+"words_diff": "0/9"
+},
+"0607222e": {
+"name": "decode_data_by_user_key",
+"elf_addr": "060675f6",
+"size": 50,
+"words_diff": "1/6"
+},
+"06024366": {
+"name": "decode_lfn",
+"elf_addr": "0607bc24",
+"size": 154,
+"words_diff": "0/19"
+},
+"060899e8": {
+"name": "delay_tmr2_lrc",
+"elf_addr": "00120318",
+"size": 100,
+"words_diff": "1/12"
+},
+"06040e66": {
+"name": "design_hp",
+"elf_addr": "060add14",
+"size": 104,
+"words_diff": "2/13"
+},
+"06040ece": {
+"name": "design_lp",
+"elf_addr": "060add7c",
+"size": 104,
+"words_diff": "2/13"
+},
+"06020c1c": {
+"name": "dir_alloc",
+"elf_addr": "0607811e",
+"size": 170,
+"words_diff": "3/21"
+},
+"06085550": {
+"name": "drc_db2mag",
+"elf_addr": "001225b6",
+"size": 26,
+"words_diff": "0/3"
+},
+"060300a6": {
+"name": "endian_change",
+"elf_addr": "0608850e",
+"size": 36,
+"words_diff": "0/4"
+},
+"0603c3c6": {
+"name": "eq_db2mag",
+"elf_addr": "060addf0",
+"size": 36,
+"words_diff": "0/4"
+},
+"06071f44": {
+"name": "f2_hash_function",
+"elf_addr": "0608289c",
+"size": 94,
+"words_diff": "1/11"
+},
+"060262c0": {
+"name": "f_GetName",
+"elf_addr": "0607a8a4",
+"size": 306,
+"words_diff": "3/38"
+},
+"060216fc": {
+"name": "f_PickOutName",
+"elf_addr": "060784e0",
+"size": 508,
+"words_diff": "2/63"
+},
+"060203cc": {
+"name": "f_opendir",
+"elf_addr": "0607751c",
+"size": 58,
+"words_diff": "1/7"
+},
+"0602728a": {
+"name": "f_save_table",
+"elf_addr": "0607cf48",
+"size": 160,
+"words_diff": "3/20"
+},
+"06058d4c": {
+"name": "fastsdct",
+"elf_addr": "0602527c",
+"size": 200,
+"words_diff": "1/25"
+},
+"06023b12": {
+"name": "fattime2systime",
+"elf_addr": "0607c648",
+"size": 42,
+"words_diff": "0/5"
+},
+"0602695e": {
+"name": "ff_delete_file",
+"elf_addr": "0607b1ee",
+"size": 228,
+"words_diff": "1/28"
+},
+"06022178": {
+"name": "fill_first_frag",
+"elf_addr": "06078bf4",
+"size": 52,
+"words_diff": "1/6"
+},
+"060206be": {
+"name": "fill_last_frag",
+"elf_addr": "060777cc",
+"size": 50,
+"words_diff": "0/6"
+},
+"0606a7a6": {
+"name": "find_max_exp.14205",
+"elf_addr": "060b8e52",
+"size": 34,
+"words_diff": "0/4"
+},
+"060706e6": {
+"name": "find_max_exp_index",
+"elf_addr": "06080fa2",
+"size": 38,
+"words_diff": "0/4"
+},
+"0606f1ce": {
+"name": "find_sbc_frame",
+"elf_addr": "0609fa34",
+"size": 84,
+"words_diff": "0/10"
+},
+"06021cd0": {
+"name": "follow_path",
+"elf_addr": "06078b38",
+"size": 164,
+"words_diff": "4/20"
+},
+"06021fe6": {
+"name": "fs_Caculatechecksum",
+"elf_addr": "06079132",
+"size": 32,
+"words_diff": "0/4"
+},
+"06022006": {
+"name": "fs_Createlfn",
+"elf_addr": "06079152",
+"size": 370,
+"words_diff": "6/46"
+},
+"060244b4": {
+"name": "fs_load_file",
+"elf_addr": "0607bd72",
+"size": 66,
+"words_diff": "0/8"
+},
+"0604dd12": {
+"name": "function_Ar01",
+"elf_addr": "0608da02",
+"size": 458,
+"words_diff": "2/57"
+},
+"0604dedc": {
+"name": "function_E13",
+"elf_addr": "0608dbcc",
+"size": 344,
+"words_diff": "4/43"
+},
+"0606a7c8": {
+"name": "gen_pow_2.14206",
+"elf_addr": "060b8e74",
+"size": 26,
+"words_diff": "0/3"
+},
+"06055ff6": {
+"name": "get_bit_from_stream",
+"elf_addr": "06022526",
+"size": 82,
+"words_diff": "0/10"
+},
+"060506fc": {
+"name": "get_dec_inf.13607",
+"elf_addr": "0609e778",
+"size": 90,
+"words_diff": "0/11"
+},
+"060247f2": {
+"name": "get_file_by_number",
+"elf_addr": "0607c0ce",
+"size": 100,
+"words_diff": "1/12"
+},
+"060247ae": {
+"name": "get_next_file",
+"elf_addr": "0607c08a",
+"size": 34,
+"words_diff": "0/4"
+},
+"060247d0": {
+"name": "get_prev_file",
+"elf_addr": "0607c0ac",
+"size": 34,
+"words_diff": "0/4"
+},
+"0601f074": {
+"name": "get_rect_nocover_b",
+"elf_addr": "06010546",
+"size": 142,
+"words_diff": "0/17"
+},
+"0601ef16": {
+"name": "get_rect_nocover_l",
+"elf_addr": "060103e8",
+"size": 106,
+"words_diff": "0/13"
+},
+"0601ef80": {
+"name": "get_rect_nocover_r",
+"elf_addr": "06010452",
+"size": 142,
+"words_diff": "0/17"
+},
+"0601f00e": {
+"name": "get_rect_nocover_t",
+"elf_addr": "060104e0",
+"size": 102,
+"words_diff": "0/12"
+},
+"0607aac0": {
+"name": "handle_vendordep_pdu_res",
+"elf_addr": "0606e894",
+"size": 86,
+"words_diff": "1/10"
+},
+"06089a4c": {
+"name": "hw_close_flash",
+"elf_addr": "00120406",
+"size": 302,
+"words_diff": "2/37"
+},
+"06058e14": {
+"name": "imdct36",
+"elf_addr": "06025344",
+"size": 170,
+"words_diff": "2/21"
+},
+"06056050": {
+"name": "init_bit_stream",
+"elf_addr": "06022580",
+"size": 40,
+"words_diff": "0/5"
+},
+"060766d0": {
+"name": "l2cap_emit_channel_closed",
+"elf_addr": "06069716",
+"size": 40,
+"words_diff": "0/5"
+},
+"0607662e": {
+"name": "l2cap_emit_channel_opened",
+"elf_addr": "06069674",
+"size": 118,
+"words_diff": "0/14"
+},
+"060766a4": {
+"name": "l2cap_emit_credits",
+"elf_addr": "060696ea",
+"size": 44,
+"words_diff": "0/5"
+},
+"06021b1c": {
+"name": "lfn_decode",
+"elf_addr": "06078986",
+"size": 194,
+"words_diff": "4/24"
+},
+"06019de8": {
+"name": "link_conn_set_encrypt",
+"elf_addr": "0608e588",
+"size": 38,
+"words_diff": "0/4"
+},
+"0602f7a0": {
+"name": "lmp_hci_accept_sco_connection_request",
+"elf_addr": "0608728c",
+"size": 42,
+"words_diff": "1/5"
+},
+"06033908": {
+"name": "lmp_hci_connection_cancel",
+"elf_addr": "060876ae",
+"size": 56,
+"words_diff": "1/7"
+},
+"0602f8de": {
+"name": "lmp_hci_create_connection",
+"elf_addr": "06086848",
+"size": 68,
+"words_diff": "1/8"
+},
+"06033980": {
+"name": "lmp_hci_inquiry",
+"elf_addr": "06087726",
+"size": 40,
+"words_diff": "1/5"
+},
+"0602f7ca": {
+"name": "lmp_hci_link_key_request_reply",
+"elf_addr": "060872c8",
+"size": 72,
+"words_diff": "1/9"
+},
+"0602f822": {
+"name": "lmp_hci_pin_code_request_reply",
+"elf_addr": "06087320",
+"size": 60,
+"words_diff": "1/7"
+},
+"06033a04": {
+"name": "lmp_hci_tx_channel_chassification",
+"elf_addr": "060877aa",
+"size": 66,
+"words_diff": "1/8"
+},
+"0602f688": {
+"name": "lmp_hci_write_simple_pairing_mode",
+"elf_addr": "0608717c",
+"size": 48,
+"words_diff": "1/6"
+},
+"060429f0": {
+"name": "lna_gain_sel",
+"elf_addr": "060836a0",
+"size": 24,
+"words_diff": "0/3"
+},
+"060221ee": {
+"name": "load_xdir",
+"elf_addr": "06078c6a",
+"size": 248,
+"words_diff": "6/31"
+},
+"0606a7f8": {
+"name": "log2Aprx_fft",
+"elf_addr": "0600f8d8",
+"size": 34,
+"words_diff": "0/4"
+},
+"06021bde": {
+"name": "long_name_fix",
+"elf_addr": "06078a48",
+"size": 56,
+"words_diff": "0/7"
+},
+"06045738": {
+"name": "low_power_group_query",
+"elf_addr": "0609a7be",
+"size": 52,
+"words_diff": "0/6"
+},
+"06045838": {
+"name": "low_power_suspend",
+"elf_addr": "0609a8c4",
+"size": 54,
+"words_diff": "0/6"
+},
+"06044060": {
+"name": "m2p_lrc_update",
+"elf_addr": "060991aa",
+"size": 52,
+"words_diff": "0/6"
+},
+"060509fe": {
+"name": "mad_layer_I",
+"elf_addr": "0609ea7a",
+"size": 312,
+"words_diff": "5/39"
+},
+"06050b36": {
+"name": "mad_layer_II",
+"elf_addr": "0609ebb2",
+"size": 480,
+"words_diff": "11/60"
+},
+"06059040": {
+"name": "mad_layer_III_decode",
+"elf_addr": "06025570",
+"size": 854,
+"words_diff": "0/106"
+},
+"06059396": {
+"name": "mad_layer_III_gr",
+"elf_addr": "060258c6",
+"size": 3178,
+"words_diff": "18/397"
+},
+"06050e2e": {
+"name": "mad_layer_II_gr",
+"elf_addr": "0609eeaa",
+"size": 836,
+"words_diff": "10/104"
+},
+"0606a63c": {
+"name": "magnAprx_float",
+"elf_addr": "0601ab58",
+"size": 46,
+"words_diff": "0/5"
+},
+"06032446": {
+"name": "make_xor",
+"elf_addr": "06089f08",
+"size": 28,
+"words_diff": "0/3"
+},
+"06044d5e": {
+"name": "mask_softflag_config",
+"elf_addr": "06098e26",
+"size": 40,
+"words_diff": "0/5"
+},
+"0605083a": {
+"name": "mp3_dec_config",
+"elf_addr": "0609e8b6",
+"size": 452,
+"words_diff": "9/56"
+},
+"06055bcc": {
+"name": "mp3_dec_fileStatus",
+"elf_addr": "060220fc",
+"size": 78,
+"words_diff": "0/9"
+},
+"0604f7b8": {
+"name": "mp3_decoder_open.13604",
+"elf_addr": "0609d834",
+"size": 156,
+"words_diff": "2/19"
+},
+"06058328": {
+"name": "mp3_decoder_run.13606",
+"elf_addr": "06024858",
+"size": 1672,
+"words_diff": "12/209"
+},
+"06055b1a": {
+"name": "mp3_get_frame_size",
+"elf_addr": "0602204a",
+"size": 48,
+"words_diff": "0/6"
+},
+"06055b4a": {
+"name": "mp3_init",
+"elf_addr": "0602207a",
+"size": 80,
+"words_diff": "1/10"
+},
+"06055c82": {
+"name": "mp3_input_data",
+"elf_addr": "060221b2",
+"size": 884,
+"words_diff": "7/110"
+},
+"0604f854": {
+"name": "mpeg_decode_header",
+"elf_addr": "0609d8d0",
+"size": 2894,
+"words_diff": "61/361"
+},
+"06055c1a": {
+"name": "mpeg_fseek_cur",
+"elf_addr": "0602214a",
+"size": 104,
+"words_diff": "0/13"
+},
+"060573ae": {
+"name": "mpegaudio_synth_full",
+"elf_addr": "060238de",
+"size": 3962,
+"words_diff": "5/495"
+},
+"06056456": {
+"name": "mpegaudio_synth_full_int",
+"elf_addr": "06022986",
+"size": 3928,
+"words_diff": "8/491"
+},
+"06089dd0": {
+"name": "mpu_enter_deep_sleep",
+"elf_addr": "00120852",
+"size": 64,
+"words_diff": "1/8"
+},
+"0608e5e0": {
+"name": "mpu_privilege",
+"elf_addr": "060019e2",
+"size": 130,
+"words_diff": "0/16"
+},
+"0608994c": {
+"name": "msys_to_p11_sync_cmd",
+"elf_addr": "0012027e",
+"size": 62,
+"words_diff": "1/7"
+},
+"060710ea": {
+"name": "muladd",
+"elf_addr": "06081a98",
+"size": 42,
+"words_diff": "0/5"
+},
+"060507e2": {
+"name": "need_dcbuf_size.13609",
+"elf_addr": "0609e85e",
+"size": 30,
+"words_diff": "0/3"
+},
+"0607cb04": {
+"name": "net_store_32",
+"elf_addr": "060726ba",
+"size": 38,
+"words_diff": "0/4"
+},
+"06087bb2": {
+"name": "os_sem_create",
+"elf_addr": "0011b1ee",
+"size": 24,
+"words_diff": "0/3"
+},
+"0608eb16": {
+"name": "owner_is_idle_task",
+"elf_addr": "0011b572",
+"size": 66,
+"words_diff": "0/8"
+},
+"06044d86": {
+"name": "p11_init",
+"elf_addr": "06098e4e",
+"size": 40,
+"words_diff": "0/5"
+},
+"0608990e": {
+"name": "p33_soft_reset",
+"elf_addr": "00120240",
+"size": 62,
+"words_diff": "0/7"
+},
+"060503a2": {
+"name": "parse_header",
+"elf_addr": "0609e41e",
+"size": 92,
+"words_diff": "0/11"
+},
+"06088f4a": {
+"name": "pc_rang_limit1",
+"elf_addr": "001193cc",
+"size": 32,
+"words_diff": "0/4"
+},
+"06088f6a": {
+"name": "pc_rang_limit2",
+"elf_addr": "001193ec",
+"size": 32,
+"words_diff": "0/4"
+},
+"0604dc78": {
+"name": "pht",
+"elf_addr": "0608d968",
+"size": 32,
+"words_diff": "0/4"
+},
+"06044d44": {
+"name": "port_protect",
+"elf_addr": "06098e0c",
+"size": 26,
+"words_diff": "0/3"
+},
+"0604dc98": {
+"name": "premute",
+"elf_addr": "0608d988",
+"size": 122,
+"words_diff": "0/15"
+},
+"06020580": {
+"name": "put_fat",
+"elf_addr": "0607768e",
+"size": 318,
+"words_diff": "7/39"
+},
+"06055b9a": {
+"name": "reset_bit_stream",
+"elf_addr": "060220ca",
+"size": 42,
+"words_diff": "0/5"
+},
+"06042b26": {
+"name": "reset_trim_info",
+"elf_addr": "06083766",
+"size": 244,
+"words_diff": "1/30"
+},
+"0607b9d0": {
+"name": "rfcomm_channel_dispatch",
+"elf_addr": "0606f8bc",
+"size": 46,
+"words_diff": "1/5"
+},
+"0607bd34": {
+"name": "rfcomm_channel_send_credits",
+"elf_addr": "0606f9e8",
+"size": 50,
+"words_diff": "1/6"
+},
+"0607bc34": {
+"name": "rfcomm_emit_channel_closed",
+"elf_addr": "0606f8ea",
+"size": 52,
+"words_diff": "1/6"
+},
+"0607b9fe": {
+"name": "rfcomm_emit_channel_opened",
+"elf_addr": "0606fa1a",
+"size": 102,
+"words_diff": "1/12"
+},
+"0607bc8c": {
+"name": "rfcomm_emit_connection_request",
+"elf_addr": "0606f94a",
+"size": 62,
+"words_diff": "0/7"
+},
+"0607bcf6": {
+"name": "rfcomm_send_uih_msc_rsp",
+"elf_addr": "0606f9aa",
+"size": 62,
+"words_diff": "0/7"
+},
+"0604dbbe": {
+"name": "roundkeygenerate",
+"elf_addr": "0608d8ae",
+"size": 186,
+"words_diff": "2/23"
+},
+"060677f8": {
+"name": "rxoffset_cal",
+"elf_addr": "0011c382",
+"size": 92,
+"words_diff": "1/11"
+},
+"0608440e": {
+"name": "sbc_cal_energy",
+"elf_addr": "060abcc4",
+"size": 136,
+"words_diff": "0/17"
+},
+"060843ce": {
+"name": "sbc_get_bits",
+"elf_addr": "060abc84",
+"size": 64,
+"words_diff": "0/8"
+},
+"06006b76": {
+"name": "sdfile_str_to_upper",
+"elf_addr": "060751c2",
+"size": 26,
+"words_diff": "0/3"
+},
+"06006b90": {
+"name": "sdfile_strcase_cmp",
+"elf_addr": "060751dc",
+"size": 134,
+"words_diff": "0/16"
+},
+"0607f6d8": {
+"name": "sdp_filter_attributes_in_attributeIDList",
+"elf_addr": "06073c62",
+"size": 52,
+"words_diff": "1/6"
+},
+"0607f70c": {
+"name": "sdp_handle_service_attribute_request",
+"elf_addr": "06073c96",
+"size": 320,
+"words_diff": "8/40"
+},
+"0607ce7c": {
+"name": "sdp_send_cmd_iotl",
+"elf_addr": "06072a64",
+"size": 82,
+"words_diff": "1/10"
+},
+"0607c8f0": {
+"name": "sdp_traversal_attributeID_search",
+"elf_addr": "06072496",
+"size": 66,
+"words_diff": "0/8"
+},
+"0607cbac": {
+"name": "sdp_traversal_contains_UUID128",
+"elf_addr": "06072762",
+"size": 64,
+"words_diff": "1/8"
+},
+"0607ca7a": {
+"name": "sdp_traversal_filter_attributes",
+"elf_addr": "06072630",
+"size": 104,
+"words_diff": "0/13"
+},
+"0607cae2": {
+"name": "sdp_traversal_get_filtered_size",
+"elf_addr": "06072698",
+"size": 34,
+"words_diff": "0/4"
+},
+"0607cbec": {
+"name": "sdp_traversal_match_pattern",
+"elf_addr": "060727a2",
+"size": 40,
+"words_diff": "0/5"
+},
+"0601f780": {
+"name": "seach_file_by_clust",
+"elf_addr": "060764d8",
+"size": 36,
+"words_diff": "0/4"
+},
+"0601f75c": {
+"name": "seach_file_by_number",
+"elf_addr": "060764b4",
+"size": 36,
+"words_diff": "0/4"
+},
+"0601f8d6": {
+"name": "seach_file_by_path",
+"elf_addr": "0607660e",
+"size": 48,
+"words_diff": "1/6"
+},
+"0603c524": {
+"name": "set_trim_buf",
+"elf_addr": "060b1f58",
+"size": 46,
+"words_diff": "0/5"
+},
+"06070d56": {
+"name": "sha256Compute",
+"elf_addr": "0608156c",
+"size": 108,
+"words_diff": "2/13"
+},
+"06070dc4": {
+"name": "sha256Init",
+"elf_addr": "06081768",
+"size": 80,
+"words_diff": "0/10"
+},
+"06070272": {
+"name": "soc_sync_bt_time",
+"elf_addr": "060b9344",
+"size": 40,
+"words_diff": "0/5"
+},
+"06070220": {
+"name": "soc_sync_matched_sample_rate",
+"elf_addr": "060b92d6",
+"size": 32,
+"words_diff": "0/4"
+},
+"0607ca38": {
+"name": "spd_append_range",
+"elf_addr": "060725ee",
+"size": 66,
+"words_diff": "1/8"
+},
+"060520de": {
+"name": "spi_writebyte",
+"elf_addr": "0011f8d0",
+"size": 26,
+"words_diff": "0/3"
+},
+"0601fabc": {
+"name": "st_qword",
+"elf_addr": "06076e0a",
+"size": 64,
+"words_diff": "0/8"
+},
+"0601dafa": {
+"name": "thread_run",
+"elf_addr": "0600f5f8",
+"size": 68,
+"words_diff": "1/8"
+},
+"060503fe": {
+"name": "type_check.13605",
+"elf_addr": "0609e47a",
+"size": 766,
+"words_diff": "10/95"
+},
+"0608af0e": {
+"name": "u_delay",
+"elf_addr": "001194c6",
+"size": 38,
+"words_diff": "0/4"
+},
+"0602c5a6": {
+"name": "usb_clr_intr_rxe",
+"elf_addr": "06062094",
+"size": 34,
+"words_diff": "0/4"
+},
+"0602c502": {
+"name": "usb_clr_intr_txe",
+"elf_addr": "06061fb2",
+"size": 34,
+"words_diff": "0/4"
+},
+"0602c538": {
+"name": "usb_set_dma_raddr",
+"elf_addr": "06061fea",
+"size": 58,
+"words_diff": "1/7"
+},
+"0602c58a": {
+"name": "usb_set_intr_rxe",
+"elf_addr": "06062078",
+"size": 28,
+"words_diff": "0/3"
+},
+"0602c4e6": {
+"name": "usb_set_intr_txe",
+"elf_addr": "06061f96",
+"size": 28,
+"words_diff": "0/3"
+},
+"06011428": {
+"name": "vad_disable",
+"elf_addr": "0600e7f4",
+"size": 24,
+"words_diff": "0/3"
+},
+"06042450": {
+"name": "wifi_det_close",
+"elf_addr": "060831e4",
+"size": 24,
+"words_diff": "0/3"
+},
+"060221c4": {
+"name": "xdir_sum",
+"elf_addr": "06078c40",
+"size": 42,
+"words_diff": "0/5"
+},
+"0608af34": {
+"name": "xosc_adet_en",
+"elf_addr": "001194ec",
+"size": 46,
+"words_diff": "0/5"
+},
+"0608af62": {
+"name": "xosc_hcs_set",
+"elf_addr": "0011943c",
+"size": 24,
+"words_diff": "0/3"
+},
+"0608af7a": {
+"name": "xosc_oe_for_hcs",
+"elf_addr": "0011951a",
+"size": 50,
+"words_diff": "0/6"
+},
+"06029a28": {
+"name": "__muldf3",
+"elf_addr": "06010f92",
+"size": 708,
+"words_diff": "0/88"
+},
+"06029558": {
+"name": "__gedf2",
+"elf_addr": "06010ac2",
+"size": 168,
+"words_diff": "0/21"
+},
+"060299a6": {
+"name": "__floatsidf",
+"elf_addr": "06010f10",
+"size": 76,
+"words_diff": "0/9"
+},
+"060293ac": {
+"name": "strcat",
+"elf_addr": "0601095c",
+"size": 44,
+"words_diff": "1/5"
+},
+"060294a8": {
+"name": "__cmpdf2",
+"elf_addr": "06010a12",
+"size": 176,
+"words_diff": "0/22"
+},
+"06029e7c": {
+"name": "__floatunsidf",
+"elf_addr": "060113aa",
+"size": 52,
+"words_diff": "0/6"
+},
+"06029696": {
+"name": "__divdf3",
+"elf_addr": "06010c00",
+"size": 784,
+"words_diff": "0/98"
+},
+"06029600": {
+"name": "__unorddf2",
+"elf_addr": "06010b6a",
+"size": 64,
+"words_diff": "0/8"
+},
+"0602941e": {
+"name": "strncpy",
+"elf_addr": "06010988",
+"size": 98,
+"words_diff": "0/12"
+},
+"06029dae": {
+"name": "__floatdisf",
+"elf_addr": "060112dc",
+"size": 206,
+"words_diff": "0/25"
+},
+"06029eb0": {
+"name": "__truncdfsf2",
+"elf_addr": "060113de",
+"size": 326,
+"words_diff": "0/40"
+},
+"06088cb4": {
+"name": "sfc_suspend",
+"elf_addr": "0011f75e",
+"size": 134,
+"words_diff": "2/16"
+},
+"06029cf8": {
+"name": "__extendsfdf2",
+"elf_addr": "06011262",
+"size": 122,
+"words_diff": "0/15"
+},
+"0602b4dc": {
+"name": "boot_clk_init",
+"elf_addr": "06094ef4",
+"size": 44,
+"words_diff": "1/5"
+},
+"06085848": {
+"name": "DrcPeakFollowProcess",
+"elf_addr": "01e7a1be",
+"size": 52,
+"words_diff": "0/6",
+"lib": "br23-sdk.elf"
+},
+"0606a0a2": {
+"name": "_Z15VectorMagAndDivRK6VectorI12floatComplexERKS_I9floatRealERK6ScalarIS4_ERS5_",
+"elf_addr": "01ea32e4",
+"size": 64,
+"words_diff": "1/8",
+"lib": "br23-sdk.elf"
+},
+"0606a03c": {
+"name": "_Z22VectorRecursiveAverageRK6VectorI9floatRealERS1_RK6ScalarIS0_E",
+"elf_addr": "01ea286e",
+"size": 56,
+"words_diff": "1/7",
+"lib": "br23-sdk.elf"
+},
+"06069e3e": {
+"name": "_Z25VectorMagRecursiveAverageRK6VectorI12floatComplexERS_I9floatRealERK6ScalarIS4_E",
+"elf_addr": "01ea2200",
+"size": 60,
+"words_diff": "1/7",
+"lib": "br23-sdk.elf"
+},
+"060277e2": {
+"name": "__btif_item_read",
+"elf_addr": "01e35fc6",
+"size": 94,
+"words_diff": "2/11",
+"lib": "br23-sdk.elf"
+},
+"0604bea4": {
+"name": "audio_cfifo_mix_data",
+"elf_addr": "00006f82",
+"size": 368,
+"words_diff": "1/46",
+"lib": "br23-sdk.elf"
+},
+"0608ea38": {
+"name": "get_fat_by_obj",
+"elf_addr": "01e302ae",
+"size": 112,
+"words_diff": "1/14",
+"lib": "br23-sdk.elf"
+},
+"0604dbc0": {
+"name": "roundkeygenerate",
+"elf_addr": "01e19fa2",
+"size": 184,
+"words_diff": "4/23",
+"lib": "br23-sdk.elf"
+},
+"06029d72": {
+"name": "__fixunsdfsi",
+"elf_addr": "01ea4d5a",
+"size": 60,
+"words_diff": "0/7",
+"lib": "br23-sdk.elf"
+}
+}

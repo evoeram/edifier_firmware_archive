@@ -1,0 +1,1 @@
+https://foreign-app.edifier.com/home/api/v1/ota-upgrade?product_id=481&os=1&mac=C8%3A24%3A78%3A12%3A34%3A56&current_version=0.0.0&app_version=1.0.32&app=13&timestamp=1794953480&sign=4766DF5718E2B215109D4E0DC5B06A4E

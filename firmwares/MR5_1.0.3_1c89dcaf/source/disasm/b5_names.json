@@ -1,0 +1,146 @@
+{
+"06087398": {
+"name": "os_mutex_post",
+"conf": "high",
+"evidence": "OSEventType==3 (mutex); restores owner prio (prio inheritance), readies highest waiter via OS_EventHighestTask",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608718a": {
+"name": "os_mutex_pend",
+"conf": "high",
+"evidence": "OSEventType==3; timeout==-1 infinite wait; raises task prio (inheritance); loops on sched state",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06086daa": {
+"name": "os_mutex_create",
+"conf": "high",
+"evidence": "writes OSEventType=3, cnt=1, owner=0xff into 16-B event block",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06087ace": {
+"name": "os_sem_pend",
+"conf": "high",
+"evidence": "OSEventType==2 (sem); timeout==-1 loop; decrements OSEventCnt(+0xc)",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06087a88": {
+"name": "os_sem_post",
+"conf": "high",
+"evidence": "rejects type!=2; sched; increments/flags OSEventCnt",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06087740": {
+"name": "os_sem_del_core",
+"conf": "med",
+"evidence": "type==2; OS_EventHighestTask + wait-list unlink; flush path",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"060878c8": {
+"name": "os_sem_del",
+"conf": "med",
+"evidence": "tail-call wrapper of 06087740",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"060874c8": {
+"name": "os_taskq_post_core",
+"conf": "med-high",
+"evidence": "OSGetTaskTcb(name); queue insert; sched request; sched-lock check",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"060875c2": {
+"name": "os_taskq_post",
+"conf": "med",
+"evidence": "wrapper: os_taskq_post_core + set per-task sched flag 0x1083e4[cnum]",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"060876d0": {
+"name": "os_time_dly",
+"conf": "med",
+"evidence": "rejects in-irq/critical context; tail into tick-wait 06087656",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06086dd0": {
+"name": "os_task_unready",
+"conf": "high",
+"evidence": "unlinks TCB from ready list 0x108228[prio*8], clears bitmap 0x108210",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06086eda": {
+"name": "os_task_ready",
+"conf": "high",
+"evidence": "inserts TCB into ready list 0x108228[prio*8], sets bitmap bit",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608732c": {
+"name": "os_event_task_unlink",
+"conf": "high",
+"evidence": "unlinks node from event wait list (+0x18/+0x1c double-linked)",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608eaba": {
+"name": "os_sched",
+"conf": "med",
+"evidence": "enter_critical; store ret-addr; switch-out (tail does not return)",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06086dc8": {
+"name": "os_int_state_get_a",
+"conf": "med",
+"evidence": "reads icfg.b0",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608eab2": {
+"name": "os_int_state_get_b",
+"conf": "med",
+"evidence": "reads icfg.b0",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608978a": {
+"name": "os_critical_nest_get",
+"conf": "high",
+"evidence": "returns per-core critical nest counter 0x1083dc[cnum]",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06087610": {
+"name": "os_spin_lock",
+"conf": "high",
+"evidence": "testset spin on global 0x108404 (SMP lock)",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608761e": {
+"name": "os_spin_unlock",
+"conf": "high",
+"evidence": "clears 0x108404",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06088c40": {
+"name": "sysclk_cs_enter",
+"conf": "med",
+"evidence": "nest counters 0x1083f4/fc[cnum] + spin lock; PLL wait 0xfe0200; SFC regs 0xfd55xx; freq dispatch table 0x06088da0",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06088c72": {
+"name": "sysclk_cs_exit",
+"conf": "med",
+"evidence": "mirror of enter: dec counters, PLL wait, freq dispatch",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"0608aee6": {
+"name": "delay_ms",
+"conf": "low-med",
+"evidence": "loop param times calling delay cal loop (global 0x1079c0 = clk rate)",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"060885ca": {
+"name": "sys_time_ms",
+"conf": "low-med",
+"evidence": "reads 0xffe0f0 timer (T2), /1000 -> ms; PMU helper 0x0bfa5194",
+"source": "b5-expert (plan NEW2 F3)"
+},
+"06088538": {
+"name": "sys_time_ms_lock",
+"conf": "low-med",
+"evidence": "same + optional critical section (param gate)",
+"source": "b5-expert (plan NEW2 F3)"
+}
+}

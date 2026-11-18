@@ -1,0 +1,7 @@
+# Ghidra project internals (binary state, keep as-is)
+*.rep/*
+!*.rep/project.log
+# big archives and OS noise
+*.7z
+Thumbs.db
+Desktop.ini

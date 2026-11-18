@@ -1,0 +1,2271 @@
+{
+"00000002": {
+"sites": 1,
+"callers": [
+"0607815a"
+],
+"kind": "rom",
+"name": "_start+2",
+"near_label": "0+2",
+"via": "rom.lst-near"
+},
+"0001fd6e": {
+"sites": 1,
+"callers": [
+"06045962"
+],
+"kind": "rom",
+"name": "__stub_lp_signature_set+2",
+"near_label": "1fd6c+2",
+"via": "rom.lst-near"
+},
+"0001fd76": {
+"sites": 189,
+"callers": [
+"060006aa",
+"0600087a",
+"060008b2",
+"06000ac2",
+"06000b52",
+"06000ec4",
+"06000fea",
+"0600252a",
+"06002584",
+"06002592",
+"060025a2",
+"06002690"
+],
+"kind": "rom",
+"name": "__stub_memcpy+2",
+"near_label": "1fd74+2",
+"via": "rom.lst-near"
+},
+"0001fd7a": {
+"sites": 32,
+"callers": [
+"0601e70a",
+"0601e71a",
+"0601e728",
+"0601e762",
+"0601e774",
+"0601e780",
+"0601e7c0",
+"0601e7d4",
+"0601e7e4",
+"0601e8a4",
+"0601e8b4",
+"0601e8c2"
+],
+"kind": "rom",
+"name": "__stub_memmove+2",
+"near_label": "1fd78+2",
+"via": "rom.lst-near"
+},
+"0001fd7e": {
+"sites": 122,
+"callers": [
+"06004f40",
+"060058e0",
+"06007cfa",
+"06007d08",
+"06007d48",
+"06009898",
+"06009972",
+"060099bc",
+"0600a9f6",
+"0600abbc",
+"0600abcc",
+"0600b108"
+],
+"kind": "rom",
+"name": "__stub_memcmp+2",
+"near_label": "1fd7c+2",
+"via": "rom.lst-near"
+},
+"0001fd82": {
+"sites": 162,
+"callers": [
+"06000a96",
+"06000fd4",
+"060022e6",
+"06002b48",
+"06002d40",
+"06003110",
+"060033a4",
+"060036e8",
+"0600446a",
+"06004502",
+"0600453c",
+"06004a76"
+],
+"kind": "rom",
+"name": "__stub_memset+2",
+"near_label": "1fd80+2",
+"via": "rom.lst-near"
+},
+"0001fd86": {
+"sites": 26,
+"callers": [
+"060004b0",
+"060008e4",
+"06001230",
+"06001260",
+"060012fe",
+"060030d4",
+"060070a2",
+"060072ea",
+"06007304",
+"06007312",
+"06007320",
+"06007ec2"
+],
+"kind": "rom",
+"name": "__stub_strcmp+2",
+"near_label": "1fd84+2",
+"via": "rom.lst-near"
+},
+"0001fd8a": {
+"sites": 7,
+"callers": [
+"060004ca",
+"06002ec8",
+"06007db0",
+"06017ba2",
+"0601af16",
+"060293ce",
+"06038b04"
+],
+"kind": "rom",
+"name": "__stub_strcpy+2",
+"near_label": "1fd88+2",
+"via": "rom.lst-near"
+},
+"0001fd8e": {
+"sites": 45,
+"callers": [
+"06000ab2",
+"06002ed0",
+"060030bc",
+"060031a2",
+"060031be",
+"060031d2",
+"060031fa",
+"06003208",
+"0600321c",
+"06003230",
+"06003f48",
+"0600431c"
+],
+"kind": "rom",
+"name": "__stub_strlen+2",
+"near_label": "1fd8c+2",
+"via": "rom.lst-near"
+},
+"0001fd92": {
+"sites": 5,
+"callers": [
+"0600a896",
+"0600dbc6",
+"0604203c",
+"0604204c",
+"06042062"
+],
+"kind": "rom",
+"name": "__stub_strncmp+2",
+"near_label": "1fd90+2",
+"via": "rom.lst-near"
+},
+"0001fd9a": {
+"sites": 4,
+"callers": [
+"0600089a",
+"06006cf0",
+"0602948c",
+"0602949c"
+],
+"kind": "rom",
+"name": "__stub_strchr+2",
+"near_label": "1fd98+2",
+"via": "rom.lst-near"
+},
+"0001fd9e": {
+"sites": 6,
+"callers": [
+"0604fa7e",
+"0604fb28",
+"06050792",
+"060507b8",
+"0605097a",
+"060509a2"
+],
+"kind": "rom",
+"name": "__stub___divdi3+2",
+"near_label": "1fd9c+2",
+"via": "rom.lst-near"
+},
+"0001fda2": {
+"sites": 1,
+"callers": [
+"06029ffe"
+],
+"kind": "rom",
+"name": "__stub___udivmoddi4+2",
+"near_label": "1fda0+2",
+"via": "rom.lst-near"
+},
+"0001fda6": {
+"sites": 43,
+"callers": [
+"0600289a",
+"06002958",
+"06007c70",
+"06014fec",
+"0601525a",
+"060281ec",
+"06028a9c",
+"06028afc",
+"06028b18",
+"06028b34",
+"06028b50",
+"06028b6c"
+],
+"kind": "rom",
+"name": "__stub___adddf3+2",
+"near_label": "1fda4+2",
+"via": "rom.lst-near"
+},
+"0001fdaa": {
+"sites": 6,
+"callers": [
+"06014ff2",
+"06015260",
+"06030fcc",
+"06040bc0",
+"06040c18",
+"06045ec8"
+],
+"kind": "rom",
+"name": "__stub___fixdfsi+2",
+"near_label": "1fda8+2",
+"via": "rom.lst-near"
+},
+"0001fdce": {
+"sites": 3,
+"callers": [
+"06052400",
+"0605245e",
+"0605257a"
+],
+"kind": "rom",
+"name": "__stub_sfc_drop_cache+2",
+"near_label": "1fdcc+2",
+"via": "rom.lst-near"
+},
+"0001fdfe": {
+"sites": 1,
+"callers": [
+"0600b43c"
+],
+"kind": "rom",
+"name": "__stub_print+2",
+"near_label": "1fdfc+2",
+"via": "rom.lst-near"
+},
+"0001fe0e": {
+"sites": 6,
+"callers": [
+"06000850",
+"06000af0",
+"060180ec",
+"060181a2",
+"0601828e",
+"0607224e"
+],
+"kind": "rom",
+"name": "__stub_doe+2",
+"near_label": "1fe0c+2",
+"via": "rom.lst-near"
+},
+"0001fe12": {
+"sites": 1,
+"callers": [
+"06005016"
+],
+"kind": "rom",
+"name": "__stub_spi_get_port+2",
+"near_label": "1fe10+2",
+"via": "rom.lst-near"
+},
+"0001fe16": {
+"sites": 1,
+"callers": [
+"0602b500"
+],
+"kind": "rom",
+"name": "__stub__pll_init+2",
+"near_label": "1fe14+2",
+"via": "rom.lst-near"
+},
+"0001fe32": {
+"sites": 1,
+"callers": [
+"06037b3a"
+],
+"kind": "rom",
+"name": "__stub_LZ4_decompress_generic+2",
+"near_label": "1fe30+2",
+"via": "rom.lst-near"
+},
+"00109522": {
+"sites": 1,
+"callers": [
+"0600e732"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608440e",
+"region": "1094e0+44080",
+"name": "sbc_cal_energy"
+},
+"0010b7fa": {
+"sites": 1,
+"callers": [
+"0600994c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060866e6",
+"region": "1094e0+44080"
+},
+"0010b826": {
+"sites": 1,
+"callers": [
+"0600e766"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086712",
+"region": "1094e0+44080"
+},
+"0010bac0": {
+"sites": 1,
+"callers": [
+"060547a0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060869ac",
+"region": "1094e0+44080"
+},
+"0010bc4e": {
+"sites": 1,
+"callers": [
+"06000738"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086b3a",
+"region": "1094e0+44080"
+},
+"0010bcd8": {
+"sites": 1,
+"callers": [
+"06051fee"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086bc4",
+"region": "1094e0+44080"
+},
+"0010bd32": {
+"sites": 1,
+"callers": [
+"06051ff4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086c1e",
+"region": "1094e0+44080"
+},
+"0010bd5c": {
+"sites": 2,
+"callers": [
+"0602bea6",
+"0602bef4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086c48",
+"region": "1094e0+44080"
+},
+"0010bd5e": {
+"sites": 1,
+"callers": [
+"0602beb4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086c4a",
+"region": "1094e0+44080"
+},
+"0010bd64": {
+"sites": 2,
+"callers": [
+"0602bdda",
+"0602bec2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086c50",
+"region": "1094e0+44080"
+},
+"0010bebe": {
+"sites": 25,
+"callers": [
+"060004f2",
+"060012d0",
+"06006ca6",
+"06011050",
+"060128fe",
+"06014b2e",
+"0601799e",
+"06017ae2",
+"06017b5a",
+"0601855e",
+"0602d1c6",
+"0602d4aa"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06086daa",
+"region": "1094e0+44080",
+"name": "os_mutex_create",
+"via": "b5-expert (high)",
+"evidence": "writes OSEventType=3, cnt=1, owner=0xff into 16-B event block"
+},
+"0010c29e": {
+"sites": 74,
+"callers": [
+"06000428",
+"06000498",
+"06000542",
+"0600064c",
+"06000824",
+"060009b0",
+"06001248",
+"0600128e",
+"06002bb6",
+"06004d94",
+"060056d2",
+"060057c0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608718a",
+"region": "1094e0+44080",
+"name": "os_mutex_pend",
+"via": "b5-expert (high)",
+"evidence": "OSEventType==3; timeout==-1 infinite wait; raises task prio (inheritance); loops on sched state"
+},
+"0010c4ac": {
+"sites": 86,
+"callers": [
+"06000480",
+"060004e2",
+"060005fc",
+"0600066a",
+"06000858",
+"060009d8",
+"060009f2",
+"06000a40",
+"0600126a",
+"06001274",
+"06001390",
+"06002cfc"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087398",
+"region": "1094e0+44080",
+"name": "os_mutex_post",
+"via": "b5-expert (high)",
+"evidence": "OSEventType==3 (mutex); restores owner prio (prio inheritance), readies highest waiter via OS_EventHighestTask"
+},
+"0010c6d6": {
+"sites": 33,
+"callers": [
+"0600040e",
+"0600098e",
+"06001134",
+"06002206",
+"0600253e",
+"060035e6",
+"060037aa",
+"06004bf6",
+"06004c36",
+"060059b0",
+"060066c6",
+"060066f6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060875c2",
+"region": "1094e0+44080",
+"name": "os_taskq_post",
+"via": "b5-expert (med)",
+"evidence": "wrapper: os_taskq_post_core + set per-task sched flag 0x1083e4[cnum]"
+},
+"0010c7e4": {
+"sites": 34,
+"callers": [
+"060050f8",
+"06005ab2",
+"06008eaa",
+"0600a644",
+"0600e05a",
+"0600f59c",
+"060111fa",
+"06011220",
+"06012982",
+"0602c096",
+"0602c294",
+"060354fe"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060876d0",
+"region": "1094e0+44080",
+"name": "os_time_dly",
+"via": "b5-expert (med)",
+"evidence": "rejects in-irq/critical context; tail into tick-wait 06087656"
+},
+"0010c9d6": {
+"sites": 2,
+"callers": [
+"0600879e",
+"0602b744"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060878c2",
+"region": "1094e0+44080"
+},
+"0010c9dc": {
+"sites": 16,
+"callers": [
+"0600139e",
+"060113bc",
+"060142ee",
+"0601ce96",
+"0602c08c",
+"0602e83a",
+"0602e90e",
+"0603786e",
+"0603964a",
+"0603966c",
+"06039a9e",
+"0603bd16"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060878c8",
+"region": "1094e0+44080",
+"name": "os_sem_del",
+"via": "b5-expert (med)",
+"evidence": "tail-call wrapper of 06087740"
+},
+"0010cad8": {
+"sites": 8,
+"callers": [
+"060013ac",
+"06005d90",
+"06008b1a",
+"0601ec06",
+"0602d570",
+"0603747c",
+"06045144",
+"06077f7c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060879c4",
+"region": "1094e0+44080"
+},
+"0010cb9c": {
+"sites": 13,
+"callers": [
+"060143b6",
+"060144f6",
+"0602c2fa",
+"0602e3b2",
+"0602e958",
+"0603b468",
+"0603bd9a",
+"0603dfa2",
+"0603e80c",
+"0603e88a",
+"06041ef0",
+"060703d6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087a88",
+"region": "1094e0+44080",
+"name": "os_sem_post",
+"via": "b5-expert (high)",
+"evidence": "rejects type!=2; sched; increments/flags OSEventCnt"
+},
+"0010cbc0": {
+"sites": 7,
+"callers": [
+"06019580",
+"0602c30e",
+"06037d2c",
+"06038b98",
+"06039478",
+"06039484",
+"06045596"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087aac",
+"region": "1094e0+44080",
+"name": "os_taskq_post_msg",
+"via": "sdk-overlay-align"
+},
+"0010cbe2": {
+"sites": 15,
+"callers": [
+"060035f4",
+"060037b8",
+"060143cc",
+"0602c318",
+"0602e76c",
+"06036fc0",
+"06037d52",
+"0603b3d8",
+"0603b432",
+"0603dfcc",
+"06042134",
+"0604229a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087ace",
+"region": "1094e0+44080",
+"name": "os_sem_pend",
+"via": "b5-expert (high)",
+"evidence": "OSEventType==2 (sem); timeout==-1 loop; decrements OSEventCnt(+0xc)"
+},
+"0010ccc6": {
+"sites": 19,
+"callers": [
+"06003774",
+"0601115c",
+"06013f06",
+"0602d120",
+"0602e5ac",
+"0602e5be",
+"06036f8e",
+"06037d14",
+"060383e0",
+"06038ae8",
+"0603a8c8",
+"0603a8d6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087bb2",
+"region": "1094e0+44080",
+"name": "os_sem_create"
+},
+"0010cd5e": {
+"sites": 1,
+"callers": [
+"0602bff2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087c4a",
+"region": "1094e0+44080"
+},
+"0010cdd0": {
+"sites": 2,
+"callers": [
+"0602c002",
+"0602c01a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087cbc",
+"region": "1094e0+44080"
+},
+"0010cdec": {
+"sites": 21,
+"callers": [
+"060110ba",
+"060135f4",
+"060178a6",
+"0601800c",
+"06018020",
+"0601802e",
+"0601853a",
+"06018548",
+"0602a9f4",
+"0602baba",
+"0602d3de",
+"0602d3f0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087cd8",
+"region": "1094e0+44080",
+"name": "request_irq",
+"via": "sdk-overlay-align"
+},
+"0010cf14": {
+"sites": 1,
+"callers": [
+"0602c062"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087e00",
+"region": "1094e0+44080"
+},
+"0010cf1a": {
+"sites": 2,
+"callers": [
+"06005128",
+"06044cc8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087e06",
+"region": "1094e0+44080"
+},
+"0010cf86": {
+"sites": 8,
+"callers": [
+"0600e3e8",
+"0600e3f0",
+"06018316",
+"0601831e",
+"06018328",
+"06018330",
+"06018338",
+"06018340"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087e72",
+"region": "1094e0+44080"
+},
+"0010cfac": {
+"sites": 1,
+"callers": [
+"06005144"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087e98",
+"region": "1094e0+44080"
+},
+"0010cfc0": {
+"sites": 1,
+"callers": [
+"060495d0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087eac",
+"region": "1094e0+44080"
+},
+"0010d03a": {
+"sites": 4,
+"callers": [
+"0602c082",
+"0602c09e",
+"0603b3e0",
+"0603b43a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087f26",
+"region": "1094e0+44080"
+},
+"0010d100": {
+"sites": 1,
+"callers": [
+"0603f158"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087fec",
+"region": "1094e0+44080"
+},
+"0010d106": {
+"sites": 2,
+"callers": [
+"06009f82",
+"06009fb0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06087ff2",
+"region": "1094e0+44080"
+},
+"0010d118": {
+"sites": 1,
+"callers": [
+"06017fe8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088004",
+"region": "1094e0+44080"
+},
+"0010d146": {
+"sites": 3,
+"callers": [
+"0601803a",
+"06018046",
+"0602bace"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088032",
+"region": "1094e0+44080"
+},
+"0010d196": {
+"sites": 2,
+"callers": [
+"06018052",
+"06018896"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088082",
+"region": "1094e0+44080"
+},
+"0010d23e": {
+"sites": 1,
+"callers": [
+"060184fe"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608812a",
+"region": "1094e0+44080"
+},
+"0010d294": {
+"sites": 2,
+"callers": [
+"0603783e",
+"06070380"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088180",
+"region": "1094e0+44080"
+},
+"0010d3ee": {
+"sites": 2,
+"callers": [
+"0603b3ea",
+"0603b444"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060882da",
+"region": "1094e0+44080"
+},
+"0010d41a": {
+"sites": 10,
+"callers": [
+"0602a096",
+"0602a0ac",
+"0602a18c",
+"0602a1bc",
+"0602a1fa",
+"0602a20e",
+"0602a27e",
+"0602a2a0",
+"0602a684",
+"0602a90e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088306",
+"region": "1094e0+44080"
+},
+"0010d560": {
+"sites": 3,
+"callers": [
+"0602a28a",
+"0602a68e",
+"0602a9b8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608844c",
+"region": "1094e0+44080"
+},
+"0010d6de": {
+"sites": 10,
+"callers": [
+"0600119e",
+"0600cf5a",
+"0602b50a",
+"0602b5bc",
+"0602b646",
+"0602b824",
+"0602b93a",
+"0602bb20",
+"0602bba8",
+"0602bd04"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060885ca",
+"region": "1094e0+44080",
+"name": "sys_time_ms",
+"via": "b5-expert (low-med)",
+"evidence": "reads 0xffe0f0 timer (T2), /1000 -> ms; PMU helper 0x0bfa5194"
+},
+"0010d70e": {
+"sites": 5,
+"callers": [
+"060011a8",
+"0602b53e",
+"0602b572",
+"0602bb2a",
+"0602bbd2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060885fa",
+"region": "1094e0+44080"
+},
+"0010d726": {
+"sites": 8,
+"callers": [
+"0602b5c4",
+"0602b64e",
+"0602b82c",
+"0602b942",
+"0602bb54",
+"0602bbe8",
+"0602bc70",
+"0602bd10"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088612",
+"region": "1094e0+44080"
+},
+"0010d734": {
+"sites": 4,
+"callers": [
+"0602b656",
+"06036ed8",
+"0603854a",
+"06076120"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088620",
+"region": "1094e0+44080"
+},
+"0010d79e": {
+"sites": 3,
+"callers": [
+"0602bd28",
+"0602bd82",
+"0602be6e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608868a",
+"region": "1094e0+44080"
+},
+"0010d7c0": {
+"sites": 2,
+"callers": [
+"0602bd8c",
+"0602be84"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060886ac",
+"region": "1094e0+44080"
+},
+"0010d7e4": {
+"sites": 2,
+"callers": [
+"0602bd3c",
+"0602bda0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060886d0",
+"region": "1094e0+44080"
+},
+"0010d840": {
+"sites": 2,
+"callers": [
+"0603e0de",
+"0604c7cc"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608872c",
+"region": "1094e0+44080"
+},
+"0010d8ac": {
+"sites": 12,
+"callers": [
+"06013b32",
+"060140c2",
+"06014458",
+"060171be",
+"0603a3f8",
+"0603a42c",
+"0603aff8",
+"0603b96c",
+"0603ebc4",
+"0604cd72",
+"0604cd7e",
+"0604cf14"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088798",
+"region": "1094e0+44080"
+},
+"0010db7e": {
+"sites": 378,
+"callers": [
+"060012b8",
+"0600131a",
+"060013ce",
+"060013f0",
+"0600255c",
+"060025e8",
+"06002702",
+"06002fac",
+"0600301a",
+"06004cf4",
+"06004e74",
+"06004f04"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088a6a",
+"region": "1094e0+44080",
+"name": "os_enter_critical",
+"via": "semantic-decompile",
+"evidence": "per-core nest counters 0x1083dc/0x1083ec inc; IRQ mask 0xffe1a8+cnum*0x800 := 6"
+},
+"0010dbcc": {
+"sites": 434,
+"callers": [
+"060012c6",
+"0600132c",
+"060013d8",
+"0600140a",
+"0600256c",
+"060025ba",
+"060025fc",
+"06002710",
+"06002fd8",
+"06003042",
+"06004d12",
+"06004e7e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088ab8",
+"region": "1094e0+44080",
+"name": "os_exit_critical",
+"via": "semantic-decompile",
+"evidence": "counters dec; IRQ mask cleared when nest==0"
+},
+"0010dc1e": {
+"sites": 5,
+"callers": [
+"0600513a",
+"0602a478",
+"0602aeee",
+"06044cd0",
+"06051fc6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088b0a",
+"region": "1094e0+44080"
+},
+"0010dc92": {
+"sites": 1,
+"callers": [
+"0602b14c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088b7e",
+"region": "1094e0+44080"
+},
+"0010dcee": {
+"sites": 3,
+"callers": [
+"0602a5a4",
+"0602b166",
+"06052260"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088bda",
+"region": "1094e0+44080"
+},
+"0010dd54": {
+"sites": 248,
+"callers": [
+"060002d0",
+"0600035e",
+"06000382",
+"0600142e",
+"06001450",
+"060049e0",
+"06004a00",
+"06004a1a",
+"06004a34",
+"06005e66",
+"0600606a",
+"06006080"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088c40",
+"region": "1094e0+44080",
+"name": "sysclk_cs_enter",
+"via": "b5-expert (med)",
+"evidence": "nest counters 0x1083f4/fc[cnum] + spin lock; PLL wait 0xfe0200; SFC regs 0xfd55xx; freq dispatch table 0x06088da0"
+},
+"0010dd86": {
+"sites": 239,
+"callers": [
+"0600032a",
+"0600039c",
+"0600145c",
+"060049f0",
+"06004a0a",
+"06004a24",
+"06004a3e",
+"06005e78",
+"0600607a",
+"0600608a",
+"0600609a",
+"060060aa"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088c72",
+"region": "1094e0+44080",
+"name": "sysclk_cs_exit",
+"via": "b5-expert (med)",
+"evidence": "mirror of enter: dec counters, PLL wait, freq dispatch"
+},
+"0010ddc8": {
+"sites": 1,
+"callers": [
+"06051ffc"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088cb4",
+"region": "1094e0+44080",
+"name": "sfc_suspend"
+},
+"0010de4e": {
+"sites": 1,
+"callers": [
+"06052010"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088d3a",
+"region": "1094e0+44080"
+},
+"0010de92": {
+"sites": 2,
+"callers": [
+"0605227c",
+"06052374"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088d7e",
+"region": "1094e0+44080"
+},
+"0010dffc": {
+"sites": 1,
+"callers": [
+"06052214"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088ee8",
+"region": "1094e0+44080"
+},
+"0010e01a": {
+"sites": 1,
+"callers": [
+"0605222a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088f06",
+"region": "1094e0+44080"
+},
+"0010e032": {
+"sites": 2,
+"callers": [
+"06000864",
+"0605230c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088f1e",
+"region": "1094e0+44080"
+},
+"0010e09e": {
+"sites": 2,
+"callers": [
+"06000f84",
+"0602c9c4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06088f8a",
+"region": "1094e0+44080"
+},
+"0010e1e8": {
+"sites": 1,
+"callers": [
+"0600cbde"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060890d4",
+"region": "1094e0+44080"
+},
+"0010e89e": {
+"sites": 7,
+"callers": [
+"060003ea",
+"060058fa",
+"06008ea0",
+"0602a2aa",
+"0602a462",
+"06036ed0",
+"06037022"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608978a",
+"region": "1094e0+44080",
+"name": "os_critical_nest_get",
+"via": "b5-expert (high)",
+"evidence": "returns per-core critical nest counter 0x1083dc[cnum]"
+},
+"0010e8ce": {
+"sites": 1,
+"callers": [
+"0600503c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060897ba",
+"region": "1094e0+44080"
+},
+"0010ea22": {
+"sites": 87,
+"callers": [
+"06000236",
+"06000472",
+"06000620",
+"06001216",
+"06001efc",
+"060021a2",
+"060025c6",
+"06002768",
+"06002c38",
+"06002da6",
+"06002db8",
+"06004dee"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608990e",
+"region": "1094e0+44080",
+"name": "p33_soft_reset"
+},
+"0010ea60": {
+"sites": 5,
+"callers": [
+"06004d26",
+"06045194",
+"06045296",
+"060452ec",
+"060453d4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608994c",
+"region": "1094e0+44080",
+"name": "msys_to_p11_sync_cmd"
+},
+"0010ea9e": {
+"sites": 6,
+"callers": [
+"060441f0",
+"060441fc",
+"06044272",
+"0604427e",
+"06045d02",
+"06045d0e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608998a",
+"region": "1094e0+44080",
+"name": "__tcnt_us"
+},
+"0010eadc": {
+"sites": 1,
+"callers": [
+"06044776"
+],
+"kind": "ram-overlay",
+"flash_equiv": "060899c8",
+"region": "1094e0+44080"
+},
+"0010ecbc": {
+"sites": 1,
+"callers": [
+"06044d3c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089ba8",
+"region": "1094e0+44080"
+},
+"0010ed38": {
+"sites": 1,
+"callers": [
+"06044d34"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089c24",
+"region": "1094e0+44080"
+},
+"0010ede4": {
+"sites": 2,
+"callers": [
+"0600d334",
+"0600d35a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089cd0",
+"region": "1094e0+44080"
+},
+"0010ee9e": {
+"sites": 1,
+"callers": [
+"06045710"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089d8a",
+"region": "1094e0+44080"
+},
+"0010eea8": {
+"sites": 2,
+"callers": [
+"06045cbc",
+"06045cda"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089d94",
+"region": "1094e0+44080"
+},
+"0010eeb6": {
+"sites": 2,
+"callers": [
+"060457fa",
+"06045ce8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089da2",
+"region": "1094e0+44080"
+},
+"0010eed0": {
+"sites": 4,
+"callers": [
+"0604587c",
+"06045a48",
+"06045c2a",
+"06045dc8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089dbc",
+"region": "1094e0+44080"
+},
+"0010eee4": {
+"sites": 1,
+"callers": [
+"060458c4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089dd0",
+"region": "1094e0+44080",
+"name": "mpu_enter_deep_sleep"
+},
+"0010ef24": {
+"sites": 1,
+"callers": [
+"0604592a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089e10",
+"region": "1094e0+44080",
+"name": "core_sfr_enter_deepsleep"
+},
+"0010ef96": {
+"sites": 1,
+"callers": [
+"06045930"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089e82",
+"region": "1094e0+44080",
+"name": "irq_enter_deepsleep",
+"via": "sdk-overlay-align"
+},
+"0010efdc": {
+"sites": 1,
+"callers": [
+"06045936"
+],
+"kind": "ram-overlay",
+"flash_equiv": "06089ec8",
+"region": "1094e0+44080"
+},
+"0010f174": {
+"sites": 1,
+"callers": [
+"06045cd2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608a060",
+"region": "1094e0+44080"
+},
+"0010f182": {
+"sites": 1,
+"callers": [
+"06045af2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608a06e",
+"region": "1094e0+44080"
+},
+"0010f1d6": {
+"sites": 3,
+"callers": [
+"06045cb0",
+"06045cf8",
+"06045d86"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608a0c2",
+"region": "1094e0+44080"
+},
+"0010f516": {
+"sites": 1,
+"callers": [
+"06045dea"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608a402",
+"region": "1094e0+44080"
+},
+"0010fe8e": {
+"sites": 1,
+"callers": [
+"06049336"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ad7a",
+"region": "1094e0+44080"
+},
+"0010fec2": {
+"sites": 71,
+"callers": [
+"060004bc",
+"0600062a",
+"060006fa",
+"0600072c",
+"06000e98",
+"06000fb4",
+"06002506",
+"060036d2",
+"06005058",
+"060054b0",
+"060058c0",
+"06005944"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608adae",
+"region": "1094e0+44080"
+},
+"0010fed0": {
+"sites": 207,
+"callers": [
+"060007ee",
+"06000904",
+"06000954",
+"06000e60",
+"06000ecc",
+"06000f7a",
+"06001024",
+"06001068",
+"06001074",
+"06001342",
+"0600244a",
+"0600246e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608adbc",
+"region": "1094e0+44080"
+},
+"0010feda": {
+"sites": 106,
+"callers": [
+"060008c0",
+"0600127c",
+"060012a4",
+"060032c4",
+"06007e7e",
+"06008bb6",
+"0600991a",
+"0600b11a",
+"0600b49e",
+"0600dfb4",
+"0600eed6",
+"0600f8f2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608adc6",
+"region": "1094e0+44080"
+},
+"0010fefc": {
+"sites": 2,
+"callers": [
+"0602e3a4",
+"0602e628"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ade8",
+"region": "1094e0+44080"
+},
+"0010ff12": {
+"sites": 1,
+"callers": [
+"0600c4de"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608adfe",
+"region": "1094e0+44080"
+},
+"0010ff20": {
+"sites": 1,
+"callers": [
+"0600c7dc"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ae0c",
+"region": "1094e0+44080"
+},
+"0010ff2a": {
+"sites": 1,
+"callers": [
+"0602b0fa"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ae16",
+"region": "1094e0+44080",
+"name": "__hw_clk_limit"
+},
+"0010ff86": {
+"sites": 1,
+"callers": [
+"0602b0e0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ae72",
+"region": "1094e0+44080"
+},
+"0010ffc8": {
+"sites": 6,
+"callers": [
+"06007440",
+"06018078",
+"0602b276",
+"0602b282",
+"0602b482",
+"0602b48e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608aeb4",
+"region": "1094e0+44080"
+},
+"0010fffa": {
+"sites": 13,
+"callers": [
+"0600238a",
+"06005e5e",
+"06006aa0",
+"0600a214",
+"0600a2ec",
+"0600a362",
+"0600a386",
+"0600a3d6",
+"0600a562",
+"0600a584",
+"0600d304",
+"0602c28a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608aee6",
+"region": "1094e0+44080",
+"name": "delay_ms",
+"via": "b5-expert (low-med)",
+"evidence": "loop param times calling delay cal loop (global 0x1079c0 = clk rate)"
+},
+"0011000c": {
+"sites": 129,
+"callers": [
+"0600cb0c",
+"0600cb6c",
+"0600d078",
+"0600d096",
+"0602ff22",
+"0603cc40",
+"0603f752",
+"0603f784",
+"0604284c",
+"06042868",
+"06042878",
+"06042888"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608aef8",
+"region": "1094e0+44080",
+"name": "delay_loop",
+"via": "semantic-decompile",
+"evidence": "pure countdown loop (param_1 iterations)"
+},
+"00110022": {
+"sites": 3,
+"callers": [
+"0602b3b2",
+"0602b408",
+"0602b42a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608af0e",
+"region": "1094e0+44080",
+"name": "u_delay"
+},
+"00110048": {
+"sites": 2,
+"callers": [
+"0602b3f0",
+"0602b43c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608af34",
+"region": "1094e0+44080",
+"name": "xosc_adet_en"
+},
+"001100c0": {
+"sites": 1,
+"callers": [
+"0602b400"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608afac",
+"region": "1094e0+44080"
+},
+"0011011e": {
+"sites": 1,
+"callers": [
+"0602b430"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b00a",
+"region": "1094e0+44080"
+},
+"001101a6": {
+"sites": 14,
+"callers": [
+"0600e108",
+"0600e404",
+"0600e42a",
+"0600e44e",
+"0601be52",
+"0601bec0",
+"06031990",
+"06031a04",
+"06035c86",
+"0603608a",
+"060368a2",
+"060368b0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b092",
+"region": "1094e0+44080"
+},
+"001101b0": {
+"sites": 7,
+"callers": [
+"06002ff2",
+"06019976",
+"0601b518",
+"0601b6d0",
+"0602f390",
+"0603798e",
+"0607618c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b09c",
+"region": "1094e0+44080"
+},
+"001101d0": {
+"sites": 11,
+"callers": [
+"060197c8",
+"06019818",
+"06019820",
+"0601b94a",
+"0601bb3a",
+"0602ff3e",
+"0602ff48",
+"0602ff52",
+"0602ff5c",
+"06034af6",
+"0603564e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b0bc",
+"region": "1094e0+44080"
+},
+"001101da": {
+"sites": 12,
+"callers": [
+"0600303c",
+"060199ee",
+"0601b618",
+"0601b740",
+"0602f358",
+"0602fdd6",
+"06034ede",
+"0603578c",
+"060379da",
+"06055a84",
+"060762ce",
+"060762d8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b0c6",
+"region": "1094e0+44080"
+},
+"00110204": {
+"sites": 18,
+"callers": [
+"0601b28a",
+"0602ed9e",
+"0602f1ec",
+"0602f278",
+"0602f5b0",
+"0602f5d0",
+"0602f64c",
+"0602fdfa",
+"06034dcc",
+"06034e1e",
+"06034e6e",
+"06035366"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b0f0",
+"region": "1094e0+44080"
+},
+"00110218": {
+"sites": 1,
+"callers": [
+"0602f3c4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b104",
+"region": "1094e0+44080"
+},
+"00110238": {
+"sites": 1,
+"callers": [
+"0602f548"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b124",
+"region": "1094e0+44080"
+},
+"00110260": {
+"sites": 11,
+"callers": [
+"0602fe08",
+"06030440",
+"06031c38",
+"06032d6a",
+"06034620",
+"06035400",
+"0603540a",
+"06035476",
+"0604e0e6",
+"0604e1ce",
+"0604e23a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b14c",
+"region": "1094e0+44080"
+},
+"0011026a": {
+"sites": 12,
+"callers": [
+"0602ffea",
+"06031080",
+"060312c2",
+"06031474",
+"06031498",
+"060314c2",
+"060324e2",
+"060327f2",
+"060330f6",
+"0604e040",
+"0604e136",
+"0604e1e6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b156",
+"region": "1094e0+44080"
+},
+"00110274": {
+"sites": 3,
+"callers": [
+"0601b666",
+"06034d46",
+"060557c8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b160",
+"region": "1094e0+44080"
+},
+"00110294": {
+"sites": 1,
+"callers": [
+"06034e46"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b180",
+"region": "1094e0+44080"
+},
+"001102b2": {
+"sites": 1,
+"callers": [
+"06034ea8"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b19e",
+"region": "1094e0+44080"
+},
+"001102c4": {
+"sites": 1,
+"callers": [
+"0600c50c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b1b0",
+"region": "1094e0+44080"
+},
+"00110338": {
+"sites": 1,
+"callers": [
+"0600c7cc"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b224",
+"region": "1094e0+44080"
+},
+"0011038c": {
+"sites": 3,
+"callers": [
+"06009736",
+"06019c3e",
+"06019fd0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b278",
+"region": "1094e0+44080"
+},
+"001107b0": {
+"sites": 1,
+"callers": [
+"06010994"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608b69c",
+"region": "1094e0+44080"
+},
+"00110f92": {
+"sites": 24,
+"callers": [
+"06012564",
+"06012612",
+"06012c2a",
+"06012d98",
+"0601485e",
+"06014d2e",
+"06038618",
+"060391b2",
+"0603920e",
+"06039bd6",
+"06039d60",
+"0603a632"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608be7e",
+"region": "1094e0+44080"
+},
+"00110fc8": {
+"sites": 1,
+"callers": [
+"060107ae"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608beb4",
+"region": "1094e0+44080"
+},
+"0011106a": {
+"sites": 12,
+"callers": [
+"060108fa",
+"06015bb8",
+"06016902",
+"0601720c",
+"06039194",
+"0603b202",
+"0603b47a",
+"0603b4ba",
+"0603bcda",
+"0603be34",
+"0603be80",
+"0604e41c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608bf56",
+"region": "1094e0+44080"
+},
+"001110a2": {
+"sites": 2,
+"callers": [
+"0603b092",
+"0603b2ee"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608bf8e",
+"region": "1094e0+44080"
+},
+"0011116a": {
+"sites": 3,
+"callers": [
+"06039206",
+"06039228",
+"0603b414"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608c056",
+"region": "1094e0+44080"
+},
+"001111c6": {
+"sites": 2,
+"callers": [
+"0603b168",
+"0603b1e4"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608c0b2",
+"region": "1094e0+44080"
+},
+"00111200": {
+"sites": 7,
+"callers": [
+"06010920",
+"06014d24",
+"06039234",
+"0603b226",
+"0603be5a",
+"0603beb0",
+"0604e43e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608c0ec",
+"region": "1094e0+44080"
+},
+"00111208": {
+"sites": 7,
+"callers": [
+"0601256c",
+"0601261a",
+"06012c36",
+"0601493a",
+"06014d36",
+"0603bd7e",
+"0604e400"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608c0f4",
+"region": "1094e0+44080"
+},
+"00111b4e": {
+"sites": 3,
+"callers": [
+"06016470",
+"06016a86",
+"060173c6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ca3a",
+"region": "1094e0+44080"
+},
+"00111b74": {
+"sites": 1,
+"callers": [
+"060391ce"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ca60",
+"region": "1094e0+44080"
+},
+"00111e4a": {
+"sites": 1,
+"callers": [
+"0603951a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608cd36",
+"region": "1094e0+44080"
+},
+"00112aec": {
+"sites": 1,
+"callers": [
+"0603b25e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608d9d8",
+"region": "1094e0+44080"
+},
+"00112b6c": {
+"sites": 2,
+"callers": [
+"0603b0a6",
+"0603b294"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608da58",
+"region": "1094e0+44080"
+},
+"001131ca": {
+"sites": 2,
+"callers": [
+"0604f726",
+"06054806"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e0b6",
+"region": "1094e0+44080"
+},
+"00113468": {
+"sites": 1,
+"callers": [
+"0606fd8a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e354",
+"region": "1094e0+44080"
+},
+"00113470": {
+"sites": 1,
+"callers": [
+"0601dee0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e35c",
+"region": "1094e0+44080"
+},
+"00113482": {
+"sites": 1,
+"callers": [
+"0601e052"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e36e",
+"region": "1094e0+44080"
+},
+"0011348a": {
+"sites": 1,
+"callers": [
+"0601e66e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e376",
+"region": "1094e0+44080"
+},
+"0011365a": {
+"sites": 1,
+"callers": [
+"06005162"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e546",
+"region": "1094e0+44080"
+},
+"001136be": {
+"sites": 6,
+"callers": [
+"06044566",
+"060451a4",
+"060452a4",
+"060452fa",
+"060453aa",
+"0604555a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e5aa",
+"region": "1094e0+44080"
+},
+"00113776": {
+"sites": 7,
+"callers": [
+"06008bf2",
+"06044588",
+"060451c6",
+"060452c6",
+"0604531c",
+"060453cc",
+"0604557c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e662",
+"region": "1094e0+44080"
+},
+"00113854": {
+"sites": 3,
+"callers": [
+"06008bcc",
+"0600c5e6",
+"060454b0"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e740",
+"region": "1094e0+44080"
+},
+"001138d6": {
+"sites": 2,
+"callers": [
+"0601804c",
+"06018554"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608e7c2",
+"region": "1094e0+44080"
+},
+"00113bce": {
+"sites": 4,
+"callers": [
+"0602a076",
+"0602a5dc",
+"0602a808",
+"0602a92c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eaba",
+"region": "1094e0+44080",
+"name": "os_sched",
+"via": "b5-expert (med)",
+"evidence": "enter_critical; store ret-addr; switch-out (tail does not return)"
+},
+"00113bd8": {
+"sites": 5,
+"callers": [
+"0602a1cc",
+"0602a262",
+"0602a6a4",
+"0602a914",
+"0602a9be"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eac4",
+"region": "1094e0+44080"
+},
+"00113bf6": {
+"sites": 1,
+"callers": [
+"0602af1a"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eae2",
+"region": "1094e0+44080"
+},
+"00113c2a": {
+"sites": 1,
+"callers": [
+"0602b66c"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eb16",
+"region": "1094e0+44080",
+"name": "owner_is_idle_task"
+},
+"00113c6c": {
+"sites": 5,
+"callers": [
+"0602bd22",
+"0602bd72",
+"0602be68",
+"0602bf94",
+"0602c022"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eb58",
+"region": "1094e0+44080"
+},
+"00113c76": {
+"sites": 2,
+"callers": [
+"0602bd34",
+"0602bd98"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eb62",
+"region": "1094e0+44080"
+},
+"00113c82": {
+"sites": 5,
+"callers": [
+"0602bd66",
+"0602be3e",
+"0602bf1a",
+"0602bfc4",
+"0602c052"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eb6e",
+"region": "1094e0+44080"
+},
+"00113c9c": {
+"sites": 1,
+"callers": [
+"060446ec"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eb88",
+"region": "1094e0+44080"
+},
+"00113cb4": {
+"sites": 1,
+"callers": [
+"06017fe2"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608eba0",
+"region": "1094e0+44080"
+},
+"00113d4e": {
+"sites": 1,
+"callers": [
+"06018504"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ec3a",
+"region": "1094e0+44080"
+},
+"00113d5e": {
+"sites": 1,
+"callers": [
+"06045cb6"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608ec4a",
+"region": "1094e0+44080"
+},
+"00113ed8": {
+"sites": 7,
+"callers": [
+"06005244",
+"06005250",
+"06005260",
+"0602a2fa",
+"0602a330",
+"0602aaf4",
+"0602ab06"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608edc4",
+"region": "1094e0+44080"
+},
+"001140f2": {
+"sites": 1,
+"callers": [
+"0600019e"
+],
+"kind": "ram-overlay",
+"flash_equiv": "0608efde",
+"region": "1094e0+44080"
+}
+}

@@ -1,0 +1,15 @@
+{
+  "product_id": 430,
+  "model": "MR3",
+  "requested_version": "0.0.0",
+  "code": 200,
+  "message": "获取成功",
+  "firmware_version": "1.0.7",
+  "firmware_url": "https://edifier-us-app.s3.us-east-2.amazonaws.com/product_firmware/20260112/07c7f2dca2eb1e001aca688a5af41e6a.bin",
+  "request_url": "https://foreign-app.edifier.com/home/api/v1/ota-upgrade?product_id=430&os=1&mac=C8%3A24%3A78%3A12%3A34%3A56&current_version=0.0.0&app_version=1.0.32&app=13&timestamp=1794953283&sign=BED706336558A2E6DC2E3BB574E454F5",
+  "sign_base": "app=13app_version=1.0.32current_version=0.0.0mac=C8:24:78:12:34:56os=1product_id=430timestamp=17949532837rn$r44-jM",
+  "action": "DOWNLOADED",
+  "file": "/root/firmware/MR3_1.0.7_acb5d6b3.bin",
+  "size": 655013,
+  "sha256": "7365fb68c6e62e4cde2a06e42b05d673d090ab0ecbb323d94a95a95c2441209b"
+}

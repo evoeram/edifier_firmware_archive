@@ -1,0 +1,102 @@
+{
+"06088f4a": {
+"name": "pc_rang_limit1",
+"elf_addr": "001193cc",
+"ram": "0010e05e"
+},
+"06088f6a": {
+"name": "pc_rang_limit2",
+"elf_addr": "001193ec",
+"ram": "0010e07e"
+},
+"0608af62": {
+"name": "xosc_hcs_set",
+"elf_addr": "0011943c",
+"ram": "00110076"
+},
+"0608af0e": {
+"name": "u_delay",
+"elf_addr": "001194c6",
+"ram": "00110022"
+},
+"0608af34": {
+"name": "xosc_adet_en",
+"elf_addr": "001194ec",
+"ram": "00110048"
+},
+"0608af7a": {
+"name": "xosc_oe_for_hcs",
+"elf_addr": "0011951a",
+"ram": "0011008e"
+},
+"0608e8f0": {
+"name": "clust2sect",
+"elf_addr": "00119de6",
+"ram": "00113a04"
+},
+"0608711e": {
+"name": "OS_EventTO",
+"elf_addr": "0011a648",
+"ram": "0010c232"
+},
+"06087154": {
+"name": "OS_EventHighestTask",
+"elf_addr": "0011a67e",
+"ram": "0010c268"
+},
+"060874ca": {
+"name": "__OSTaskQPost",
+"elf_addr": "0011aeca",
+"ram": "0010c5de"
+},
+"06087aac": {
+"name": "os_taskq_post_msg",
+"elf_addr": "0011afb8",
+"ram": "0010cbc0"
+},
+"06087bb2": {
+"name": "os_sem_create",
+"elf_addr": "0011b1ee",
+"ram": "0010ccc6"
+},
+"06087cd8": {
+"name": "request_irq",
+"elf_addr": "0011b3d8",
+"ram": "0010cdec"
+},
+"0608eb16": {
+"name": "owner_is_idle_task",
+"elf_addr": "0011b572",
+"ram": "00113c2a"
+},
+"0608ecae": {
+"name": "__time_tick",
+"elf_addr": "0011b8de",
+"ram": "00113dc2"
+},
+"0608ecf2": {
+"name": "core_tick_timer_init",
+"elf_addr": "0011b91e",
+"ram": "00113e06"
+},
+"0608990e": {
+"name": "p33_soft_reset",
+"elf_addr": "00120240",
+"ram": "0010ea22"
+},
+"06089b7a": {
+"name": "clear_wkup_src_pnd",
+"elf_addr": "0012056e",
+"ram": "0010ec8e"
+},
+"06089e82": {
+"name": "irq_enter_deepsleep",
+"elf_addr": "00120904",
+"ram": "0010ef96"
+},
+"06085550": {
+"name": "drc_db2mag",
+"elf_addr": "001225b6",
+"ram": "0010a664"
+}
+}

@@ -1,0 +1,4 @@
+WARN  1059 NOP constructors found
+WARN  Use -n switch to list each individually
+WARN  36 operations wrote to temporaries that were not read
+WARN  Use -t switch to list each individually

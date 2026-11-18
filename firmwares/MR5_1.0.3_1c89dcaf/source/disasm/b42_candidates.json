@@ -1,0 +1,3568 @@
+[
+ {
+  "addr": "06001df2",
+  "name": "thunk_FUN_0600b47e",
+  "size": 32,
+  "strings": [
+   "TrebShelf_LB3",
+   "TrebShelf_LB4",
+   "Desk_Acoustic",
+   "AUX_DAC_GAIN2",
+   "Vol_BtmMusic2",
+   "Vol_LinMusic2",
+   "DUT+TST+TXS+0",
+   "DUT+TST+TXS+1",
+   "DUT+TST+DUT+0",
+   "TST+LED+IO1+1",
+   "TST+LED+IO1+0",
+   "TST+LED+IO2+1",
+   "TST+LED+IO2+0",
+   "TST+LED+IO3+1",
+   "TST+LED+IO3+0",
+   "app_area_head",
+   "I2SEnergyMusic",
+   "a2dp_always_on",
+   "tone_zh/ring.*",
+   "DUT+TST+SAV+00"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06001e50",
+  "name": "FUN_06001e50",
+  "size": 38,
+  "strings": [
+   "AUX_DAC_GAIN",
+   "SET_HP_GAIN2",
+   "EnergyMusic2",
+   "tone_zh/bt.*",
+   "Vol_BtmMusic",
+   "config397392",
+   "Vol_LinMusic",
+   "1234567890abcTST+DUT+TXS+",
+   "TST+DUT+SAV+",
+   "EXT_RESERVED",
+   "BassShelf_LB3",
+   "BassShelf_LB4",
+   "TrebShelf_LB3",
+   "TrebShelf_LB4",
+   "Desk_Acoustic",
+   "AUX_DAC_GAIN2",
+   "Vol_BtmMusic2",
+   "Vol_LinMusic2",
+   "DUT+TST+TXS+0",
+   "DUT+TST+TXS+1"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06004d44",
+  "name": "FUN_06004d44",
+  "size": 44,
+  "strings": [
+   "AUX_DAC_GAIN",
+   "SET_HP_GAIN2",
+   "EnergyMusic2",
+   "tone_zh/bt.*",
+   "Vol_BtmMusic",
+   "config397392",
+   "Vol_LinMusic",
+   "1234567890abcTST+DUT+TXS+",
+   "TST+DUT+SAV+",
+   "EXT_RESERVED",
+   "BassShelf_LB3",
+   "BassShelf_LB4",
+   "TrebShelf_LB3",
+   "TrebShelf_LB4",
+   "Desk_Acoustic",
+   "AUX_DAC_GAIN2",
+   "Vol_BtmMusic2",
+   "Vol_LinMusic2",
+   "DUT+TST+TXS+0",
+   "DUT+TST+TXS+1"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "0600ba7c",
+  "name": "",
+  "size": 2742,
+  "strings": [
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1",
+   "DUT+TST+MAC+SET+0",
+   "DUT+TST+NAM+SET+1",
+   "DUT+TST+NAM+SET+0",
+   "DUT+TST+TRM+SET+0",
+   "$$$$$",
+   "%%%%%",
+   "&&&$%%&",
+   ",@Th",
+   "BLT+BUTTON+IO1+1",
+   "BLT+BUTTON+IO4+1",
+   "BLT+BUTTON+IO5+1",
+   "BLT+BUTTON+IO6+1",
+   "BLT+BUTTON+IO2+1",
+   "BLT+BUTTON+IO3+1",
+   "tone_zh/power_on.*",
+   "tone_zh/bt_dconn.*",
+   "tone_zh/game_out.*"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600e216",
+  "name": "FUN_0600e216",
+  "size": 56,
+  "strings": [
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+",
+   "TST+DUT+NAM+SET+",
+   "TST+DUT+TRM+SET+",
+   "DUT+TST+VER+GET+",
+   "tone_zh/bt_conn.*",
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1",
+   "DUT+TST+MAC+SET+0",
+   "DUT+TST+NAM+SET+1",
+   "DUT+TST+NAM+SET+0",
+   "DUT+TST+TRM+SET+0",
+   "$$$$$",
+   "%%%%%",
+   "&&&$%%&",
+   ",@Th"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "060109f0",
+  "name": "FUN_060109f0",
+  "size": 22,
+  "strings": [
+   "TST+DUT+MAC+GET",
+   "TST+DUT+BLE+GET",
+   "TST+DUT+NAM+GET",
+   "TST+DUT+TRM+GET",
+   "TST+DUT+VER+GET",
+   "BLT+CLR+ALL+0",
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+",
+   "TST+DUT+NAM+SET+",
+   "TST+DUT+TRM+SET+",
+   "DUT+TST+VER+GET+",
+   "tone_zh/bt_conn.*",
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1",
+   "DUT+TST+MAC+SET+0",
+   "DUT+TST+NAM+SET+1"
+  ],
+  "callers": 5
+ },
+ {
+  "addr": "06010a06",
+  "name": "FUN_06010a06",
+  "size": 22,
+  "strings": [
+   "TST+DUT+MAC+GET",
+   "TST+DUT+BLE+GET",
+   "TST+DUT+NAM+GET",
+   "TST+DUT+TRM+GET",
+   "TST+DUT+VER+GET",
+   "BLT+CLR+ALL+0",
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+",
+   "TST+DUT+NAM+SET+",
+   "TST+DUT+TRM+SET+",
+   "DUT+TST+VER+GET+",
+   "tone_zh/bt_conn.*",
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1",
+   "DUT+TST+MAC+SET+0",
+   "DUT+TST+NAM+SET+1"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0601293a",
+  "name": "FUN_0601293a",
+  "size": 238,
+  "strings": [
+   "TST+DUT+MAC+GET",
+   "TST+DUT+BLE+GET",
+   "TST+DUT+NAM+GET",
+   "TST+DUT+TRM+GET",
+   "TST+DUT+VER+GET",
+   "BLT+CLR+ALL+0",
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+",
+   "TST+DUT+NAM+SET+",
+   "TST+DUT+TRM+SET+",
+   "DUT+TST+VER+GET+",
+   "tone_zh/bt_conn.*",
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1",
+   "DUT+TST+MAC+SET+0",
+   "DUT+TST+NAM+SET+1"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06013202",
+  "name": "FUN_06013202",
+  "size": 1604,
+  "strings": [
+   " ~ H@ ",
+   "TST+DUT+MAC+GET",
+   "TST+DUT+BLE+GET",
+   "TST+DUT+NAM+GET",
+   "TST+DUT+TRM+GET",
+   "TST+DUT+VER+GET",
+   "BLT+CLR+ALL+0",
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+",
+   "TST+DUT+NAM+SET+",
+   "TST+DUT+TRM+SET+",
+   "DUT+TST+VER+GET+",
+   "tone_zh/bt_conn.*",
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1",
+   "DUT+TST+MAC+SET+0"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06013cf2",
+  "name": "",
+  "size": 402,
+  "strings": [
+   "b102211",
+   "b04C008",
+   "141C010",
+   "111C014",
+   "Hc08c02",
+   "res.bin",
+   "a2dp_dec",
+   "file_dec",
+   "a2dp_dut",
+   "Hexciter",
+   "IIS0_TX3",
+   "MusicDrc",
+   "Eq*Media",
+   "Eq0Media",
+   "EscoDlEq",
+   "EscoUlEq",
+   "A2DP_RX7",
+   "A2DP_RX6",
+   "IIS0_RX1",
+   "IIS0_RX2"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06014348",
+  "name": "FUN_06014348",
+  "size": 690,
+  "strings": [
+   "1OX@",
+   "@p@'R",
+   "TST+DUT+MAC+GET",
+   "TST+DUT+BLE+GET",
+   "TST+DUT+NAM+GET",
+   "TST+DUT+TRM+GET",
+   "TST+DUT+VER+GET",
+   "BLT+CLR+ALL+0",
+   "tone_zh/normal.*",
+   "tone_zh/linein.*",
+   "ER_FLOW_OPEN_BUF",
+   "TST+DUT+MAC+SET+",
+   "DUT+TST+NAM+GET+",
+   "TST+DUT+NAM+SET+",
+   "TST+DUT+TRM+SET+",
+   "DUT+TST+VER+GET+",
+   "tone_zh/bt_conn.*",
+   "tone_zh/vol_max.*",
+   "tone_zh/game_in.*",
+   "DUT+TST+MAC+SET+1"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06019a02",
+  "name": "FUN_06019a02",
+  "size": 24,
+  "strings": [
+   "Vol_Btc",
+   "Vol_Btm",
+   "Vol_Lin",
+   "Vol_Sys",
+   "MusicEq",
+   "b102211",
+   "b04C008",
+   "141C010",
+   "111C014",
+   "Hc08c02",
+   "res.bin",
+   "a2dp_dec",
+   "file_dec",
+   "a2dp_dut",
+   "Hexciter",
+   "IIS0_TX3",
+   "MusicDrc",
+   "Eq*Media",
+   "Eq0Media",
+   "EscoDlEq"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0601cc90",
+  "name": "FUN_0601cc90",
+  "size": 108,
+  "strings": [
+   "l@ef",
+   "$@G!",
+   "B Cl",
+   "hEA$",
+   "@kiAq",
+   "#aB ",
+   ",F[@",
+   "Re5ThCiB",
+   "t@@j",
+   " 2!g",
+   "E hC",
+   "!ag`c",
+   "ag`c",
+   "A XL",
+   "YEKL",
+   "D2ACD:",
+   "STDTF",
+   "Zedr_ota2.bin",
+   "Zsd_update2.bin",
+   "Zble_app_ota.bin"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0601cf3c",
+  "name": "FUN_0601cf3c",
+  "size": 76,
+  "strings": [
+   "QPf`",
+   "Bd@ ",
+   "kxCyB",
+   " ${@0",
+   "bxGyF",
+   " ${D0",
+   "bxKyJ",
+   " ${H0",
+   "bxOyN",
+   " ${L0",
+   "`F`V",
+   "l^C_Bf",
+   " xZA",
+   " $[@",
+   "gZG[F\"",
+   " 8^E",
+   " d_Dr",
+   "gZK[J\"",
+   " 8^I",
+   " d_Hr"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0602c322",
+  "name": "FUN_0602c322",
+  "size": 168,
+  "strings": [
+   "2usb_stack",
+   "s:%d",
+   "h:%d:0",
+   "charge",
+   "DBG_REV",
+   "flash_powerup_ok",
+   "flash/res/p11_code.bin",
+   "CxrwPrw",
+   "pmu_task",
+   " !\"#$%",
+   "&'()*+,-.",
+   "autotest",
+   "J@YA",
+   "YGZF",
+   "@aA ",
+   "XG[F",
+   "YCZB",
+   "YG[F",
+   "NZGYF",
+   "A@ U"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0602d29a",
+  "name": "FUN_0602d29a",
+  "size": 598,
+  "strings": [
+   "Ob$Z",
+   "J@YA",
+   "YGZF",
+   "@aA ",
+   "XG[F",
+   "YCZB",
+   "YG[F",
+   "NZGYF",
+   "A@ U",
+   "`A R",
+   " #`P",
+   "  #`3'",
+   "  #`",
+   "`@ U",
+   "A&B G Q",
+   "bHaAbQ",
+   "`fabbc",
+   "cegkdg\"",
+   "_A @",
+   "D k C"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603358a",
+  "name": "FUN_0603358a",
+  "size": 616,
+  "strings": [
+   " ,9a",
+   "0b3c",
+   "A r0",
+   "@\"A9",
+   "@$A=",
+   "@D!E",
+   "$@-A,",
+   "@+I ",
+   "xAE ",
+   "3@&Q\"",
+   "T yB",
+   "#E t",
+   "*PB&S!@",
+   "H6B ",
+   "T iB",
+   "@hg@",
+   "\":H\"",
+   "@#A=",
+   "A :gB :",
+   "B :7C :"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06035d6c",
+  "name": "FUN_06035d6c",
+  "size": 916,
+  "strings": [
+   "FA!B*@",
+   " @)R",
+   "nA z0",
+   "@`y:",
+   "@'B$S",
+   "@ D ",
+   "\"@!B",
+   "!@#C ",
+   "cXbQ`",
+   "@!C Q",
+   "HA\"B",
+   "A B\"0",
+   "(4|?",
+   "@ B$",
+   "@@Ecvb",
+   "G#A C2@",
+   "A!C2@",
+   "RnA ",
+   "RnA!",
+   "A@cI"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604004c",
+  "name": "FUN_0604004c",
+  "size": 208,
+  "strings": [
+   "+SRC_V2_%d%d",
+   "AUX_DAC_GAIN",
+   "SET_HP_GAIN2",
+   "EnergyMusic2",
+   "tone_zh/bt.*",
+   "Vol_BtmMusic",
+   "config397392",
+   "Vol_LinMusic",
+   "1234567890abcTST+DUT+TXS+",
+   "TST+DUT+SAV+",
+   "EXT_RESERVED",
+   "BassShelf_LB3",
+   "BassShelf_LB4",
+   "TrebShelf_LB3",
+   "TrebShelf_LB4",
+   "Desk_Acoustic",
+   "AUX_DAC_GAIN2",
+   "Vol_BtmMusic2",
+   "Vol_LinMusic2",
+   "DUT+TST+TXS+0"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "06052da8",
+  "name": "FUN_06052da8",
+  "size": 366,
+  "strings": [
+   "mj@_",
+   "d`)$l",
+   "V$E/",
+   "[7R>]",
+   "{P=Z|",
+   "W?~9:",
+   "b}$'",
+   "|Jy)3@x-_#w",
+   "t&f_sI9",
+   "Yldi",
+   "lh`]",
+   "I(huF",
+   "X!A,",
+   "g'Xwg$",
+   "!O?\\#x",
+   "\"C88",
+   "`WH_",
+   "iK8L",
+   "LLA!M",
+   "'AMK\\7M"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0605312e",
+  "name": "FUN_0605312e",
+  "size": 5282,
+  "strings": [
+   "UUUU%I",
+   "bt_test",
+   "base",
+   "flash/res/effect_cfg.bin",
+   "new_cfg_tool",
+   "storage/nor_ui",
+   "storage/nor_ui/C/",
+   "nor_sdfile",
+   "pll_trim",
+   "bredr",
+   "btencry",
+   "jlstream_1",
+   "jlstream_2",
+   "jlstream_3",
+   "jlstream_4",
+   "jlstream_5",
+   "jlstream_6",
+   "jlstream_7",
+   "jlstream_8",
+   "jlstream_9"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060755bc",
+  "name": "FUN_060755bc",
+  "size": 1134,
+  "strings": [
+   "HJII",
+   "HMKK",
+   "NOCJ<d",
+   "IBHK",
+   "ICHz5T",
+   "@ I>",
+   "@ A(",
+   "A%B ",
+   "HIIH",
+   "ILJK",
+   "HF0J",
+   "NOCJ={?@",
+   "ICHz>",
+   "HDIC",
+   "AD @",
+   "C$F ",
+   "H[Is",
+   "aXJp",
+   "AD 4",
+   "@A r8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0606a96e",
+  "name": "FUN_0606a96e",
+  "size": 44,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?",
+   "Y?SHX?&pW?",
+   "3R?=MQ?",
+   "dP? zO?",
+   "|:?Bh9?",
+   "R8?\":7?l 6?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06017490",
+  "name": "FUN_06017490",
+  "size": 1470,
+  "strings": [
+   "O@ E ",
+   "Q@ R",
+   " @@ ",
+   "1 B ",
+   "@ A ",
+   "Jd@ ",
+   " @!A!",
+   "A Jc",
+   "P8B$",
+   "`)A D ",
+   "p&H@",
+   "x&C B!6",
+   "@H@G R",
+   "IFJE",
+   "KDHC",
+   " 4NB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607a6ee",
+  "name": "FUN_0607a6ee",
+  "size": 178,
+  "strings": [
+   "XHEa",
+   "EB7a",
+   "ID!r",
+   "A B P",
+   "Dx@p",
+   "- zA",
+   "\\yEx@Q",
+   "DA!B 0",
+   "DA\"B 0",
+   "A B ",
+   "EA!B!0",
+   "EA\"B!0",
+   "UUUUUUE(BC!$",
+   ")G*F",
+   "(H)G",
+   "(BC A"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "0603dd96",
+  "name": "FUN_0603dd96",
+  "size": 418,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?",
+   "Y?SHX?&pW?",
+   "3R?=MQ?",
+   "dP? zO?"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603ef20",
+  "name": "FUN_0603ef20",
+  "size": 404,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?",
+   "Y?SHX?&pW?",
+   "3R?=MQ?",
+   "dP? zO?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06072d92",
+  "name": "FUN_06072d92",
+  "size": 120,
+  "strings": [
+   "Zedr_ota2.bin",
+   "Zsd_update2.bin",
+   "Zble_app_ota.bin",
+   "Zspp_app_ota.bin",
+   "Zusb_update2.bin",
+   "Zble_ota.bin",
+   "Zuart_user.bin",
+   "Znor_ota.bin",
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin",
+   "app_dir_head2",
+   "J C "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0607d1a6",
+  "name": "FUN_0607d1a6",
+  "size": 236,
+  "strings": [
+   "HBC!D",
+   " @\"B&Q",
+   "XEYD",
+   "A B!C!",
+   "IGJF",
+   "jIJJI",
+   "EZgY",
+   "HBC Q",
+   "$sZ@!",
+   "I@OA",
+   "@H0R",
+   "`@ A&",
+   "HLIK",
+   "IHJG",
+   "HCIB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0601d9f6",
+  "name": "FUN_0601d9f6",
+  "size": 260,
+  "strings": [
+   "4pE ",
+   "4p@ ",
+   "U-QC!5",
+   "PE a",
+   "xDA(",
+   "+U,T",
+   "4pqn",
+   "`[dxD",
+   "[dB ",
+   "QPf`",
+   "Bd@ ",
+   "kxCyB",
+   " ${@0",
+   "bxGyF"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06036a98",
+  "name": "FUN_06036a98",
+  "size": 860,
+  "strings": [
+   "@ A Q",
+   "@@)r",
+   "A.B#0",
+   "$GH8",
+   "RmA ",
+   "RmPbA!",
+   "`@)R",
+   "A!B2",
+   "ui5Apb",
+   "_Xhq",
+   "ui BYj",
+   "uiXh0$",
+   "\"A0R",
+   "uiXh0\""
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0604c65c",
+  "name": "",
+  "size": 750,
+  "strings": [
+   "spdif",
+   "Cross",
+   "VBass",
+   "music",
+   "Gain4",
+   "1HA11",
+   "1C016",
+   "1H11A",
+   "1C008",
+   "AC008",
+   "1H122",
+   "image",
+   "ascii",
+   "flash"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600de08",
+  "name": "FUN_0600de08",
+  "size": 170,
+  "strings": [
+   "esco_adc",
+   "smart_voice",
+   "periph_demo",
+   "clock",
+   "uart",
+   "mcpwm",
+   "usr_systimer",
+   "btstack_lowpwer_deal",
+   "btstack",
+   "222D",
+   "22222",
+   "Ac161",
+   "1C004"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0602cde6",
+  "name": "FUN_0602cde6",
+  "size": 840,
+  "strings": [
+   "2usb_stack",
+   "s:%d",
+   "h:%d:0",
+   "charge",
+   "DBG_REV",
+   "flash_powerup_ok",
+   "flash/res/p11_code.bin",
+   "CxrwPrw",
+   "pmu_task",
+   " !\"#$%",
+   "&'()*+,-.",
+   "autotest",
+   "QbPd"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0603df44",
+  "name": "FUN_0603df44",
+  "size": 182,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?",
+   "Y?SHX?&pW?"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "060418d6",
+  "name": "FUN_060418d6",
+  "size": 38,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?",
+   "Y?SHX?&pW?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607d430",
+  "name": "FUN_0607d430",
+  "size": 2296,
+  "strings": [
+   "CHOP",
+   "AD @",
+   "0<G=F",
+   "N<I=H",
+   "0(@p",
+   "A B ",
+   "CA+R",
+   "!H@b1",
+   "&I@!",
+   "OhNp",
+   "NA E `",
+   "E pY",
+   "Fh@p"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600ca62",
+  "name": "",
+  "size": 928,
+  "strings": [
+   "Pn@+",
+   "PnH#",
+   "PnH-",
+   "Pn@9",
+   "F`$A ",
+   "PnX$",
+   "J*@%",
+   ".*@&",
+   "Y*@&",
+   "RaH)A ",
+   "CF R",
+   "QaH*A "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0602c736",
+  "name": "FUN_0602c736",
+  "size": 706,
+  "strings": [
+   "2usb_stack",
+   "s:%d",
+   "h:%d:0",
+   "charge",
+   "DBG_REV",
+   "flash_powerup_ok",
+   "flash/res/p11_code.bin",
+   "CxrwPrw",
+   "pmu_task",
+   " !\"#$%",
+   "&'()*+,-.",
+   "autotest"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0602ca70",
+  "name": "FUN_0602ca70",
+  "size": 58,
+  "strings": [
+   "2usb_stack",
+   "s:%d",
+   "h:%d:0",
+   "charge",
+   "DBG_REV",
+   "flash_powerup_ok",
+   "flash/res/p11_code.bin",
+   "CxrwPrw",
+   "pmu_task",
+   " !\"#$%",
+   "&'()*+,-.",
+   "autotest"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603cdb2",
+  "name": "",
+  "size": 454,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06040204",
+  "name": "",
+  "size": 1892,
+  "strings": [
+   "p~?#C~?#",
+   "}?tt}?",
+   ":}?s",
+   "~|?';|?1",
+   "y?Ony?",
+   "o?0ho?",
+   "Kk?{",
+   "ei?<",
+   "^e?Y",
+   "c?Y<c?",
+   "a?!F`?'",
+   "]?T-]?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06043854",
+  "name": "FUN_06043854",
+  "size": 1954,
+  "strings": [
+   "ccccccccccccddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeffffffffffffffffffffffffggggggggggggggggg",
+   "Q/;U",
+   "Ab).",
+   "y0h6u}",
+   "XicV",
+   "PY?Mb4",
+   "VL.k",
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06074948",
+  "name": "",
+  "size": 58,
+  "strings": [
+   "@ A#J1D ",
+   "P_Aq",
+   "YC_B",
+   "T$@ P",
+   "C@ P",
+   "XE\\D",
+   "XEYD",
+   "btstack",
+   "222D",
+   "22222",
+   "Ac161",
+   "1C004"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06079364",
+  "name": "thunk_FUN_06073b70",
+  "size": 1190,
+  "strings": [
+   "UHIIH",
+   "IGHF",
+   "@!@ ",
+   "20X@",
+   "Y@@!",
+   "A@!&",
+   "a@!a",
+   "A B ",
+   "AD @",
+   "08G9F",
+   "N9I8H",
+   "DA B 0"
+  ],
+  "callers": 8
+ },
+ {
+  "addr": "0607ccb6",
+  "name": "FUN_0607ccb6",
+  "size": 54,
+  "strings": [
+   "p`A ",
+   "s`8a",
+   "@A1P",
+   "Pp`\\E^F",
+   "r`)b#",
+   "4jA!",
+   "5l[H",
+   " D@%",
+   "[HA!",
+   "A!B!",
+   "r`(a",
+   "0Qs`<G"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06001216",
+  "name": "thunk_FUN_0010ea22",
+  "size": 250,
+  "strings": [
+   "pc_mic",
+   "pc_spk",
+   "1AC032",
+   "c08c04",
+   "strpic",
+   "SDFILE",
+   "Vol_Btc",
+   "Vol_Btm",
+   "Vol_Lin",
+   "Vol_Sys",
+   "MusicEq"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0600e3d8",
+  "name": "",
+  "size": 410,
+  "strings": [
+   "spdif",
+   "Cross",
+   "VBass",
+   "music",
+   "Gain4",
+   "1HA11",
+   "1C016",
+   "1H11A",
+   "1C008",
+   "AC008",
+   "1H122"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0602f09e",
+  "name": "FUN_0602f09e",
+  "size": 310,
+  "strings": [
+   "@`y:",
+   "A B\"0",
+   "_E@!",
+   "B XC",
+   "DpB ",
+   "B#@\"",
+   "EXEA ",
+   "B#A\"",
+   "BA\"B.C\"",
+   " xmN",
+   " TlMB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06049cfa",
+  "name": "FUN_06049cfa",
+  "size": 138,
+  "strings": [
+   "$@@`A(",
+   "@`A2B ",
+   "A%J2",
+   "A%B>C ",
+   "`A+B!",
+   "1H122",
+   "image",
+   "ascii",
+   "flash",
+   "pc_mic",
+   "pc_spk"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604dd12",
+  "name": "FUN_0604dd12",
+  "size": 458,
+  "strings": [
+   "Q/;U",
+   "Ab).",
+   "y0h6u}",
+   "XicV",
+   "PY?Mb4",
+   "VL.k",
+   "@x-:",
+   "V$~G",
+   ":3r.O",
+   "zl/'",
+   "NKiH"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "060724f4",
+  "name": "",
+  "size": 466,
+  "strings": [
+   "flash",
+   "pc_mic",
+   "pc_spk",
+   "1AC032",
+   "c08c04",
+   "strpic",
+   "SDFILE",
+   "Vol_Btc",
+   "Vol_Btm",
+   "Vol_Lin",
+   "Vol_Sys"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0607aeac",
+  "name": "FUN_0607aeac",
+  "size": 422,
+  "strings": [
+   "UUUUUUE(BC!$",
+   ")G*F",
+   "(H)G",
+   "(BC A",
+   "XHEa",
+   "EB7a",
+   "ID!r",
+   "A B P",
+   "Dx@p",
+   "- zA",
+   "\\yEx@Q"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "060101d8",
+  "name": "FUN_060101d8",
+  "size": 498,
+  "strings": [
+   "`aeg",
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB",
+   "Fx`I2",
+   "x`1#",
+   "AE h@P",
+   "@B @",
+   "H@ Wa",
+   "AIBjB"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0601697e",
+  "name": "",
+  "size": 272,
+  "strings": [
+   "eAaM",
+   "\"@Xd",
+   "@F B ",
+   " #XD",
+   " 1q ",
+   "ZCC\"",
+   " A!@!\"",
+   "$N@d",
+   "O``E4",
+   "zM`b "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06039e4a",
+  "name": "",
+  "size": 1710,
+  "strings": [
+   "A@/R",
+   "@HAR",
+   "X@0Q@ P",
+   "Y@@ ",
+   "BQk!QB",
+   "PbRk",
+   "JJ`Ab!",
+   "A!C ",
+   "AeH<",
+   "@ D C "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607ca1c",
+  "name": "FUN_0607ca1c",
+  "size": 28,
+  "strings": [
+   "IAJB",
+   "JAMB",
+   " $9b",
+   "PJCLD",
+   "L`A!B!A!B\"",
+   "+C(D",
+   " 4,B",
+   " H*A",
+   "+A(B",
+   "L_b`"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06019928",
+  "name": "FUN_06019928",
+  "size": 42,
+  "strings": [
+   "J>C @",
+   "F@#R",
+   ">PA!B$@",
+   "WLK4",
+   "(jC!",
+   "AC 0",
+   "x:B F ",
+   "Pky?",
+   "`V`d`P"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "06032bec",
+  "name": "FUN_06032bec",
+  "size": 2208,
+  "strings": [
+   "J>C @",
+   "F@#R",
+   ">PA!B$@",
+   "WLK4",
+   "(jC!",
+   "AC 0",
+   "x:B F ",
+   "Pky?",
+   "`V`d`P"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0603578c",
+  "name": "FUN_0603578c",
+  "size": 498,
+  "strings": [
+   "A!B2",
+   "ui5Apb",
+   "_Xhq",
+   "ui BYj",
+   "uiXh0$",
+   "\"A0R",
+   "uiXh0\"",
+   "auiXh0!",
+   "FA!B*@"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060363b2",
+  "name": "FUN_060363b2",
+  "size": 708,
+  "strings": [
+   "L@X@",
+   "JYA0",
+   "pnQ`",
+   " ``B`",
+   "0V`` ]",
+   "AA(@",
+   "#D E C F ",
+   "05G ",
+   "?vT<"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0603f348",
+  "name": "FUN_0603f348",
+  "size": 1114,
+  "strings": [
+   "!0@ D ",
+   "H0A!C D!",
+   "tA D `",
+   "B$D$",
+   " `X@0",
+   "PaG ",
+   "o@eA\"",
+   "GHAG 0",
+   "PO:R"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060726d4",
+  "name": "",
+  "size": 150,
+  "strings": [
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin",
+   "app_dir_head2",
+   "J C ",
+   "@ J a",
+   "NB.@"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0607283e",
+  "name": "FUN_0607283e",
+  "size": 128,
+  "strings": [
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin",
+   "app_dir_head2",
+   "J C ",
+   "@ J a",
+   "NB.@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06072e1c",
+  "name": "FUN_06072e1c",
+  "size": 144,
+  "strings": [
+   "app_dir_head",
+   "ota.bin",
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin",
+   "app_dir_head2",
+   "J C ",
+   "@ J a",
+   "NB.@"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0607dfb8",
+  "name": "FUN_0607dfb8",
+  "size": 116,
+  "strings": [
+   "@)A B D ",
+   "$sZ@!",
+   "_D R",
+   "PA B!`",
+   "@\"B&a",
+   "hMiL",
+   "A!B!`",
+   "IXI0",
+   "@!B&a"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06000102",
+  "name": "",
+  "size": 170,
+  "strings": [
+   "B C P",
+   "e\"g*E",
+   "A!@!",
+   "@&G&",
+   "@1A B ",
+   "eA B",
+   "@A B",
+   "4A r!"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0600701c",
+  "name": "FUN_0600701c",
+  "size": 194,
+  "strings": [
+   "MSDOS5.0",
+   "LNO NAME    FAT32   3",
+   "f`f;F",
+   "fXfXfXfX",
+   "NTLDR      ",
+   "Remove disks or other media.",
+   "Disk error",
+   "Press any key to restart"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06013fae",
+  "name": "FUN_06013fae",
+  "size": 70,
+  "strings": [
+   "#aB ",
+   ",F[@",
+   "Re5ThCiB",
+   "kD@0",
+   "0I%^",
+   "&N%F@ ",
+   "E@#`",
+   "kC@2B"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0601b06c",
+  "name": "FUN_0601b06c",
+  "size": 118,
+  "strings": [
+   " A!P",
+   "CXh0!",
+   "CXg0 ",
+   "gX`p",
+   "oHh0 ",
+   "hHi0 @",
+   "gXkP",
+   "pNaJbK`p`P"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060307e8",
+  "name": "FUN_060307e8",
+  "size": 150,
+  "strings": [
+   "Ply?",
+   "L@pk",
+   "opkB",
+   " PF\"@",
+   "R`\"NP",
+   "B&K>",
+   "NP`P",
+   "A*@5"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060328ee",
+  "name": "FUN_060328ee",
+  "size": 40,
+  "strings": [
+   "@\"A9",
+   "@$A=",
+   "@D!E",
+   "$@-A,",
+   "@+I ",
+   "xAE ",
+   "3@&Q\"",
+   "T yB"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603ac6a",
+  "name": "FUN_0603ac6a",
+  "size": 138,
+  "strings": [
+   "h@`d",
+   "BhApJ`d",
+   "@A`@ ",
+   "H@@ ",
+   "qh@kCl",
+   "$@ A ",
+   "A!8H",
+   "@@@a"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0604a8ba",
+  "name": "FUN_0604a8ba",
+  "size": 336,
+  "strings": [
+   "A!B ",
+   "@x;z;",
+   "bP`A/",
+   "h`yo5",
+   "cP`A0",
+   "hgid5",
+   "hhfie5",
+   "@ I<"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06059040",
+  "name": "FUN_06059040",
+  "size": 4140,
+  "strings": [
+   "\"(.66",
+   "\"*26L",
+   "&.8DTf",
+   "\"\"\"***",
+   " &.6>FL$",
+   " &.4<D:6",
+   "   ,,,",
+   "   ***"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06072c78",
+  "name": "FUN_06072c78",
+  "size": 152,
+  "strings": [
+   "cfg_tool.bin",
+   "flash.bin",
+   "flash2.bin",
+   "app_dir_head",
+   "app_dir_head2",
+   "J C ",
+   "@ J a",
+   "NB.@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06007f3e",
+  "name": "FUN_06007f3e",
+  "size": 78,
+  "strings": [
+   "T`$XHB V",
+   "OI`1'",
+   "`F R ",
+   "PD %WZB2!",
+   "Z`2(",
+   "`P50",
+   "%Y(B0!"
+  ],
+  "callers": 19
+ },
+ {
+  "addr": "06008e48",
+  "name": "FUN_06008e48",
+  "size": 118,
+  "strings": [
+   ",F[@",
+   "Re5ThCiB",
+   "kD@0",
+   "0I%^",
+   "&N%F@ ",
+   "E@#`",
+   "kC@2B"
+  ],
+  "callers": 5
+ },
+ {
+  "addr": "0600d804",
+  "name": "FUN_0600d804",
+  "size": 308,
+  "strings": [
+   "`)A D ",
+   "p&H@",
+   "x&C B!6",
+   "@H@G R",
+   "IFJE",
+   "KDHC",
+   " 4NB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06019e80",
+  "name": "FUN_06019e80",
+  "size": 106,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~",
+   "[AYb_dZcR",
+   "`XgP",
+   "V5Zi_jd`T",
+   "D F ",
+   "7bC ",
+   "TxEreyD"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0602f3f2",
+  "name": "FUN_0602f3f2",
+  "size": 106,
+  "strings": [
+   "XApYXH",
+   "A\"B.C\"",
+   "A\"B.C#@",
+   "L@X@",
+   "JYA0",
+   "pnQ`",
+   " ``B`"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06032ab0",
+  "name": "FUN_06032ab0",
+  "size": 108,
+  "strings": [
+   "#E t",
+   "*PB&S!@",
+   "H6B ",
+   "T iB",
+   "@hg@",
+   "\":H\"",
+   "@#A="
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06042c34",
+  "name": "FUN_06042c34",
+  "size": 254,
+  "strings": [
+   "Q/;U",
+   "Ab).",
+   "y0h6u}",
+   "XicV",
+   "PY?Mb4",
+   "VL.k",
+   "@x-:"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0604b2cc",
+  "name": "FUN_0604b2cc",
+  "size": 346,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8",
+   " #c3",
+   "A B$@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604c588",
+  "name": "",
+  "size": 204,
+  "strings": [
+   "30Rk ",
+   " G A ",
+   "A @!",
+   "t@Pc",
+   "`XIC\"",
+   "AC#XHG!",
+   "X@X`"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06050d46",
+  "name": "FUN_06050d46",
+  "size": 1076,
+  "strings": [
+   "\"(.66",
+   "\"*26L",
+   "&.8DTf",
+   "\"\"\"***",
+   " &.6>FL$",
+   " &.4<D:6",
+   "   ,,,"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060560c8",
+  "name": "FUN_060560c8",
+  "size": 26,
+  "strings": [
+   "\"(.66",
+   "\"*26L",
+   "&.8DTf",
+   "\"\"\"***",
+   " &.6>FL$",
+   " &.4<D:6",
+   "   ,,,"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "06070332",
+  "name": "FUN_06070332",
+  "size": 12,
+  "strings": [
+   "30Rk ",
+   " G A ",
+   "A @!",
+   "t@Pc",
+   "`XIC\"",
+   "AC#XHG!",
+   "X@X`"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06071904",
+  "name": "FUN_06071904",
+  "size": 670,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB",
+   "I0$r",
+   "A0K1 ",
+   "3 ! ",
+   "A8K?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06074908",
+  "name": "",
+  "size": 16,
+  "strings": [
+   "PQ``",
+   "4A\"A",
+   "@!B ",
+   "D C!",
+   "AC b ",
+   "kE$LQ",
+   "aH`@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06009aba",
+  "name": "FUN_06009aba",
+  "size": 104,
+  "strings": [
+   "D`+A ",
+   "V@ P",
+   "J`+A ",
+   "wH@7B!",
+   "A@)J$",
+   "A@*J "
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06010eb0",
+  "name": "FUN_06010eb0",
+  "size": 1142,
+  "strings": [
+   "@@@`0",
+   "@@@nP",
+   "(@n0",
+   "X4A D ",
+   " O`v",
+   "777:G"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0602e138",
+  "name": "FUN_0602e138",
+  "size": 16,
+  "strings": [
+   "@!B ",
+   "@!B'A",
+   "@\"B&A",
+   "kl@!",
+   "@$B'",
+   "@#B&"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0602e148",
+  "name": "",
+  "size": 16,
+  "strings": [
+   "@!B ",
+   "@!B'A",
+   "@\"B&A",
+   "kl@!",
+   "@$B'",
+   "@#B&"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060302b6",
+  "name": "FUN_060302b6",
+  "size": 180,
+  "strings": [
+   "x:B F ",
+   "Pky?",
+   "`V`d`P",
+   "MHh`",
+   "z>C1",
+   "@ Y$B"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060307b2",
+  "name": "FUN_060307b2",
+  "size": 54,
+  "strings": [
+   "Pky?",
+   "`V`d`P",
+   "MHh`",
+   "z>C1",
+   "@ Y$B",
+   "E!A\"B'C!p"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0603626a",
+  "name": "FUN_0603626a",
+  "size": 130,
+  "strings": [
+   "x:B F ",
+   "Pky?",
+   "`V`d`P",
+   "MHh`",
+   "z>C1",
+   "@ Y$B"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06037d02",
+  "name": "FUN_06037d02",
+  "size": 92,
+  "strings": [
+   "energy_detect",
+   "channel_merge",
+   "channel_expander",
+   "data_saturation",
+   "audio_dac",
+   "%04d"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "06037ea2",
+  "name": "FUN_06037ea2",
+  "size": 40,
+  "strings": [
+   "energy_detect",
+   "channel_merge",
+   "channel_expander",
+   "data_saturation",
+   "audio_dac",
+   "%04d"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06038b62",
+  "name": "FUN_06038b62",
+  "size": 94,
+  "strings": [
+   "energy_detect",
+   "channel_merge",
+   "channel_expander",
+   "data_saturation",
+   "audio_dac",
+   "%04d"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0603942e",
+  "name": "FUN_0603942e",
+  "size": 94,
+  "strings": [
+   "energy_detect",
+   "channel_merge",
+   "channel_expander",
+   "data_saturation",
+   "audio_dac",
+   "%04d"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603a58a",
+  "name": "FUN_0603a58a",
+  "size": 144,
+  "strings": [
+   "YBiSc",
+   "mr`Sc",
+   "BcSc",
+   "X@A G ",
+   "`#f<EB$",
+   "UA!A"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0603a7e0",
+  "name": "FUN_0603a7e0",
+  "size": 80,
+  "strings": [
+   "JJ`Ab!",
+   "A!C ",
+   "AeH<",
+   "@ D C ",
+   "@ C ",
+   "MaC "
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06044708",
+  "name": "FUN_06044708",
+  "size": 34,
+  "strings": [
+   "@!B ",
+   "@!B'A",
+   "@\"B&A",
+   "kl@!",
+   "@$B'",
+   "@#B&"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06052790",
+  "name": "FUN_06052790",
+  "size": 32,
+  "strings": [
+   "RaQc",
+   "@`Ec",
+   "RaQh@`Cc",
+   "$`E *",
+   "#C P",
+   " A B"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "060527b0",
+  "name": "FUN_060527b0",
+  "size": 22,
+  "strings": [
+   "RaQc",
+   "@`Ec",
+   "RaQh@`Cc",
+   "$`E *",
+   "#C P",
+   " A B"
+  ],
+  "callers": 7
+ },
+ {
+  "addr": "06052b18",
+  "name": "FUN_06052b18",
+  "size": 32,
+  "strings": [
+   "RaQc",
+   "@`Ec",
+   "RaQh@`Cc",
+   "$`E *",
+   "#C P",
+   " A B"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0606a9aa",
+  "name": "FUN_0606a9aa",
+  "size": 488,
+  "strings": [
+   "`A `",
+   "@ A P",
+   " @ P",
+   "Hmd,?%7'?",
+   ">$xp?m'",
+   "}x=I"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06075328",
+  "name": "",
+  "size": 88,
+  "strings": [
+   "I@OA",
+   "@H0R",
+   "`@ A&",
+   "HLIK",
+   "IHJG",
+   "HCIB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06079abc",
+  "name": "FUN_06079abc",
+  "size": 472,
+  "strings": [
+   "JL_A2DP",
+   "HPxnxxxxrXB0M",
+   "YHZG",
+   "YGZF",
+   "@D+:",
+   "H<Jt"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0607cd9a",
+  "name": "FUN_0607cd9a",
+  "size": 226,
+  "strings": [
+   "CHOP",
+   "AD @",
+   "0<G=F",
+   "N<I=H",
+   "0(@p",
+   "KA C "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600ab08",
+  "name": "FUN_0600ab08",
+  "size": 88,
+  "strings": [
+   "1cA ",
+   "Ab2c",
+   "@3A B D ",
+   "@ @!A!",
+   "5333"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0600e890",
+  "name": "FUN_0600e890",
+  "size": 596,
+  "strings": [
+   "1cA ",
+   "Ab2c",
+   "@3A B D ",
+   "@ @!A!",
+   "5333"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0600eae4",
+  "name": "FUN_0600eae4",
+  "size": 194,
+  "strings": [
+   "1cA ",
+   "Ab2c",
+   "@3A B D ",
+   "@ @!A!",
+   "5333"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0601226e",
+  "name": "thunk_FUN_0010ea22",
+  "size": 140,
+  "strings": [
+   "`H A",
+   ">` A",
+   "YiPh",
+   "dy?@ R",
+   "A F "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060124a6",
+  "name": "FUN_060124a6",
+  "size": 384,
+  "strings": [
+   "YiPh",
+   "dy?@ R",
+   "A F ",
+   "F Xe",
+   "@!A!"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06016198",
+  "name": "FUN_06016198",
+  "size": 758,
+  "strings": [
+   "E3F!",
+   "RA Q",
+   "BA Q",
+   "EA! ",
+   "p`A\""
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0601b982",
+  "name": "FUN_0601b982",
+  "size": 172,
+  "strings": [
+   "TcPm",
+   "[X@C0$",
+   "jX\"@",
+   "X@K ",
+   "PX@^"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0602c3ca",
+  "name": "FUN_0602c3ca",
+  "size": 24,
+  "strings": [
+   "iGlF",
+   "A R V ",
+   "G D Q",
+   "$@ A$",
+   "@ A$"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0602c5c8",
+  "name": "FUN_0602c5c8",
+  "size": 260,
+  "strings": [
+   "iGlF",
+   "A R V ",
+   "G D Q",
+   "$@ A$",
+   "@ A$"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06030226",
+  "name": "FUN_06030226",
+  "size": 52,
+  "strings": [
+   "A!B ",
+   "A B!",
+   "PIaa",
+   "$Qp`",
+   "xa0 "
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06036124",
+  "name": "FUN_06036124",
+  "size": 210,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06036e46",
+  "name": "FUN_06036e46",
+  "size": 36,
+  "strings": [
+   "E!A\"B'C!p",
+   "SB#R",
+   "`yBq",
+   "BA ~",
+   "`S@ R"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06036f4c",
+  "name": "FUN_06036f4c",
+  "size": 38,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060424f4",
+  "name": "FUN_060424f4",
+  "size": 192,
+  "strings": [
+   "ddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeffffffffffffffffffffffffggggggggg",
+   "Q/;U",
+   "Ab).",
+   "y0h6u}",
+   "XicV"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060425b4",
+  "name": "FUN_060425b4",
+  "size": 128,
+  "strings": [
+   "ddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeffffffffffffffffffffffffggggggggg",
+   "Q/;U",
+   "Ab).",
+   "y0h6u}",
+   "XicV"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "0604687e",
+  "name": "FUN_0604687e",
+  "size": 202,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604a462",
+  "name": "FUN_0604a462",
+  "size": 88,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604ab90",
+  "name": "FUN_0604ab90",
+  "size": 82,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0604b08e",
+  "name": "",
+  "size": 426,
+  "strings": [
+   "energy_detect",
+   "channel_merge",
+   "channel_expander",
+   "data_saturation",
+   "audio_dac"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604b678",
+  "name": "FUN_0604b678",
+  "size": 192,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604be66",
+  "name": "FUN_0604be66",
+  "size": 30,
+  "strings": [
+   "A :gB :",
+   "B :7C :",
+   "A(9gB(9",
+   "B(9gC(9",
+   "B(87C(8"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0605260c",
+  "name": "",
+  "size": 166,
+  "strings": [
+   "A B!C!",
+   "@ D ",
+   "@ E ",
+   "@ F ",
+   "[cG#"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06072282",
+  "name": "FUN_06072282",
+  "size": 84,
+  "strings": [
+   "app_dir_head",
+   "app_dir_head2",
+   "J C ",
+   "@ J a",
+   "NB.@"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06073256",
+  "name": "FUN_06073256",
+  "size": 146,
+  "strings": [
+   "@@ R",
+   "Y{@ B*C!",
+   "Q|@ B!C ",
+   "@,YO",
+   "`&A "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06074982",
+  "name": "FUN_06074982",
+  "size": 104,
+  "strings": [
+   "CHOP",
+   "AD @",
+   "0<G=F",
+   "N<I=H",
+   "0(@p"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06076050",
+  "name": "FUN_06076050",
+  "size": 102,
+  "strings": [
+   "CHOP",
+   "AD @",
+   "0<G=F",
+   "N<I=H",
+   "0(@p"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607867a",
+  "name": "FUN_0607867a",
+  "size": 176,
+  "strings": [
+   "HPxnxxxxrXB0M",
+   "YHZG",
+   "YGZF",
+   "@D+:",
+   "H<Jt"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "06002a34",
+  "name": "FUN_06002a34",
+  "size": 112,
+  "strings": [
+   "333?",
+   "X4A D ",
+   " O`v",
+   "777:G"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06005798",
+  "name": "",
+  "size": 960,
+  "strings": [
+   "dA P",
+   "y?R ",
+   "TA @",
+   "PCB @"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600a6f2",
+  "name": "FUN_0600a6f2",
+  "size": 70,
+  "strings": [
+   "P+A B ",
+   "KP@ A ",
+   "PQ``",
+   "4A\"A"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600b236",
+  "name": "FUN_0600b236",
+  "size": 94,
+  "strings": [
+   "333?",
+   "@333?",
+   "@@333?",
+   "?333?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600df78",
+  "name": "FUN_0600df78",
+  "size": 234,
+  "strings": [
+   "Jd@ ",
+   " @!A!",
+   "A Jc",
+   "P8B$"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060109a0",
+  "name": "FUN_060109a0",
+  "size": 22,
+  "strings": [
+   "`aeg",
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "06010c1e",
+  "name": "FUN_06010c1e",
+  "size": 234,
+  "strings": [
+   "`aeg",
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06011f02",
+  "name": "FUN_06011f02",
+  "size": 876,
+  "strings": [
+   "!C!P",
+   "0,CC",
+   "@mG`",
+   "AaCA "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060146a6",
+  "name": "FUN_060146a6",
+  "size": 1166,
+  "strings": [
+   "Wpc0@\\iyA",
+   "@yjpd",
+   "sb#I4`$GZiQh0a",
+   "Q`@ Q"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06014cb4",
+  "name": "FUN_06014cb4",
+  "size": 1708,
+  "strings": [
+   "333?",
+   "@333?",
+   "@@333?",
+   "?333?"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0602d4f0",
+  "name": "FUN_0602d4f0",
+  "size": 32,
+  "strings": [
+   "A R V ",
+   "G D Q",
+   "$@ A$",
+   "@ A$"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060338a0",
+  "name": "FUN_060338a0",
+  "size": 74,
+  "strings": [
+   " @)R",
+   "nA z0",
+   "@`y:",
+   "A B\"0"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603711e",
+  "name": "FUN_0603711e",
+  "size": 28,
+  "strings": [
+   "I0$r",
+   "A0K1 ",
+   "3 ! ",
+   "A8K?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06037156",
+  "name": "FUN_06037156",
+  "size": 24,
+  "strings": [
+   "I0$r",
+   "A0K1 ",
+   "3 ! ",
+   "A8K?"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06041e08",
+  "name": "FUN_06041e08",
+  "size": 678,
+  "strings": [
+   "@!A\"",
+   "AA2B",
+   "c `0=",
+   "B!A "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060462f4",
+  "name": "FUN_060462f4",
+  "size": 326,
+  "strings": [
+   "x@F P",
+   "\"F R",
+   " 0@ ",
+   "QA/@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604a30c",
+  "name": "FUN_0604a30c",
+  "size": 342,
+  "strings": [
+   "@ I<",
+   "``A&r",
+   "L``A!",
+   "A.C B"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0604a57e",
+  "name": "FUN_0604a57e",
+  "size": 146,
+  "strings": [
+   "A%J2",
+   "A%B>C ",
+   "`A+B!",
+   " #c3"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0604dbbe",
+  "name": "FUN_0604dbbe",
+  "size": 186,
+  "strings": [
+   ":3r.O",
+   "zl/'",
+   "NKiH",
+   "V$~G"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0604e388",
+  "name": "",
+  "size": 256,
+  "strings": [
+   "OQ`@h",
+   "2\":?",
+   "A j(",
+   " C F "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604fd32",
+  "name": "FUN_0604fd32",
+  "size": 1608,
+  "strings": [
+   " 0@P`p",
+   " (08@P`p",
+   " (08@HPX`p",
+   " (08@HP"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06058484",
+  "name": "FUN_06058484",
+  "size": 818,
+  "strings": [
+   " 0@P`p",
+   " (08@P`p",
+   " (08@HPX`p",
+   " (08@HP"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06058886",
+  "name": "",
+  "size": 40,
+  "strings": [
+   " 0@P`p",
+   " (08@P`p",
+   " (08@HPX`p",
+   " (08@HP"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0606fba0",
+  "name": "FUN_0606fba0",
+  "size": 56,
+  "strings": [
+   "P6B\"",
+   "Z@I@",
+   "@ F ",
+   "@,=C"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0606fc52",
+  "name": "FUN_0606fc52",
+  "size": 160,
+  "strings": [
+   "1 E ",
+   "P6B\"",
+   "Z@I@",
+   "@ F "
+  ],
+  "callers": 6
+ },
+ {
+  "addr": "0607029a",
+  "name": "",
+  "size": 152,
+  "strings": [
+   "Y@@ ",
+   " @c!",
+   "GP`P",
+   "oA\"a"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607033e",
+  "name": "FUN_0607033e",
+  "size": 138,
+  "strings": [
+   "Y@@ ",
+   " @c!",
+   "GP`P",
+   "oA\"a"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06070bca",
+  "name": "FUN_06070bca",
+  "size": 310,
+  "strings": [
+   "A@ T",
+   "E!A!",
+   "7`&`d",
+   "@ D "
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "06074918",
+  "name": "",
+  "size": 16,
+  "strings": [
+   "D C!",
+   "AC b ",
+   "kE$LQ",
+   "aH`@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607f6ac",
+  "name": "FUN_0607f6ac",
+  "size": 134,
+  "strings": [
+   "b@ U",
+   " 8B8T",
+   " A P",
+   "L_b`"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0600280c",
+  "name": "",
+  "size": 478,
+  "strings": [
+   "X4A D ",
+   " O`v",
+   "777:G"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060075a6",
+  "name": "FUN_060075a6",
+  "size": 64,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06009b22",
+  "name": "FUN_06009b22",
+  "size": 130,
+  "strings": [
+   "P@ A!",
+   "P$A ",
+   "D`+A "
+  ],
+  "callers": 5
+ },
+ {
+  "addr": "0600a860",
+  "name": "",
+  "size": 226,
+  "strings": [
+   "A B ",
+   "G A ",
+   "%A r-E "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600b62a",
+  "name": "FUN_0600b62a",
+  "size": 588,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600d6dc",
+  "name": "FUN_0600d6dc",
+  "size": 14,
+  "strings": [
+   "!@ 1",
+   "`D 2",
+   "a#`A "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0600d6ea",
+  "name": "FUN_0600d6ea",
+  "size": 20,
+  "strings": [
+   "!@ 1",
+   "`D 2",
+   "a#`A "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0600db32",
+  "name": "FUN_0600db32",
+  "size": 412,
+  "strings": [
+   "A B ",
+   "G A ",
+   "%A r-E "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060104c4",
+  "name": "FUN_060104c4",
+  "size": 422,
+  "strings": [
+   "^ZM ",
+   "!C!P",
+   "0,CC"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0601bbf2",
+  "name": "FUN_0601bbf2",
+  "size": 392,
+  "strings": [
+   "hAt`",
+   "I@!R",
+   "Xg0 "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0601c162",
+  "name": "FUN_0601c162",
+  "size": 262,
+  "strings": [
+   "hAt`",
+   "I@!R",
+   "Xg0 "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0601e2b2",
+  "name": "FUN_0601e2b2",
+  "size": 914,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06036e36",
+  "name": "FUN_06036e36",
+  "size": 16,
+  "strings": [
+   "`Bb3c",
+   "b@ J O a",
+   "CbJ a"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06036f32",
+  "name": "FUN_06036f32",
+  "size": 16,
+  "strings": [
+   "`D 2",
+   "a#`A ",
+   "Q`B%"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060395b4",
+  "name": "FUN_060395b4",
+  "size": 96,
+  "strings": [
+   "1F@ ",
+   "eC!Dh",
+   "(EDeEeX"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603a8ec",
+  "name": "FUN_0603a8ec",
+  "size": 106,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603bf6c",
+  "name": "FUN_0603bf6c",
+  "size": 50,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603bfa4",
+  "name": "FUN_0603bfa4",
+  "size": 156,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603c552",
+  "name": "FUN_0603c552",
+  "size": 18,
+  "strings": [
+   "         (((((                  ",
+   "AAAAAA",
+   "BBBBBB"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06049f8c",
+  "name": "FUN_06049f8c",
+  "size": 58,
+  "strings": [
+   "A B$@",
+   " @3B!",
+   "x>B$C "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604ccd0",
+  "name": "FUN_0604ccd0",
+  "size": 120,
+  "strings": [
+   "@D01",
+   "AD01",
+   "UFA "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604d2be",
+  "name": "FUN_0604d2be",
+  "size": 1354,
+  "strings": [
+   " B 0",
+   "a@ W",
+   "BbA`"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0606f5d2",
+  "name": "",
+  "size": 10,
+  "strings": [
+   "dy?R",
+   "IA @",
+   "D xA"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060709e6",
+  "name": "FUN_060709e6",
+  "size": 286,
+  "strings": [
+   "vRQ>",
+   "8STs",
+   "LwH'"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "06070b66",
+  "name": "FUN_06070b66",
+  "size": 100,
+  "strings": [
+   "vRQ>",
+   "8STs",
+   "LwH'"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "060730d8",
+  "name": "",
+  "size": 74,
+  "strings": [
+   "`Bb3c",
+   "b@ J O a",
+   "CbJ a"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0607318c",
+  "name": "FUN_0607318c",
+  "size": 28,
+  "strings": [
+   "`Bb3c",
+   "b@ J O a",
+   "CbJ a"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060748f8",
+  "name": "",
+  "size": 16,
+  "strings": [
+   "KP@ A ",
+   "PQ``",
+   "4A\"A"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06074928",
+  "name": "",
+  "size": 16,
+  "strings": [
+   "A B ",
+   "G A ",
+   "%A r-E "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607f48c",
+  "name": "FUN_0607f48c",
+  "size": 32,
+  "strings": [
+   "b@ U",
+   "@A!q",
+   "A#B!P"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06001fd8",
+  "name": "FUN_06001fd8",
+  "size": 158,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 14
+ },
+ {
+  "addr": "06002acc",
+  "name": "FUN_06002acc",
+  "size": 42,
+  "strings": [
+   "P@ A!",
+   "P$A "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06003050",
+  "name": "FUN_06003050",
+  "size": 74,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 24
+ },
+ {
+  "addr": "06008928",
+  "name": "FUN_06008928",
+  "size": 90,
+  "strings": [
+   "x0A ",
+   "ygqJ"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060098ac",
+  "name": "FUN_060098ac",
+  "size": 126,
+  "strings": [
+   "9IAH@",
+   "@y?R"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "06009e6e",
+  "name": "FUN_06009e6e",
+  "size": 536,
+  "strings": [
+   "FA!R",
+   "QcPh"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060304d6",
+  "name": "FUN_060304d6",
+  "size": 34,
+  "strings": [
+   "Ac161",
+   "1C004"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "06032462",
+  "name": "FUN_06032462",
+  "size": 34,
+  "strings": [
+   "Ac161",
+   "1C004"
+  ],
+  "callers": 4
+ },
+ {
+  "addr": "060371f8",
+  "name": "FUN_060371f8",
+  "size": 14,
+  "strings": [
+   "cHAq",
+   "pbB E "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0603c57c",
+  "name": "thunk_FUN_0603cb64",
+  "size": 1520,
+  "strings": [
+   "c `0=",
+   "B!A "
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06045754",
+  "name": "FUN_06045754",
+  "size": 54,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "060457f0",
+  "name": "FUN_060457f0",
+  "size": 42,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06045868",
+  "name": "FUN_06045868",
+  "size": 50,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06045a8c",
+  "name": "FUN_06045a8c",
+  "size": 446,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06045c76",
+  "name": "",
+  "size": 40,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06045db4",
+  "name": "FUN_06045db4",
+  "size": 86,
+  "strings": [
+   "B C P",
+   "e\"g*E"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "06049818",
+  "name": "",
+  "size": 46,
+  "strings": [
+   "`A+B!",
+   " #c3"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604a610",
+  "name": "FUN_0604a610",
+  "size": 248,
+  "strings": [
+   " #c3",
+   "A B$@"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06074938",
+  "name": "",
+  "size": 16,
+  "strings": [
+   "P+A B ",
+   "KP@ A "
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0607cb90",
+  "name": "FUN_0607cb90",
+  "size": 268,
+  "strings": [
+   "b@ U",
+   "@A!q"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06006c6e",
+  "name": "FUN_06006c6e",
+  "size": 112,
+  "strings": [
+   "Q`@ Q"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600d2c0",
+  "name": "",
+  "size": 984,
+  "strings": [
+   "B C P"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0600f9c6",
+  "name": "FUN_0600f9c6",
+  "size": 72,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0600fa34",
+  "name": "FUN_0600fa34",
+  "size": 70,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06015684",
+  "name": "FUN_06015684",
+  "size": 2122,
+  "strings": [
+   "E3F!"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0601a2ae",
+  "name": "FUN_0601a2ae",
+  "size": 40,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0601b488",
+  "name": "",
+  "size": 350,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0603066e",
+  "name": "FUN_0603066e",
+  "size": 80,
+  "strings": [
+   "1C004"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "060397b8",
+  "name": "FUN_060397b8",
+  "size": 808,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 0
+ },
+ {
+  "addr": "0603f91e",
+  "name": "FUN_0603f91e",
+  "size": 336,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06046632",
+  "name": "FUN_06046632",
+  "size": 202,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "0604e034",
+  "name": "FUN_0604e034",
+  "size": 188,
+  "strings": [
+   "Q`@ Q"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "06054b1a",
+  "name": "FUN_06054b1a",
+  "size": 2570,
+  "strings": [
+   "Q`@ Q"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "0606f5c8",
+  "name": "",
+  "size": 10,
+  "strings": [
+   "   !!!\"\"\"\"###$$$%%%&&&'''((())))***+++,,,---....///000111222233344455556667778888999:::;;;;<<<====>>>????@@@AAABBBBCCCCDDDEEEEFFFGGGGHHHHIIIJJJJKKKKLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ[[[[[\\\\\\\\]]]]]^^^^_____````aaaaabbbbbccccdddddeeeeefffffggggghhhhhhiiiiijjjjjkkkkkkllllllmmmmmmnnnnnnooooooppppppqqqqqqqrrrrrrrssssssstttttttuuuuuuuuvvvvvvvvwwwwwwwwwxxxxxxxxxyyyyyyyyyyzzzzzzzzzzz{{{{{{{{{{{{||||||||||||||}}}}}}}}}}}}}}}}}~~~~~~~~~~~~~~~~~~~~~~~~~"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060761ae",
+  "name": "FUN_060761ae",
+  "size": 174,
+  "strings": [
+   "JL_A2DP"
+  ],
+  "callers": 2
+ },
+ {
+  "addr": "060762e6",
+  "name": "FUN_060762e6",
+  "size": 136,
+  "strings": [
+   "JL_A2DP"
+  ],
+  "callers": 1
+ },
+ {
+  "addr": "060782b4",
+  "name": "FUN_060782b4",
+  "size": 268,
+  "strings": [
+   "JL_A2DP"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0607a5a6",
+  "name": "FUN_0607a5a6",
+  "size": 90,
+  "strings": [
+   "JL_A2DP"
+  ],
+  "callers": 3
+ },
+ {
+  "addr": "0607cb2a",
+  "name": "FUN_0607cb2a",
+  "size": 102,
+  "strings": [
+   "JL_A2DP"
+  ],
+  "callers": 1
+ }
+]

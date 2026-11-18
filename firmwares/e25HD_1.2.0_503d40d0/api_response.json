@@ -1,0 +1,18 @@
+{
+  "message": "获取成功",
+  "code": 200,
+  "data": {
+    "id": 108,
+    "FirmwareVersionNo": "1.2.0",
+    "__v": 0,
+    "type": "0x00",
+    "chip": "",
+    "FirmwareLinkUrl": "https://edifier-us-app.s3.us-east-2.amazonaws.com/product_firmware/20231213/a17148994131050272930d3199cd76c8.bin",
+    "chip_decode": {},
+    "rule_type": 1,
+    "upgrade_prompt": "<android>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android> \n\n<ios> \n<zh-CN>\n\n</zh-CN>\n <en-US>\n\n</en-US>\n </ios>",
+    "upgrade_start_time": "00:00",
+    "upgrade_end_time": "23:59"
+  },
+  "uuid": "log_4846b554-bfff-fb99-a77d-51fd99d3e377"
+}
