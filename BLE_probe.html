@@ -155,11 +155,16 @@ background:var(--tx);transition:left .2s}
     </div>
     <div class="row" style="margin-top:8px">
       <label class="switch"><input type="checkbox" id="swConfirm"> Подтверждать каждый кадр</label>
+      <button id="btnQuick" class="btn-p" disabled>⚡ Быстрый прогон (события + gain-тест)</button>
       <button id="btnProbe" class="btn-t" disabled>Проба (по одному, с ожиданием ответа)</button>
       <button id="btnProbeStop" class="btn-sm">Прервать серию</button>
     </div>
-    <div class="muted" style="margin-top:4px">READ-подобные op (0x43, 0xC6, 0xD8, …) шлются сразу, без тумблеров.
-    Для не-READ op нужно снять Dry-run и включить «Разрешить запись» (карточка 3).</div>
+    <div class="row" style="margin-top:6px">
+      <label class="switch"><input type="checkbox" id="swGainTest" checked> Фаза B: gainByte 0xFE на band1 (вниз, с автовозвратом)</label>
+    </div>
+    <div class="muted" style="margin-top:4px">Быстрый прогон: Фаза A — op 0x29–0x34/0x38/0x39 с пустым payload
+    (и повтор с [00] для ответивших); Фаза B — band1 gainByte=0xFE (только ВНИЗ), эхо-проверка клампа,
+    автоворзврат к 0x06. Требует: Dry-run снят + «Разрешить запись».</div>
     <div class="warnbox">Кандидат 0x2B (десятичный 43) — гипотеза «доставка node_param_set по app-каналу».
     Гейн-блок с 0 дБ безобиден: это заводское значение SET_HP_GAIN idx0. Проба шлёт кадры ПО ОДНОМУ,
     ждёт RX-окно 2 с и классифицирует ответ. Любой ACK/эхо = кандидат подтверждён.</div>
@@ -377,6 +382,7 @@ function upd(){
   $("btnReadAll").disabled=!(S.connected&&S.dry);
   ["rtVol","rtPrompt","rtEq","rtEqGet","rtMap"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
   $("btnProbe").disabled=!S.connected;
+  $("btnQuick").disabled=!S.connected;
   $("dutRun").disabled=!(S.connected&&!S.pause);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
@@ -606,6 +612,61 @@ async function probeSeries(){
   log("sys","серия PROBE завершена");
 }
 
+/* ===== БЫСТРЫЙ ПРОГОН: события 0x29–0x39 + gain-кламп тест ===== */
+const QUICK_OPS=[0x29,0x2A,0x2B,0x2C,0x2D,0x2E,0x2F,0x30,0x31,0x32,0x33,0x34,0x38,0x39];
+async function quickRun(){
+  const out=$("probeOut");
+  if(S.dry||!S.write){
+    out.textContent="ПРЕДОХРАНИТЕЛЬ: все кандидаты быстрого прогона — не READ.\n"+
+      "Сними Dry-run и включи «Разрешить запись» (карточка 3), затем нажми снова.";
+    log("warn","QUICK: нужна запись — Dry-run снят? «Разрешить запись» включён?");
+    return;
+  }
+  S.stop=false;
+  out.textContent="";
+  out.textContent+="— ФАЗА A: события EQ/vbass, пустой payload —\n";
+  const alive=[];
+  for(const op of QUICK_OPS){
+    if(S.stop)break;
+    pending={op};
+    const p=await transmit(frame(op,new Uint8Array(0)),
+      `QUICK-A op=0x${op.toString(16).toUpperCase()} пусто`,"PROBE");
+    if(p){alive.push(op);
+      out.textContent+=`0x${op.toString(16).toUpperCase()}: ОТВЕТ pay(${p.pay.length})=${hex(p.pay)}\n`;}
+    else out.textContent+=`0x${op.toString(16).toUpperCase()}: тишина\n`;
+  }
+  if(alive.length&&!S.stop){
+    out.textContent+="\n— ФАЗА A2: живые op с payload [00] —\n";
+    for(const op of alive){
+      if(S.stop)break;
+      pending={op};
+      const p=await transmit(frame(op,new Uint8Array([0x00])),
+        `QUICK-A2 op=0x${op.toString(16).toUpperCase()} [00]`,"PROBE");
+      out.textContent+=`0x${op.toString(16).toUpperCase()} [00]: ${p?"ОТВЕТ pay("+p.pay.length+")="+hex(p.pay):"тишина"}\n`;
+    }
+  }else if(!alive.length)out.textContent+="(живых op в фазе A нет — A2 пропущена)\n";
+  if($("swGainTest").checked&&!S.stop){
+    out.textContent+="\n— ФАЗА B: band1 gainByte=0xFE (только вниз) —\n";
+    pending={op:CMD.SINGLE_EQ_SET};
+    await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0xFE])),
+      "QUICK-B band1 freq=40 gainByte=0xFE (вниз)","ROUNDTRIP");
+    pending={op:CMD.CUSTOM_EQ_GET};
+    const p=await transmit(frame(CMD.CUSTOM_EQ_GET,new Uint8Array(0)),"QUICK-B контроль 0x43","READ");
+    if(p&&p.cmd===CMD.CUSTOM_EQ_GET){
+      const i=p.pay.indexOf(0xFE);
+      out.textContent+=i>=0
+        ?`В ответе есть 0xFE @pay[${i}] — КЛАМПА НЕТ: app-EQ принимает широкий гейн!\n`
+        :"Байта 0xFE в ответе нет — гейн клампится (когда-то ±3 дБ).\n";
+    }else out.textContent+="0x43 не ответил — кламп не проверить, см. лог.\n";
+    pending={op:CMD.SINGLE_EQ_SET};
+    await transmit(frame(CMD.SINGLE_EQ_SET,new Uint8Array([0x00,0x01,0x00,0x28,0x06])),
+      "QUICK-B возврат band1 (40 Гц, 0 дБ)","ROUNDTRIP");
+    out.textContent+="band1 возвращён к 40 Гц / 0 дБ.\n";
+  }
+  log("sys","QUICK-прогон завершён");
+  out.textContent+="\nГотово. Полный разбор — в логе (экспорт в файл).";
+}
+
 /* ===== DUT/AT ПРОБНИК ===== */
 const DUT_DANGER=["DUT+TST+TXS+0","DUT+TST+TXS+1","DUT+TST+DUT+0","DUT+TST+SAV+00","DUT+TST+SAV+01",
   "TST+LED+IO1+1","TST+LED+IO1+0","TST+LED+IO2+1","TST+LED+IO2+0","TST+LED+IO3+1","TST+LED+IO3+0"];
@@ -688,6 +749,7 @@ $("rtVol").onclick=rtVolume;$("rtPrompt").onclick=rtPrompt;$("rtEq").onclick=rtE
 $("rtMap").onclick=bandMap;
 $("probePay").onchange=e=>{$("probeHex").disabled=e.target.value!=="custom";};
 $("btnProbe").onclick=async()=>{S.stop=false;await probeSeries();};
+$("btnQuick").onclick=async()=>{S.stop=false;await quickRun();};
 $("btnProbeStop").onclick=()=>{S.stop=true;log("sys","серия PROBE прервана");};
 document.querySelectorAll("[data-danger]").forEach(b=>b.onclick=()=>{
   const d=b.dataset.danger;
