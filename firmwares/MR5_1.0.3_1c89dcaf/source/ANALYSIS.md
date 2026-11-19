@@ -997,3 +997,54 @@ source/decrypted/MR5BT_1.0.3_CN_dec.bin, source/products_cn.json}.
 Следствие: у нас теперь есть СВОЯ прошивка устройства пользователя
 (CN 1.0.3) — база для фазы E и для диффа против 1.0.0/Global.
 Полный дамп 2 МБ по-прежнему только UART/SWD.
+
+### 18. Квест полного дампа CN MR5BT: cfg_tool (2026-11-19)
+
+## 18.1 Установлен исходник SDK JieLi
+
+Публичный клон beyondxu/JL701N (sdk звуковых колонок JL, поколение
+jlstream/br28; протоколы совпадают с нашим jl701n_V100-@20240417-$fcd444d5)
+-> C:\Users\User\AppData\Local\Temp\opencode\jl701n_sdk.
+В образе MR5BT CN есть строки: new_cfg_tool (имя LP-таргета из
+new_cfg_tool.c => TCFG_CFG_TOOL_ENABLE=1), usb_stack, JL_SPP,
+Zusb_update2.bin, Zble_ota.bin, Zuart_user.bin, Znor_ota.bin,
+Zspp_app_ota.bin, Zble_app_ota.bin, DBG_ISP/DBG_UART0-2/DBG_SPI0-2/DBG_USB,
+flash/res/cfg_tool.bin, pipeline-PCAudio##USB Audio.
+
+## 18.2 Протокол cfg_tool = ШТАТНАЯ КОМАНДА ЧТЕНИЯ ВСЕЙ ФЛЕШ
+
+apps/common/config/new_cfg_tool.c + include/cfg_tool.h:
+- транспорт: TCFG_UART_COMM (ci_transport_uart) / TCFG_USB_COMM (CDC) /
+  TCFG_SPP_COMM (через spp_online_db -> cfg_tool_combine_rx_data);
+- кадр: 5A AA A5 | CRC16(lo,hi) | L(lo,hi) | T | SQ | payload;
+  L = длина (T+SQ+payload); CRC16 по байтам [5..];
+  канал T = VISUAL_CFG_TOOL_CHANNEL_STYLE = 0x21;
+- команды (payload = cmd LE32 + params):
+  0x400 QUERY_BASIC_INFO; 0x0B file size; 0x0C file content;
+  0x22 prepare write; **0x27 READ_ADDR_RANGE: norflash_read(addr,size)
+  БЕЗ ОГРАНИЧЕНИЙ**; 0x24 ERASE; 0x25 WRITE; 0x26 ENTER_UPGRADE
+  (go_mask_usb_updata); 0x505 CPU_RESET;
+- READ_ADDR_RANGE ответ = сырые байты флеша (send_len=size), SQ эхо.
+CRC16 реализация в cfg_tool.a; кандидаты: CCITT-FALSE / KERMIT / MCRF4XX
+(в либе найден байт-паттерн 0x8408). Опасные команды в дампере запрещены.
+
+## 18.3 Живая проверка транспортов (колонка пользователя, B4:E7:B0:C7:B7:2C)
+
+- BLE-адрес B4:E7:B0:C7:B7:2C ("EDIFIER BLE"), классический адрес
+  **B4:E7:B3:C7:B7:2C** (из PnP: BTHENUM\DEV_B4E7B3C7B72C, VID 05D6=JieLi);
+- спарено с ПК; SDP отдал **только A2DP (0x110B) + AVRCP (0x110E)** —
+  SPP выпилен => cfg_tool по Bluetooth НЕДОСТУПЕН;
+- у колонки НЕТ USB-порта => CDC-маршрут закрыт;
+- op-коды OTA Edifier 0xE1..0xE8 = RCSP OTA (rcsp_define.h):
+  0xE1 GET_DEVICE_UPDATE_FILE_INFO_OFFSET, 0xE2 INQUIRE_DEVICE_IF_CAN_UPDATE,
+  0xE3 ENTER_UPDATE_MODE, 0xE4 EXIT_UPDATE_MODE, 0xE5 SEND_FW_UPDATE_BLOCK,
+  0xE6 GET_DEVICE_REFRESH_FW_STATUS, 0xE7 SET_DEVICE_REBOOT,
+  0xE8 NOTIFY_UPDATE_CONENT_SIZE — все только запись, чтения флеш нет.
+
+## 18.4 Единственный маршрут к полному дампу
+
+**UART + cfg_tool** (TCFG_UART_COMM, ci_transport_uart). Нужны:
+фото платы (ищем пады/штыри TX/RX/GND/3V3 у JL701N, часто 4-пин гребёнка),
+USB-UART адаптер 3.3В (CH340/CP2102), скорость (типовые 921600/115200).
+Готовый дампер: cfg_tool_dump.py (зонд CRC -> READ_ADDR_RANGE циклом,
+READ-ONLY). Полный дамп 2МБ = cmd 0x27 по addr 0x000000..0x200000.
