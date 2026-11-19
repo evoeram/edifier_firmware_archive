@@ -1,67 +1,53 @@
-# Архив прошивок Edifier (снято с API ConneX 1.0.32)
+# Edifier Firmware Archive
 
-13 файлов, 9571007 байт всего. Каждая прошивка лежит в отдельном каталоге
-`firmwares/<Модель>_<Версия>_<хэшURL>/` и содержит:
-
-- `firmware.bin` — скачанный `.bin`
-- `info.json` — метаданные запроса и ответа
-- `api_request.txt` — точный URL запроса с подписью
-- `api_response.json` — полный ответ `/home/api/v1/ota-upgrade`
-- `README.md` — что это, откуда, как прошивать и как исследовать
-
-## Список
-
-| Модель | product_id | Версия | Размер | SHA-256 (начало) |
-|---|---|---|---|---|
-| `ES20` | 481 | 1.0.4 | 865555 | `cbe40d4f463619bb…` |
-| `ES60` | 480 | 1.0.3 | 927747 | `044f9fe2a7e59883…` |
-| `MP330` | 518 | 1.0.2 | 993458 | `6e07554486761478…` |
-| `MR3` | 430 | 1.0.7 | 655013 | `7365fb68c6e62e4c…` |
-| `MR4 MKII` | 10012 | 1.0.1 | 664229 | `c7862136c166e24d…` |
-| `MR4.5` | 10011 | 1.0.1 | 664229 | `df08eb21229ef9e9…` |
-| `MR5` | 521 | 1.0.3 | 697612 | `e9b9b86610141574…` |
-| `QD25` | 546 | 1.0.1 | 943284 | `0c2b7550073774e3…` |
-| `QR30` | 478 | 1.0.2 | 721496 | `ba40b655b30e646f…` |
-| `QS20` | 520 | 1.0.1 | 927529 | `9bb075cbfc0b59a2…` |
-| `R990BT` | 10021 | 1.0.1 | 666143 | `9b91343abcbea0cb…` |
-| `S355DB` | 10005 | 2.1.1 | 809689 | `a29b125533ef7749…` |
-| `e25HD` | 320 | 1.2.0 | 35023 | `d37d276dc2625fdf…` |
-
-## Воспроизведение
-
-```
-python3 download_firmware.py --all --out ./firmware
-python3 download_firmware.py --id 521 --out ./firmware     # только MR5
-python3 download_firmware.py --all --dry-run              # посмотреть, что доступно
-```
-
-Скрипт использует только standard library, с паузой 1.2 с и обработкой `429`. Не меняйте
-`--workers` на большее без нужды — сервер банит частые запросы.
-
-HTML-версия: `firmware_tool.html` (открыть в браузере, работает из файла).
+Архив прошивок Edifier и материалов реверс-инжиниринга (JieLi jl701n / pi32v2).
 
 ## Структура
 
 ```
-.
-├── README.md
-├── API_NOTES.md
-├── MANIFEST.json / .csv
-├── catalog_products.json        # все 103 модели из расшифрованного каталога
-├── download_firmware.py
-├── firmware_tool.html
-├── inspect_firmware.py
-└── firmwares/
-    └── <Модель>_<Версия>_<hash>/
-        ├── firmware.bin
-        ├── info.json
-        ├── api_request.txt
-        ├── api_response.json
-        └── README.md
+firmwares/
+  GLOBAL/              # массовая выкачка через ConneX API (foreign-app.edifier.com)
+    <pid>_<Model>/firmware_<ver>.bin   # зашифрованный OTA-образ
+    <pid>_<Model>/ota_response.json    # метаданные OTA
+    _manifest.json                     # статусы всех 103 продуктов
+    _provenance_old/                   # request_url+подписи из первой выкачки
+  CN/                  # массовая выкачка через Edifier Connect API (admin-app.edifier.com)
+    <pid>_<Model>/firmware_<ver>.bin
+    <pid>_<Model>/ota_response.json
+    _manifest.json                     # статусы всех 349 продуктов
+  MR5_1.0.3_1c89dcaf/  # дерево анализа GLOBAL MR5 (не дублировать!)
+    firmware.bin, source/ (ANALYSIS.md, ghidra_export, decrypted, tools),
+    DSP_ARCH/ (EQ_TABLES, DSP_ALGORITHMS, FLASH_LAYOUT, POWER_AMP)
+  MR5BT_1.0.3_CN/      # дерево анализа CN MR5BT (устройство пользователя)
+    firmware.bin, source/ (decrypted, products_cn.json), README.md
 ```
 
-## Безопасность
+## Содержимое
 
-Файлы предназначены для резерва и исследования. Прошивка — только через официальное
-приложение и только на совпадающую модель. Исходный код приложения не модифицировался;
-трафик не перехватывался — всё восстановлено статически из DEX и подтверждено живыми запросами.
+- **50 уникальных прошивок**: 13 GLOBAL + 37 CN. Полный список с MD5/SHA-256 —
+  `MANIFEST_ALL.csv` (52 строки: 50 файлов + 2 записи analysis-tree дублей).
+- Шифрование OTA-образов: LFSR (K=0x2BC1, блоки 32 Б, seed=K^((off-2)>>2)) —
+  расшифровка в `firmwares/MR5_1.0.3_1c89dcaf/source/tools/decrypt_mr5.py`.
+- Продукт пользователя: **CN MR5BT = product_id 497**, прошивка 1.0.3
+  (`CN/497_MR5BT`, расшифрованный образ в `MR5BT_1.0.3_CN/source/decrypted/`).
+
+## Инструменты
+
+- `download_all_firmware.py` — массовая выкачка (подпись MD5 `7rn$r44-jM`,
+  обработка 429-in-body, ретраи, алиясунг-фолбэк, percent-encoding URL).
+  Перезапуск докачивает только новые версии.
+- `download_firmware.py`, `inspect_firmware.py` — одиночная выкачка/инспектор.
+
+## Ключевые документы
+
+- `firmwares/MR5_1.0.3_1c89dcaf/source/ANALYSIS.md` — журнал реверса (§1–17).
+- `firmwares/MR5_1.0.3_1c89dcaf/source/edifier_api.md` — API Edifier (подпись,
+  AES-ключи, эндпоинты, продукты).
+- `DSP.html`, `BLE_probe.html` — рабочие стенды (DSP-управление, BLE-пробы).
+- `API_NOTES.md`, `MANIFEST.csv` — история первой (точечной) выкачки.
+
+## Правила
+
+- e25HD не трогать. Фаза E (модификация/перепрошивка) — только по явной просьбе.
+- Опасные OTA-операции (0xE3/0xE5/0xE7) в BLE-стенде запрещены.
+- После каждого коммита обновлять `edifier_re.bundle`.
