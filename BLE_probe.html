@@ -415,8 +415,10 @@ async function transmit(frameU8,label,risk){
   try{await S.wCh.writeValue(frameU8);}
   catch(e){log("err","TX: "+e.message);return null;}
   const p=await waitFor(2000);
-  if(!p){S.sil++;S.silStreak++;classify(pending||{op:frameU8[2]},null,"silence");
-    if(S.silStreak>=5){S.pause=true;log("err","WATCHDOG: 5 молчаний подряд — ПАУЗА. Кнопка СТОП сбросит.");upd();}
+  if(!p){S.sil++;
+    if(!S.noWatchdog){S.silStreak++;classify(pending||{op:frameU8[2]},null,"silence");
+      if(S.silStreak>=5){S.pause=true;log("err","WATCHDOG: 5 молчаний подряд — ПАУЗА. Кнопка СТОП сбросит.");upd();}
+    }
   }else S.silStreak=0;
   await new Promise(r=>setTimeout(r,300)); // троттлинг
   return p;
@@ -623,7 +625,10 @@ async function quickRun(){
     return;
   }
   S.stop=false;
+  S.noWatchdog=true; // в PROBE-серии тишина — ожидаемый результат, не ЧП
+  S.pause=false;S.silStreak=0;upd();
   out.textContent="";
+  try{
   out.textContent+="— ФАЗА A: события EQ/vbass, пустой payload —\n";
   const alive=[];
   for(const op of QUICK_OPS){
@@ -665,6 +670,7 @@ async function quickRun(){
   }
   log("sys","QUICK-прогон завершён");
   out.textContent+="\nГотово. Полный разбор — в логе (экспорт в файл).";
+  }finally{S.noWatchdog=false;}
 }
 
 /* ===== DUT/AT ПРОБНИК ===== */
