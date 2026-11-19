@@ -179,8 +179,14 @@ background:var(--tx);transition:left .2s}
     ОПАСНЫЕ op 0xE2/0xE3/0xE4/0xE5/0xE9/0xEA заблокированы в стенде: 0xE3 = перезагрузка в загрузчик (риск кирпича без UART).</div>
     <div class="row" style="margin-top:8px">
       <button id="btnOtaE1" class="btn-t" disabled>0xE1: update-file info (пусто)</button>
-      <button id="btnOtaE8" class="btn-t" disabled>0xE8: content size (пусто)</button>
+      <button id="btnOtaE2" class="btn-t" disabled>0xE2: можно ли обновлять? [00]</button>
+      <button id="btnOtaE4" class="btn-t" disabled>0xE4: exit update mode (no-op)</button>
+      <button id="btnOtaE6" class="btn-t" disabled>0xE6: refresh fw status</button>
     </div>
+    <div class="warnbox">0xE1 ответил (pay=00) — мост OTA к app-каналу ЖИВОЙ (лог 05:17:57). Стоковый набор:
+    E1 info, E2 can-update, E3 enter (ЗАПРЕЩЁН — reboot в загрузчик), E4 exit, E5 block (ЗАПРЕЩЁН — запись),
+    E6 refresh status, E7 reboot (ЗАПРЕЩЁН), E8 notify (device→app, молчит — норма). E3 шлём только после
+    разбора загрузчика из образа 1.0.3.</div>
     <div id="otaOut" class="hexbox" style="margin-top:8px">—</div>
   </div>
 
@@ -398,6 +404,9 @@ function upd(){
   $("btnQuick").disabled=!S.connected;
   $("btnOtaE1").disabled=!S.connected;
   $("btnOtaE8").disabled=!S.connected;
+  $("btnOtaE2").disabled=!S.connected;
+  $("btnOtaE4").disabled=!S.connected;
+  $("btnOtaE6").disabled=!S.connected;
   $("dutRun").disabled=!(S.connected&&!S.pause);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
@@ -603,7 +612,10 @@ async function bandMap(){
    0xE1 (GET_UPDATE_FILE_INFO) и 0xE8 (NOTIFY_CONTENT_SIZE) — read-only зонды OTA-канала
    (RCSP-эталон из SDK ac701n). 0xE3/0xEA/0xE5 — ЗАПРЕЩЕНЫ: enter_update_mode/reboot/запись. */
 const READ_LIKE=new Set([0x43,0xC5,0xC6,0xC9,0x66,0x68,0xD8,0xC3,0xC0,0xD5,0x61,0x48,0xBB,0x86,0xD7,0x92,0x92&0xff,0xE1,0xE8]);
-const OTA_FORBIDDEN=new Set([0xE2,0xE3,0xE4,0xE5,0xE7,0xE9,0xEA]);
+/* OTA-опасные: 0xE3 enter_update_mode (reboot в загрузчик!), 0xE5 запись блоков прошивки,
+   0xE7 SET_DEVICE_REBOOT (перезагрузка). 0xE2/E4/E6 — зонды стокового RCSP-потока (безопасны:
+   E2 опрос "можно ли обновлять", E4 выход из режима обновления (no-op вне его), E6 статус). */
+const OTA_FORBIDDEN=new Set([0xE3,0xE5,0xE7]);
 async function probeSeries(){
   const ops=$("probeOps").value.split(",").map(x=>parseInt(x.trim(),16)).filter(x=>x>=0&&x<=0xff);
   if(!ops.length){log("err","список op пуст");return;}
@@ -792,6 +804,25 @@ $("btnOtaE8").onclick=async()=>{
   pending={op:0xE8,onReply:p=>{$("otaOut").textContent="0xE8 ОТВЕТ pay("+p.pay.length+")="+hex(p.pay);}};
   const p=await transmit(frame(0xE8,new Uint8Array(0)),"OTA-зонд 0xE8 (read-only)","READ");
   if(!p)$("otaOut").textContent="0xE8: тишина";
+};
+$("btnOtaE2").onclick=async()=>{
+  $("otaOut").textContent="";
+  pending={op:0xE2,onReply:p=>{$("otaOut").textContent="0xE2 ОТВЕТ pay("+p.pay.length+")="+hex(p.pay)+
+    "\n(сток RCSP: status, data[0]=0x00 'можно' / иное 'нельзя'; событие юзер-таске — reboot НЕ выполняется)";}};
+  const p=await transmit(frame(0xE2,new Uint8Array([0x00])),"OTA-зонд 0xE2 can-update [00] (PROBE, без reboot)","PROBE");
+  if(!p)$("otaOut").textContent="0xE2: тишина";
+};
+$("btnOtaE4").onclick=async()=>{
+  $("otaOut").textContent="";
+  pending={op:0xE4,onReply:p=>{$("otaOut").textContent="0xE4 ОТВЕТ pay("+p.pay.length+")="+hex(p.pay);}};
+  const p=await transmit(frame(0xE4,new Uint8Array(0)),"OTA 0xE4 exit-update-mode (no-op вне режима)","PROBE");
+  if(!p)$("otaOut").textContent="0xE4: тишина";
+};
+$("btnOtaE6").onclick=async()=>{
+  $("otaOut").textContent="";
+  pending={op:0xE6,onReply:p=>{$("otaOut").textContent="0xE6 ОТВЕТ pay("+p.pay.length+")="+hex(p.pay);}};
+  const p=await transmit(frame(0xE6,new Uint8Array(0)),"OTA 0xE6 refresh fw status (read)","READ");
+  if(!p)$("otaOut").textContent="0xE6: тишина";
 };
 $("btnProbeStop").onclick=()=>{S.stop=true;log("sys","серия PROBE прервана");};
 document.querySelectorAll("[data-danger]").forEach(b=>b.onclick=()=>{
