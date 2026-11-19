@@ -1,0 +1,13 @@
+{
+ "id": 219,
+ "FirmwareVersionNo": "1.1.2",
+ "__v": 112,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-provider-oss.edifier.com/product_firmware/20260407/776045b8aec4a11424d3be21ecfb600f.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android> \n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android>\n <ios>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</ios>\n<ota-des>\n<zh-CN>\n优化耳机充电流程\n</zh-CN>\n<en-US>\n\n</en-US>\n</ota-des>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}

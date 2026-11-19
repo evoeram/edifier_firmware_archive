@@ -1,0 +1,13 @@
+{
+ "id": 127,
+ "FirmwareVersionNo": "1.2.9",
+ "__v": 0,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-provider-oss.edifier.com/product_firmware/20240924/09f4a8555f1ed61514f3f91f479b42e4.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android> \n\n<ios> \n<zh-CN>\n\n</zh-CN>\n <en-US>\n\n</en-US>\n </ios>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}

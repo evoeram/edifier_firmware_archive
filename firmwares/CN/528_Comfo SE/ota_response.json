@@ -1,0 +1,13 @@
+{
+ "id": 309,
+ "FirmwareVersionNo": "1.0.8",
+ "__v": 0,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-provider-oss.edifier.com/product_firmware/20260804/ba58a0c7d5298f752df64c51605f48a5.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android> \n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android>\n <ios>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</ios>\n<ota-des>\n<zh-CN>\n优化小米手机弹窗适配，提升开盖弹窗触发信息显示体验\n</zh-CN>\n<en-US>\n\n</en-US>\n</ota-des>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}

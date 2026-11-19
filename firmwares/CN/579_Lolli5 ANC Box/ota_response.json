@@ -1,0 +1,13 @@
+{
+ "id": 281,
+ "FirmwareVersionNo": "1.2.2",
+ "__v": 0,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-provider-oss.edifier.com/product_firmware/20260528/6650618a84940fe2a6b0c0eb0e6542f1.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android> \n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android>\n <ios>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</ios>\n<ota-des>\n<zh-CN>\n• 优化充电盒与耳机在特定情况下的连接稳定性\n• 优化偶现的屏幕显示效果\n</zh-CN>\n<en-US>\n\n</en-US>\n</ota-des>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}

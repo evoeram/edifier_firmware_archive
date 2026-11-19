@@ -1,0 +1,3204 @@
+[
+ {
+  "product_id": 239,
+  "name": "K750W",
+  "model": "K750W",
+  "service_uuid": "4809ab01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 200,
+  "name": "Zero Buds",
+  "model": "Zero Buds",
+  "service_uuid": "48097301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 198,
+  "name": "TO-U3 Plus",
+  "model": "TO-U3 Plus",
+  "service_uuid": "48099401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 170,
+  "name": "Lolli 3",
+  "model": "Lolli 3",
+  "service_uuid": "48097001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 184,
+  "name": "W220T",
+  "model": "W220T",
+  "service_uuid": "48095501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 269,
+  "name": "MT6",
+  "model": "MT6",
+  "service_uuid": "4809c501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 235,
+  "name": "Lolli3 ANC",
+  "model": "Lolli3 ANC",
+  "service_uuid": "48099b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 180,
+  "name": "LolliPods 2022",
+  "model": "LolliPods 2022",
+  "service_uuid": "48097601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 203,
+  "name": "Lolli Pro 2",
+  "model": "Lolli Pro 2",
+  "service_uuid": "48099701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 178,
+  "name": "Magic Air",
+  "model": "Magic Air",
+  "service_uuid": "48097401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 179,
+  "name": "Minions的心情",
+  "model": "Minions的心情",
+  "service_uuid": "48097501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 123,
+  "name": "W820NB",
+  "model": "W820NB",
+  "service_uuid": "48093801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 114,
+  "name": "W200BT Plus",
+  "model": "W200BT Plus",
+  "service_uuid": "48092801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 158,
+  "name": "Lambo Pro",
+  "model": "Lambo Pro",
+  "service_uuid": "48096B01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 152,
+  "name": "Retro pro",
+  "model": "Retro pro",
+  "service_uuid": "48095801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 233,
+  "name": "TWS5 Pro",
+  "model": "TWS5 Pro",
+  "service_uuid": "4809a601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 118,
+  "name": "NeoBuds Pro",
+  "model": "NeoBuds Pro(国内版)",
+  "service_uuid": "48093301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "2.0.5",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 142,
+  "name": "NeoBuds Pro",
+  "model": "NeoBuds Pro（海外版）",
+  "service_uuid": "48095301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 110,
+  "name": "Lolli Pods Pro",
+  "model": "Lolli Pods Pro",
+  "service_uuid": "48092401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 103,
+  "name": "W800BT Plus",
+  "model": "W800BT Plus(国内版)",
+  "service_uuid": "48091601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 120,
+  "name": "FitPods",
+  "model": "FitPods",
+  "service_uuid": "48093501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 90,
+  "name": "TWS NB",
+  "model": "TWS NB",
+  "service_uuid": "48090901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 119,
+  "name": "TWS NB3",
+  "model": "TWS NB3",
+  "service_uuid": "48093401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 133,
+  "name": "FitPods DSP",
+  "model": "FitPods DSP",
+  "service_uuid": "48094901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 140,
+  "name": "FitPods 冇心版",
+  "model": "FitPods 冇心版",
+  "service_uuid": "48095101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 126,
+  "name": "DreamPods 2",
+  "model": "DreamPods 2",
+  "service_uuid": "48094101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 143,
+  "name": "STAX SPIRIT S3",
+  "model": "STAX SPIRIT S3（国内版）",
+  "service_uuid": "48095401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 167,
+  "name": "STAX SPIRIT S3",
+  "model": "STAX SPIRIT S3(海外版)",
+  "service_uuid": "48096E01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 156,
+  "name": "D-Pods",
+  "model": "D-Pods",
+  "service_uuid": "48095901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 112,
+  "name": "TWS NB2 Pro",
+  "model": "TWS NB2 Pro",
+  "service_uuid": "48092601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 117,
+  "name": "W280NB",
+  "model": "W280NB",
+  "service_uuid": "48093201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 95,
+  "name": "W800X",
+  "model": "W800X",
+  "service_uuid": "48090e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 124,
+  "name": "GX07",
+  "model": "GX07",
+  "service_uuid": "48093901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 147,
+  "name": "NB2 Genie",
+  "model": "NB2 Genie",
+  "service_uuid": "48095601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 108,
+  "name": "TWS NB2",
+  "model": "TWS NB2",
+  "service_uuid": "48092101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 129,
+  "name": "DreamPods Pro",
+  "model": "DreamPods Pro",
+  "service_uuid": "48094501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 128,
+  "name": "TWS300 NB",
+  "model": "TWS300 NB",
+  "service_uuid": "48094301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 138,
+  "name": "FunBuds 小黄人",
+  "model": "FunBuds 小黄人",
+  "service_uuid": "48095001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 141,
+  "name": "BH10",
+  "model": "BH10",
+  "service_uuid": "48095201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 132,
+  "name": "TWS330 NB",
+  "model": "TWS330 NB",
+  "service_uuid": "48094801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 96,
+  "name": "W200BT SE",
+  "model": "W200BT SE",
+  "service_uuid": "48090f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 121,
+  "name": "Uni-Buds",
+  "model": "Uni-Buds",
+  "service_uuid": "48093601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 122,
+  "name": "TWS NBQ",
+  "model": "TWS NBQ",
+  "service_uuid": "48093701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 111,
+  "name": "FunBuds",
+  "model": "FunBuds",
+  "service_uuid": "48092501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 109,
+  "name": "FUNBUDS 哆啦A梦",
+  "model": "FUNBUDS 哆啦A梦",
+  "service_uuid": "48092301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 116,
+  "name": "Z3",
+  "model": "Z3",
+  "service_uuid": "48093101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 115,
+  "name": "W300BT Plus",
+  "model": "W300BT Plus",
+  "service_uuid": "48092901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 105,
+  "name": "DreamPods",
+  "model": "DreamPods",
+  "service_uuid": "48091801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 125,
+  "name": "EdiCall TWS600",
+  "model": "EdiCall TWS600",
+  "service_uuid": "48094001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 85,
+  "name": "W380NB",
+  "model": "W380NB",
+  "service_uuid": "48090201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 101,
+  "name": "Ejoy5",
+  "model": "Ejoy5",
+  "service_uuid": "48091401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 97,
+  "name": "W200BT",
+  "model": "W200BT",
+  "service_uuid": "48091001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 93,
+  "name": "W281BT",
+  "model": "W281BT",
+  "service_uuid": "48090c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 94,
+  "name": "W281BT颈挂版",
+  "model": "W281BT颈挂版",
+  "service_uuid": "48090d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 92,
+  "name": "W280X 19版",
+  "model": "W280X 19版",
+  "service_uuid": "48090b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 91,
+  "name": "W300BT",
+  "model": "W300BT",
+  "service_uuid": "48090a01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 89,
+  "name": "W280BT 19版",
+  "model": "W280BT 19版",
+  "service_uuid": "48090601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 88,
+  "name": "W200BT经典版",
+  "model": "W200BT经典版",
+  "service_uuid": "48090501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 87,
+  "name": "W200BT颈挂版",
+  "model": "W200BT颈挂版",
+  "service_uuid": "48090401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 86,
+  "name": "W800BT 19版",
+  "model": "W800BT 19版",
+  "service_uuid": "48090301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 104,
+  "name": "W380NB",
+  "model": "W380NB",
+  "service_uuid": "48091701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 100,
+  "name": "W800BT",
+  "model": "W800BT",
+  "service_uuid": "48091200-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 99,
+  "name": "W201BT",
+  "model": "W201BT",
+  "service_uuid": "48091100-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 149,
+  "name": "W350TN",
+  "model": "W350TN",
+  "service_uuid": "48095701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 256,
+  "name": "X3 Air",
+  "model": "X3 Air",
+  "service_uuid": "4809c701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 157,
+  "name": "NeoBuds S",
+  "model": "NeoBuds S",
+  "service_uuid": "48096A01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "ok",
+  "version": "1.0.4",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20220218161318M_QCC5151_Neobuds_S_BLE_V1.0.4_USER.bin",
+  "size": 2135256,
+  "fw_id": 78
+ },
+ {
+  "product_id": 247,
+  "name": "X200BT",
+  "model": "X200BT",
+  "service_uuid": "48098a01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 401,
+  "name": "LolliClip",
+  "model": "LolliClip普通版",
+  "service_uuid": "4809ee01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.3",
+  "status": "ok",
+  "version": "1.1.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260409/b4f284353c924ce4645d72a0864df9a8.bin",
+  "size": 1925944,
+  "fw_id": 262
+ },
+ {
+  "product_id": 106,
+  "name": "TWS2",
+  "model": "TWS2",
+  "service_uuid": "48091900-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 107,
+  "name": "冇心 TO-U2",
+  "model": "冇心 TO-U2",
+  "service_uuid": "48092001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 131,
+  "name": "FunBuds 冇心版",
+  "model": "FunBuds 冇心版",
+  "service_uuid": "48094701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 159,
+  "name": "S3000MKII",
+  "model": "S3000MKII(国内版)",
+  "service_uuid": "48096C01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 161,
+  "name": "LolliPods Max",
+  "model": "LolliPods Max",
+  "service_uuid": "48096D01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 168,
+  "name": "MiniBuds2",
+  "model": "MiniBuds2",
+  "service_uuid": "48096F01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 174,
+  "name": "H180 Plus (Type C)",
+  "model": "H180 Plus (Type C)",
+  "service_uuid": "",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 175,
+  "name": "W240TN",
+  "model": "W240TN",
+  "service_uuid": "48097101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 176,
+  "name": "NeoBuds S",
+  "model": "NeoBuds S(海外版)",
+  "service_uuid": "48097201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 182,
+  "name": "Free Pro",
+  "model": "Free Pro",
+  "service_uuid": "48097701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 183,
+  "name": "P180 USB-C",
+  "model": "P180 USB-C",
+  "service_uuid": "",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 185,
+  "name": "WH500",
+  "model": "WH500",
+  "service_uuid": "48094201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 186,
+  "name": "W200BT Free",
+  "model": "W200BT Free",
+  "service_uuid": "48097801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 187,
+  "name": "W820NB 双金标版",
+  "model": "W820NB 双金标版",
+  "service_uuid": "48097901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 190,
+  "name": "W280NB International",
+  "model": "W280NB International",
+  "service_uuid": "48098b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 191,
+  "name": "TO-U7 Pro",
+  "model": "TO-U7 Pro",
+  "service_uuid": "48098c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 193,
+  "name": "M25",
+  "model": "M25",
+  "service_uuid": "48098e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 194,
+  "name": "Air+",
+  "model": "Air+",
+  "service_uuid": "48098f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 195,
+  "name": "光冷能量音箱 NEW-X",
+  "model": "NEW-X",
+  "service_uuid": "48099101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.3.7",
+  "status": "ok",
+  "version": "1.3.6",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20230614/3375b824fe56bb9e6f75bb829a2d49c3.bin",
+  "size": 40817,
+  "fw_id": 89
+ },
+ {
+  "product_id": 196,
+  "name": "WH950NB",
+  "model": "WH950NB",
+  "service_uuid": "48099201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 197,
+  "name": "W860NB Pro",
+  "model": "W860NB Pro",
+  "service_uuid": "48099301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 199,
+  "name": "FitPods 冇心版",
+  "model": "FitPods 冇心版(APP)",
+  "service_uuid": "48099501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 201,
+  "name": "我是Minions",
+  "model": "我是Minions",
+  "service_uuid": "48099601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 204,
+  "name": "R1200BT",
+  "model": "R1200BT",
+  "service_uuid": "48099801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 205,
+  "name": "Lambo Pro滴滴版",
+  "model": "Lambo Pro滴滴版",
+  "service_uuid": "48099901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 210,
+  "name": "V3",
+  "model": "V3",
+  "service_uuid": "48099e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 211,
+  "name": "Z1 Plus",
+  "model": "Z1 Plus",
+  "service_uuid": "48099f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 212,
+  "name": "M0",
+  "model": "M0",
+  "service_uuid": "4809a001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 218,
+  "name": "W820NB经典版",
+  "model": "W820NB经典版",
+  "service_uuid": "4809a101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 223,
+  "name": "QD35",
+  "model": "QD35",
+  "service_uuid": "4809a401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.3.0",
+  "status": "ok",
+  "version": "1.3.0",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20230221/2855917202cfc6cbefd62320920c3015.bin",
+  "size": 40471,
+  "fw_id": 97
+ },
+ {
+  "product_id": 224,
+  "name": "W820NB Plus",
+  "model": "W820NB Plus",
+  "service_uuid": "4809a501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 227,
+  "name": "Zero ACE",
+  "model": "Zero ACE",
+  "service_uuid": "4809a801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 228,
+  "name": "MP85",
+  "model": "MP85",
+  "service_uuid": "4809a901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 236,
+  "name": "Retro Pro 2",
+  "model": "Retro Pro 2",
+  "service_uuid": "4809af01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 237,
+  "name": "TWS1 ANC",
+  "model": "TWS1 ANC",
+  "service_uuid": "4809c101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 238,
+  "name": "M330",
+  "model": "M330",
+  "service_uuid": "48099c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.6.0",
+  "status": "ok",
+  "version": "1.6.0",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20231116/5f1c8cbd9728098ab180450e1f9db1b3.bin",
+  "size": 28576,
+  "fw_id": 108
+ },
+ {
+  "product_id": 240,
+  "name": "Z2 Plus",
+  "model": "Z2 Plus",
+  "service_uuid": "4809b001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 241,
+  "name": "W800BT Plus",
+  "model": "W800BT Plus",
+  "service_uuid": "4809ca01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 243,
+  "name": "X1",
+  "model": "X1",
+  "service_uuid": "4809aa01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 244,
+  "name": "Zero Air",
+  "model": "Zero Air",
+  "service_uuid": "4809ad01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 245,
+  "name": "NeoBuds Pro 2",
+  "model": "NeoBuds Pro 2（国内版）",
+  "service_uuid": "4809a701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.5",
+  "status": "ok",
+  "version": "1.1.5",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20230731/827ef1dd22f260c4808c14360cdcc7b8.bin",
+  "size": 2730632,
+  "fw_id": 105
+ },
+ {
+  "product_id": 246,
+  "name": "Zero Pro",
+  "model": "Zero Pro",
+  "service_uuid": "4809c201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 248,
+  "name": "R1700BT+",
+  "model": "R1700BT+",
+  "service_uuid": "4809c401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 249,
+  "name": "深渊监听音箱 Halo 2.0",
+  "model": "深渊监听音箱 Halo 2.0",
+  "service_uuid": "4809c301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.14.0",
+  "status": "ok",
+  "version": "1.14.0",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20230515/56eb04550d0cb1c0c5ef7a4819202b10.bin",
+  "size": 68794,
+  "fw_id": 100
+ },
+ {
+  "product_id": 250,
+  "name": "ATOMBUDS at03",
+  "model": "ATOMBUDS at03",
+  "service_uuid": "4809b301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 251,
+  "name": "W320TN",
+  "model": "W320TN海外版",
+  "service_uuid": "4809c901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 252,
+  "name": "TWS1 Pro 2",
+  "model": "TWS1 Pro 2(海外版)",
+  "service_uuid": "4809cb01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 253,
+  "name": "V2",
+  "model": "V2",
+  "service_uuid": "4809cd01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 254,
+  "name": "XS1",
+  "model": "XS1",
+  "service_uuid": "4809ce01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 257,
+  "name": "W210BT",
+  "model": "W210BT(EC)",
+  "service_uuid": "4809b101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 258,
+  "name": "Atombuds AS02",
+  "model": "Atombuds AS02",
+  "service_uuid": "4809b201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 260,
+  "name": "BH 8",
+  "model": "BH 8",
+  "service_uuid": "4809bb01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 261,
+  "name": "X2s",
+  "model": "X2s",
+  "service_uuid": "4809b401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 262,
+  "name": "X3 Lite",
+  "model": "X3 Lite",
+  "service_uuid": "4809b801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 263,
+  "name": "TWS B8",
+  "model": "TWS B8",
+  "service_uuid": "4809ba01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 264,
+  "name": "AtomBuds",
+  "model": "AtomBuds",
+  "service_uuid": "4809b501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 265,
+  "name": "TWS B10",
+  "model": "TWS B10",
+  "service_uuid": "4809b901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 266,
+  "name": "Zero X",
+  "model": "Zero X",
+  "service_uuid": "4809cf01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 267,
+  "name": "Zero 喵系列",
+  "model": "Zero 喵系列",
+  "service_uuid": "4809b601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 268,
+  "name": "漫步者•花再 N2",
+  "model": "漫步者•花再 N2",
+  "service_uuid": "4809b701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 270,
+  "name": "STAX SPIRIT S5",
+  "model": "STAX SPIRIT S5（国内版）",
+  "service_uuid": "4809c601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.3",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 271,
+  "name": "W110T",
+  "model": "W110T(海外版)",
+  "service_uuid": "4809be01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 272,
+  "name": "WH700NB",
+  "model": "WH700NB",
+  "service_uuid": "48091f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 274,
+  "name": "TWS1 Air",
+  "model": "TWS1 Air",
+  "service_uuid": "48099d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 275,
+  "name": "X5 Lite",
+  "model": "X5 Lite",
+  "service_uuid": "4809bc01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 276,
+  "name": "ATOMBUDS A1",
+  "model": "ATOMBUDS A1",
+  "service_uuid": "48091b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 277,
+  "name": "ZX3",
+  "model": "ZX3",
+  "service_uuid": "4809bf01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 279,
+  "name": "MG250",
+  "model": "MG250",
+  "service_uuid": "48092a01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 281,
+  "name": "Z1 Air",
+  "model": "Z1 Air",
+  "service_uuid": "48091c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 282,
+  "name": "W160T",
+  "model": "W160T",
+  "service_uuid": "48093c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 285,
+  "name": "W820NB空间音频版",
+  "model": "W820NB空间音频版",
+  "service_uuid": "48094e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 286,
+  "name": "X2 Plus",
+  "model": "X2 Plus",
+  "service_uuid": "48091d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 287,
+  "name": "LS880NB Pro 龙吟版",
+  "model": "LS880NB Pro 龙吟版",
+  "service_uuid": "48093f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 288,
+  "name": "NeoBuds Pro 2",
+  "model": "NeoBuds Pro 2",
+  "service_uuid": "48094c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 289,
+  "name": "BS 8",
+  "model": "BS 8",
+  "service_uuid": "48092f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 290,
+  "name": "Evo Pro",
+  "model": "Evo Pro",
+  "service_uuid": "48091e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 291,
+  "name": "NEW-X PRO",
+  "model": "NEW-X PRO",
+  "service_uuid": "4809ae01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.5.19",
+  "status": "ok",
+  "version": "1.5.17",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20231025/f0700687be8c97f804d10e4c9891c8dc.bin",
+  "size": 5809842,
+  "fw_id": 107
+ },
+ {
+  "product_id": 292,
+  "name": "Evo Soul",
+  "model": "Evo Soul",
+  "service_uuid": "48093b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.18.16",
+  "status": "ok",
+  "version": "1.14.16",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20231018/39b0d5d8123d6a5d1de91176a4bd28c5.bin",
+  "size": 5800909,
+  "fw_id": 106
+ },
+ {
+  "product_id": 293,
+  "name": "Comfo Run",
+  "model": "Comfo Run（国内）",
+  "service_uuid": "4809c801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 294,
+  "name": "Comfo Fit",
+  "model": "Comfo Fit",
+  "service_uuid": "48092c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 295,
+  "name": "XS3",
+  "model": "XS3",
+  "service_uuid": "48092b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 298,
+  "name": "X5 Pro",
+  "model": "X5 Pro（国内版）",
+  "service_uuid": "4809bd01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 299,
+  "name": "X Fit",
+  "model": "X Fit",
+  "service_uuid": "48093a01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 300,
+  "name": "e25HD",
+  "model": "e25HD",
+  "service_uuid": "48095c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 301,
+  "name": "Comfo Solo",
+  "model": "Comfo Solo",
+  "service_uuid": "48092d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "ok",
+  "version": "1.0.3",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20251211/0a0cc798cc1cda7011a347685ee23b6b.bin",
+  "size": 2728528,
+  "fw_id": 215
+ },
+ {
+  "product_id": 304,
+  "name": "LS F1",
+  "model": "LS F1",
+  "service_uuid": "48097b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 306,
+  "name": "LS820NB PRO",
+  "model": "LS820NB PRO",
+  "service_uuid": "48095f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 307,
+  "name": "e25HD",
+  "model": "e25HD(海外版)",
+  "service_uuid": "48095e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 308,
+  "name": "Evo Soul",
+  "model": "Evo Soul-亮度16级",
+  "service_uuid": "48098401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.14.16",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 314,
+  "name": "Z3 Pro",
+  "model": "Z3 Pro",
+  "service_uuid": "48097c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 317,
+  "name": "Magic ANC",
+  "model": "Magic ANC",
+  "service_uuid": "48095b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 320,
+  "name": "Comfo Fit Ⅱ",
+  "model": "Comfo Fit Ⅱ",
+  "service_uuid": "48098701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.3",
+  "status": "ok",
+  "version": "1.0.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20251211/a10b7cf3aa4ca0cc4f73669268781a1d.bin",
+  "size": 2351056,
+  "fw_id": 214
+ },
+ {
+  "product_id": 321,
+  "name": "EDIFIER & SANY S2",
+  "model": "EDIFIER & SANY S2",
+  "service_uuid": "48098901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 322,
+  "name": "Halo Soundbar",
+  "model": "Halo Soundbar（APP）",
+  "service_uuid": "48098201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "ok",
+  "version": "1.0.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260112/d1515364a77fb98f0ed27f70c79d5504.bin",
+  "size": 530840,
+  "fw_id": 229
+ },
+ {
+  "product_id": 323,
+  "name": "B2SW",
+  "model": "B2SW",
+  "service_uuid": "48092e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 324,
+  "name": "Zero Open",
+  "model": "Zero Open",
+  "service_uuid": "48095a01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 325,
+  "name": "K710W",
+  "model": "K710W",
+  "service_uuid": "48097d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 348,
+  "name": "W820NB臻品版",
+  "model": "W820NB臻品版",
+  "service_uuid": "48098101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 349,
+  "name": "Evo Air",
+  "model": "Evo Air",
+  "service_uuid": "4809d101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 350,
+  "name": "Evo Open",
+  "model": "Evo Open",
+  "service_uuid": "48094b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 351,
+  "name": "W830NB",
+  "model": "W830NB",
+  "service_uuid": "48098501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 352,
+  "name": "W800BT FREE降噪版",
+  "model": "W800BT FREE降噪版",
+  "service_uuid": "4809d401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 353,
+  "name": "B2",
+  "model": "B2",
+  "service_uuid": "4809d501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 354,
+  "name": "Halo Space",
+  "model": "Halo Space",
+  "service_uuid": "48093d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 359,
+  "name": "M30 Plus",
+  "model": "M30 Plus（APP）",
+  "service_uuid": "4809dc01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 360,
+  "name": "M30SW",
+  "model": "M30SW（APP）",
+  "service_uuid": "48094f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.3",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 362,
+  "name": "FitBuds Pro",
+  "model": "FitBuds Pro",
+  "service_uuid": "4809d201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 363,
+  "name": "N300",
+  "model": "N300",
+  "service_uuid": "48097e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.5.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 365,
+  "name": "Lolli Pro 3",
+  "model": "Lolli Pro 3",
+  "service_uuid": "4809d601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 366,
+  "name": "S880 MKII",
+  "model": "S880 MKII",
+  "service_uuid": "48098801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 370,
+  "name": "M203",
+  "model": "M203",
+  "service_uuid": "4809df01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 371,
+  "name": "M125",
+  "model": "M125",
+  "service_uuid": "4809d801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 372,
+  "name": "STAX SPIRIT S10",
+  "model": "STAX SPIRIT S10（国内版）",
+  "service_uuid": "48093e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.3.0",
+  "status": "ok",
+  "version": "1.2.9",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20240924/09f4a8555f1ed61514f3f91f479b42e4.bin",
+  "size": 3350852,
+  "fw_id": 127
+ },
+ {
+  "product_id": 373,
+  "name": "NeoBuds Evo",
+  "model": "NeoBuds Evo",
+  "service_uuid": "4809e601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.2.2",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 382,
+  "name": "Lolli Pro 2S",
+  "model": "Lolli Pro 2S",
+  "service_uuid": "4809ed01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 383,
+  "name": "Fit900NB",
+  "model": "Fit900NB",
+  "service_uuid": "4809e901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 384,
+  "name": "MT6 Pro",
+  "model": "MT6 Pro",
+  "service_uuid": "4809d701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 385,
+  "name": "Comfo Clip",
+  "model": "Comfo Clip",
+  "service_uuid": "4809e301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 386,
+  "name": "W800BT FREE",
+  "model": "W800BT FREE",
+  "service_uuid": "4809de01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 387,
+  "name": "Atom Max",
+  "model": "Atom Max",
+  "service_uuid": "4809eb01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 388,
+  "name": "Lark Pro",
+  "model": "Lark Pro",
+  "service_uuid": "4809ea01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 390,
+  "name": "Evo Play",
+  "model": "Evo Play",
+  "service_uuid": "4809da01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 391,
+  "name": "MT2 Free",
+  "model": "MT2 Free",
+  "service_uuid": "4809dd01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 392,
+  "name": "Air X",
+  "model": "Air X",
+  "service_uuid": "4809e101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 393,
+  "name": "FitFree",
+  "model": "FitFree",
+  "service_uuid": "4809e501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 394,
+  "name": "FIT CAT",
+  "model": "FIT CAT",
+  "service_uuid": "48090101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 400,
+  "name": "AtomBuds Plus",
+  "model": "AtomBuds Plus",
+  "service_uuid": "48090701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 402,
+  "name": "W830NB",
+  "model": "W830NB绿色版",
+  "service_uuid": "48091001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 403,
+  "name": "Halo Soundbar Max",
+  "model": "Halo Soundbar Max（APP）",
+  "service_uuid": "4809fb01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.2.0",
+  "status": "ok",
+  "version": "1.2.0",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20241213/f805277019273fb7afbeabcdbe8dff31.bin",
+  "size": 1438418,
+  "fw_id": 142
+ },
+ {
+  "product_id": 412,
+  "name": "Lark Air",
+  "model": "Lark Air",
+  "service_uuid": "48090c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 413,
+  "name": "LolliClip",
+  "model": "LolliClip",
+  "service_uuid": "48091601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.2",
+  "status": "ok",
+  "version": "1.1.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260407/776045b8aec4a11424d3be21ecfb600f.bin",
+  "size": 1990153,
+  "fw_id": 219
+ },
+ {
+  "product_id": 414,
+  "name": "Comfo CC",
+  "model": "Comfo CC",
+  "service_uuid": "4809fe01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 415,
+  "name": "Shiny 流光",
+  "model": "Shiny 流光",
+  "service_uuid": "48090b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 416,
+  "name": "NeoDots",
+  "model": "NeoDots",
+  "service_uuid": "4809fd01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 420,
+  "name": "Halo 2.0 SE",
+  "model": "Halo 2.0 SE(APP)",
+  "service_uuid": "48090801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "ok",
+  "version": "1.0.4",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260225/a9c60e8f5afab88319ce83eb312e7335.bin",
+  "size": 721400,
+  "fw_id": 243
+ },
+ {
+  "product_id": 422,
+  "name": "K750W Air",
+  "model": "K750W Air",
+  "service_uuid": "48091401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 423,
+  "name": "Evo Nano",
+  "model": "Evo Nano",
+  "service_uuid": "48090901-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.6",
+  "status": "ok",
+  "version": "1.0.6",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260131/dfde3c9837a25460593f79cd43380b0b.bin",
+  "size": 821179,
+  "fw_id": 234
+ },
+ {
+  "product_id": 424,
+  "name": "Comfo CC",
+  "model": "Comfo CC绿色版",
+  "service_uuid": "48091e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 429,
+  "name": "Evo Space",
+  "model": "Evo Space国内",
+  "service_uuid": "4809e401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 430,
+  "name": "X3 Pro",
+  "model": "X3 Pro",
+  "service_uuid": "48091501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 431,
+  "name": "B1",
+  "model": "B1",
+  "service_uuid": "48090201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 432,
+  "name": "MR3BT",
+  "model": "MR3BT",
+  "service_uuid": "48091201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.7",
+  "status": "ok",
+  "version": "1.0.7",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260128/3cc1de5db6e694ff2fa357d7779cb2ab.bin",
+  "size": 653829,
+  "fw_id": 231
+ },
+ {
+  "product_id": 433,
+  "name": "W280NB Pro",
+  "model": "W280NB Pro",
+  "service_uuid": "4809e801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 434,
+  "name": "G2500 BAR",
+  "model": "G2500 BAR",
+  "service_uuid": "4809f801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 435,
+  "name": "Zero Clip",
+  "model": "Zero Clip",
+  "service_uuid": "4809f501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 441,
+  "name": "G2无线版",
+  "model": "G2无线版",
+  "service_uuid": "4809f701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 442,
+  "name": "NeoBuds Pro 3",
+  "model": "NeoBuds Pro 3",
+  "service_uuid": "48090d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 443,
+  "name": "M285",
+  "model": "M285",
+  "service_uuid": "48091301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.5",
+  "status": "ok",
+  "version": "1.0.5",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20251113/1fae2a4cff9982da24e61a10aed561be.bin",
+  "size": 992222,
+  "fw_id": 198
+ },
+ {
+  "product_id": 457,
+  "name": "Zero Zoo",
+  "model": "Zero Zoo",
+  "service_uuid": "48092a01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 458,
+  "name": "TWS B9",
+  "model": "TWS B9",
+  "service_uuid": "48092701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 459,
+  "name": "M285绿魔黑",
+  "model": "M285绿魔黑",
+  "service_uuid": "48093301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.5",
+  "status": "ok",
+  "version": "1.0.5",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20251201/043fc2370d775efc1955e4041f298242.bin",
+  "size": 1023497,
+  "fw_id": 205
+ },
+ {
+  "product_id": 460,
+  "name": "花再 LINE FRIENDS 联名款",
+  "model": "花再 LINE FRIENDS 联名款",
+  "service_uuid": "48091d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 467,
+  "name": "Lolli Pro 3i",
+  "model": "Lolli Pro 3i",
+  "service_uuid": "48093401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 468,
+  "name": "Comfo Clip Q",
+  "model": "Comfo Clip Q",
+  "service_uuid": "48092b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 469,
+  "name": "X1 Evo",
+  "model": "X1 Evo",
+  "service_uuid": "48092f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 470,
+  "name": "NeoBuds Planar",
+  "model": "NeoBuds Planar国内版",
+  "service_uuid": "48093601-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 471,
+  "name": "Halo Nano",
+  "model": "Halo Nano",
+  "service_uuid": "48092301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 472,
+  "name": "Zero Air 2025版",
+  "model": "Zero Air 2025版",
+  "service_uuid": "4809fc01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 478,
+  "name": "Lolli ANC",
+  "model": "Lolli ANC",
+  "service_uuid": "48094201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.9",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 479,
+  "name": "Lolli Pro 5",
+  "model": "Lolli Pro 5",
+  "service_uuid": "48093f01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 480,
+  "name": "NewSound Buds",
+  "model": "NewSound buds",
+  "service_uuid": "48090102-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 481,
+  "name": "NewSound Clip",
+  "model": "NewSound Clip",
+  "service_uuid": "48094d01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 482,
+  "name": "Atom Lace",
+  "model": "Atom Lace",
+  "service_uuid": "48094e01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 483,
+  "name": "W820NB三金标版",
+  "model": "W820NB三金标版",
+  "service_uuid": "48093501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 484,
+  "name": "Echo Clip",
+  "model": "Echo Clip",
+  "service_uuid": "48095301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 485,
+  "name": "Atom Dot",
+  "model": "Atom Dot",
+  "service_uuid": "48093c01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 486,
+  "name": "X5 Evo",
+  "model": "X5 Evo",
+  "service_uuid": "48092401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 487,
+  "name": "G5无线版",
+  "model": "G5无线版",
+  "service_uuid": "48095001-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 492,
+  "name": "Echo Air",
+  "model": "Echo Air",
+  "service_uuid": "48090202-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 493,
+  "name": "LolliClip Lite",
+  "model": "LolliClip Lite",
+  "service_uuid": "48093801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 494,
+  "name": "Doo Ace",
+  "model": "Doo Ace",
+  "service_uuid": "48094301-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 495,
+  "name": "New Play",
+  "model": "New Play(APP)",
+  "service_uuid": "48093201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.5",
+  "status": "ok",
+  "version": "1.0.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20250721/9b34c4dd2229297d9ab96f4ef2bfe5ac.bin",
+  "size": 941088,
+  "fw_id": 167
+ },
+ {
+  "product_id": 497,
+  "name": "MR5BT",
+  "model": "MR5BT",
+  "service_uuid": "48090a03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "ok",
+  "version": "1.0.3",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260204/438539b2bd0039521d2d885ad62e1d6f.bin",
+  "size": 696140,
+  "fw_id": 235
+ },
+ {
+  "product_id": 498,
+  "name": "X3 Air",
+  "model": "X3 Air翻译版",
+  "service_uuid": "48090c03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 499,
+  "name": "感官森林",
+  "model": "感官森林",
+  "service_uuid": "48091203-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 500,
+  "name": "K300",
+  "model": "K300",
+  "service_uuid": "48093701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.14.11",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 501,
+  "name": "Halo PixelBar",
+  "model": "Halo PixelBar",
+  "service_uuid": "48093b01-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.3.9",
+  "status": "ok",
+  "version": "1.3.8",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20261021/Halo_PixelBar_MCU_V1.0.3_JL_V1.0.8_OTA_NoLog_1016_1792545873.bin",
+  "size": 805212,
+  "fw_id": 344
+ },
+ {
+  "product_id": 503,
+  "name": "Atom Dot",
+  "model": "Atom Dot翻译版",
+  "service_uuid": "48090e03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 506,
+  "name": "Comfo CC",
+  "model": "Comfo CC绿色翻译版",
+  "service_uuid": "48091103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 507,
+  "name": "Comfo CC",
+  "model": "Comfo CC 翻译版",
+  "service_uuid": "48091003-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 508,
+  "name": "FitFree",
+  "model": "FitFree翻译版",
+  "service_uuid": "48090f03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 509,
+  "name": "XS3",
+  "model": "XS3翻译版",
+  "service_uuid": "48090d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 510,
+  "name": "AtomBuds Plus",
+  "model": "AtomBuds Plus翻译版",
+  "service_uuid": "48090b03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 513,
+  "name": "拍拍耳机",
+  "model": "拍拍耳机",
+  "service_uuid": "48094801-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 518,
+  "name": "Z1 Air+",
+  "model": "Z1 Air+",
+  "service_uuid": "48091603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 519,
+  "name": "LolliClip AI",
+  "model": "LolliClip AI",
+  "service_uuid": "48092803-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "3.0.2",
+  "status": "ok",
+  "version": "3.0.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260327/e5f27ef7493f16533fb8acdf3b1186c4.bin",
+  "size": 1919643,
+  "fw_id": 253
+ },
+ {
+  "product_id": 520,
+  "name": "G30 BT",
+  "model": "G30 BT",
+  "service_uuid": "48091e03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 521,
+  "name": "拍拍盒子",
+  "model": "拍拍盒子",
+  "service_uuid": "48094701-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 522,
+  "name": "Lolli Air",
+  "model": "Lolli Air",
+  "service_uuid": "48091403-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 523,
+  "name": "NewSound Pro",
+  "model": "NewSound Pro",
+  "service_uuid": "48092b03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 525,
+  "name": "Zero Air Pro",
+  "model": "Zero Air Pro",
+  "service_uuid": "48092103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 526,
+  "name": "拍拍耳夹",
+  "model": "花再 拍拍耳夹",
+  "service_uuid": "48092501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 527,
+  "name": "Air X 升级版",
+  "model": "Air X 升级版",
+  "service_uuid": "48092203-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 528,
+  "name": "Comfo SE",
+  "model": "Comfo SE",
+  "service_uuid": "48095101-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.9",
+  "status": "ok",
+  "version": "1.0.8",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260804/ba58a0c7d5298f752df64c51605f48a5.bin",
+  "size": 1123749,
+  "fw_id": 309
+ },
+ {
+  "product_id": 529,
+  "name": "Atom Air",
+  "model": "Atom Air",
+  "service_uuid": "48090303-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 532,
+  "name": "X2 Evo",
+  "model": "X2 Evo",
+  "service_uuid": "48091d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 533,
+  "name": "G1200",
+  "model": "G1200",
+  "service_uuid": "48091903-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 534,
+  "name": "Halo Buds",
+  "model": "Halo Buds",
+  "service_uuid": "48094501-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 536,
+  "name": "Lolli Pro SE",
+  "model": "Lolli Pro SE",
+  "service_uuid": "48092f03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 537,
+  "name": "H230P Type-C",
+  "model": "H230P Type-C",
+  "service_uuid": "",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 538,
+  "name": "W820NB经典版",
+  "model": "W820NB经典版（25版）",
+  "service_uuid": "48093003-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 539,
+  "name": "X Clip",
+  "model": "X Clip",
+  "service_uuid": "48091a03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 540,
+  "name": "FitClip Ultra",
+  "model": "FitClip Ultra",
+  "service_uuid": "48091303-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.8",
+  "status": "ok",
+  "version": "1.0.7",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20251205/589061f8dd3a76b187c5177ce18cfe64.bin",
+  "size": 1143652,
+  "fw_id": 213
+ },
+ {
+  "product_id": 541,
+  "name": "Atom CC",
+  "model": "Atom CC",
+  "service_uuid": "48090603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 542,
+  "name": "Auro Clip",
+  "model": "Auro Clip",
+  "service_uuid": "48092a03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 543,
+  "name": "H180 Plus (Type-C)",
+  "model": "H180 Plus (Type-C 2025)",
+  "service_uuid": "",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 544,
+  "name": "Halo Clip",
+  "model": "Halo Clip",
+  "service_uuid": "48094401-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.5",
+  "status": "ok",
+  "version": "1.0.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20251203/fa8829632ce975e71a01434b65a41e16.bin",
+  "size": 1115429,
+  "fw_id": 209
+ },
+ {
+  "product_id": 545,
+  "name": "AtomBuds",
+  "model": "AtomBuds 翻译版",
+  "service_uuid": "48093603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 546,
+  "name": "Atom ANC",
+  "model": "Atom ANC",
+  "service_uuid": "4809e201-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.3",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 547,
+  "name": "Atom Evo",
+  "model": "Atom Evo",
+  "service_uuid": "48093503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 548,
+  "name": "R20",
+  "model": "R20",
+  "service_uuid": "48092d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "ok",
+  "version": "1.0.1",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260409/1ebf19c1e7ebb587ea932720a9de9231.bin",
+  "size": 737881,
+  "fw_id": 264
+ },
+ {
+  "product_id": 550,
+  "name": "M130",
+  "model": "M130",
+  "service_uuid": "48092003-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 551,
+  "name": "XS1",
+  "model": "XS1 翻译版",
+  "service_uuid": "48092603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 552,
+  "name": "TWS S8智能版",
+  "model": "TWS S8智能版",
+  "service_uuid": "48093b03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 553,
+  "name": "DZ-3",
+  "model": "DZ-3",
+  "service_uuid": "48093a03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 558,
+  "name": "S201MKII",
+  "model": "S201MKII",
+  "service_uuid": "48091c03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.7",
+  "status": "ok",
+  "version": "1.0.7",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20261010/S201_107_db_update_data_0910_1791601847.bin",
+  "size": 619910,
+  "fw_id": 338
+ },
+ {
+  "product_id": 560,
+  "name": "N500",
+  "model": "N500",
+  "service_uuid": "48092503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.3",
+  "status": "ok",
+  "version": "1.0.3",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20261020/EDIFIER_N500_V1.0.3_db_update_data_20260915_1792487456.bin",
+  "size": 772353,
+  "fw_id": 343
+ },
+ {
+  "product_id": 561,
+  "name": "AIR 3",
+  "model": "AIR 3",
+  "service_uuid": "48092703-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 562,
+  "name": "M330 II",
+  "model": "M330 II",
+  "service_uuid": "48094403-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.2.1",
+  "status": "ok",
+  "version": "1.2.1",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260526/85691f5a3fafdef42b277f4a9a91b552.bin",
+  "size": 5804495,
+  "fw_id": 277
+ },
+ {
+  "product_id": 563,
+  "name": "悦影耳夹",
+  "model": "悦影耳夹",
+  "service_uuid": "48091b03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 564,
+  "name": "G3无线版",
+  "model": "G3无线版",
+  "service_uuid": "48094103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 565,
+  "name": "W60",
+  "model": "W60国内版",
+  "service_uuid": "48094d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 566,
+  "name": "A6",
+  "model": "A6-EC",
+  "service_uuid": "48094e03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 567,
+  "name": "TWS B3",
+  "model": "TWS B3",
+  "service_uuid": "48095403-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 569,
+  "name": "G5 Max 无线版",
+  "model": "G5 Max 无线版",
+  "service_uuid": "48093c03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 570,
+  "name": "花再 深渊音箱",
+  "model": "花再 深渊音箱",
+  "service_uuid": "48093703-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 573,
+  "name": "LolliClip AI",
+  "model": "LolliClip AI GATT",
+  "service_uuid": "48094803-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "3.0.3",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 574,
+  "name": "CyberX 聚能音箱",
+  "model": "CyberX 聚能音箱",
+  "service_uuid": "48094b03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 575,
+  "name": "G3 Max",
+  "model": "G3 Max",
+  "service_uuid": "48095f03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 576,
+  "name": "HECATE CP2",
+  "model": "HECATE CP2",
+  "service_uuid": "48094903-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 577,
+  "name": "HECATE 光冷小方",
+  "model": "HECATE 光冷小方",
+  "service_uuid": "48094c03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 578,
+  "name": "Lolli5 ANC",
+  "model": "Lolli5 ANC",
+  "service_uuid": "48093203-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 579,
+  "name": "Lolli5 ANC Box",
+  "model": "Lolli5 ANC Box",
+  "service_uuid": "48093303-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.2.5",
+  "status": "ok",
+  "version": "1.2.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260528/6650618a84940fe2a6b0c0eb0e6542f1.bin",
+  "size": 1359930,
+  "fw_id": 281
+ },
+ {
+  "product_id": 580,
+  "name": "MR4BT",
+  "model": "MR4BT",
+  "service_uuid": "48094703-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 581,
+  "name": "Lolli Pro SE",
+  "model": "Lolli Pro SE-灵犀版",
+  "service_uuid": "48096503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 584,
+  "name": "花再 Melo Bar",
+  "model": "花再 Melo Bar",
+  "service_uuid": "48095603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "9.9.9",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 585,
+  "name": "花再 Auro Ace",
+  "model": "Auro Ace",
+  "service_uuid": "48095B03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 586,
+  "name": "LolliClip SE",
+  "model": "LolliClip SE",
+  "service_uuid": "48096603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.3",
+  "status": "ok",
+  "version": "1.0.2",
+  "url": "https://edifier-provider-oss.edifier.com/product_firmware/20260825/a5713b43e3cbb954fac8cc3f914b08e7.bin",
+  "size": 1574413,
+  "fw_id": 326
+ },
+ {
+  "product_id": 587,
+  "name": "K750W NC",
+  "model": "K750W NC",
+  "service_uuid": "48095d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 589,
+  "name": "GX03 Ultra",
+  "model": "GX03 Ultra",
+  "service_uuid": "48096003-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 590,
+  "name": "FitBuds Turbo",
+  "model": "FitBuds Turbo",
+  "service_uuid": "48095503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 591,
+  "name": "FitFree Turbo",
+  "model": "FitFree Turbo",
+  "service_uuid": "48096203-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.2",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 592,
+  "name": "R1000TC II",
+  "model": "R1000TC II",
+  "service_uuid": "48096403-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.2",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 594,
+  "name": "Comfo Clip Q2",
+  "model": "Comfo Clip Q2",
+  "service_uuid": "48096803-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 595,
+  "name": "GX05 大师版",
+  "model": "GX05 大师版",
+  "service_uuid": "48098103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 596,
+  "name": "X2 ANC",
+  "model": "X2 ANC",
+  "service_uuid": "48096d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 588,
+  "name": "N500 典藏款",
+  "model": "N500 典藏款",
+  "service_uuid": "48096e03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.2",
+  "status": "ok",
+  "version": "1.0.2",
+  "url": "https://edifier-provider.oss-cn-shenzhen.aliyuncs.com/product_firmware/20261112/EDIFIER_N500_%E5%85%B8%E8%97%8F%E6%AC%BE_V1.0.2_db_update_data_20261021_1794464422.bin",
+  "size": 772353,
+  "fw_id": 376
+ },
+ {
+  "product_id": 599,
+  "name": "Halo PixelBar",
+  "model": "Halo PixelBar（适配器版本）",
+  "service_uuid": "48098603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.3.3",
+  "status": "ok",
+  "version": "1.1.1",
+  "url": "https://edifier-provider.oss-cn-shenzhen.aliyuncs.com/product_firmware/20261109/Halo_PixelBar_adapter_OTA_V1.1.1_0921_1794207779.bin",
+  "size": 785222,
+  "fw_id": 370
+ },
+ {
+  "product_id": 600,
+  "name": "MR4BT",
+  "model": "MR4BT（换功放8625）",
+  "service_uuid": "48097903-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 601,
+  "name": "X Clip",
+  "model": "X Clip-移动版",
+  "service_uuid": "48099403-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 602,
+  "name": "X1",
+  "model": "X1-鑫生升级版",
+  "service_uuid": "48099903-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 605,
+  "name": "Atom Max 2.0",
+  "model": "Atom Max 2.0",
+  "service_uuid": "48098903-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 606,
+  "name": "W800NB",
+  "model": "W800NB",
+  "service_uuid": "48094303-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 607,
+  "name": "N300",
+  "model": "N300-26版",
+  "service_uuid": "48099503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 608,
+  "name": "Comfo Clip Ultra",
+  "model": "Comfo Clip Ultra",
+  "service_uuid": "48093803-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 609,
+  "name": "NeoBuds Pro 5",
+  "model": "NeoBuds Pro 5",
+  "service_uuid": "48096c03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.5",
+  "status": "ok",
+  "version": "1.1.4",
+  "url": "https://edifier-provider.oss-cn-shenzhen.aliyuncs.com/product_firmware/20261109/NeoBuds_Pro_5_OTA_compressed_V1.1.4_1794187984.bin",
+  "size": 2473027,
+  "fw_id": 362
+ },
+ {
+  "product_id": 610,
+  "name": "Fit900NB Turbo",
+  "model": "Fit900NB Turbo",
+  "service_uuid": "48097303-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 611,
+  "name": "M230 II",
+  "model": "M230 II",
+  "service_uuid": "48095703-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.3",
+  "status": "ok",
+  "version": "1.0.3",
+  "url": "https://edifier-provider.oss-cn-shenzhen.aliyuncs.com/product_firmware/20261112/M230II_V1.0.3_A1_db_update_data_1794464201.bin",
+  "size": 1000819,
+  "fw_id": 375
+ },
+ {
+  "product_id": 612,
+  "name": "G5 MAX底座版",
+  "model": "G5 MAX底座版",
+  "service_uuid": "48099a03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 613,
+  "name": "G4 MAX底座版",
+  "model": "G4 MAX底座版",
+  "service_uuid": "48098203-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 614,
+  "name": "N2",
+  "model": "N2（X2 Plus 定制版已终止）",
+  "service_uuid": "48099b03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 615,
+  "name": "K200",
+  "model": "K200",
+  "service_uuid": "48096103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.1.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 616,
+  "name": "X1 Evo",
+  "model": "X1 Evo-移动版",
+  "service_uuid": "48099c03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 621,
+  "name": "NeoBuds Pro 5",
+  "model": "NeoBuds Pro 5（标准版）",
+  "service_uuid": "4809a003-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 622,
+  "name": "Auro Pro",
+  "model": "Auro Pro",
+  "service_uuid": "48097603-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 623,
+  "name": "Sona Clip",
+  "model": "Sona Clip",
+  "service_uuid": "48097103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 624,
+  "name": "W900NB",
+  "model": "W900NB",
+  "service_uuid": "48097203-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.2",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 625,
+  "name": "K300",
+  "model": "K300-26版",
+  "service_uuid": "48098e03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.4",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 626,
+  "name": "H1000 光年",
+  "model": "H1000 光年",
+  "service_uuid": "",
+  "last_fw": "1.0.3",
+  "status": "no_firmware",
+  "note": "проверено вручную: data={} (без прошивки)"
+ },
+ {
+  "product_id": 627,
+  "name": "WE-BASS",
+  "model": "WE-BASS",
+  "service_uuid": "48099d03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 628,
+  "name": "M230 II",
+  "model": "M230 II（96k）",
+  "service_uuid": "4809ac03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 629,
+  "name": "GT3",
+  "model": "GT3",
+  "service_uuid": "48098303-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 630,
+  "name": "N2",
+  "model": "N2（X1 Evo 定制版）",
+  "service_uuid": "4809a703-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 631,
+  "name": "Comfo SE",
+  "model": "Comfo SE-移动版",
+  "service_uuid": "48099e03-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "2.0.1",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 632,
+  "name": "G2000 BAR",
+  "model": "G2000 BAR",
+  "service_uuid": "48098503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 633,
+  "name": "W200BT Go",
+  "model": "W200BT Go",
+  "service_uuid": "48098003-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 634,
+  "name": "Z1 Air",
+  "model": "Z1 Air（漫问漫答版）",
+  "service_uuid": "4809a503-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 636,
+  "name": "Lolli Spark",
+  "model": "Lolli Spark",
+  "service_uuid": "48099103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "0.5.0",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 637,
+  "name": "R1700BT+",
+  "model": "R1700BT+（26版）",
+  "service_uuid": "4809a103-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "1.0.2",
+  "status": "no_firmware"
+ },
+ {
+  "product_id": 638,
+  "name": "G2 MAX无线版",
+  "model": "G2 MAX无线版",
+  "service_uuid": "4809a903-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ },
+ {
+  "product_id": 640,
+  "name": "GX07 Ultra",
+  "model": "GX07 Ultra",
+  "service_uuid": "48098403-1a48-11e9-ab14-d663bd873d93",
+  "last_fw": "",
+  "status": "no_firmware",
+  "message": "产品未启用固件升级"
+ }
+]

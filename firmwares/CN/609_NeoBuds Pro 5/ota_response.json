@@ -1,0 +1,13 @@
+{
+ "id": 362,
+ "FirmwareVersionNo": "1.1.4",
+ "__v": 114,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-provider-oss.edifier.com/product_firmware/20261109/NeoBuds_Pro_5_OTA_compressed_V1.1.4_1794187984.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android> \n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android>\n <ios>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</ios>\n<ota-des>\n<zh-CN>\n在 App 内开启后，开口说话时会自动暂停并切换到通透模式方便交谈，说完后自动恢复。\n</zh-CN>\n<en-US>\n\n</en-US>\n</ota-des>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}

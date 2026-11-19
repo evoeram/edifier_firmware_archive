@@ -1,0 +1,13 @@
+{
+ "id": 158,
+ "FirmwareVersionNo": "1.0.2",
+ "__v": 0,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-us-app.s3.us-east-2.amazonaws.com/product_firmware/20260111/b8688522a1437984c960459e6ce71e88.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android> \n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</android>\n <ios>\n<zh-CN>\n\n</zh-CN>\n<en-US>\n\n</en-US>\n</ios>\n<ota-des>\n<zh-CN>\n1）優化了當連接到外部電源適配器或電腦的USB-A端口時的充電時間。\n</zh-CN>\n<en-US>\n1) Optimized the charging time when connected to the USB-A port of an external power adapter or computer.\n</en-US>\n<ja-JP>\n1）外部電源アダプターまたはコンピュータのUSB-Aポートに接続時に充電時間を最適化しました。\n</ja-JP>\n<ko-KR>\n1) 외부 전원 어댑터나 컴퓨터의 USB-A 포트에 연결했을 때 충전 시간을 최적화했습니다.\n</ko-KR>\n<fr-FR>\n1) Optimisé le temps de charge lorsqu'il est connecté au port USB-A d'un adaptateur secteur externe ou d'un ordinateur.\n</fr-FR>\n<es-ES>\n1) Optimizado el tiempo de carga cuando se conecta al puerto USB-A de un adaptador de corriente externo o una computadora.\n</es-ES>\n<pt-PT>\n1) Otimizado o tempo de carregamento quando conectado ao porto USB-A de um adaptador de energia externo ou computador.\n</pt-PT>\n<pl-PL>\n1) Optymalizowano czas ładowania po podłączeniu do portu USB-A zewnętrznego zasilacza lub komputera.\n</pl-PL>\n<el-GR>\n1) Βελτιστοποιήθηκε ο χρόνος φόρτισης όταν συνδέεται στην υποδοχή USB-A ενός εξωτερικού προσαρμογέα ρεύματος ή υπολογιστή.\n</el-GR>\n<ru-RU>\n1) Оптимизировано время зарядки при подключении к порту USB-A внешнего источника питания или компьютера.\n</ru-RU>\n<vi-VI>\n1) Tối ưu hóa thời gian sạc khi kết nối với cổng USB-A của bộ chuyển đổi nguồn ngoài hoặc máy tính.\n</vi-VI>\n<th-TH>\n1) ปรับเวลาในการชาร์จเมื่อเชื่อมต่อกับพอร์ต USB-A ของอะแดปเตอร์จ่ายไฟภายนอกหรือคอมพิวเตอร์\n</th-TH>\n<id-ID>\n1) Mengoptimalkan waktu pengisian saat terhubung ke port USB-A dari adaptor daya eksternal atau komputer.\n</id-ID>\n</ota-des>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}

@@ -1,0 +1,13 @@
+{
+ "id": 231,
+ "FirmwareVersionNo": "1.0.7",
+ "__v": 0,
+ "type": "0x00",
+ "chip": "",
+ "FirmwareLinkUrl": "https://edifier-provider-oss.edifier.com/product_firmware/20260128/3cc1de5db6e694ff2fa357d7779cb2ab.bin",
+ "chip_decode": {},
+ "rule_type": 1,
+ "upgrade_prompt": "<android> \n<zh-CN>\n修复超长时间未重启，复合多功能旋钮可能出现的调节故障问题\n</zh-CN>\n<en-US>\n\n</en-US>\n</android>\n <ios>\n<zh-CN>\n修复超长时间未重启，复合多功能旋钮可能出现的调节故障问题\n</zh-CN>\n<en-US>\n</en-US>\n</ios>\n<ota-des>\n<zh-CN>\n</zh-CN>\n<en-US>\n</en-US>\n</ota-des>",
+ "upgrade_start_time": "00:00",
+ "upgrade_end_time": "23:59"
+}
