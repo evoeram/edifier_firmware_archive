@@ -969,3 +969,31 @@ MR5BT возможен ТОЛЬКО через UART/SWD.
 
 Артефакты: source/edifier_api.md (описание API+подписи),
 products_foreign-app.json в Temp (полный список продуктов).
+
+### 17.1 CN-приложение Edifier Connect: CN-сервер и прошивка MR5BT (2026-11-19)
+
+Пользователь указал: его CN MR5BT обслуживается приложением
+**Edifier Connect** (не ConneX). Скачан APK (apkpure, 8.3.43), jadx:
+
+- База CN: **https://admin-app.edifier.com/** (ConstantUtil);
+- ключи sign (`7rn$r44-jM`) и AES (`HiO9d5jV0Ln7VNE5M+lM=E&E^Mobt_TA`,
+  IV `3-eM$+G6-UZBisv$`) — ИДЕНТИЧНЫ международным;
+- encrypt-products на CN: **349 продуктов** (ConneX — 103);
+- **MR5BT = product_id 497**, SearchUuid 00000a03, Service
+  48090a03-1a48-11e9-ab14-d663bd873d93, Read/Write 48090001/48090002 —
+  совпадают с живым устройством;
+- ota-upgrade(497) → **MR5BT CN 1.0.3** с Aliyun OSS
+  (edifier-provider.oss-cn-shenzhen.aliyuncs.com; фирменный домен
+  edifier-provider-oss.edifier.com из нашей сети не коннектится);
+- образ расшифрован тем же LFSR (K=0x2BC1): валидный app_area_head,
+  696 140 Б, внутри строка "EDIFIER MR5BT" — отдельная CN-сборка,
+  ~91% байт отличается от Global MR5 1.0.3;
+- LastFirmwareVersion=1.0.4 в карточке, но файла нет (staged);
+- OSS-листинг закрыт; старые версии (1.0.0 устройства) недоступны.
+
+Артефакты: firmwares/MR5BT_1.0.3_CN/{README.md, firmware.bin,
+source/decrypted/MR5BT_1.0.3_CN_dec.bin, source/products_cn.json}.
+
+Следствие: у нас теперь есть СВОЯ прошивка устройства пользователя
+(CN 1.0.3) — база для фазы E и для диффа против 1.0.0/Global.
+Полный дамп 2 МБ по-прежнему только UART/SWD.
