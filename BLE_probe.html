@@ -182,6 +182,7 @@ background:var(--tx);transition:left .2s}
       <button id="btnOtaE2" class="btn-t" disabled>0xE2: можно ли обновлять? [00]</button>
       <button id="btnOtaE4" class="btn-t" disabled>0xE4: exit update mode (no-op)</button>
       <button id="btnOtaE6" class="btn-t" disabled>0xE6: refresh fw status</button>
+      <button id="btnOtaE8" class="btn-t" disabled>0xE8: content size (device→app)</button>
     </div>
     <div class="warnbox">0xE1 ответил (pay=00) — мост OTA к app-каналу ЖИВОЙ (лог 05:17:57). Стоковый набор:
     E1 info, E2 can-update, E3 enter (ЗАПРЕЩЁН — reboot в загрузчик), E4 exit, E5 block (ЗАПРЕЩЁН — запись),
@@ -402,11 +403,9 @@ function upd(){
   ["rtVol","rtPrompt","rtEq","rtEqGet","rtMap"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
   $("btnProbe").disabled=!S.connected;
   $("btnQuick").disabled=!S.connected;
-  $("btnOtaE1").disabled=!S.connected;
-  $("btnOtaE8").disabled=!S.connected;
-  $("btnOtaE2").disabled=!S.connected;
-  $("btnOtaE4").disabled=!S.connected;
-  $("btnOtaE6").disabled=!S.connected;
+  for(const id of ["btnOtaE1","btnOtaE2","btnOtaE4","btnOtaE6","btnOtaE8"]){
+    const b=$(id); if(b)b.disabled=!S.connected;
+  }
   $("dutRun").disabled=!(S.connected&&!S.pause);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
