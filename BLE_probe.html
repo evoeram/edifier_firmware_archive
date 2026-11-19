@@ -172,6 +172,19 @@ background:var(--tx);transition:left .2s}
   </div>
 
   <div class="card">
+    <h2>4b · OTA-зонд (read-only): жив ли канал обновления</h2>
+    <div class="muted" style="margin-top:2px">В прошивке есть полный upgrade-менеджер с транспортом ble_app_ota (ANALYSIS §16).
+    Стоковый JieLi-протокол спрашивает update-file-info опом 0xE1 (пустой payload) и размер контента 0xE8 —
+    оба read-only. Ответ = OTA-канал жив (дамп прошивки возможен через загрузчик), тишина = Edifier вырезал мост.
+    ОПАСНЫЕ op 0xE2/0xE3/0xE4/0xE5/0xE9/0xEA заблокированы в стенде: 0xE3 = перезагрузка в загрузчик (риск кирпича без UART).</div>
+    <div class="row" style="margin-top:8px">
+      <button id="btnOtaE1" class="btn-t" disabled>0xE1: update-file info (пусто)</button>
+      <button id="btnOtaE8" class="btn-t" disabled>0xE8: content size (пусто)</button>
+    </div>
+    <div id="otaOut" class="hexbox" style="margin-top:8px">—</div>
+  </div>
+
+  <div class="card">
     <h2>5 · DANGER (по умолчанию ВЫКЛЮЧЕНО, требует двойного включения)</h2>
     <div class="row">
       <label class="switch"><input type="checkbox" id="swDanger1"> Осознал риск</label>
@@ -383,6 +396,8 @@ function upd(){
   ["rtVol","rtPrompt","rtEq","rtEqGet","rtMap"].forEach(id=>$(id).disabled=!(S.connected&&S.write));
   $("btnProbe").disabled=!S.connected;
   $("btnQuick").disabled=!S.connected;
+  $("btnOtaE1").disabled=!S.connected;
+  $("btnOtaE8").disabled=!S.connected;
   $("dutRun").disabled=!(S.connected&&!S.pause);
   document.querySelectorAll("[data-danger]").forEach(b=>b.disabled=!(S.connected&&S.danger));
 }
@@ -584,10 +599,20 @@ async function bandMap(){
 
 /* ===== PROBE ===== */
 /* READ-подобные op: шлются как READ (без тумблера записи и мимо dry-run) */
-const READ_LIKE=new Set([0x43,0xC5,0xC6,0xC9,0x66,0x68,0xD8,0xC3,0xC0,0xD5,0x61,0x48,0xBB,0x86,0xD7,0x92,0x92&0xff]);
+/* READ-подобные op: шлются как READ (без тумблера записи и мимо dry-run).
+   0xE1 (GET_UPDATE_FILE_INFO) и 0xE8 (NOTIFY_CONTENT_SIZE) — read-only зонды OTA-канала
+   (RCSP-эталон из SDK ac701n). 0xE3/0xEA/0xE5 — ЗАПРЕЩЕНЫ: enter_update_mode/reboot/запись. */
+const READ_LIKE=new Set([0x43,0xC5,0xC6,0xC9,0x66,0x68,0xD8,0xC3,0xC0,0xD5,0x61,0x48,0xBB,0x86,0xD7,0x92,0x92&0xff,0xE1,0xE8]);
+const OTA_FORBIDDEN=new Set([0xE2,0xE3,0xE4,0xE5,0xE7,0xE9,0xEA]);
 async function probeSeries(){
   const ops=$("probeOps").value.split(",").map(x=>parseInt(x.trim(),16)).filter(x=>x>=0&&x<=0xff);
   if(!ops.length){log("err","список op пуст");return;}
+  for(const op of ops){
+    if(OTA_FORBIDDEN.has(op)){
+      log("err","op 0x"+op.toString(16).toUpperCase()+" — OTA-ОПАСНЫЙ (reboot в загрузчик / запись). Заблокирован до статического разбора. СМ. ANALYSIS §16.");
+      continue;
+    }
+  }
   const mode=$("probePay").value;
   let payload=new Uint8Array(0);
   if(mode==="gain0")payload=gainBlock(0);
@@ -756,6 +781,18 @@ $("rtMap").onclick=bandMap;
 $("probePay").onchange=e=>{$("probeHex").disabled=e.target.value!=="custom";};
 $("btnProbe").onclick=async()=>{S.stop=false;await probeSeries();};
 $("btnQuick").onclick=async()=>{S.stop=false;await quickRun();};
+$("btnOtaE1").onclick=async()=>{
+  $("otaOut").textContent="";
+  pending={op:0xE1,onReply:p=>{$("otaOut").textContent="0xE1 ОТВЕТ pay("+p.pay.length+")="+hex(p.pay)+"\n(это update-file-info: offset u32 BE + len u16 BE в стоке RCSP)";}};
+  const p=await transmit(frame(0xE1,new Uint8Array(0)),"OTA-зонд 0xE1 (read-only)","READ");
+  if(!p)$("otaOut").textContent="0xE1: тишина — мост OTA к app-каналу отсутствует/не отвечает";
+};
+$("btnOtaE8").onclick=async()=>{
+  $("otaOut").textContent="";
+  pending={op:0xE8,onReply:p=>{$("otaOut").textContent="0xE8 ОТВЕТ pay("+p.pay.length+")="+hex(p.pay);}};
+  const p=await transmit(frame(0xE8,new Uint8Array(0)),"OTA-зонд 0xE8 (read-only)","READ");
+  if(!p)$("otaOut").textContent="0xE8: тишина";
+};
 $("btnProbeStop").onclick=()=>{S.stop=true;log("sys","серия PROBE прервана");};
 document.querySelectorAll("[data-danger]").forEach(b=>b.onclick=()=>{
   const d=b.dataset.danger;
